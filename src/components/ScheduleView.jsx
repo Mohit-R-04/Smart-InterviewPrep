@@ -127,38 +127,42 @@ export default function ScheduleView({ schedule, completed, setCompleted }) {
                 <DailyProblem />
             </div>
 
-            {/* Sticky Stats Header - Responsive for all devices */}
-            <div
-                className="sticky top-16 z-[999] -mx-4 px-4 pb-4 -mt-8 pt-8 shadow-sm transition-colors duration-300 dark:bg-slate-900 bg-gray-100"
-            >
-                <div className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-4 sm:p-6 shadow-sm relative z-[999]">
-                    {/* Topics - Responsive */}
-                    <h3 className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-3 sm:mb-4 uppercase tracking-wider flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-                        <span>Topic Distribution</span>
-                        <span className="text-blue-600 dark:text-blue-400">{globalStats.solved} / {globalStats.total} Solved</span>
-                    </h3>
-                    <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
-                        {topicStats.map(([topic, count]) => (
-                            <span key={topic} className="px-2 sm:px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium border border-gray-200 dark:border-gray-600 flex items-center gap-1.5 sm:gap-2">
-                                <span className="truncate max-w-[120px] sm:max-w-none">{topic}</span>
-                                <span className="bg-white dark:bg-gray-800 px-1.5 py-0.5 rounded-md text-[10px] font-bold text-blue-600 dark:text-blue-400 shadow-sm border border-gray-100 dark:border-gray-700">{count}</span>
-                            </span>
-                        ))}
+            {/* Compact Stats Header - NOT sticky on mobile, sticky on desktop */}
+            <div className="lg:sticky lg:top-16 z-10 -mx-4 px-4 pb-3">
+                <div className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-xl p-3 sm:p-4 shadow-sm">
+                    {/* Compact Progress Bar */}
+                    <div className="flex items-center justify-between mb-3">
+                        <h3 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            Progress
+                        </h3>
+                        <span className="text-xs font-bold text-blue-600 dark:text-blue-400">
+                            {globalStats.solved} / {globalStats.total} ({Math.round(globalStats.percent)}%)
+                        </span>
+                    </div>
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden mb-3">
+                        <div
+                            className="bg-gradient-to-r from-blue-500 to-indigo-600 h-full rounded-full transition-all duration-700 ease-out"
+                            style={{ width: `${globalStats.percent}%` }}
+                        ></div>
                     </div>
 
-                    {/* Global Progress Bar - Responsive */}
-                    <div className="flex flex-col gap-2">
-                        <div className="flex justify-between text-xs font-medium text-gray-500 dark:text-gray-400">
-                            <span>Total Progress</span>
-                            <span>{Math.round(globalStats.percent)}%</span>
+                    {/* Collapsible Topics - Show only top 5 on mobile */}
+                    <details className="group">
+                        <summary className="cursor-pointer text-xs font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 flex items-center gap-2">
+                            <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                            Top Topics ({topicStats.length})
+                        </summary>
+                        <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3">
+                            {topicStats.map(([topic, count]) => (
+                                <span key={topic} className="px-2 py-0.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-[10px] sm:text-xs font-medium border border-gray-200 dark:border-gray-600 flex items-center gap-1">
+                                    <span className="truncate max-w-[80px] sm:max-w-[120px]">{topic}</span>
+                                    <span className="bg-white dark:bg-gray-800 px-1 py-0.5 rounded text-[9px] font-bold text-blue-600 dark:text-blue-400">{count}</span>
+                                </span>
+                            ))}
                         </div>
-                        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 overflow-hidden">
-                            <div
-                                className="bg-gradient-to-r from-blue-500 to-indigo-600 h-full rounded-full transition-all duration-700 ease-out"
-                                style={{ width: `${globalStats.percent}%` }}
-                            ></div>
-                        </div>
-                    </div>
+                    </details>
                 </div>
             </div>
 
