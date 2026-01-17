@@ -115,8 +115,21 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
                 });
 
                 if (response.ok) {
-                    data = await response.json();
+                    const proxyData = await response.json();
                     console.log('✅ Proxy call succeeded');
+
+                    // The proxy returns the Gemini response directly
+                    // Check if it's already the right format or needs unwrapping
+                    if (proxyData.candidates) {
+                        data = proxyData;
+                    } else if (proxyData.body) {
+                        // If wrapped in Netlify response format
+                        data = typeof proxyData.body === 'string'
+                            ? JSON.parse(proxyData.body)
+                            : proxyData.body;
+                    } else {
+                        console.error('❌ Unexpected proxy response format:', proxyData);
+                    }
                 } else {
                     console.error(`❌ Proxy call failed: ${response.status}`);
                 }
@@ -127,7 +140,13 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
 
         // Validate response structure
         if (!data || !data.candidates || !data.candidates[0] || !data.candidates[0].content || !data.candidates[0].content.parts || !data.candidates[0].content.parts[0]) {
-            console.error('❌ Invalid AI response structure:', data);
+            console.error('❌ Invalid AI response structure:', {
+                hasData: !!data,
+                hasCandidates: !!data?.candidates,
+                candidatesLength: data?.candidates?.length,
+                firstCandidate: data?.candidates?.[0],
+                rawData: data
+            });
             return { recommendations: [], aiGenerated: false };
         }
 
