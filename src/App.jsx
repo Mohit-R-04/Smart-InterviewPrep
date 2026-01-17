@@ -235,10 +235,10 @@ function App() {
 
     return (
         <div className="min-h-screen transition-colors duration-300 bg-gray-100 dark:bg-slate-900 text-gray-900 dark:text-gray-100 font-sans selection:bg-blue-500 selection:text-white pb-20">
-            <header className="fixed top-0 left-0 right-0 h-16 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-800 z-[2000] flex items-center justify-between px-8 transition-colors duration-300">
-                <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg shadow-blue-600/20 text-white">⚡</div>
-                    <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+            <header className="fixed top-0 left-0 right-0 h-14 sm:h-16 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-800 z-[2000] flex items-center justify-between px-3 sm:px-6 lg:px-8 transition-colors duration-300">
+                <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-lg sm:text-xl shadow-lg shadow-blue-600/20 text-white flex-shrink-0">⚡</div>
+                    <h1 className="text-sm sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 truncate">
                         Smart Interview Grind
                     </h1>
                 </div>
@@ -333,8 +333,8 @@ function App() {
             )}
 
             {(viewMode === 'app' || viewMode === 'results') && (
-                <main className="pt-24 w-full px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <main className="pt-16 sm:pt-20 lg:pt-24 w-full px-3 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                         {/* Left: Configuration or Summary */}
                         <div className="lg:col-span-1">
                             {viewMode === 'app' ? (

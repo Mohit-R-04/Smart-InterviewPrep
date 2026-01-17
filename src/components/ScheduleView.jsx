@@ -128,7 +128,7 @@ export default function ScheduleView({ schedule, completed, setCompleted }) {
             </div>
 
             {/* Compact Stats Header - NOT sticky on mobile, sticky on desktop */}
-            <div className="lg:sticky lg:top-16 z-10 -mx-4 px-4 pb-3">
+            <div className="lg:sticky lg:top-16 z-10 pb-3">
                 <div className="bg-white dark:bg-slate-800 border border-gray-200 dark:border-gray-700 rounded-xl p-3 sm:p-4 shadow-sm">
                     {/* Compact Progress Bar */}
                     <div className="flex items-center justify-between mb-3">
