@@ -311,3 +311,6 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                     )}
                 </div>
             </div>
+        </div>
+    );
+}
