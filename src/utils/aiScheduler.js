@@ -118,23 +118,42 @@ SCHEDULE FORMAT (JSON):
 
 CRITICAL: Return ONLY valid JSON. No markdown, no explanations, just the JSON object.`;
 
-        // Call Gemini API through serverless proxy (keeps API key secure)
-        const response = await fetch('/.netlify/functions/gemini-proxy', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ prompt })
-        });
+        let data;
 
-        if (!response.ok) {
-            console.error('Gemini API error, falling back to algorithmic scheduler');
-            return generateAlgorithmicSchedule(allProblems, config);
+        // DIRECT API CALL (if key provided)
+        if (typeof geminiApiKey === 'string' && geminiApiKey.length > 10) {
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${geminiApiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }]
+                    })
+                });
+
+                if (!response.ok) throw new Error('Direct API call failed');
+                data = await response.json();
+            } catch (e) {
+                console.warn('Direct API call failed, trying proxy...', e);
+            }
         }
 
-        const data = await response.json();
+        // PROXY CALL (fallback or default)
+        if (!data) {
+            const response = await fetch('/.netlify/functions/gemini-proxy', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt })
+            });
+
+            if (response.ok) {
+                data = await response.json();
+            }
+        }
 
         // Validate response structure
         if (!data || !data.candidates || !data.candidates[0] || !data.candidates[0].content || !data.candidates[0].content.parts || !data.candidates[0].content.parts[0]) {
-            console.warn('⚠️ Using algorithmic scheduler');
+            console.warn('⚠️ AI scheduler failed or returned invalid format. Using algorithmic scheduler.');
             return generateAlgorithmicSchedule(allProblems, config);
         }
 
