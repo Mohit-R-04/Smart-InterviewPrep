@@ -51,22 +51,27 @@ export async function generateAIRecommendations(allProblems, config, geminiApiKe
 
         console.log(`🎯 Sending ${candidates.length} candidates to AI`);
 
-        const prompt = `You are an expert technical interview coach. The user has a core study plan, but needs 3-5 "Hidden Gem" or "Key Insight" problems specific to their targets.
+        // Calculate number of AI recommendations based on plan duration
+        const numRecommendations = (config.weeks || 4) * (config.hoursPerWeek || 6);
+        console.log(`📝 Requesting ${numRecommendations} AI recommendations`);
+
+        const prompt = `You are an expert technical interview coach. The user has a core study plan, but needs ${numRecommendations} additional "Hidden Gem" or "Must-Do" problems specific to their targets.
 
 USER TARGETS:
 - Companies: ${config.selectedCompanies.length > 0 ? config.selectedCompanies.join(', ') : 'General Top Tech'}
 - Topics: ${config.selectedTopics?.length > 0 ? config.selectedTopics.join(', ') : 'All Core'}
 - Level: ${config.experienceLevel}
+- Plan Duration: ${config.weeks} weeks, ${config.hoursPerWeek} hours/week
 
-CANDIDATE PROBLEMS (Select 3-5 that are most critical):
-${JSON.stringify(candidates.slice(0, 50).map(p => ({
+CANDIDATE PROBLEMS (Select ${numRecommendations} that are most critical):
+${JSON.stringify(candidates.slice(0, 100).map(p => ({
             id: p.id,
             title: p.title,
             difficulty: p.difficulty,
             companies: p.companies.slice(0, 3)
         })), null, 2)}
 
-TASK: Recommend 3-5 specific problems that are highly relevant to the User Targets.
+TASK: Recommend exactly ${numRecommendations} specific problems that are highly relevant to the User Targets.
 Return ONLY valid JSON:
 {
   "recommendations": [
