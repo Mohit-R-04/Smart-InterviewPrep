@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import ConfigurationPanel from './components/ConfigurationPanel';
 import ScheduleView from './components/ScheduleView';
-import Footer from './components/Footer';
+
 import WelcomeScreen from './components/WelcomeScreen';
 import Wizard from './components/Wizard';
 import ConfigSummary from './components/ConfigSummary';
@@ -372,7 +372,7 @@ function App() {
                 </main>
             )}
 
-            {(viewMode === 'app' || viewMode === 'results') && <Footer />}
+
 
             <ConfirmationModal
                 isOpen={confirmModal.isOpen}
