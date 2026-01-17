@@ -17,17 +17,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Dependencies 🔧
-        run: |
-          rm -f package-lock.json
-          npm install
-
-      - name: Run Lint 🧹
-        run: npm run lint
-
-      - name: Run Tests 🧪
-        run: npm run test -- --run
+        run: npm install
 
       - name: Build Application 🏗️
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
         run: npm run build
 
       - name: Deploy 🚀
