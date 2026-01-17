@@ -118,6 +118,21 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
                     const proxyData = await response.json();
                     console.log('✅ Proxy call succeeded');
 
+                    // Check for API errors (quota exceeded, etc.)
+                    if (proxyData.error) {
+                        const errorMsg = proxyData.error.message || 'Unknown API error';
+                        const errorCode = proxyData.error.code;
+
+                        if (errorCode === 429) {
+                            console.warn('⏳ AI quota exceeded. Recommendations unavailable temporarily.');
+                            console.log('💡 Tip: The main schedule is still generated. AI picks will return when quota resets.');
+                        } else {
+                            console.error(`❌ Gemini API error (${errorCode}):`, errorMsg);
+                        }
+
+                        return { recommendations: [], aiGenerated: false };
+                    }
+
                     // The proxy returns the Gemini response directly
                     // Check if it's already the right format or needs unwrapping
                     if (proxyData.candidates) {
@@ -129,6 +144,7 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
                             : proxyData.body;
                     } else {
                         console.error('❌ Unexpected proxy response format:', proxyData);
+                        return { recommendations: [], aiGenerated: false };
                     }
                 } else {
                     console.error(`❌ Proxy call failed: ${response.status}`);
