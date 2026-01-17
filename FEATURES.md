@@ -17,11 +17,11 @@
 - ✅ **Importance scores** calculated
 
 ### **3. Company Targeting** 🏢
-- ✅ **57 companies** total
-- ✅ **FAANG+**: Google, Amazon, Microsoft, Meta, Apple, Netflix
-- ✅ **Top Tech**: Bloomberg, Adobe, Uber, Airbnb, LinkedIn, Stripe, Nvidia
-- ✅ **Finance**: Goldman Sachs, JPMorgan, Morgan Stanley, Citadel
-- ✅ **Startups**: DoorDash, Instacart, Robinhood, Coinbase, Databricks
+- ✅ **24 companies** with real problems
+- ✅ **FAANG+**: Google (1,113), Meta (859), Amazon (800), Microsoft (651), Apple (609), Facebook (610), Netflix (681)
+- ✅ **Top Tech**: Bloomberg (264), Adobe (152), Uber (153), Airbnb (198), LinkedIn (129), Stripe (130), Nvidia (105)
+- ✅ **Startups**: DoorDash (126), Instacart (82), Lyft (122), ByteDance (107), TikTok (97)
+- ✅ **Others**: Salesforce (145), Oracle (160), Twitter (161), Tesla (92), Snapchat (87)
 - ✅ **Real company-specific questions**
 
 ### **4. Topic Coverage** 📚
@@ -150,7 +150,7 @@ npm run deploy                 # Deploy to GitHub Pages (static only)
 
 Your app is a **complete, production-ready interview prep platform** with:
 - ✅ 3,058 problems with real metrics
-- ✅ 57 companies (FAANG + Top Tech + Finance + Startups)
+- ✅ 24 companies (FAANG + Top Tech + Startups)
 - ✅ AI-powered personalized scheduling
 - ✅ 160 curated problems from 3 popular sheets
 - ✅ Daily LeetCode problem
