@@ -118,23 +118,12 @@ SCHEDULE FORMAT (JSON):
 
 CRITICAL: Return ONLY valid JSON. No markdown, no explanations, just the JSON object.`;
 
-        // Call Gemini API
-        const response = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${geminiApiKey}`,
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    contents: [{
-                        parts: [{ text: prompt }]
-                    }],
-                    generationConfig: {
-                        temperature: 0.4,
-                        maxOutputTokens: 8000
-                    }
-                })
-            }
-        );
+        // Call Gemini API through serverless proxy (keeps API key secure)
+        const response = await fetch('/.netlify/functions/gemini-proxy', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ prompt })
+        });
 
         if (!response.ok) {
             console.error('Gemini API error, falling back to algorithmic scheduler');
