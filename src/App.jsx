@@ -9,6 +9,7 @@ import ConfirmationModal from './components/ConfirmationModal';
 import DailyProblem from './components/DailyProblem';
 import { generateSchedule } from './utils/scheduler';
 import { generateAIRecommendations } from './utils/aiScheduler';
+import { getCachedAIRecommendations, cacheAIRecommendations } from './utils/aiCache';
 
 function App() {
     // Problems are loaded directly from JSON
