@@ -2,6 +2,8 @@
 
 **Your intelligent, personalized interview preparation companion powered by AI and real-time data.**
 
+🌐 **[Live Demo](https://Mohit-R-04.github.io/Smart-InterviewPrep/)** | 📖 [Documentation](#architecture) | ⭐ [Star this repo](https://github.com/Mohit-R-04/Smart-InterviewPrep)
+
 ---
 
 ## ✨ Features
