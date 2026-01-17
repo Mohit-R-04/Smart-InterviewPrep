@@ -3,6 +3,11 @@
  * 
  * Uses Gemini AI to suggest ADDITIONAL problems based on user targets.
  * This complements the algorithmic schedule rather than replacing it.
+ * 
+ * Features:
+ * - Batched requests to avoid timeouts
+ * - Progressive saving (resumes if page refreshes)
+ * - Duplicate detection
  */
 
 
@@ -114,19 +119,51 @@ export async function generateAIRecommendations(allProblems, config, geminiApiKe
         const totalRecommendations = (config.weeks || 4) * (config.hoursPerWeek || 6);
         console.log(`📝 Requesting ${totalRecommendations} AI recommendations`);
 
+        // Create a unique cache key for this config
+        const configKey = JSON.stringify({
+            companies: config.selectedCompanies,
+            topics: config.selectedTopics,
+            weeks: config.weeks,
+            hours: config.hoursPerWeek
+        });
+
+        // Check if we have partial progress saved
+        const progressKey = 'grind_ai_progress';
+        let savedProgress = null;
+        try {
+            const saved = localStorage.getItem(progressKey);
+            if (saved) {
+                savedProgress = JSON.parse(saved);
+                // Only use if same config
+                if (savedProgress.configKey === configKey) {
+                    console.log(`🔄 Resuming from batch ${savedProgress.lastBatch + 1} (${savedProgress.recommendations.length} already fetched)`);
+                } else {
+                    savedProgress = null;
+                    localStorage.removeItem(progressKey);
+                }
+            }
+        } catch (e) {
+            console.warn('Could not load progress:', e);
+        }
+
         // Make batched requests (max 8 per batch to avoid timeout)
         const batchSize = 8;
         const numBatches = Math.ceil(totalRecommendations / batchSize);
-        console.log(`📦 Splitting into ${numBatches} batches (${batchSize} per batch)`);
 
-        const allRecommendations = [];
-        const usedIds = new Set(); // Track used IDs to avoid duplicates
+        // Resume from saved progress or start fresh
+        const startBatch = savedProgress ? savedProgress.lastBatch + 1 : 0;
+        const allRecommendations = savedProgress ? savedProgress.recommendations : [];
+        const usedIds = new Set(allRecommendations.map(r => r.id)); // Track used IDs
 
-        for (let batchNum = 0; batchNum < numBatches; batchNum++) {
+        if (startBatch === 0) {
+            console.log(`📦 Splitting into ${numBatches} batches (${batchSize} per batch)`);
+        }
+
+        for (let batchNum = startBatch; batchNum < numBatches; batchNum++) {
             const batchCount = Math.min(batchSize, totalRecommendations - allRecommendations.length);
             console.log(`📤 Batch ${batchNum + 1}/${numBatches}: Requesting ${batchCount} problems`);
 
-            // Filter out already recommended problems for this batch
+            // Filter out already recommended problems
             const availableCandidates = candidates.filter(p => !usedIds.has(p.id));
 
             if (availableCandidates.length === 0) {
@@ -187,19 +224,34 @@ Return ONLY valid JSON with exactly ${batchCount} unique problems:
                     }
                 }
 
-                console.log(`✅ Batch ${batchNum + 1} complete: ${allRecommendations.length} total recommendations`);
+                console.log(`✅ Batch ${batchNum + 1} complete: ${allRecommendations.length} total`);
 
-                // Small delay between batches to avoid rate limiting
+                // 💾 SAVE PROGRESS after each batch
+                try {
+                    localStorage.setItem(progressKey, JSON.stringify({
+                        configKey,
+                        lastBatch: batchNum,
+                        recommendations: allRecommendations,
+                        timestamp: Date.now()
+                    }));
+                    console.log(`💾 Progress saved (batch ${batchNum + 1}/${numBatches})`);
+                } catch (e) {
+                    console.warn('Could not save progress:', e);
+                }
+
+                // Small delay between batches
                 if (batchNum < numBatches - 1) {
                     await new Promise(resolve => setTimeout(resolve, 500));
                 }
 
             } catch (error) {
                 console.error(`❌ Batch ${batchNum + 1} failed:`, error.message);
-                // Continue with next batch even if one fails
+                // Continue with next batch
             }
         }
 
+        // Clear progress once complete
+        localStorage.removeItem(progressKey);
         console.log(`✅ AI Recommendations complete: ${allRecommendations.length} problems`);
 
         return {
