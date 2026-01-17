@@ -51,8 +51,8 @@ export async function generateAIRecommendations(allProblems, config, geminiApiKe
 
         console.log(`🎯 Sending ${candidates.length} candidates to AI`);
 
-        // Calculate number of AI recommendations: weeks * hoursPerWeek (capped at 20 for performance)
-        const numRecommendations = Math.min((config.weeks || 4) * (config.hoursPerWeek || 6), 20);
+        // Calculate number of AI recommendations: weeks * hoursPerWeek (capped at 10 for Netlify timeout limits)
+        const numRecommendations = Math.min((config.weeks || 4) * (config.hoursPerWeek || 6), 10);
         console.log(`📝 Requesting ${numRecommendations} AI recommendations`);
 
         const prompt = `You are an expert technical interview coach. The user has a core study plan, but needs ${numRecommendations} additional "Hidden Gem" or "Must-Do" problems specific to their targets.
