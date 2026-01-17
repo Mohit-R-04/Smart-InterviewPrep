@@ -186,16 +186,24 @@ function assignCompaniesToProblems(problems, companyData) {
         // Select companies based on tier and frequency
         const selectedCompanies = [];
 
-        // Always include top tier companies for popular problems
-        if (freqBar > 50) {
-            const tier1 = companies.filter(c => companyData[c].tier === 1);
-            const shuffled = tier1.sort(() => Math.random() - 0.5);
-            selectedCompanies.push(...shuffled.slice(0, Math.min(3, companyCount)));
+        // ALWAYS include at least one FAANG company for popular problems
+        const tier1 = companies.filter(c => companyData[c].tier === 1);
+        const tier2 = companies.filter(c => companyData[c].tier === 2);
+        const tier3 = companies.filter(c => companyData[c].tier === 3);
+
+        // For high frequency problems, prioritize FAANG
+        if (freqBar > 30 || problem.difficulty === 'Medium' || problem.difficulty === 'Hard') {
+            const shuffledT1 = tier1.sort(() => Math.random() - 0.5);
+            const t1Count = Math.min(Math.ceil(companyCount * 0.6), tier1.length); // 60% FAANG
+            selectedCompanies.push(...shuffledT1.slice(0, t1Count));
+        } else {
+            // Even for low frequency, include at least 1 FAANG
+            const shuffledT1 = tier1.sort(() => Math.random() - 0.5);
+            selectedCompanies.push(shuffledT1[0]);
         }
 
         // Add tier 2 companies
         if (selectedCompanies.length < companyCount) {
-            const tier2 = companies.filter(c => companyData[c].tier === 2);
             const shuffled = tier2.sort(() => Math.random() - 0.5);
             const needed = companyCount - selectedCompanies.length;
             selectedCompanies.push(...shuffled.slice(0, needed));
@@ -203,7 +211,6 @@ function assignCompaniesToProblems(problems, companyData) {
 
         // Fill remaining with tier 3 if needed
         if (selectedCompanies.length < companyCount) {
-            const tier3 = companies.filter(c => companyData[c].tier === 3);
             const shuffled = tier3.sort(() => Math.random() - 0.5);
             const needed = companyCount - selectedCompanies.length;
             selectedCompanies.push(...shuffled.slice(0, needed));
