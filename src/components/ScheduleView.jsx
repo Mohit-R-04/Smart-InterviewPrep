@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import confetti from 'canvas-confetti';
-import DailyProblem from './DailyProblem';
+
 
 export default function ScheduleView({ schedule, completed, setCompleted, aiExtras }) {
     const [celebratedWeeks, setCelebratedWeeks] = useState(new Set());
@@ -122,10 +122,7 @@ export default function ScheduleView({ schedule, completed, setCompleted, aiExtr
 
     return (
         <div className="space-y-6 pb-20">
-            {/* Daily Problem - Always visible at top */}
-            <div className="mb-6">
-                <DailyProblem />
-            </div>
+
 
             {/* Compact Stats Header - NOT sticky on mobile, sticky on desktop */}
             <div className="lg:sticky lg:top-16 z-10 pb-3">
@@ -170,10 +167,7 @@ export default function ScheduleView({ schedule, completed, setCompleted, aiExtr
             {aiExtras && aiExtras.length > 0 && (
                 <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-purple-950/40 border border-indigo-100 dark:border-indigo-800 rounded-2xl overflow-hidden shadow-sm mb-6 relative animate-[fadeIn_0.5s_ease-out]">
 
-                    {/* Decorative Background Icon */}
-                    <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
-                        <svg className="w-32 h-32 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                    </div>
+
 
                     <div className="p-4 sm:p-5 border-b border-indigo-100 dark:border-indigo-800 flex items-center gap-4 relative z-10">
                         <div className="w-10 h-10 rounded-xl bg-white dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shadow-sm border border-indigo-50 dark:border-indigo-700">
@@ -214,8 +208,8 @@ export default function ScheduleView({ schedule, completed, setCompleted, aiExtr
                                             </a>
                                             <div className="flex flex-wrap gap-2 mt-1">
                                                 <span className={`text-[10px] px-2 py-0.5 rounded font-medium border ${p.difficulty === 'Easy' ? 'bg-green-100 text-green-700 border-green-200' :
-                                                        p.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-700 border-yellow-200' :
-                                                            'bg-red-100 text-red-700 border-red-200'
+                                                    p.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-700 border-yellow-200' :
+                                                        'bg-red-100 text-red-700 border-red-200'
                                                     } dark:bg-opacity-20 dark:border-opacity-20`}>{p.difficulty}</span>
                                                 {p.aiReason && (
                                                     <span className="text-[10px] sm:text-xs text-indigo-600 dark:text-indigo-300 italic flex items-center gap-1">
