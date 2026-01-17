@@ -166,16 +166,14 @@ function App() {
         // Fetches additional "Hidden Gem" problems based on current target
         const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-        if (apiKey) {
-            generateAIRecommendations(problemsData, config, apiKey)
-                .then(result => {
-                    if (result.aiGenerated && result.recommendations.length > 0) {
-                        console.log('✅ Received AI Recommendations');
-                        setAiExtras(result.recommendations);
-                    }
-                })
-                .catch(err => console.error('AI Recommendation Error:', err));
-        }
+        generateAIRecommendations(problemsData, config, apiKey)
+            .then(result => {
+                if (result.aiGenerated && result.recommendations.length > 0) {
+                    console.log('✅ Received AI Recommendations');
+                    setAiExtras(result.recommendations);
+                }
+            })
+            .catch(err => console.error('AI Recommendation Error:', err));
 
     }, [config, problemsData]);
 
@@ -373,7 +371,7 @@ function App() {
 
                         {/* Right: Daily Problem + Schedule (Scrollable) */}
                         <div className="lg:col-span-3">
-                            {viewMode === 'app' && <DailyProblem />}
+                            <DailyProblem />
                             <ScheduleView
                                 schedule={schedule}
                                 completed={completed}

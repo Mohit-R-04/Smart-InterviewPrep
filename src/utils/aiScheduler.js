@@ -8,9 +8,7 @@
 import { generateAlgorithmicSchedule } from './scheduler'; // Import for consistency, though we might not fallback to it here
 
 export async function generateAIRecommendations(allProblems, config, geminiApiKey) {
-    if (!geminiApiKey) {
-        return { recommendations: [], aiGenerated: false };
-    }
+
 
     try {
         // Prepare context for AI (focus on company/topic match)
