@@ -75,24 +75,39 @@
 
 ## 🚀 Quick Start
 
-### **1. Install Dependencies**
+### **Option 1: Deploy to Netlify (Recommended - FREE & Secure)**
+
+1. **Fork this repository** on GitHub
+2. **Sign up** at [netlify.com](https://netlify.com)
+3. **Import your fork**: Click "Add new site" → "Import from Git"
+4. **Auto-deploy**: Netlify detects settings from `netlify.toml`
+5. **Add API Key Securely**:
+   - Go to **Site settings** → **Environment variables**
+   - Add: `GEMINI_API_KEY` = `your_gemini_api_key`
+   - Get free key at [Google AI Studio](https://aistudio.google.com/app/apikey)
+6. **Trigger redeploy** and you're live! 🎉
+
+**Your site will be at**: `https://your-site-name.netlify.app`
+
+> 🔒 **Security**: Your API key stays on the server via serverless functions. Never exposed to users!
+
+### **Option 2: Run Locally (Development)**
+
 ```bash
+# Install dependencies
 npm install
-```
 
-### **2. Fetch Real-Time Data**
-```bash
+# Fetch real-time LeetCode data (optional, ~5-10 min)
 npm run fetch-realtime
-```
-This fetches 3,058 problems with real metrics (~5-10 minutes)
 
-### **3. Start the App**
-```bash
+# Start development server
 npm run dev
+
+# Open browser
+# Navigate to http://localhost:5173/
 ```
 
-### **4. Open in Browser**
-Navigate to `http://localhost:5173/`
+> ⚠️ **Note**: AI features require deployment to Netlify/Vercel with API key configured. Local dev uses algorithmic scheduler.
 
 ---
 
@@ -322,4 +337,45 @@ npm run fetch-realtime
 npm run dev
 ```
 
+---
+
+## 🌐 Deployment
+
+### **Netlify (Recommended)**
+- **Free tier**: Generous limits
+- **Serverless functions**: Keeps API key secure
+- **Auto-deploy**: Push to GitHub → Auto-deploy
+- **Custom domains**: Free SSL included
+
+See [`DEPLOY.md`](./DEPLOY.md) for detailed instructions.
+
+### **Vercel (Alternative)**
+- Rename `netlify/functions` to `api`
+- Deploy to [vercel.com](https://vercel.com)
+- Add `GEMINI_API_KEY` in environment variables
+
+### **GitHub Pages (Static Only)**
+- No AI features (requires serverless backend)
+- Good for demo/testing
+- Already configured in `.github/workflows/deploy.yml`
+
+---
+
+## 🔒 Security
+
+### **API Key Protection**
+- ✅ **Never commit** API keys to Git (`.env` is git-ignored)
+- ✅ **Use serverless functions** to keep keys on server
+- ✅ **Environment variables** in Netlify/Vercel dashboard
+- ❌ **Never** hardcode keys in frontend code
+
+### **Serverless Proxy**
+The app uses `netlify/functions/gemini-proxy.js` to:
+- Keep your Gemini API key secure on the server
+- Prevent exposure in client-side JavaScript
+- Allow all users to benefit from AI features safely
+
+---
+
 **Happy Grinding! 🚀**
+
