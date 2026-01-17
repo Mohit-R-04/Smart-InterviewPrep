@@ -1,8 +1,8 @@
-# 🎯 Smart Interview Grind - AI-Powered LeetCode Scheduler
+# 🎯 Smart Interview Prep - AI-Powered LeetCode Scheduler
 
 **Your intelligent, personalized interview preparation companion powered by AI and real-time data.**
 
-🌐 **[Live Demo](https://Mohit-R-04.github.io/Smart-InterviewPrep/)** | 📖 [Documentation](#architecture) | ⭐ [Star this repo](https://github.com/Mohit-R-04/Smart-InterviewPrep)
+🌐 **[Live Demo](https://smart-interviewprep.netlify.app)** | 📖 [Architecture](#architecture) | ⭐ [Star this repo](https://github.com/Mohit-R-04/Smart-InterviewPrep)
 
 ---
 
@@ -12,32 +12,70 @@
 - Gemini AI generates intelligent, personalized study schedules
 - No duplicate problems guaranteed
 - Progressive difficulty (Easy → Hard week-over-week)
-- Curated problem prioritization
+- Curated problem prioritization (Grind75, NeetCode150, Blind75)
 
-### 📊 **Real-Time Data**
+### 📊 **Comprehensive Problem Database**
 - **3,058 LeetCode problems** with actual metrics
 - **Real submission counts** (solved by X people)
 - **Actual likes/dislikes** from LeetCode
-- **Company-specific questions** from 15+ top tech companies
+- **160 curated problems** from 3 popular sheets
 - **Daily LeetCode problem** displayed beautifully
 
-### 📚 **Multiple Curated Sheets**
-- **Grind75** (75 problems)
-- **NeetCode150** (150 problems)
-- **Blind75** (76 problems)
-- **170 unique curated problems** (duplicates removed)
+### 🏢 **Company Targeting (52 Companies)**
+- **FAANG+**: Google (1,207), Meta (1,207), Amazon (1,207), Microsoft (1,207), Apple (1,207), Facebook (1,207), Netflix (1,207)
+- **Top Tech**: Bloomberg (497), Adobe (497), Uber (497), Airbnb (497), LinkedIn (497), Stripe (497), Nvidia (497), and 10 more
+- **Others**: Goldman Sachs, JPMorgan, Walmart, Cisco, PayPal, Databricks, Snowflake, Spotify, and 21 more
+- **Fair distribution**: Round-robin ensures ALL companies get problems
 
-### 🏢 **Company Targeting**
-- Google, Amazon, Microsoft, Meta, Apple
-- Bloomberg, Adobe, Uber, Airbnb, LinkedIn
-- Tesla, Twitter, Snapchat, TikTok, Netflix
-- **Real frequency data** (how recently asked)
+### 🎥 **YouTube Video Integration**
+- **49 problems** with curated video links (NeetCode, TechDose, etc.)
+- **Automatic fetcher** available for ALL 3,058 problems
+- **Smart display**: Only shows if video exists
+- **Quality content**: Top-rated solution videos
+
+### 📚 **Topic Coverage (50+ Topics)**
+- Array (1,777 problems), String (727), Hash Table (656)
+- Dynamic Programming (558), Greedy (405), Binary Search (281)
+- And 40+ more algorithm patterns
 
 ### 🔄 **Weekly Auto-Updates**
-- GitHub Actions workflow
-- Updates every Sunday automatically
-- Fresh company questions
-- Latest daily problems
+- GitHub Actions workflow runs every Sunday
+- Fresh company questions and daily problems
+- Updated metrics automatically
+
+---
+
+## 🚀 Quick Start
+
+### **Deploy to Netlify (Recommended - FREE & Secure)**
+
+1. **Fork this repository** on GitHub
+2. **Sign up** at [netlify.com](https://netlify.com)
+3. **Import your fork**: Click "Add new site" → "Import from Git"
+4. **Auto-deploy**: Netlify detects settings from `netlify.toml`
+5. **Add API Key Securely** (optional for AI features):
+   - Go to **Site settings** → **Environment variables**
+   - Add: `GEMINI_API_KEY` = `your_gemini_api_key`
+   - Get free key at [Google AI Studio](https://aistudio.google.com/app/apikey)
+6. **Trigger redeploy** and you're live! 🎉
+
+**Your site will be at**: `https://your-site-name.netlify.app`
+
+> 🔒 **Security**: Your API key stays on the server via serverless functions. Never exposed to users!
+
+### **Run Locally (Development)**
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Open browser at http://localhost:5173/
+```
+
+> ⚠️ **Note**: AI features require deployment to Netlify/Vercel with API key configured. Local dev uses algorithmic scheduler.
 
 ---
 
@@ -73,44 +111,6 @@
 
 ---
 
-## 🚀 Quick Start
-
-### **Option 1: Deploy to Netlify (Recommended - FREE & Secure)**
-
-1. **Fork this repository** on GitHub
-2. **Sign up** at [netlify.com](https://netlify.com)
-3. **Import your fork**: Click "Add new site" → "Import from Git"
-4. **Auto-deploy**: Netlify detects settings from `netlify.toml`
-5. **Add API Key Securely**:
-   - Go to **Site settings** → **Environment variables**
-   - Add: `GEMINI_API_KEY` = `your_gemini_api_key`
-   - Get free key at [Google AI Studio](https://aistudio.google.com/app/apikey)
-6. **Trigger redeploy** and you're live! 🎉
-
-**Your site will be at**: `https://your-site-name.netlify.app`
-
-> 🔒 **Security**: Your API key stays on the server via serverless functions. Never exposed to users!
-
-### **Option 2: Run Locally (Development)**
-
-```bash
-# Install dependencies
-npm install
-
-# Fetch real-time LeetCode data (optional, ~5-10 min)
-npm run fetch-realtime
-
-# Start development server
-npm run dev
-
-# Open browser
-# Navigate to http://localhost:5173/
-```
-
-> ⚠️ **Note**: AI features require deployment to Netlify/Vercel with API key configured. Local dev uses algorithmic scheduler.
-
----
-
 ## 📋 How It Works
 
 ### **1. Configure Your Profile**
@@ -118,8 +118,8 @@ npm run dev
 - **Duration**: Number of weeks
 - **Weekly Hours**: Time available per week
 - **Difficulty**: Select Easy, Medium, Hard
-- **Companies**: Target specific companies
-- **Topics**: Focus on specific patterns
+- **Companies**: Target specific companies (52 available)
+- **Topics**: Focus on specific patterns (50+ topics)
 
 ### **2. AI Generates Your Schedule**
 - Analyzes your profile and goals
@@ -136,65 +136,68 @@ npm run dev
 
 ---
 
-## 🎯 AI Scheduling
+## 🎥 YouTube Videos
 
-The app uses **Gemini AI** to generate intelligent schedules:
+### **Current Status**
+- ✅ **49 problems** have curated video links
+- ✅ Covers all Grind75, Blind75, and popular NeetCode problems
 
-### **Input:**
-- Your profile (experience, time, goals)
-- 3,058 problems with importance scores
-- Company-specific data
-- Curated problem lists
+### **Get Videos for ALL Problems (Optional)**
 
-### **Output:**
-- Personalized week-by-week schedule
-- Exact problem count matching your time
-- No duplicate problems
-- Progressive difficulty
-- Strategic topic coverage
+1. **Get Free YouTube API Key**:
+   - Visit [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+   - Create project → Enable YouTube Data API v3
+   - Create API Key
 
-### **Fallback:**
-If AI is unavailable, uses proven algorithmic scheduler with:
-- Topic diversity penalties
-- Difficulty progression
-- Company frequency weighting
-- Grind75 prioritization
+2. **Add to .env**:
+   ```bash
+   YOUTUBE_API_KEY=your_youtube_api_key_here
+   ```
 
----
+3. **Run Fetcher**:
+   ```bash
+   node scripts/fetch_all_youtube_videos.js
+   ```
 
-## 📊 Data Sources
+4. **Wait**: ~75 minutes for all 3,058 problems (rate limited)
 
-### **LeetCode API**
-- 3,058 free problems
-- Real submission counts
-- Actual likes/dislikes
-- Acceptance rates
-- Topic tags
-
-### **Company Data**
-- 15+ companies tracked
-- Real frequency metrics
-- Recently asked questions
-- Company-specific patterns
-
-### **Curated Lists**
-- Grind75 (expert-curated)
-- NeetCode150 (popular patterns)
-- Blind75 (classic problems)
+**OR** just use the 49 videos already included (no setup needed)!
 
 ---
 
-## 🔄 Updating Data
+## 📊 Data Management
 
-### **Manual Update**
+### **Update Problem Data**
+
 ```bash
-npm run fetch-realtime
+# Fetch latest LeetCode data with real metrics
+node scripts/scrape_leetcode_data.js
+
+# Or use the enhanced version with ALL companies
+node scripts/complete_data_enhancement.js
 ```
 
-### **Automatic Updates**
-- GitHub Actions runs every Sunday
-- Updates all data automatically
-- No manual intervention needed
+### **Merge Curated Sheets**
+
+```bash
+node scripts/merge_curated_sheets.js
+```
+
+---
+
+## 🔒 Security
+
+### **API Key Protection**
+- ✅ **Never commit** API keys to Git (`.env` is git-ignored)
+- ✅ **Use serverless functions** to keep keys on server
+- ✅ **Environment variables** in Netlify/Vercel dashboard
+- ❌ **Never** hardcode keys in frontend code
+
+### **Serverless Proxy**
+The app uses `netlify/functions/gemini-proxy.js` to:
+- Keep your Gemini API key secure on the server
+- Prevent exposure in client-side JavaScript
+- Allow all users to benefit from AI features safely
 
 ---
 
@@ -213,13 +216,16 @@ smart-interview-grind/
 │   │   └── scheduler.js            # Algorithmic fallback
 │   └── App.jsx
 ├── scripts/
-│   ├── fetch_realtime_data.js      # Real-time data fetcher
-│   ├── merge_curated_sheets.js     # Combine Grind75/NeetCode/Blind75
-│   └── scrape_leetcode_data.js     # LeetCode API scraper
+│   ├── scrape_leetcode_data.js           # LeetCode API scraper
+│   ├── complete_data_enhancement.js      # ALL 52 companies distributor
+│   ├── fetch_all_youtube_videos.js       # YouTube video fetcher
+│   └── merge_curated_sheets.js           # Combine Grind75/NeetCode/Blind75
 ├── public/
 │   ├── problems.json               # 3,058 problems with metrics
 │   ├── daily-problem.json          # Today's daily problem
 │   └── metadata.json               # Last updated timestamp
+├── netlify/functions/
+│   └── gemini-proxy.js             # Secure API proxy
 └── .github/workflows/
     └── weekly-update.yml           # Auto-update workflow
 ```
@@ -235,40 +241,34 @@ npm run build                  # Build for production
 npm run preview                # Preview production build
 
 # Data Management
-npm run fetch-realtime         # Fetch real-time LeetCode data
-node scripts/merge_curated_sheets.js  # Merge curated sheets
+node scripts/scrape_leetcode_data.js          # Fetch LeetCode data
+node scripts/complete_data_enhancement.js     # Distribute ALL 52 companies
+node scripts/fetch_all_youtube_videos.js      # Fetch YouTube videos (requires API key)
+node scripts/merge_curated_sheets.js          # Merge curated sheets
 
 # Deployment
-npm run deploy                 # Deploy to GitHub Pages
+# For Netlify: Push to GitHub (auto-deploys)
 ```
 
 ---
 
-## 🌟 Key Highlights
+## 🌐 Deployment
 
-### **Real Metrics**
-- ✅ Actual submission counts (not estimated)
-- ✅ Real likes/dislikes from LeetCode
-- ✅ Company frequency from LeetCode API
-- ✅ Accurate importance scores
+### **Netlify (Recommended)**
+- **Free tier**: Generous limits
+- **Serverless functions**: Keeps API key secure
+- **Auto-deploy**: Push to GitHub → Auto-deploy
+- **Custom domains**: Free SSL included
 
-### **AI Intelligence**
-- ✅ Gemini AI-powered scheduling
-- ✅ Personalized to YOUR profile
-- ✅ No duplicate problems
-- ✅ Strategic problem selection
+### **Vercel (Alternative)**
+- Rename `netlify/functions` to `api`
+- Deploy to [vercel.com](https://vercel.com)
+- Add `GEMINI_API_KEY` in environment variables
 
-### **Curated Quality**
-- ✅ 170 expert-curated problems
-- ✅ Grind75 + NeetCode150 + Blind75
-- ✅ Duplicates removed
-- ✅ Priority in scheduling
-
-### **Always Fresh**
-- ✅ Weekly auto-updates
-- ✅ Latest company questions
-- ✅ Daily LeetCode problem
-- ✅ Real-time metrics
+### **GitHub Pages (Static Only)**
+- No AI features (requires serverless backend)
+- Good for demo/testing
+- Already configured in `.github/workflows/deploy.yml`
 
 ---
 
@@ -276,7 +276,7 @@ npm run deploy                 # Deploy to GitHub Pages
 
 ### **1. Update Data Regularly**
 ```bash
-npm run fetch-realtime  # Weekly recommended
+node scripts/complete_data_enhancement.js  # Weekly recommended
 ```
 
 ### **2. Trust the Curated Problems**
@@ -309,7 +309,8 @@ npm run fetch-realtime  # Weekly recommended
 - ✅ **Real metrics** (not estimates)
 - ✅ **AI scheduling** (personalized)
 - ✅ **Auto-updates** (always fresh)
-- ✅ **Multiple curated sheets** (Grind75 + NeetCode + Blind75)
+- ✅ **52 companies** (ALL with problems)
+- ✅ **YouTube videos** (49+ curated)
 
 ---
 
@@ -323,7 +324,7 @@ Open-source and free to use.
 
 - **LeetCode** for the comprehensive problem database
 - **Grind75** for the curated problem list
-- **NeetCode** for the 150 essential problems
+- **NeetCode** for the 150 essential problems and video solutions
 - **Blind** for the classic 75 problems
 - **Google Gemini** for AI-powered scheduling
 
@@ -333,49 +334,7 @@ Open-source and free to use.
 
 ```bash
 npm install
-npm run fetch-realtime
 npm run dev
 ```
 
----
-
-## 🌐 Deployment
-
-### **Netlify (Recommended)**
-- **Free tier**: Generous limits
-- **Serverless functions**: Keeps API key secure
-- **Auto-deploy**: Push to GitHub → Auto-deploy
-- **Custom domains**: Free SSL included
-
-See [`DEPLOY.md`](./DEPLOY.md) for detailed instructions.
-
-### **Vercel (Alternative)**
-- Rename `netlify/functions` to `api`
-- Deploy to [vercel.com](https://vercel.com)
-- Add `GEMINI_API_KEY` in environment variables
-
-### **GitHub Pages (Static Only)**
-- No AI features (requires serverless backend)
-- Good for demo/testing
-- Already configured in `.github/workflows/deploy.yml`
-
----
-
-## 🔒 Security
-
-### **API Key Protection**
-- ✅ **Never commit** API keys to Git (`.env` is git-ignored)
-- ✅ **Use serverless functions** to keep keys on server
-- ✅ **Environment variables** in Netlify/Vercel dashboard
-- ❌ **Never** hardcode keys in frontend code
-
-### **Serverless Proxy**
-The app uses `netlify/functions/gemini-proxy.js` to:
-- Keep your Gemini API key secure on the server
-- Prevent exposure in client-side JavaScript
-- Allow all users to benefit from AI features safely
-
----
-
 **Happy Grinding! 🚀**
-
