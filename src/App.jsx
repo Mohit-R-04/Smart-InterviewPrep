@@ -164,7 +164,15 @@ function App() {
         setAiExtras([]);
 
         // 2. AI Recommendations (Async Side Channel)
-        // Fetches additional "Hidden Gem" problems based on current target
+        // Check cache first
+        const cachedRecs = getCachedAIRecommendations(config);
+        if (cachedRecs) {
+            console.log('✅ Using cached AI recommendations');
+            setAiExtras(cachedRecs);
+            return;
+        }
+
+        // Fetch new recommendations
         const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
         generateAIRecommendations(problemsData, config, apiKey)
@@ -172,6 +180,8 @@ function App() {
                 if (result.aiGenerated && result.recommendations.length > 0) {
                     console.log('✅ Received AI Recommendations');
                     setAiExtras(result.recommendations);
+                    // Cache the completed recommendations
+                    cacheAIRecommendations(config, result.recommendations);
                 }
             })
             .catch(err => console.error('AI Recommendation Error:', err));
