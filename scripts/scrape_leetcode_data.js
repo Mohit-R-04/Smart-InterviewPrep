@@ -120,9 +120,8 @@ async function fetchCompanyTags() {
     console.log('\n🏢 Fetching company tag data...');
 
     // This is a curated list based on LeetCode premium data and public sources
-    // In production, you'd scrape this from LeetCode premium or use their API
     const companyData = {
-        // FAANG+
+        // FAANG+ (Tier 1 - Most Asked)
         'Google': { tier: 1, frequency: 'very-high', problems: [] },
         'Amazon': { tier: 1, frequency: 'very-high', problems: [] },
         'Microsoft': { tier: 1, frequency: 'very-high', problems: [] },
@@ -131,29 +130,56 @@ async function fetchCompanyTags() {
         'Apple': { tier: 1, frequency: 'very-high', problems: [] },
         'Netflix': { tier: 1, frequency: 'high', problems: [] },
 
-        // Top Tech
+        // Top Tech (Tier 2 - Frequently Asked)
         'Bloomberg': { tier: 2, frequency: 'high', problems: [] },
         'Adobe': { tier: 2, frequency: 'high', problems: [] },
         'Uber': { tier: 2, frequency: 'high', problems: [] },
         'Airbnb': { tier: 2, frequency: 'high', problems: [] },
         'LinkedIn': { tier: 2, frequency: 'high', problems: [] },
-        'Salesforce': { tier: 2, frequency: 'medium', problems: [] },
+        'Salesforce': { tier: 2, frequency: 'high', problems: [] },
         'Oracle': { tier: 2, frequency: 'medium', problems: [] },
         'Twitter': { tier: 2, frequency: 'medium', problems: [] },
         'Tesla': { tier: 2, frequency: 'medium', problems: [] },
         'Snapchat': { tier: 2, frequency: 'medium', problems: [] },
         'TikTok': { tier: 2, frequency: 'medium', problems: [] },
         'ByteDance': { tier: 2, frequency: 'medium', problems: [] },
+        'Nvidia': { tier: 2, frequency: 'medium', problems: [] },
+        'Stripe': { tier: 2, frequency: 'medium', problems: [] },
+        'Lyft': { tier: 2, frequency: 'medium', problems: [] },
+        'DoorDash': { tier: 2, frequency: 'medium', problems: [] },
+        'Instacart': { tier: 2, frequency: 'medium', problems: [] },
 
-        // Other Notable
+        // Finance & Enterprise (Tier 3)
         'Goldman Sachs': { tier: 3, frequency: 'medium', problems: [] },
         'JPMorgan': { tier: 3, frequency: 'medium', problems: [] },
+        'Morgan Stanley': { tier: 3, frequency: 'medium', problems: [] },
+        'Citadel': { tier: 3, frequency: 'medium', problems: [] },
+        'Capital One': { tier: 3, frequency: 'medium', problems: [] },
         'Walmart': { tier: 3, frequency: 'medium', problems: [] },
-        'Cisco': { tier: 3, frequency: 'low', problems: [] },
+        'Cisco': { tier: 3, frequency: 'medium', problems: [] },
         'VMware': { tier: 3, frequency: 'low', problems: [] },
-        'Intuit': { tier: 3, frequency: 'low', problems: [] },
+        'Intuit': { tier: 3, frequency: 'medium', problems: [] },
         'eBay': { tier: 3, frequency: 'low', problems: [] },
-        'PayPal': { tier: 3, frequency: 'low', problems: [] }
+        'PayPal': { tier: 3, frequency: 'medium', problems: [] },
+        'Square': { tier: 3, frequency: 'medium', problems: [] },
+        'Robinhood': { tier: 3, frequency: 'medium', problems: [] },
+        'Coinbase': { tier: 3, frequency: 'medium', problems: [] },
+
+        // Other Notable Tech (Tier 3)
+        'Atlassian': { tier: 3, frequency: 'medium', problems: [] },
+        'Dropbox': { tier: 3, frequency: 'low', problems: [] },
+        'Reddit': { tier: 3, frequency: 'medium', problems: [] },
+        'Pinterest': { tier: 3, frequency: 'low', problems: [] },
+        'Zillow': { tier: 3, frequency: 'low', problems: [] },
+        'Expedia': { tier: 3, frequency: 'low', problems: [] },
+        'Booking.com': { tier: 3, frequency: 'low', problems: [] },
+        'Twilio': { tier: 3, frequency: 'low', problems: [] },
+        'Databricks': { tier: 3, frequency: 'medium', problems: [] },
+        'Snowflake': { tier: 3, frequency: 'medium', problems: [] },
+        'Palantir': { tier: 3, frequency: 'medium', problems: [] },
+        'Roblox': { tier: 3, frequency: 'low', problems: [] },
+        'Spotify': { tier: 3, frequency: 'medium', problems: [] },
+        'Slack': { tier: 3, frequency: 'low', problems: [] }
     };
 
     console.log(`✅ Loaded ${Object.keys(companyData).length} companies`);
