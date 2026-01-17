@@ -5,7 +5,7 @@
  * This complements the algorithmic schedule rather than replacing it.
  */
 
-import { generateAlgorithmicSchedule } from './scheduler'; // Import for consistency, though we might not fallback to it here
+
 
 export async function generateAIRecommendations(allProblems, config, geminiApiKey) {
 
@@ -127,4 +127,4 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
 }
 
 // Re-export for compatibility if needed elsewhere, but mainly we use the new function now
-export { generateAlgorithmicSchedule };
+
