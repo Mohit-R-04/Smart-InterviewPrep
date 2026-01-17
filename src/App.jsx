@@ -279,9 +279,10 @@ function App() {
                                     message: 'Are you sure you want to start over with a new plan? This will clear your current progress and settings.',
                                     isDanger: false
                                 })}
-                                className="hidden md:block text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 px-3 py-1.5 rounded-lg transition-colors"
+                                className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 px-2 sm:px-3 py-1.5 rounded-lg transition-colors"
                             >
-                                Start Over
+                                <span className="hidden sm:inline">Start Over</span>
+                                <span className="sm:hidden">New Plan</span>
                             </button>
 
                             <button
