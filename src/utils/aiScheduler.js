@@ -250,9 +250,16 @@ Return ONLY valid JSON with exactly ${batchCount} unique problems:
             }
         }
 
-        // Clear progress once complete
-        localStorage.removeItem(progressKey);
-        console.log(`✅ AI Recommendations complete: ${allRecommendations.length} problems`);
+        // Only clear progress if we got ALL recommendations
+        const isComplete = allRecommendations.length >= totalRecommendations;
+
+        if (isComplete) {
+            localStorage.removeItem(progressKey);
+            console.log(`✅ AI Recommendations COMPLETE: ${allRecommendations.length}/${totalRecommendations} problems`);
+        } else {
+            console.log(`⏸️ AI Recommendations PARTIAL: ${allRecommendations.length}/${totalRecommendations} problems`);
+            console.log(`💡 Refresh later to continue fetching remaining ${totalRecommendations - allRecommendations.length} problems`);
+        }
 
         return {
             recommendations: allRecommendations,

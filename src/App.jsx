@@ -180,8 +180,15 @@ function App() {
                 if (result.aiGenerated && result.recommendations.length > 0) {
                     console.log('✅ Received AI Recommendations');
                     setAiExtras(result.recommendations);
-                    // Cache the completed recommendations
-                    cacheAIRecommendations(config, result.recommendations);
+
+                    // Only cache if we got the full expected count
+                    const expectedCount = (config.weeks || 4) * (config.hoursPerWeek || 6);
+                    if (result.recommendations.length >= expectedCount) {
+                        cacheAIRecommendations(config, result.recommendations);
+                        console.log('💾 Cached complete AI recommendations');
+                    } else {
+                        console.log(`⏸️ Partial results (${result.recommendations.length}/${expectedCount}) - not caching yet`);
+                    }
                 }
             })
             .catch(err => console.error('AI Recommendation Error:', err));
