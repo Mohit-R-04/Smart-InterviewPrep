@@ -164,6 +164,12 @@ function App() {
         setAiExtras([]);
 
         // 2. AI Recommendations (Async Side Channel)
+        // ONLY fetch if user is viewing the schedule (not in wizard)
+        if (viewMode !== 'app' && viewMode !== 'results') {
+            console.log('⏸️ Skipping AI fetch - not viewing schedule yet');
+            return;
+        }
+
         // Check cache first
         const cachedRecs = getCachedAIRecommendations(config);
         if (cachedRecs) {
@@ -193,7 +199,7 @@ function App() {
             })
             .catch(err => console.error('AI Recommendation Error:', err));
 
-    }, [config, problemsData]);
+    }, [config, problemsData, viewMode]);
 
     const totalProblems = schedule.reduce((acc, week) => acc + week.problems.length, 0);
     const completedProblems = schedule.reduce((acc, week) => acc + week.problems.filter(p => completed.has(p.id)).length, 0);
