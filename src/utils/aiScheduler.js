@@ -131,6 +131,13 @@ CRITICAL: Return ONLY valid JSON. No markdown, no explanations, just the JSON ob
         }
 
         const data = await response.json();
+
+        // Validate response structure
+        if (!data || !data.candidates || !data.candidates[0] || !data.candidates[0].content || !data.candidates[0].content.parts || !data.candidates[0].content.parts[0]) {
+            console.warn('⚠️ Using algorithmic scheduler');
+            return generateAlgorithmicSchedule(allProblems, config);
+        }
+
         const aiResponse = data.candidates[0].content.parts[0].text;
 
         // Parse JSON response
