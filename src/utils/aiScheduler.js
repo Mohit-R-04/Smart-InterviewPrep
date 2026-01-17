@@ -1,11 +1,70 @@
 /**
  * AI-POWERED SMART RECOMMENDATION ENGINE
  * 
- * Uses Gemini AI to sugggest ADDITIONAL problems based on user targets.
+ * Uses Gemini AI to suggest ADDITIONAL problems based on user targets.
  * This complements the algorithmic schedule rather than replacing it.
  */
 
 
+// Helper function to make a single AI request
+async function makeSingleAIRequest(prompt, geminiApiKey) {
+    let data;
+
+    // DIRECT API CALL (if key provided)
+    if (typeof geminiApiKey === 'string' && geminiApiKey.length > 10) {
+        try {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${geminiApiKey}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: prompt }] }]
+                })
+            });
+
+            if (response.ok) {
+                data = await response.json();
+                return data;
+            }
+        } catch (e) {
+            console.warn('⚠️ Direct API call failed, trying proxy...', e.message);
+        }
+    }
+
+    // PROXY CALL (fallback or default)
+    const response = await fetch('/.netlify/functions/gemini-proxy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt })
+    });
+
+    if (!response.ok) {
+        throw new Error(`Proxy call failed: ${response.status}`);
+    }
+
+    const proxyData = await response.json();
+
+    // Check for API errors
+    if (proxyData.error) {
+        const errorMsg = proxyData.error.message || 'Unknown API error';
+        const errorCode = proxyData.error.code;
+
+        if (errorCode === 429) {
+            console.warn('⏳ AI quota exceeded.');
+        } else {
+            console.error(`❌ Gemini API error (${errorCode}):`, errorMsg);
+        }
+        throw new Error(errorMsg);
+    }
+
+    // Handle response format
+    if (proxyData.candidates) {
+        return proxyData;
+    } else if (proxyData.body) {
+        return typeof proxyData.body === 'string' ? JSON.parse(proxyData.body) : proxyData.body;
+    }
+
+    throw new Error('Unexpected proxy response format');
+}
 
 export async function generateAIRecommendations(allProblems, config, geminiApiKey) {
 
@@ -44,160 +103,108 @@ export async function generateAIRecommendations(allProblems, config, geminiApiKe
             return { recommendations: [], aiGenerated: false };
         }
 
-        // Take top 150 candidates for AI to choose from
+        // Take top candidates for AI to choose from
         const candidates = relevantProblems
             .sort((a, b) => (b.importanceScore || 0) - (a.importanceScore || 0))
             .slice(0, 150);
 
         console.log(`🎯 Sending ${candidates.length} candidates to AI`);
 
-        // Calculate number of AI recommendations: weeks * hoursPerWeek (capped at 10 for Netlify timeout limits)
-        const numRecommendations = Math.min((config.weeks || 4) * (config.hoursPerWeek || 6), 10);
-        console.log(`📝 Requesting ${numRecommendations} AI recommendations`);
+        // Calculate total recommendations needed: weeks * hoursPerWeek
+        const totalRecommendations = (config.weeks || 4) * (config.hoursPerWeek || 6);
+        console.log(`📝 Requesting ${totalRecommendations} AI recommendations`);
 
-        const prompt = `You are an expert technical interview coach. The user has a core study plan, but needs ${numRecommendations} additional "Hidden Gem" or "Must-Do" problems specific to their targets.
+        // Make batched requests (max 8 per batch to avoid timeout)
+        const batchSize = 8;
+        const numBatches = Math.ceil(totalRecommendations / batchSize);
+        console.log(`📦 Splitting into ${numBatches} batches (${batchSize} per batch)`);
+
+        const allRecommendations = [];
+        const usedIds = new Set(); // Track used IDs to avoid duplicates
+
+        for (let batchNum = 0; batchNum < numBatches; batchNum++) {
+            const batchCount = Math.min(batchSize, totalRecommendations - allRecommendations.length);
+            console.log(`📤 Batch ${batchNum + 1}/${numBatches}: Requesting ${batchCount} problems`);
+
+            // Filter out already recommended problems for this batch
+            const availableCandidates = candidates.filter(p => !usedIds.has(p.id));
+
+            if (availableCandidates.length === 0) {
+                console.warn('⚠️ No more unique candidates available');
+                break;
+            }
+
+            const prompt = `You are an expert technical interview coach. Recommend ${batchCount} "Hidden Gem" problems.
 
 USER TARGETS:
-- Companies: ${config.selectedCompanies.length > 0 ? config.selectedCompanies.join(', ') : 'General Top Tech'}
-- Topics: ${config.selectedTopics?.length > 0 ? config.selectedTopics.join(', ') : 'All Core'}
+- Companies: ${config.selectedCompanies.join(', ') || 'Top Tech'}
+- Topics: ${config.selectedTopics?.join(', ') || 'Core CS'}
 - Level: ${config.experienceLevel}
-- Plan Duration: ${config.weeks} weeks, ${config.hoursPerWeek} hours/week
 
-CANDIDATE PROBLEMS (Select ${numRecommendations} that are most critical):
-${JSON.stringify(candidates.slice(0, 100).map(p => ({
-            id: p.id,
-            title: p.title,
-            difficulty: p.difficulty,
-            companies: p.companies.slice(0, 3)
-        })), null, 2)}
+${usedIds.size > 0 ? `ALREADY RECOMMENDED (DO NOT REPEAT): ${Array.from(usedIds).join(', ')}\n` : ''}
+CANDIDATES:
+${JSON.stringify(availableCandidates.slice(0, 50).map(p => ({
+                id: p.id,
+                title: p.title,
+                difficulty: p.difficulty,
+                companies: p.companies.slice(0, 2)
+            })), null, 2)}
 
-TASK: Recommend exactly ${numRecommendations} specific problems that are highly relevant to the User Targets.
-Return ONLY valid JSON:
+Return ONLY valid JSON with exactly ${batchCount} unique problems:
 {
   "recommendations": [
-    {
-      "id": "Problem ID",
-      "reason": "Why this specific problem is critical for ${config.selectedCompanies[0] || 'interviewing'}."
-    }
+    {"id": "problem-id", "reason": "Why critical for ${config.selectedCompanies[0] || 'interviews'}"}
   ]
-}
+}`;
 
-CRITICAL: Return ONLY valid JSON. No markdown.`;
-
-        let data;
-
-        // DIRECT API CALL (if key provided)
-        if (typeof geminiApiKey === 'string' && geminiApiKey.length > 10) {
-            console.log('🔑 Attempting direct API call...');
             try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${geminiApiKey}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: prompt }] }]
-                    })
-                });
+                const data = await makeSingleAIRequest(prompt, geminiApiKey);
 
-                if (!response.ok) {
-                    console.warn(`❌ Direct API call failed: ${response.status}`);
-                    throw new Error('Direct API call failed');
+                // Validate response
+                if (!data?.candidates?.[0]?.content?.parts?.[0]) {
+                    console.error(`❌ Batch ${batchNum + 1} invalid response`);
+                    continue;
                 }
-                data = await response.json();
-                console.log('✅ Direct API call succeeded');
-            } catch (e) {
-                console.warn('⚠️ Direct API call failed, trying proxy...', e.message);
-            }
-        }
 
-        // PROXY CALL (fallback or default)
-        if (!data) {
-            console.log('🔄 Attempting proxy call...');
-            try {
-                const response = await fetch('/.netlify/functions/gemini-proxy', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ prompt })
-                });
+                const aiResponse = data.candidates[0].content.parts[0].text;
+                const jsonMatch = aiResponse.match(/\{[\s\S]*\}/);
 
-                if (response.ok) {
-                    const proxyData = await response.json();
-                    console.log('✅ Proxy call succeeded');
+                if (!jsonMatch) {
+                    console.error(`❌ Batch ${batchNum + 1} no JSON found`);
+                    continue;
+                }
 
-                    // Check for API errors (quota exceeded, etc.)
-                    if (proxyData.error) {
-                        const errorMsg = proxyData.error.message || 'Unknown API error';
-                        const errorCode = proxyData.error.code;
+                const result = JSON.parse(jsonMatch[0]);
 
-                        if (errorCode === 429) {
-                            console.warn('⏳ AI quota exceeded. Recommendations unavailable temporarily.');
-                            console.log('💡 Tip: The main schedule is still generated. AI picks will return when quota resets.');
-                        } else {
-                            console.error(`❌ Gemini API error (${errorCode}):`, errorMsg);
+                // Add unique recommendations
+                for (const rec of result.recommendations || []) {
+                    if (!usedIds.has(rec.id)) {
+                        const original = allProblems.find(p => p.id === rec.id);
+                        if (original) {
+                            allRecommendations.push({ ...original, aiReason: rec.reason });
+                            usedIds.add(rec.id);
                         }
-
-                        return { recommendations: [], aiGenerated: false };
                     }
-
-                    // The proxy returns the Gemini response directly
-                    // Check if it's already the right format or needs unwrapping
-                    if (proxyData.candidates) {
-                        data = proxyData;
-                    } else if (proxyData.body) {
-                        // If wrapped in Netlify response format
-                        data = typeof proxyData.body === 'string'
-                            ? JSON.parse(proxyData.body)
-                            : proxyData.body;
-                    } else {
-                        console.error('❌ Unexpected proxy response format:', proxyData);
-                        return { recommendations: [], aiGenerated: false };
-                    }
-                } else {
-                    console.error(`❌ Proxy call failed: ${response.status}`);
                 }
-            } catch (e) {
-                console.error('❌ Proxy call error:', e.message);
+
+                console.log(`✅ Batch ${batchNum + 1} complete: ${allRecommendations.length} total recommendations`);
+
+                // Small delay between batches to avoid rate limiting
+                if (batchNum < numBatches - 1) {
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                }
+
+            } catch (error) {
+                console.error(`❌ Batch ${batchNum + 1} failed:`, error.message);
+                // Continue with next batch even if one fails
             }
         }
 
-        // Validate response structure
-        if (!data || !data.candidates || !data.candidates[0] || !data.candidates[0].content || !data.candidates[0].content.parts || !data.candidates[0].content.parts[0]) {
-            console.error('❌ Invalid AI response structure:', {
-                hasData: !!data,
-                hasCandidates: !!data?.candidates,
-                candidatesLength: data?.candidates?.length,
-                firstCandidate: data?.candidates?.[0],
-                rawData: data
-            });
-            return { recommendations: [], aiGenerated: false };
-        }
-
-        const aiResponse = data.candidates[0].content.parts[0].text;
-        console.log('📝 AI Response received, parsing...');
-
-        // Parse JSON response
-        const jsonMatch = aiResponse.match(/\{[\s\S]*\}/);
-        if (!jsonMatch) {
-            console.error('❌ No JSON found in AI response');
-            return { recommendations: [], aiGenerated: false };
-        }
-
-        const result = JSON.parse(jsonMatch[0]);
-        console.log(`✨ AI suggested ${result.recommendations?.length || 0} problems`);
-
-        // Enrich with full problem data
-        const enrichedRecs = result.recommendations.map(r => {
-            const original = allProblems.find(p => p.id === r.id);
-            if (!original) {
-                console.warn(`⚠️ Problem ${r.id} not found in database`);
-            }
-            return original ? { ...original, aiReason: r.reason } : null;
-        }).filter(Boolean);
-
-        console.log(`✅ AI Recommendations complete: ${enrichedRecs.length} problems enriched`);
+        console.log(`✅ AI Recommendations complete: ${allRecommendations.length} problems`);
 
         return {
-            recommendations: enrichedRecs,
-            aiGenerated: true
+            recommendations: allRecommendations,
+            aiGenerated: allRecommendations.length > 0
         };
 
     } catch (error) {
@@ -205,6 +212,3 @@ CRITICAL: Return ONLY valid JSON. No markdown.`;
         return { recommendations: [], aiGenerated: false };
     }
 }
-
-// Re-export for compatibility if needed elsewhere, but mainly we use the new function now
-
