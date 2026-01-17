@@ -412,6 +412,9 @@ function App() {
                 onConfirm={() => {
                     if (confirmModal.type === 'startOver') {
                         setCompleted(new Set());
+                        // Clear AI caches for fresh start
+                        localStorage.removeItem('grind_ai_cache');
+                        localStorage.removeItem('grind_ai_progress');
                         setAndPersistViewMode('welcome');
                     } else if (confirmModal.type === 'reset') {
                         setCompleted(new Set());
