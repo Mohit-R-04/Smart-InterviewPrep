@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import confetti from 'canvas-confetti';
 import DailyProblem from './DailyProblem';
 
-export default function ScheduleView({ schedule, completed, setCompleted }) {
+export default function ScheduleView({ schedule, completed, setCompleted, aiExtras }) {
     const [celebratedWeeks, setCelebratedWeeks] = useState(new Set());
     const [showCompletionModal, setShowCompletionModal] = useState(false);
     const [hasCelebratedCompletion, setHasCelebratedCompletion] = useState(false);
@@ -165,6 +165,79 @@ export default function ScheduleView({ schedule, completed, setCompleted }) {
                     </details>
                 </div>
             </div>
+
+            {/* AI Recommendations Section */}
+            {aiExtras && aiExtras.length > 0 && (
+                <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-purple-950/40 border border-indigo-100 dark:border-indigo-800 rounded-2xl overflow-hidden shadow-sm mb-6 relative animate-[fadeIn_0.5s_ease-out]">
+
+                    {/* Decorative Background Icon */}
+                    <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                        <svg className="w-32 h-32 text-indigo-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    </div>
+
+                    <div className="p-4 sm:p-5 border-b border-indigo-100 dark:border-indigo-800 flex items-center gap-4 relative z-10">
+                        <div className="w-10 h-10 rounded-xl bg-white dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shadow-sm border border-indigo-50 dark:border-indigo-700">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <div>
+                            <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">AI Smart Picks</h3>
+                            <p className="text-xs sm:text-sm text-indigo-600 dark:text-indigo-300 font-medium">
+                                Highly recommended extra problems for your target companies
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="divide-y divide-indigo-100 dark:divide-indigo-800/50 bg-white/50 dark:bg-transparent">
+                        {aiExtras.map(p => (
+                            <div key={p.id} className="p-4 hover:bg-white/80 dark:hover:bg-indigo-900/20 transition-colors group">
+                                <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
+                                    <div className="flex items-start gap-3">
+                                        <label className="mt-1 flex items-center justify-center p-1 cursor-pointer flex-shrink-0">
+                                            <input
+                                                type="checkbox"
+                                                checked={completed.has(p.id)}
+                                                onChange={() => setCompleted(prev => {
+                                                    const next = new Set(prev);
+                                                    if (next.has(p.id)) next.delete(p.id);
+                                                    else next.add(p.id);
+                                                    return next;
+                                                })}
+                                                className="appearance-none w-5 h-5 border-2 border-indigo-200 dark:border-indigo-700 rounded-md checked:bg-indigo-600 dark:checked:bg-indigo-500 checked:border-transparent transition-all cursor-pointer"
+                                            />
+                                            {completed.has(p.id) && (
+                                                <svg className="w-3.5 h-3.5 text-white absolute pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
+                                            )}
+                                        </label>
+                                        <div>
+                                            <a href={p.url} target="_blank" rel="noreferrer" className={`font-semibold text-gray-900 dark:text-indigo-100 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors ${completed.has(p.id) ? 'line-through opacity-60' : ''}`}>
+                                                {p.title}
+                                            </a>
+                                            <div className="flex flex-wrap gap-2 mt-1">
+                                                <span className={`text-[10px] px-2 py-0.5 rounded font-medium border ${p.difficulty === 'Easy' ? 'bg-green-100 text-green-700 border-green-200' :
+                                                        p.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-700 border-yellow-200' :
+                                                            'bg-red-100 text-red-700 border-red-200'
+                                                    } dark:bg-opacity-20 dark:border-opacity-20`}>{p.difficulty}</span>
+                                                {p.aiReason && (
+                                                    <span className="text-[10px] sm:text-xs text-indigo-600 dark:text-indigo-300 italic flex items-center gap-1">
+                                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                                        {p.aiReason}
+                                                    </span>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Action Button */}
+                                    <a href={p.url} target="_blank" rel="noreferrer" className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded-lg text-xs font-bold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors whitespace-nowrap">
+                                        Solve
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             {schedule.map((week) => {
                 const total = week.problems.length;

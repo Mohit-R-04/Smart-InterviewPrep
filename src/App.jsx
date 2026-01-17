@@ -8,7 +8,7 @@ import ConfigSummary from './components/ConfigSummary';
 import ConfirmationModal from './components/ConfirmationModal';
 import DailyProblem from './components/DailyProblem';
 import { generateSchedule } from './utils/scheduler';
-import { generateAISchedule } from './utils/aiScheduler';
+import { generateAIRecommendations } from './utils/aiScheduler';
 
 function App() {
     // Problems are loaded directly from JSON
@@ -146,35 +146,36 @@ function App() {
     }, [completed]);
 
     const [schedule, setSchedule] = useState([]);
+    const [aiExtras, setAiExtras] = useState([]);
 
     useEffect(() => {
         if (!problemsData) {
             setSchedule([]);
+            setAiExtras([]);
             return;
         }
 
-        // 1. Instant Algorithmic Schedule (Fast Layout)
-        // We generate this first so the user sees immediate results
+        // 1. Instant Algorithmic Schedule (Source of Truth)
         const algoSchedule = generateSchedule(problemsData, config);
         setSchedule(algoSchedule);
 
-        // 2. AI Enhancement (Async)
-        // Now try to generate a smarter schedule using Gemini
+        // Clear previous AI extras when config changes
+        setAiExtras([]);
+
+        // 2. AI Recommendations (Async Side Channel)
+        // Fetches additional "Hidden Gem" problems based on current target
         const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-        generateAISchedule(problemsData, config, apiKey)
-            .then(result => {
-                if (result.aiGenerated) {
-                    console.log('✅ Upgraded to AI Schedule');
-                    setSchedule(result.schedule);
-                } else {
-                    console.log('ℹ️ Kept Algorithmic Schedule (AI fallback or not configured)');
-                }
-            })
-            .catch(err => {
-                console.error('AI Schedule Error:', err);
-                // No action needed, algorithmic schedule is already set
-            });
+        if (apiKey) {
+            generateAIRecommendations(problemsData, config, apiKey)
+                .then(result => {
+                    if (result.aiGenerated && result.recommendations.length > 0) {
+                        console.log('✅ Received AI Recommendations');
+                        setAiExtras(result.recommendations);
+                    }
+                })
+                .catch(err => console.error('AI Recommendation Error:', err));
+        }
 
     }, [config, problemsData]);
 
@@ -377,6 +378,7 @@ function App() {
                                 schedule={schedule}
                                 completed={completed}
                                 setCompleted={setCompleted}
+                                aiExtras={aiExtras}
                             />
                         </div>
                     </div>
