@@ -1,0 +1,78 @@
+{
+  "lastUpdated": "2026-01-17T10:04:02.411Z",
+  "totalProblems": 3058,
+  "curatedProblems": 160,
+  "dailyProblem": {
+    "date": "2026-01-17",
+    "id": "3047",
+    "title": "Find the Largest Area of Square Inside Two Rectangles",
+    "titleSlug": "find-the-largest-area-of-square-inside-two-rectangles",
+    "difficulty": "Medium",
+    "likes": 272,
+    "dislikes": 63,
+    "acceptanceRate": 58.84979145861482,
+    "url": "https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/"
+  },
+  "topProblems": [
+    {
+      "title": "Two Sum",
+      "importance": 100,
+      "solvedBy": 20242130,
+      "companies": []
+    },
+    {
+      "title": "Add Two Numbers",
+      "importance": 100,
+      "solvedBy": 6616435,
+      "companies": []
+    },
+    {
+      "title": "Longest Substring Without Repeating Characters",
+      "importance": 100,
+      "solvedBy": 8780704,
+      "companies": []
+    },
+    {
+      "title": "Longest Palindromic Substring",
+      "importance": 100,
+      "solvedBy": 4441359,
+      "companies": []
+    },
+    {
+      "title": "Container With Most Water",
+      "importance": 100,
+      "solvedBy": 4943967,
+      "companies": []
+    },
+    {
+      "title": "3Sum",
+      "importance": 100,
+      "solvedBy": 5532935,
+      "companies": []
+    },
+    {
+      "title": "Letter Combinations of a Phone Number",
+      "importance": 100,
+      "solvedBy": 2861439,
+      "companies": []
+    },
+    {
+      "title": "Remove Nth Node From End of List",
+      "importance": 100,
+      "solvedBy": 3968869,
+      "companies": []
+    },
+    {
+      "title": "Valid Parentheses",
+      "importance": 100,
+      "solvedBy": 7061664,
+      "companies": []
+    },
+    {
+      "title": "Merge Two Sorted Lists",
+      "importance": 100,
+      "solvedBy": 5926735,
+      "companies": []
+    }
+  ]
+}
