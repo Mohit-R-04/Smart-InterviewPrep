@@ -30,6 +30,35 @@ function arePropsEqual(prevProps, nextProps) {
     );
 }
 
+// CollapsibleSection component - MUST be outside to prevent re-creation
+const CollapsibleSection = ({ title, isOpen, setIsOpen, children, count }) => (
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors duration-300">
+        <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="w-full flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors rounded-t-2xl"
+        >
+            <div className="flex items-center gap-2">
+                <h3 className="text-base font-bold text-gray-900 dark:text-white tracking-tight">{title}</h3>
+                {count !== undefined && (
+                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded-full">
+                        {count}
+                    </span>
+                )}
+            </div>
+            {isOpen ? (
+                <ChevronUp className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+            ) : (
+                <ChevronDown className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+            )}
+        </button>
+        {isOpen && (
+            <div className="p-4 pt-0 border-t border-gray-100 dark:border-gray-700">
+                {children}
+            </div>
+        )}
+    </div>
+);
+
 const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setConfig, allProblems, filteredStats, dynamicCompanyCounts, dynamicTopicCounts }) {
     const [companySearch, setCompanySearch] = useState('');
     const [topicSearch, setTopicSearch] = useState('');
@@ -159,34 +188,6 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
             setConfig({ ...config, selectedTopics: [...current, topic] });
         }
     };
-
-    const CollapsibleSection = ({ title, isOpen, setIsOpen, children, count }) => (
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors duration-300">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="w-full flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors rounded-t-2xl"
-            >
-                <div className="flex items-center gap-2">
-                    <h3 className="text-base font-bold text-gray-900 dark:text-white tracking-tight">{title}</h3>
-                    {count !== undefined && (
-                        <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded-full">
-                            {count}
-                        </span>
-                    )}
-                </div>
-                {isOpen ? (
-                    <ChevronUp className="w-5 h-5 text-gray-500 dark:text-gray-400" />
-                ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-500 dark:text-gray-400" />
-                )}
-            </button>
-            {isOpen && (
-                <div className="p-4 pt-0 border-t border-gray-100 dark:border-gray-700">
-                    {children}
-                </div>
-            )}
-        </div>
-    );
 
     return (
         <div className="lg:sticky lg:top-16 lg:-mt-8 lg:pt-8 lg:h-[calc(100vh-6rem)] lg:overflow-y-auto custom-scrollbar z-[900] space-y-4">
