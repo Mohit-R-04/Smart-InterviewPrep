@@ -146,16 +146,28 @@ npm run dev
 
 ## 📊 Data Management
 
-### **Automated Weekly Updates (Recommended)**
+### **Automated Monthly Updates**
 
-The GitHub Actions workflow automatically:
-1. Fetches latest LeetCode problems
-2. Fetches company data from LeetCode Wizard
-3. Categorizes companies into tiers
-4. Updates all JSON files
-5. Commits and pushes changes
+The system automatically updates on the **1st of every month at 00:00 UTC** with built-in failure protection:
 
-**No manual intervention needed!**
+#### **Update Process:**
+1. **Backup** - Creates backups of all current data
+2. **Fetch** - Gets latest data from LeetCode and LeetCode Wizard
+3. **Verify** - Checks if all steps succeeded
+4. **Rollback** - If ANY step fails, restores backups automatically
+5. **Commit** - Pushes new data or keeps old data based on success
+
+#### **What Gets Updated:**
+- 3,058 LeetCode problems with latest metrics
+- 664 companies with accurate interview frequency data
+- Company tier categorization
+- Metadata and timestamps
+
+#### **Failure Protection:**
+- ✅ If LeetCode API fails → Keeps old data
+- ✅ If LeetCode Wizard fails → Keeps old data  
+- ✅ If categorization fails → Keeps old data
+- ✅ Site always has valid, working data
 
 ### **Manual Data Update (Optional)**
 
