@@ -1,0 +1,3999 @@
+{
+  "Tier 1 - FAANG+": [
+    {
+      "name": "Google",
+      "count": 5432,
+      "slug": "google",
+      "id": "eb23d291-425f-4456-87f4-5f08ba323bef"
+    },
+    {
+      "name": "Amazon",
+      "count": 4749,
+      "slug": "amazon",
+      "id": "fc86b85f-5ba6-4c62-8945-f5cc6e884743"
+    },
+    {
+      "name": "Facebook",
+      "count": 3429,
+      "slug": "facebook",
+      "id": "4c2c2324-2a1a-4bbb-9359-30abaa10a2f3"
+    },
+    {
+      "name": "Microsoft",
+      "count": 3198,
+      "slug": "microsoft",
+      "id": "8c423d23-cd6a-40e2-aef8-c26b8d4aba91"
+    },
+    {
+      "name": "Uber",
+      "count": 884,
+      "slug": "uber",
+      "id": "c70adce6-2c42-47a5-b228-307035de4356"
+    },
+    {
+      "name": "Apple",
+      "count": 878,
+      "slug": "apple",
+      "id": "c6b061fc-d574-4d6d-b094-e834ead14d1e"
+    },
+    {
+      "name": "Salesforce",
+      "count": 397,
+      "slug": "salesforce",
+      "id": "f68632da-f041-4bf7-9723-ed17e94b3c48"
+    },
+    {
+      "name": "Airbnb",
+      "count": 128,
+      "slug": "airbnb",
+      "id": "eddd66d2-8537-4f92-a6fe-8f2ba91fe836"
+    },
+    {
+      "name": "Netflix",
+      "count": 76,
+      "slug": "netflix",
+      "id": "a02019c5-9588-4a47-ba81-323ce90f5893"
+    }
+  ],
+  "Tier 2 - Major Tech": [
+    {
+      "name": "Bloomberg",
+      "count": 2835,
+      "slug": "bloomberg",
+      "id": "f395f559-c729-4124-943c-7a5c78741725"
+    },
+    {
+      "name": "Oracle",
+      "count": 809,
+      "slug": "oracle",
+      "id": "cdac6307-b569-4c0a-87e0-99e6426a326e"
+    },
+    {
+      "name": "Adobe",
+      "count": 532,
+      "slug": "adobe",
+      "id": "683ddfc0-2726-4ebc-8357-02367e48f9d9"
+    },
+    {
+      "name": "Nvidia",
+      "count": 295,
+      "slug": "nvidia",
+      "id": "08cd67bb-f9b3-4534-b623-09ed850bb453"
+    },
+    {
+      "name": "Snowflake",
+      "count": 230,
+      "slug": "snowflake",
+      "id": "d92b7fac-1009-4930-978d-1279363a060a"
+    },
+    {
+      "name": "Snapchat",
+      "count": 201,
+      "slug": "snapchat",
+      "id": "8d387346-fac8-4f3f-8b4b-348704b93a6f"
+    },
+    {
+      "name": "Cisco",
+      "count": 171,
+      "slug": "cisco",
+      "id": "2817e662-0c09-4cd7-a65f-6a9ed03148b7"
+    },
+    {
+      "name": "Intuit",
+      "count": 146,
+      "slug": "intuit",
+      "id": "f9fad54c-fe68-487f-a93b-6bfbcb00bb91"
+    },
+    {
+      "name": "Atlassian",
+      "count": 143,
+      "slug": "atlassian",
+      "id": "06b2bbec-6eb5-4a85-8609-1b8666a68d39"
+    },
+    {
+      "name": "Roblox",
+      "count": 135,
+      "slug": "roblox",
+      "id": "33fdefd0-30a0-4262-9280-effc1437f67f"
+    },
+    {
+      "name": "Expedia",
+      "count": 110,
+      "slug": "expedia",
+      "id": "12d77c7c-3243-4e10-989a-0207a5c04b07"
+    },
+    {
+      "name": "Twitter",
+      "count": 108,
+      "slug": "twitter",
+      "id": "f67cca01-ca3f-489b-b70a-aab573d2d547"
+    },
+    {
+      "name": "Pinterest",
+      "count": 105,
+      "slug": "pinterest",
+      "id": "1da55ea4-6e01-4686-ad94-3a2d4797e6bf"
+    },
+    {
+      "name": "Tesla",
+      "count": 97,
+      "slug": "tesla",
+      "id": "05de0233-dc70-4ada-bf02-9a620dec20c7"
+    },
+    {
+      "name": "Databricks",
+      "count": 86,
+      "slug": "databricks",
+      "id": "46f28fe4-3d00-4282-bfaf-8b415a7612e4"
+    },
+    {
+      "name": "Lyft",
+      "count": 55,
+      "slug": "lyft",
+      "id": "2bedde9c-b5f0-4bfb-b03c-816334a671ab"
+    },
+    {
+      "name": "Dropbox",
+      "count": 48,
+      "slug": "dropbox",
+      "id": "7dd426c7-bac7-4350-9e65-504ec50fff03"
+    },
+    {
+      "name": "Spotify",
+      "count": 35,
+      "slug": "spotify",
+      "id": "e06537de-661c-4f66-a7ab-02518acbbac9"
+    },
+    {
+      "name": "Robinhood",
+      "count": 31,
+      "slug": "robinhood",
+      "id": "a50c9f6b-6eff-428a-8d32-f75f4688b364"
+    },
+    {
+      "name": "Coinbase",
+      "count": 28,
+      "slug": "coinbase",
+      "id": "2d6996a8-5d7f-4924-8551-671dd7eaee28"
+    },
+    {
+      "name": "Stripe",
+      "count": 26,
+      "slug": "stripe",
+      "id": "b342b209-4483-4dda-a0fa-7d2926597762"
+    },
+    {
+      "name": "Square",
+      "count": 25,
+      "slug": "square",
+      "id": "7af9484c-2a30-44cf-9e9f-c0a67fb7485e"
+    },
+    {
+      "name": "Instacart",
+      "count": 24,
+      "slug": "instacart",
+      "id": "8d34f039-d290-42f7-b413-9641021b601a"
+    },
+    {
+      "name": "Twilio",
+      "count": 21,
+      "slug": "twilio",
+      "id": "c9aa317a-7c0e-4ba9-af59-e533c9556d59"
+    },
+    {
+      "name": "Reddit",
+      "count": 10,
+      "slug": "reddit",
+      "id": "f797c866-6d30-46a8-81f5-387c69549849"
+    },
+    {
+      "name": "Zillow",
+      "count": 3,
+      "slug": "zillow",
+      "id": "478510d8-7324-4ae0-9ded-eb934fd1c90e"
+    }
+  ],
+  "Tier 3 - Finance": [
+    {
+      "name": "Citadel",
+      "count": 196,
+      "slug": "citadel",
+      "id": "07fc648b-1fcd-4824-8e9a-613cdcb77c39"
+    },
+    {
+      "name": "Barclays",
+      "count": 30,
+      "slug": "barclays",
+      "id": "445644e4-15c9-432e-92d8-c742906bf607"
+    }
+  ],
+  "Tier 4 - High Volume (1000+)": [],
+  "Tier 5 - Medium Volume (500-999)": [
+    {
+      "name": "Tiktok",
+      "count": 899,
+      "slug": "tiktok",
+      "id": "964055cd-e876-4893-8c66-3463c914fce1"
+    },
+    {
+      "name": "Goldman-sachs",
+      "count": 588,
+      "slug": "goldman-sachs",
+      "id": "889a1bd7-e3b7-49ff-84fe-a86cbcb739d3"
+    }
+  ],
+  "Tier 6 - Standard Volume (100-499)": [
+    {
+      "name": "Linkedin",
+      "count": 473,
+      "slug": "linkedin",
+      "id": "cbdefe28-163c-455d-a5c6-669d24b758f1"
+    },
+    {
+      "name": "Tcs",
+      "count": 437,
+      "slug": "tcs",
+      "id": "25791d66-83c5-4aae-b2f5-167806760213"
+    },
+    {
+      "name": "Zoho",
+      "count": 370,
+      "slug": "zoho",
+      "id": "c191448e-3867-45f4-85b0-9d3b4b33968d"
+    },
+    {
+      "name": "Ibm",
+      "count": 337,
+      "slug": "ibm",
+      "id": "9e8c8fcc-aa48-4afd-a544-5c99acabfdb2"
+    },
+    {
+      "name": "Walmart-labs",
+      "count": 337,
+      "slug": "walmart-labs",
+      "id": "c590b004-ba38-427f-a9b5-d7d2d2b68182"
+    },
+    {
+      "name": "Infosys",
+      "count": 312,
+      "slug": "infosys",
+      "id": "b47d9360-1345-4f98-9a49-d497cf61641a"
+    },
+    {
+      "name": "Yandex",
+      "count": 308,
+      "slug": "yandex",
+      "id": "f9704e01-1f70-4e71-b92c-c5b518b4aaf2"
+    },
+    {
+      "name": "Accenture",
+      "count": 284,
+      "slug": "accenture",
+      "id": "b636a874-4742-4303-ab89-910ff4e3b477"
+    },
+    {
+      "name": "Visa",
+      "count": 257,
+      "slug": "visa",
+      "id": "cd5268a6-d0da-469a-8b31-8fe5dfec852a"
+    },
+    {
+      "name": "De-shaw",
+      "count": 246,
+      "slug": "de-shaw",
+      "id": "a5a44cf3-e4be-46ca-a71c-ac1d4e6534b2"
+    },
+    {
+      "name": "Flipkart",
+      "count": 232,
+      "slug": "flipkart",
+      "id": "f9cdea52-2357-445a-b20c-0efd6ea1436b"
+    },
+    {
+      "name": "Paypal",
+      "count": 227,
+      "slug": "paypal",
+      "id": "f55227ac-9f76-45f9-afd4-854c4725c3a1"
+    },
+    {
+      "name": "Doordash",
+      "count": 206,
+      "slug": "doordash",
+      "id": "cfb4bde0-9423-49c8-881c-30b39ebfb89d"
+    },
+    {
+      "name": "Phonepe",
+      "count": 200,
+      "slug": "phonepe",
+      "id": "fb7fb211-8a03-434f-82d8-f3d20b5c07a9"
+    },
+    {
+      "name": "Yahoo",
+      "count": 200,
+      "slug": "yahoo",
+      "id": "0e12b65d-49d0-4ba1-a965-26d31a2c4c06"
+    },
+    {
+      "name": "Servicenow",
+      "count": 169,
+      "slug": "servicenow",
+      "id": "8dfc9a36-28ef-42e6-a292-c4bff21780c9"
+    },
+    {
+      "name": "Jpmorgan",
+      "count": 162,
+      "slug": "jpmorgan",
+      "id": "0c32b8ec-fbf1-4153-893d-d1a74acb29f6"
+    },
+    {
+      "name": "Nutanix",
+      "count": 140,
+      "slug": "nutanix",
+      "id": "9a201820-b7b6-4ac1-a801-bd9c42182912"
+    },
+    {
+      "name": "Samsung",
+      "count": 131,
+      "slug": "samsung",
+      "id": "9bac528d-713d-45ec-a950-da3800fb8b53"
+    },
+    {
+      "name": "Bytedance",
+      "count": 127,
+      "slug": "bytedance",
+      "id": "a05220a7-9127-4260-a887-77db57b2ddf9"
+    },
+    {
+      "name": "Capital-one",
+      "count": 126,
+      "slug": "capital-one",
+      "id": "3c760d61-8c13-4973-bad6-1fa52056a1a7"
+    },
+    {
+      "name": "Ebay",
+      "count": 117,
+      "slug": "ebay",
+      "id": "610820b2-ac8f-49ee-8d42-e5b1a9eb5d28"
+    },
+    {
+      "name": "Wix",
+      "count": 111,
+      "slug": "wix",
+      "id": "c0b32802-7872-4edc-bf1c-c4f5997d6663"
+    },
+    {
+      "name": "Qualcomm",
+      "count": 110,
+      "slug": "qualcomm",
+      "id": "e1fef01a-9994-46c2-a27e-f2801482d6ef"
+    },
+    {
+      "name": "Coupang",
+      "count": 108,
+      "slug": "coupang",
+      "id": "84a03cb2-955c-488c-87c4-b7937dff1623"
+    },
+    {
+      "name": "Epam-systems",
+      "count": 107,
+      "slug": "epam-systems",
+      "id": "5280ddd4-8899-4812-8468-e48ad9081e4e"
+    }
+  ],
+  "Tier 7 - Emerging (<100)": [
+    {
+      "name": "Anduril",
+      "count": 98,
+      "slug": "anduril",
+      "id": "6c34acb2-d864-4b2d-8bbc-e8c6b8f1440f"
+    },
+    {
+      "name": "Morgan-stanley",
+      "count": 96,
+      "slug": "morgan-stanley",
+      "id": "c06df8fc-8f51-4e6f-909f-5ade3573a6d1"
+    },
+    {
+      "name": "Cognizant",
+      "count": 92,
+      "slug": "cognizant",
+      "id": "1b4f96b5-a32f-47c5-95d4-4f91a9870d30"
+    },
+    {
+      "name": "Sap",
+      "count": 89,
+      "slug": "sap",
+      "id": "6176b3e6-64a3-4a8a-be9a-292c3bf01a92"
+    },
+    {
+      "name": "Agoda",
+      "count": 88,
+      "slug": "agoda",
+      "id": "230f157c-efd9-4a38-ac15-09ffab319e87"
+    },
+    {
+      "name": "Meesho",
+      "count": 85,
+      "slug": "meesho",
+      "id": "ddd781b5-5089-476c-ae2d-46babedeee11"
+    },
+    {
+      "name": "Arista-networks",
+      "count": 84,
+      "slug": "arista-networks",
+      "id": "5eff4a15-f493-471c-8d4f-09c2f22add02"
+    },
+    {
+      "name": "Turing",
+      "count": 83,
+      "slug": "turing",
+      "id": "2534c8c7-4077-4f0f-a243-fdc873babddb"
+    },
+    {
+      "name": "Sprinklr",
+      "count": 81,
+      "slug": "sprinklr",
+      "id": "cc05a7e9-d763-4545-9172-953732e3c35f"
+    },
+    {
+      "name": "Rubrik",
+      "count": 77,
+      "slug": "rubrik",
+      "id": "f95b6ab4-db13-41b4-a466-ae8224e78094"
+    },
+    {
+      "name": "Swiggy",
+      "count": 72,
+      "slug": "swiggy",
+      "id": "fd1c25b1-5332-4206-903d-9a87bdd6b133"
+    },
+    {
+      "name": "Josh-technology",
+      "count": 71,
+      "slug": "josh-technology",
+      "id": "42f91bb1-6da1-426e-9c94-3d43b59e44a1"
+    },
+    {
+      "name": "Deloitte",
+      "count": 70,
+      "slug": "deloitte",
+      "id": "2d22163d-8bd0-4403-8572-56f137c0539f"
+    },
+    {
+      "name": "Palo-alto-networks",
+      "count": 68,
+      "slug": "palo-alto-networks",
+      "id": "6eee4126-f869-416e-8349-e58e50f20de4"
+    },
+    {
+      "name": "Grammarly",
+      "count": 67,
+      "slug": "grammarly",
+      "id": "ceb47b81-9723-4199-bc4f-83f6ba38f545"
+    },
+    {
+      "name": "Docusign",
+      "count": 67,
+      "slug": "docusign",
+      "id": "681c0046-440c-44e0-942e-20a6b69beb18"
+    },
+    {
+      "name": "Medianet",
+      "count": 65,
+      "slug": "medianet",
+      "id": "701b2b1e-d052-4c6e-8d73-ded5d0603b69"
+    },
+    {
+      "name": "Autodesk",
+      "count": 63,
+      "slug": "autodesk",
+      "id": "76fa7f96-0e01-46ae-9edb-fb98633c05ef"
+    },
+    {
+      "name": "Zeta",
+      "count": 63,
+      "slug": "zeta",
+      "id": "94438f15-597d-47e9-8067-4b2bee962a67"
+    },
+    {
+      "name": "Palantir-technologies",
+      "count": 62,
+      "slug": "palantir-technologies",
+      "id": "5b4aea00-7736-466d-a567-3cf1d5b9ac0c"
+    },
+    {
+      "name": "Mathworks",
+      "count": 62,
+      "slug": "mathworks",
+      "id": "f00f6063-b583-4ead-8b8d-945ca338ca24"
+    },
+    {
+      "name": "Hashedin",
+      "count": 61,
+      "slug": "hashedin",
+      "id": "17121fcb-ae71-4df3-a997-64cebaf0f6ef"
+    },
+    {
+      "name": "Capgemini",
+      "count": 59,
+      "slug": "capgemini",
+      "id": "5509999a-5e34-4b3b-bfdc-9d5e47197f4f"
+    },
+    {
+      "name": "Yelp",
+      "count": 56,
+      "slug": "yelp",
+      "id": "04bad4d3-df8e-481a-90d4-dda2667ae72c"
+    },
+    {
+      "name": "Zepto",
+      "count": 55,
+      "slug": "zepto",
+      "id": "29c151c9-c100-4798-8bc5-1a677ac7ac7c"
+    },
+    {
+      "name": "Tinkoff",
+      "count": 54,
+      "slug": "tinkoff",
+      "id": "9d1b2c81-6e27-49ed-ba18-71042b85bc75"
+    },
+    {
+      "name": "Zomato",
+      "count": 50,
+      "slug": "zomato",
+      "id": "9c68ce76-af1d-497d-8f5d-bc562939c828"
+    },
+    {
+      "name": "Intel",
+      "count": 50,
+      "slug": "intel",
+      "id": "08a11e72-59fb-48f4-8b8f-93e7cf04349f"
+    },
+    {
+      "name": "Siemens",
+      "count": 48,
+      "slug": "siemens",
+      "id": "4192719d-93df-4446-ac4b-3f207d227597"
+    },
+    {
+      "name": "American-express",
+      "count": 47,
+      "slug": "american-express",
+      "id": "334da527-0046-4801-8a34-356bf08d7785"
+    },
+    {
+      "name": "Myntra",
+      "count": 47,
+      "slug": "myntra",
+      "id": "d9afe9d8-e467-47f8-99e5-1c61db33e4b4"
+    },
+    {
+      "name": "Rippling",
+      "count": 46,
+      "slug": "rippling",
+      "id": "186db6c9-0c28-49b5-8e29-e6a0e120d4a2"
+    },
+    {
+      "name": "Paytm",
+      "count": 46,
+      "slug": "paytm",
+      "id": "59c53d4b-6557-48aa-9f49-5e793a6cd62f"
+    },
+    {
+      "name": "Wayfair",
+      "count": 45,
+      "slug": "wayfair",
+      "id": "ed007e62-bd73-44ec-ab39-67062dcc50f0"
+    },
+    {
+      "name": "Verkada",
+      "count": 44,
+      "slug": "verkada",
+      "id": "f8c78884-47bf-4600-a345-69ba5d6061f7"
+    },
+    {
+      "name": "Tekion",
+      "count": 44,
+      "slug": "tekion",
+      "id": "c5a73c98-3ed2-4cc5-9b24-b78e1784088a"
+    },
+    {
+      "name": "Squarepoint-capital",
+      "count": 43,
+      "slug": "squarepoint-capital",
+      "id": "cfa2518a-16c9-4d19-9aee-9d2196296be4"
+    },
+    {
+      "name": "Wipro",
+      "count": 43,
+      "slug": "wipro",
+      "id": "b4eb4fe4-d02a-4f1f-bf25-c3f840d78c8e"
+    },
+    {
+      "name": "Geico",
+      "count": 43,
+      "slug": "geico",
+      "id": "03c942a8-b3a3-4f72-b0df-68af0b78b61f"
+    },
+    {
+      "name": "Wells-fargo",
+      "count": 43,
+      "slug": "wells-fargo",
+      "id": "dcb8337b-5518-4789-94d2-7c3bde0e2275"
+    },
+    {
+      "name": "Datadog",
+      "count": 42,
+      "slug": "datadog",
+      "id": "e32a7903-968e-4bc2-b24b-edf98009ae21"
+    },
+    {
+      "name": "Two-sigma",
+      "count": 42,
+      "slug": "two-sigma",
+      "id": "286ab3b7-86cd-47e5-95b0-334a9f0ee977"
+    },
+    {
+      "name": "Zopsmart",
+      "count": 42,
+      "slug": "zopsmart",
+      "id": "c91d5e20-ccbd-4612-b613-f44c4675842a"
+    },
+    {
+      "name": "Zenefits",
+      "count": 42,
+      "slug": "zenefits",
+      "id": "7452c578-6699-4531-8261-d80bb045adfc"
+    },
+    {
+      "name": "Makemytrip",
+      "count": 41,
+      "slug": "makemytrip",
+      "id": "5871b663-2eaf-4b07-b6f9-631fbae1e094"
+    },
+    {
+      "name": "Quora",
+      "count": 41,
+      "slug": "quora",
+      "id": "43c88c11-7228-4949-ba4f-c38e28e1f8c7"
+    },
+    {
+      "name": "Ixl",
+      "count": 41,
+      "slug": "ixl",
+      "id": "9681e5fa-0bc1-4807-a832-3494eb5af501"
+    },
+    {
+      "name": "Deutsche-bank",
+      "count": 40,
+      "slug": "deutsche-bank",
+      "id": "bd089728-e78d-4cce-908b-ee44b2a44232"
+    },
+    {
+      "name": "Okta",
+      "count": 40,
+      "slug": "okta",
+      "id": "e1c62e86-6422-4a85-93e0-bded8b879087"
+    },
+    {
+      "name": "Zscaler",
+      "count": 39,
+      "slug": "zscaler",
+      "id": "d84f73d7-b5b5-4adc-981a-3ab4367e1a03"
+    },
+    {
+      "name": "Accolite",
+      "count": 39,
+      "slug": "accolite",
+      "id": "d62ff103-e4b9-4602-8abd-34059cd491d8"
+    },
+    {
+      "name": "Mongodb",
+      "count": 39,
+      "slug": "mongodb",
+      "id": "86446743-df1f-4901-b3c0-4bd9873c7684"
+    },
+    {
+      "name": "Huawei",
+      "count": 38,
+      "slug": "huawei",
+      "id": "b77ba362-7501-4e74-a32d-d5a32544d5e5"
+    },
+    {
+      "name": "Akuna-capital",
+      "count": 35,
+      "slug": "akuna-capital",
+      "id": "c4666df1-67f1-41e4-b2c9-4026f9482bca"
+    },
+    {
+      "name": "Epic-systems",
+      "count": 34,
+      "slug": "epic-systems",
+      "id": "624b9295-9ef5-4ffb-b2fa-1a3baf89af96"
+    },
+    {
+      "name": "Fractal-analytics",
+      "count": 34,
+      "slug": "fractal-analytics",
+      "id": "38b6bc25-acf8-445c-b509-bd09f94561c9"
+    },
+    {
+      "name": "Nuro",
+      "count": 34,
+      "slug": "nuro",
+      "id": "47d4032a-c987-4f4e-818b-f9621adb2a09"
+    },
+    {
+      "name": "Disney",
+      "count": 33,
+      "slug": "disney",
+      "id": "9b56a8f9-116f-4dfc-997e-e99b3f9068ba"
+    },
+    {
+      "name": "Cloudflare",
+      "count": 33,
+      "slug": "cloudflare",
+      "id": "7c79f322-b041-4a78-9cb8-d28b91fa1209"
+    },
+    {
+      "name": "Mitsogo",
+      "count": 32,
+      "slug": "mitsogo",
+      "id": "5ca601ee-a780-4a8c-b2a2-6889a21a50d0"
+    },
+    {
+      "name": "Karat",
+      "count": 32,
+      "slug": "karat",
+      "id": "aa73ab7f-6612-4e5b-9cd5-8ae4a69c85c8"
+    },
+    {
+      "name": "Sofi",
+      "count": 32,
+      "slug": "sofi",
+      "id": "539fc8eb-fe7e-401e-abc0-adc3686eee0f"
+    },
+    {
+      "name": "Openai",
+      "count": 32,
+      "slug": "openai",
+      "id": "ade7c4fc-75f5-4532-b4c0-4d6b1053d99e"
+    },
+    {
+      "name": "Splunk",
+      "count": 32,
+      "slug": "splunk",
+      "id": "733a527f-f5a1-46b5-b78e-8fc64c76d2f2"
+    },
+    {
+      "name": "Roku",
+      "count": 32,
+      "slug": "roku",
+      "id": "b0bdda4d-fa27-488f-8442-72343a13b508"
+    },
+    {
+      "name": "Grab",
+      "count": 31,
+      "slug": "grab",
+      "id": "cc4b519e-9322-4a6a-b64b-8725e53e6958"
+    },
+    {
+      "name": "Pocket-gems",
+      "count": 30,
+      "slug": "pocket-gems",
+      "id": "19f29b39-312b-4d1b-93be-fe8c373891be"
+    },
+    {
+      "name": "Blackrock",
+      "count": 30,
+      "slug": "blackrock",
+      "id": "4d2faa07-b539-4fa3-a77c-c61993fd3a81"
+    },
+    {
+      "name": "Juspay",
+      "count": 30,
+      "slug": "juspay",
+      "id": "c0f279d6-3f4d-473d-90ee-7ad053558b89"
+    },
+    {
+      "name": "Bookingcom",
+      "count": 29,
+      "slug": "bookingcom",
+      "id": "18b5ec97-6866-4c6e-8497-ebdcb2de6f89"
+    },
+    {
+      "name": "Crowdstrike",
+      "count": 29,
+      "slug": "crowdstrike",
+      "id": "0ae2e0d5-fd9a-4531-b96e-1c65a8a01ed6"
+    },
+    {
+      "name": "Bitgo",
+      "count": 29,
+      "slug": "bitgo",
+      "id": "30923f4a-6341-4f7a-82bb-5cb3091b8157"
+    },
+    {
+      "name": "Arcesium",
+      "count": 28,
+      "slug": "arcesium",
+      "id": "0ef78859-e6b4-431b-9273-013c156691ae"
+    },
+    {
+      "name": "Udemy",
+      "count": 28,
+      "slug": "udemy",
+      "id": "5638dd5c-3a49-4de2-92c8-a906d0e489a6"
+    },
+    {
+      "name": "Clevertap",
+      "count": 28,
+      "slug": "clevertap",
+      "id": "0fd2f09b-3b37-409e-968a-e479cabfaf37"
+    },
+    {
+      "name": "Nike",
+      "count": 27,
+      "slug": "nike",
+      "id": "2b140fa4-bd2b-4206-855d-19c11edb9223"
+    },
+    {
+      "name": "Bny-mellon",
+      "count": 27,
+      "slug": "bny-mellon",
+      "id": "f4b740e8-c5c2-47b1-8449-4754e20d2f95"
+    },
+    {
+      "name": "Uipath",
+      "count": 27,
+      "slug": "uipath",
+      "id": "a21cb1c6-4fb0-4798-883e-f6c87a2bae08"
+    },
+    {
+      "name": "Netapp",
+      "count": 27,
+      "slug": "netapp",
+      "id": "3640b374-0910-413c-ad8c-dd408226988f"
+    },
+    {
+      "name": "Affirm",
+      "count": 27,
+      "slug": "affirm",
+      "id": "33d52796-e195-43b5-90cd-370babdb2f90"
+    },
+    {
+      "name": "Hubspot",
+      "count": 26,
+      "slug": "hubspot",
+      "id": "e50c33fe-4515-46f9-a4da-dcf03ac253b5"
+    },
+    {
+      "name": "Razorpay",
+      "count": 26,
+      "slug": "razorpay",
+      "id": "d8864008-acb1-4d54-b7e7-17f62dc1dcfb"
+    },
+    {
+      "name": "Ripple",
+      "count": 26,
+      "slug": "ripple",
+      "id": "c97b04da-5d8c-4afa-91bf-e052dc8eb0eb"
+    },
+    {
+      "name": "Amd",
+      "count": 26,
+      "slug": "amd",
+      "id": "e25bfa81-80fd-4659-8910-ede013be3dbe"
+    },
+    {
+      "name": "Dream11",
+      "count": 25,
+      "slug": "dream11",
+      "id": "ca8c966c-1a5f-459f-85ef-ddad5853018b"
+    },
+    {
+      "name": "Vk",
+      "count": 25,
+      "slug": "vk",
+      "id": "8a08f6ff-a013-437d-a229-88cd8d077c27"
+    },
+    {
+      "name": "Ozon",
+      "count": 25,
+      "slug": "ozon",
+      "id": "31391d8d-435e-4386-8037-dff07c4af50c"
+    },
+    {
+      "name": "Confluent",
+      "count": 25,
+      "slug": "confluent",
+      "id": "4ce65682-1708-469c-9955-0bd99587b33c"
+    },
+    {
+      "name": "Waymo",
+      "count": 25,
+      "slug": "waymo",
+      "id": "53fafe23-2a47-4b41-8118-9a35a758fe94"
+    },
+    {
+      "name": "Verily",
+      "count": 24,
+      "slug": "verily",
+      "id": "cc3e3ebd-b26e-4f02-aad1-1df89e686120"
+    },
+    {
+      "name": "Applied-intuition",
+      "count": 23,
+      "slug": "applied-intuition",
+      "id": "5bc15601-3ac4-4d77-ba70-6d32305d4d3b"
+    },
+    {
+      "name": "Whatnot",
+      "count": 23,
+      "slug": "whatnot",
+      "id": "71486e3b-20e0-4872-8e02-f58565093796"
+    },
+    {
+      "name": "Persistent-systems",
+      "count": 23,
+      "slug": "persistent-systems",
+      "id": "0012fe63-be2a-4309-b1a8-d4608cd167d4"
+    },
+    {
+      "name": "Jane-street",
+      "count": 23,
+      "slug": "jane-street",
+      "id": "abbb5f01-49f7-4bc4-a7e3-19d5f8c7bf9e"
+    },
+    {
+      "name": "Sigmoid",
+      "count": 23,
+      "slug": "sigmoid",
+      "id": "5625768b-d128-4717-a3b1-b98ad2f95845"
+    },
+    {
+      "name": "Revolut",
+      "count": 22,
+      "slug": "revolut",
+      "id": "6a3272b2-872a-46b7-a664-5ee4ee856392"
+    },
+    {
+      "name": "Mastercard",
+      "count": 22,
+      "slug": "mastercard",
+      "id": "32e0dfcd-d837-46c5-8e2d-3e87aa39986e"
+    },
+    {
+      "name": "Warnermedia",
+      "count": 22,
+      "slug": "warnermedia",
+      "id": "fa072b29-8118-481a-82eb-6e20fd55ee97"
+    },
+    {
+      "name": "Dp-world",
+      "count": 21,
+      "slug": "dp-world",
+      "id": "f9aaedd4-ff41-4911-8d51-d446ed3505e9"
+    },
+    {
+      "name": "Zs-associates",
+      "count": 21,
+      "slug": "zs-associates",
+      "id": "9978809a-dd8c-4f9d-9bc7-e3a0fca3a258"
+    },
+    {
+      "name": "Dell",
+      "count": 21,
+      "slug": "dell",
+      "id": "7fd10cef-d78c-41f0-81f0-a962403843f9"
+    },
+    {
+      "name": "Baidu",
+      "count": 21,
+      "slug": "baidu",
+      "id": "91ca8a05-5c2b-4bc6-b173-2eb727dae280"
+    },
+    {
+      "name": "Axon",
+      "count": 21,
+      "slug": "axon",
+      "id": "563de1c7-6474-46b9-8421-979d6111f84d"
+    },
+    {
+      "name": "Inmobi",
+      "count": 21,
+      "slug": "inmobi",
+      "id": "648e687b-8a0a-46ee-bdc7-e6b37cc340c1"
+    },
+    {
+      "name": "Weride",
+      "count": 21,
+      "slug": "weride",
+      "id": "fc4af0d4-3695-4011-b7e5-ae22e65476af"
+    },
+    {
+      "name": "Ukg",
+      "count": 21,
+      "slug": "ukg",
+      "id": "dca4815e-94e6-4283-8a68-e477d40c95b7"
+    },
+    {
+      "name": "Htc",
+      "count": 20,
+      "slug": "htc",
+      "id": "9788e2c3-5243-4a78-b9d4-63f3d9176e48"
+    },
+    {
+      "name": "Millennium",
+      "count": 20,
+      "slug": "millennium",
+      "id": "27b213c2-6b64-4f85-8c57-43877a1bf995"
+    },
+    {
+      "name": "Bcg",
+      "count": 20,
+      "slug": "bcg",
+      "id": "6a6e57cb-6473-430f-aed3-5088506c1974"
+    },
+    {
+      "name": "Flexport",
+      "count": 20,
+      "slug": "flexport",
+      "id": "72ad71f5-8af6-4c2b-926a-41ddc57457ae"
+    },
+    {
+      "name": "Hcl",
+      "count": 20,
+      "slug": "hcl",
+      "id": "568a3d8f-1c25-443d-aecc-a4239eddf985"
+    },
+    {
+      "name": "Rivian",
+      "count": 20,
+      "slug": "rivian",
+      "id": "667eb28c-d717-4400-9035-3b12aedaeaa0"
+    },
+    {
+      "name": "General-motors",
+      "count": 19,
+      "slug": "general-motors",
+      "id": "532645c5-b6e1-476b-9d3b-c44f36ade662"
+    },
+    {
+      "name": "Sig",
+      "count": 19,
+      "slug": "sig",
+      "id": "b2b9a6bc-0962-4f4c-8824-b704175acfa2"
+    },
+    {
+      "name": "Kla",
+      "count": 19,
+      "slug": "kla",
+      "id": "91a22203-3877-4a24-9169-d18529af42ec"
+    },
+    {
+      "name": "Tencent",
+      "count": 19,
+      "slug": "tencent",
+      "id": "911abd6e-87dd-48ef-bfcb-66eb1d6e7104"
+    },
+    {
+      "name": "Aurora",
+      "count": 19,
+      "slug": "aurora",
+      "id": "9ee6f06b-5053-42ca-aeaa-708474a03fc5"
+    },
+    {
+      "name": "Avito",
+      "count": 19,
+      "slug": "avito",
+      "id": "a31633f7-8475-4d70-a86b-8810a835aab6"
+    },
+    {
+      "name": "Directi",
+      "count": 18,
+      "slug": "directi",
+      "id": "947a213c-75ec-4ed7-9c7f-4f7ca30dc1ba"
+    },
+    {
+      "name": "Microstrategy",
+      "count": 18,
+      "slug": "microstrategy",
+      "id": "f1b6bbf2-ea83-4bde-ab49-34d24f9dd9dc"
+    },
+    {
+      "name": "Rakuten",
+      "count": 18,
+      "slug": "rakuten",
+      "id": "b3009578-2cae-4eb2-bf25-4cece12cac8a"
+    },
+    {
+      "name": "Coursera",
+      "count": 18,
+      "slug": "coursera",
+      "id": "c223fd4c-11e4-4cdf-8857-bfec4e278da0"
+    },
+    {
+      "name": "Hrt",
+      "count": 18,
+      "slug": "hrt",
+      "id": "f90f7a94-6e7f-461f-808c-7f9bf30705c1"
+    },
+    {
+      "name": "Nielsen",
+      "count": 18,
+      "slug": "nielsen",
+      "id": "91f8f2ec-6ce0-46dc-8071-237dfa5c524b"
+    },
+    {
+      "name": "Nordstrom",
+      "count": 18,
+      "slug": "nordstrom",
+      "id": "4e6a6681-c8ae-41a4-ae86-73e9f6332303"
+    },
+    {
+      "name": "Shopee",
+      "count": 18,
+      "slug": "shopee",
+      "id": "158d4165-357f-4c01-aa70-558f198d133e"
+    },
+    {
+      "name": "Moloco",
+      "count": 17,
+      "slug": "moloco",
+      "id": "6031f611-5af5-4d8f-a4b4-2ac135932518"
+    },
+    {
+      "name": "Virtusa",
+      "count": 17,
+      "slug": "virtusa",
+      "id": "4a1e7b53-32fb-422b-8b23-98f887853cef"
+    },
+    {
+      "name": "Freshworks",
+      "count": 17,
+      "slug": "freshworks",
+      "id": "7ce397f1-c8f6-4f8e-a91c-653f7a86a138"
+    },
+    {
+      "name": "C3-ai",
+      "count": 17,
+      "slug": "c3-ai",
+      "id": "1794faa0-0e28-4854-9d2f-c8266e599c09"
+    },
+    {
+      "name": "Athenahealth",
+      "count": 17,
+      "slug": "athenahealth",
+      "id": "28895052-5983-4da2-8e28-0ae9e3e3cc1c"
+    },
+    {
+      "name": "Akamai",
+      "count": 17,
+      "slug": "akamai",
+      "id": "09987f91-ec94-41ef-a4a4-ef52710731b3"
+    },
+    {
+      "name": "Vmware",
+      "count": 17,
+      "slug": "vmware",
+      "id": "6f9d437d-84a2-44da-b1a6-190265e7c575"
+    },
+    {
+      "name": "Info-edge",
+      "count": 16,
+      "slug": "info-edge",
+      "id": "c97377b4-74cb-40ac-81a5-efbf0469fe51"
+    },
+    {
+      "name": "Virtu",
+      "count": 16,
+      "slug": "virtu",
+      "id": "2d2d0a7b-de10-4ffb-8ff6-3eb20aebf605"
+    },
+    {
+      "name": "Criteo",
+      "count": 16,
+      "slug": "criteo",
+      "id": "d5382712-9c89-492d-a596-b5eef5750504"
+    },
+    {
+      "name": "Thoughtspot",
+      "count": 16,
+      "slug": "thoughtspot",
+      "id": "fb0f54d8-7f14-4fed-a778-7c8b11bf9689"
+    },
+    {
+      "name": "Gusto",
+      "count": 16,
+      "slug": "gusto",
+      "id": "59d7d2b9-d4b3-487b-beeb-e8025b95d1bf"
+    },
+    {
+      "name": "Imc",
+      "count": 16,
+      "slug": "imc",
+      "id": "39f614f3-6556-45fe-90a2-ccff73f89af7"
+    },
+    {
+      "name": "Rokt",
+      "count": 16,
+      "slug": "rokt",
+      "id": "931cf751-82cb-4882-8643-ffbd0691a0ad"
+    },
+    {
+      "name": "Pure-storage",
+      "count": 16,
+      "slug": "pure-storage",
+      "id": "dc4a17ad-847e-4d4c-8463-f33afee04710"
+    },
+    {
+      "name": "Compass",
+      "count": 16,
+      "slug": "compass",
+      "id": "4b51f92b-5fdd-4337-8902-bc2eb4cbe9e5"
+    },
+    {
+      "name": "Oyo",
+      "count": 16,
+      "slug": "oyo",
+      "id": "5e510bff-7564-4e26-bf81-ce29e4217d21"
+    },
+    {
+      "name": "Pornhub",
+      "count": 15,
+      "slug": "pornhub",
+      "id": "24183ed4-3027-4564-a408-337fab6a5d01"
+    },
+    {
+      "name": "Twitch",
+      "count": 15,
+      "slug": "twitch",
+      "id": "c137116f-3de4-4ec7-b9fc-fcc4a730412a"
+    },
+    {
+      "name": "Upstart",
+      "count": 15,
+      "slug": "upstart",
+      "id": "8792678e-8152-418b-ace6-c6bea91ec01f"
+    },
+    {
+      "name": "Shopify",
+      "count": 15,
+      "slug": "shopify",
+      "id": "87a71542-382c-4821-b047-18a403e4f15f"
+    },
+    {
+      "name": "Nextdoor",
+      "count": 14,
+      "slug": "nextdoor",
+      "id": "fbe9c919-6b37-4efb-b17a-7de3f2402dcf"
+    },
+    {
+      "name": "Attentive",
+      "count": 14,
+      "slug": "attentive",
+      "id": "b9ba6f95-9a2f-491d-a9b1-e38902233ddb"
+    },
+    {
+      "name": "Squarespace",
+      "count": 14,
+      "slug": "squarespace",
+      "id": "1dfc0159-ca45-4528-b443-c82c2ffb72af"
+    },
+    {
+      "name": "At-t",
+      "count": 14,
+      "slug": "at-t",
+      "id": "d9204cc2-dfc9-4e14-a1a6-b61ff56dc1b3"
+    },
+    {
+      "name": "Nokia",
+      "count": 14,
+      "slug": "nokia",
+      "id": "78d32340-9e5d-4963-babb-0e05bc1fb2ba"
+    },
+    {
+      "name": "Dunzo",
+      "count": 14,
+      "slug": "dunzo",
+      "id": "179f4038-68ad-40ad-8d42-d2a5c5feda4f"
+    },
+    {
+      "name": "Cars24",
+      "count": 14,
+      "slug": "cars24",
+      "id": "fb81f0eb-b5e7-4270-bc96-a5537fd9b7d0"
+    },
+    {
+      "name": "Zoox",
+      "count": 14,
+      "slug": "zoox",
+      "id": "6b1e14a8-ce8d-4b9d-a119-094c0df09611"
+    },
+    {
+      "name": "Lucid",
+      "count": 14,
+      "slug": "lucid",
+      "id": "c11a6c7c-4b04-42e6-8c86-5349d1128ede"
+    },
+    {
+      "name": "Graviton",
+      "count": 14,
+      "slug": "graviton",
+      "id": "e4d29b41-d5e9-4b07-99e4-ebc4b093a912"
+    },
+    {
+      "name": "Indeed",
+      "count": 14,
+      "slug": "indeed",
+      "id": "cbce7e4e-749b-44ac-91bd-9b0c51d08169"
+    },
+    {
+      "name": "Duolingo",
+      "count": 14,
+      "slug": "duolingo",
+      "id": "fbf494eb-0527-4791-8628-1c90528d6faf"
+    },
+    {
+      "name": "Moveworks",
+      "count": 13,
+      "slug": "moveworks",
+      "id": "c7ae802c-b953-4b42-81b6-36657cdf31e9"
+    },
+    {
+      "name": "Hsbc",
+      "count": 13,
+      "slug": "hsbc",
+      "id": "3a8415f8-d066-44f0-9352-5140caec972c"
+    },
+    {
+      "name": "Trilogy",
+      "count": 13,
+      "slug": "trilogy",
+      "id": "dbda642a-832f-4928-b457-27a219cdea8f"
+    },
+    {
+      "name": "Keeptruckin",
+      "count": 13,
+      "slug": "keeptruckin",
+      "id": "57907e49-12c2-4c73-b070-42c7d4724d65"
+    },
+    {
+      "name": "Box",
+      "count": 13,
+      "slug": "box",
+      "id": "23173938-fab3-410b-8bbd-cd45dc53ee80"
+    },
+    {
+      "name": "6sense",
+      "count": 13,
+      "slug": "6sense",
+      "id": "c833148d-7f38-4b70-a0b2-71ff72a58825"
+    },
+    {
+      "name": "Chewy",
+      "count": 13,
+      "slug": "chewy",
+      "id": "23306fa8-b81e-40d7-987b-e5832faa2bc4"
+    },
+    {
+      "name": "Thoughtworks",
+      "count": 13,
+      "slug": "thoughtworks",
+      "id": "38678b82-8a4a-47d1-a862-84df7f0e3fc8"
+    },
+    {
+      "name": "Pwc",
+      "count": 13,
+      "slug": "pwc",
+      "id": "e7f4249e-b0fd-4725-9abf-8e33862e7404"
+    },
+    {
+      "name": "Citrix",
+      "count": 12,
+      "slug": "citrix",
+      "id": "6d38f1c7-768a-4e31-b6ba-a0c0dfed20a4"
+    },
+    {
+      "name": "Faire",
+      "count": 12,
+      "slug": "faire",
+      "id": "15159825-6e63-4297-a251-ba65ec126db8"
+    },
+    {
+      "name": "Lime",
+      "count": 12,
+      "slug": "lime",
+      "id": "c48f9bf9-3540-4016-8e63-2aa963f6a7e1"
+    },
+    {
+      "name": "Verizon",
+      "count": 12,
+      "slug": "verizon",
+      "id": "9917debf-3e85-463b-adcd-cb1a6c32ce0c"
+    },
+    {
+      "name": "Vimeo",
+      "count": 12,
+      "slug": "vimeo",
+      "id": "f26a42a0-5c8c-4256-a083-1bde68d5607e"
+    },
+    {
+      "name": "Deliveroo",
+      "count": 12,
+      "slug": "deliveroo",
+      "id": "a835efda-434f-4507-beea-00936ee78d6b"
+    },
+    {
+      "name": "Liveramp",
+      "count": 12,
+      "slug": "liveramp",
+      "id": "99dc575a-b5ec-425e-901c-e56da088372d"
+    },
+    {
+      "name": "Ge-healthcare",
+      "count": 12,
+      "slug": "ge-healthcare",
+      "id": "a26d5338-1e84-42ec-a32e-46647803b457"
+    },
+    {
+      "name": "Cadence",
+      "count": 12,
+      "slug": "cadence",
+      "id": "b454c31f-7fb0-4025-9c27-2053558f7c90"
+    },
+    {
+      "name": "Trexquant",
+      "count": 12,
+      "slug": "trexquant",
+      "id": "d4745c05-17d5-4f37-a750-d4e6e0c725e9"
+    },
+    {
+      "name": "Target",
+      "count": 12,
+      "slug": "target",
+      "id": "2f9b4d35-591a-410e-a0bd-88184cfc10e1"
+    },
+    {
+      "name": "Garmin",
+      "count": 12,
+      "slug": "garmin",
+      "id": "0bb5ae9b-9969-4599-912f-b171812efad7"
+    },
+    {
+      "name": "Netskope",
+      "count": 12,
+      "slug": "netskope",
+      "id": "22eb75fd-b5a0-434c-9596-63e42f1835d6"
+    },
+    {
+      "name": "Darwinbox",
+      "count": 12,
+      "slug": "darwinbox",
+      "id": "d46d2b41-b3cd-43c6-9a1f-3519c8191a53"
+    },
+    {
+      "name": "Maq-software",
+      "count": 12,
+      "slug": "maq-software",
+      "id": "386b248c-4c6e-4ce5-8a10-9c5fe44652e2"
+    },
+    {
+      "name": "Optiver",
+      "count": 12,
+      "slug": "optiver",
+      "id": "de038ae5-fed7-4707-bfb4-d18c9a66d7ac"
+    },
+    {
+      "name": "Lowe",
+      "count": 11,
+      "slug": "lowe",
+      "id": "05df1d1e-cbfd-48b1-a449-d64f547d84d8"
+    },
+    {
+      "name": "Airtel",
+      "count": 11,
+      "slug": "airtel",
+      "id": "cb246fc2-cfca-44dc-b614-d596f13fbe18"
+    },
+    {
+      "name": "Remitly",
+      "count": 11,
+      "slug": "remitly",
+      "id": "cb4d38da-1ff2-4b9e-a884-d4db7ae46f52"
+    },
+    {
+      "name": "Gameskraft",
+      "count": 11,
+      "slug": "gameskraft",
+      "id": "fd898830-641d-4dd4-b4e5-65e3154d279d"
+    },
+    {
+      "name": "Toast",
+      "count": 11,
+      "slug": "toast",
+      "id": "dd6a18b8-b131-4bc1-84a3-7d92bc027d20"
+    },
+    {
+      "name": "Samsara",
+      "count": 11,
+      "slug": "samsara",
+      "id": "5c9d739a-d772-4be6-ad3d-9d829af81c12"
+    },
+    {
+      "name": "Factset",
+      "count": 11,
+      "slug": "factset",
+      "id": "7198eee6-54e3-479e-9091-9c70f530db6f"
+    },
+    {
+      "name": "Couchbase",
+      "count": 11,
+      "slug": "couchbase",
+      "id": "73e73fba-1a22-4064-866b-48215e1c39f8"
+    },
+    {
+      "name": "Groww",
+      "count": 11,
+      "slug": "groww",
+      "id": "4c0b2beb-a050-4c60-957e-d08c5ec2ca7d"
+    },
+    {
+      "name": "Jio",
+      "count": 11,
+      "slug": "jio",
+      "id": "c345d31c-50f8-4d6c-bec4-8a8aad32f85b"
+    },
+    {
+      "name": "Optum",
+      "count": 11,
+      "slug": "optum",
+      "id": "36a40856-3841-42f0-946b-bc4656551a23"
+    },
+    {
+      "name": "Ubs",
+      "count": 11,
+      "slug": "ubs",
+      "id": "cf0c08b5-86ec-414f-830d-c6c0c66d64f3"
+    },
+    {
+      "name": "Alibaba",
+      "count": 11,
+      "slug": "alibaba",
+      "id": "d2711132-d860-4c78-8c9d-9cf41250e653"
+    },
+    {
+      "name": "Workday",
+      "count": 11,
+      "slug": "workday",
+      "id": "c3f8c394-c98b-429e-9595-d4b4ebce22f3"
+    },
+    {
+      "name": "Cashfree",
+      "count": 11,
+      "slug": "cashfree",
+      "id": "5eee75f8-d9e3-4756-9660-eef04d2deb99"
+    },
+    {
+      "name": "Gojek",
+      "count": 10,
+      "slug": "gojek",
+      "id": "4c5f3a66-7941-48d7-acd3-af77e436ad0f"
+    },
+    {
+      "name": "Mercari",
+      "count": 10,
+      "slug": "mercari",
+      "id": "1a7ae5e3-2303-4b41-b6f9-abf6dd4050e6"
+    },
+    {
+      "name": "Godaddy",
+      "count": 10,
+      "slug": "godaddy",
+      "id": "1fde56e2-f7c4-4cbb-a954-eb14e524b3ac"
+    },
+    {
+      "name": "Cyntexa",
+      "count": 10,
+      "slug": "cyntexa",
+      "id": "01c51db7-a131-4da8-a301-e28d05473f5a"
+    },
+    {
+      "name": "Comcast",
+      "count": 10,
+      "slug": "comcast",
+      "id": "ab90281b-d5ec-4e9e-acc2-9c3e9f17adaa"
+    },
+    {
+      "name": "Point72",
+      "count": 10,
+      "slug": "point72",
+      "id": "64db323f-6b0c-4dcf-b039-7927831895d5"
+    },
+    {
+      "name": "Guidewire",
+      "count": 10,
+      "slug": "guidewire",
+      "id": "8f8b5029-dfd9-43e4-90fe-ddcc6e5b01c5"
+    },
+    {
+      "name": "Navan",
+      "count": 10,
+      "slug": "navan",
+      "id": "5a48d253-f4cc-42ec-a512-4d0761d43c4f"
+    },
+    {
+      "name": "Liftoff",
+      "count": 10,
+      "slug": "liftoff",
+      "id": "cf2a05af-a295-491f-8998-2c10ba396145"
+    },
+    {
+      "name": "Anthropic",
+      "count": 10,
+      "slug": "anthropic",
+      "id": "47ff06ac-4397-42aa-8fb0-0298cee98e4e"
+    },
+    {
+      "name": "Qualtrics",
+      "count": 10,
+      "slug": "qualtrics",
+      "id": "dc4dcf1c-4ab2-4432-a1b9-b630c33d6652"
+    },
+    {
+      "name": "Nagarro",
+      "count": 10,
+      "slug": "nagarro",
+      "id": "cee5577f-bf89-4b59-b9e0-03a631d40911"
+    },
+    {
+      "name": "Bolt",
+      "count": 10,
+      "slug": "bolt",
+      "id": "09b36fe8-2ea2-4add-b2f4-7b3055d99dff"
+    },
+    {
+      "name": "Patreon",
+      "count": 10,
+      "slug": "patreon",
+      "id": "b84b3aa1-004f-474b-bf5c-b20979fc1fa1"
+    },
+    {
+      "name": "Lg-electronics",
+      "count": 10,
+      "slug": "lg-electronics",
+      "id": "9474c3ed-e828-442f-8013-8cdb96fd5c1a"
+    },
+    {
+      "name": "Tripadvisor",
+      "count": 10,
+      "slug": "tripadvisor",
+      "id": "33420e34-9220-4519-9245-765069275e38"
+    },
+    {
+      "name": "Careem",
+      "count": 10,
+      "slug": "careem",
+      "id": "fea40de9-8ba4-43d2-aa26-606ca9424fd2"
+    },
+    {
+      "name": "Asana",
+      "count": 10,
+      "slug": "asana",
+      "id": "7e1fe357-860e-4a0e-badb-52c24f6ef6b3"
+    },
+    {
+      "name": "Hulu",
+      "count": 10,
+      "slug": "hulu",
+      "id": "38875954-8c74-4223-a7c9-238e30f15482"
+    },
+    {
+      "name": "Gsn-games",
+      "count": 10,
+      "slug": "gsn-games",
+      "id": "fe32b78f-249a-407d-9c20-a03c9d03b28d"
+    },
+    {
+      "name": "The-trade-desk",
+      "count": 10,
+      "slug": "the-trade-desk",
+      "id": "be7ac58d-7509-424a-ae04-8b08fe67c13b"
+    },
+    {
+      "name": "Earnin",
+      "count": 9,
+      "slug": "earnin",
+      "id": "947e6e8e-3491-4cd8-a99b-0bfae2f75d50"
+    },
+    {
+      "name": "Nykaa",
+      "count": 9,
+      "slug": "nykaa",
+      "id": "b760715e-19a2-4006-8376-e5799ebbd45b"
+    },
+    {
+      "name": "Tech-mahindra",
+      "count": 9,
+      "slug": "tech-mahindra",
+      "id": "0226d981-bdbb-4d45-9801-be33bf844e2c"
+    },
+    {
+      "name": "Commvault",
+      "count": 9,
+      "slug": "commvault",
+      "id": "2f387ce0-78e8-4d78-be5b-705579929aea"
+    },
+    {
+      "name": "Citi",
+      "count": 9,
+      "slug": "citi",
+      "id": "ad30404f-68b5-4abf-abae-cee0d5e67657"
+    },
+    {
+      "name": "Lti",
+      "count": 9,
+      "slug": "lti",
+      "id": "726123b5-d568-4f78-b14b-5d43159c902d"
+    },
+    {
+      "name": "Syfe",
+      "count": 9,
+      "slug": "syfe",
+      "id": "e74ac42e-3635-408e-ae58-265752fd7e7e"
+    },
+    {
+      "name": "Tomtom",
+      "count": 9,
+      "slug": "tomtom",
+      "id": "21a7ced4-f409-4341-97e3-e9eeaad98fa7"
+    },
+    {
+      "name": "Github",
+      "count": 9,
+      "slug": "github",
+      "id": "1d258715-97aa-428d-bbe2-2d64d70679d9"
+    },
+    {
+      "name": "Publicis-sapient",
+      "count": 9,
+      "slug": "publicis-sapient",
+      "id": "6c74b80e-8818-42fc-8926-6c12adc89fd9"
+    },
+    {
+      "name": "Otterai",
+      "count": 9,
+      "slug": "otterai",
+      "id": "21b0fa32-c3f3-4be5-ac93-8053e1d561bf"
+    },
+    {
+      "name": "Chime",
+      "count": 9,
+      "slug": "chime",
+      "id": "666efe0f-b457-4e0c-aea7-db9a5246407d"
+    },
+    {
+      "name": "Urban-company",
+      "count": 9,
+      "slug": "urban-company",
+      "id": "1ffbc44b-a366-416f-b9ae-ad23dccb2b5b"
+    },
+    {
+      "name": "Paypay",
+      "count": 9,
+      "slug": "paypay",
+      "id": "e2bd1f2f-b3b4-46e6-94c4-4064d63bfcdd"
+    },
+    {
+      "name": "Riot-games",
+      "count": 9,
+      "slug": "riot-games",
+      "id": "e538dc4c-273a-4030-b5f1-d109bf534f87"
+    },
+    {
+      "name": "Zip",
+      "count": 9,
+      "slug": "zip",
+      "id": "a049fce5-b52a-46ff-815e-c43740b6097e"
+    },
+    {
+      "name": "Wish",
+      "count": 9,
+      "slug": "wish",
+      "id": "c78b9a87-bd57-450f-85fa-d6b53178d678"
+    },
+    {
+      "name": "Devrev",
+      "count": 8,
+      "slug": "devrev",
+      "id": "7d29934d-6e4d-4872-a037-7547001fc381"
+    },
+    {
+      "name": "Worldquant",
+      "count": 8,
+      "slug": "worldquant",
+      "id": "a8c5dbc1-1996-4083-82fb-688b5783d793"
+    },
+    {
+      "name": "Aon",
+      "count": 8,
+      "slug": "aon",
+      "id": "dafd81fd-b232-4c48-97a0-930f1de9d86a"
+    },
+    {
+      "name": "Ncr",
+      "count": 8,
+      "slug": "ncr",
+      "id": "2864c56d-335c-4589-b5be-7c3685dc6a0d"
+    },
+    {
+      "name": "Honeywell",
+      "count": 8,
+      "slug": "honeywell",
+      "id": "eaa23df2-c37e-4773-939f-7c89f1e4c06c"
+    },
+    {
+      "name": "Audible",
+      "count": 8,
+      "slug": "audible",
+      "id": "f2a88a22-55ce-492f-94d8-15213275757d"
+    },
+    {
+      "name": "Drw",
+      "count": 8,
+      "slug": "drw",
+      "id": "f6d1cc41-4985-45a0-b8bd-5a6be75e0b97"
+    },
+    {
+      "name": "Apolloio",
+      "count": 8,
+      "slug": "apolloio",
+      "id": "4b038762-2cdc-428c-840f-9b9ce60aa0c5"
+    },
+    {
+      "name": "Stackadapt",
+      "count": 8,
+      "slug": "stackadapt",
+      "id": "470f3fd3-807e-4caa-913b-ba1902584b0b"
+    },
+    {
+      "name": "Mindtickle",
+      "count": 8,
+      "slug": "mindtickle",
+      "id": "8279ffea-1526-4f88-bb92-35497f791fa6"
+    },
+    {
+      "name": "Spinny",
+      "count": 8,
+      "slug": "spinny",
+      "id": "511c23a7-ff87-40f7-9c13-33584e6390b0"
+    },
+    {
+      "name": "Kla-tencor",
+      "count": 8,
+      "slug": "kla-tencor",
+      "id": "0fc681ae-ee55-455f-940e-76a404e31b40"
+    },
+    {
+      "name": "Zulily",
+      "count": 8,
+      "slug": "zulily",
+      "id": "1ebb2a9b-5be7-4303-8b3a-bc828df02acd"
+    },
+    {
+      "name": "Thousandeyes",
+      "count": 8,
+      "slug": "thousandeyes",
+      "id": "bdd0286d-439e-4724-add2-20826da694d7"
+    },
+    {
+      "name": "Airbus",
+      "count": 8,
+      "slug": "airbus",
+      "id": "a83932f2-236a-41c7-93ac-5de23bd4ca97"
+    },
+    {
+      "name": "Cloudera",
+      "count": 8,
+      "slug": "cloudera",
+      "id": "42532510-2650-405a-af8f-eb70fac04187"
+    },
+    {
+      "name": "Innovaccer",
+      "count": 8,
+      "slug": "innovaccer",
+      "id": "c18dde88-e2f6-4ad6-96b0-545bd25636ac"
+    },
+    {
+      "name": "Fortinet",
+      "count": 8,
+      "slug": "fortinet",
+      "id": "4ccc915f-263b-4066-9e14-dee759b623d2"
+    },
+    {
+      "name": "Tusimple",
+      "count": 8,
+      "slug": "tusimple",
+      "id": "d7e9c67d-2d89-4ad5-b4d6-6e2547b6dca4"
+    },
+    {
+      "name": "Valve",
+      "count": 8,
+      "slug": "valve",
+      "id": "c6296d6b-8294-4653-805a-3d3a034230ca"
+    },
+    {
+      "name": "Niantic",
+      "count": 8,
+      "slug": "niantic",
+      "id": "f98efc86-b675-4125-866b-d9d72f2d6357"
+    },
+    {
+      "name": "Poshmark",
+      "count": 8,
+      "slug": "poshmark",
+      "id": "ec571a3c-5b13-4a92-ba3d-47c78be7f457"
+    },
+    {
+      "name": "Opentext",
+      "count": 8,
+      "slug": "opentext",
+      "id": "25e0be68-df65-4f9b-84d2-4d7234858c7b"
+    },
+    {
+      "name": "Zalando",
+      "count": 8,
+      "slug": "zalando",
+      "id": "cbfee686-8b75-4372-b0a2-15e9cec8da4a"
+    },
+    {
+      "name": "Ponyai",
+      "count": 8,
+      "slug": "ponyai",
+      "id": "3a1f0f23-e915-42ae-81e2-89780c0fc086"
+    },
+    {
+      "name": "Tiger-analytics",
+      "count": 8,
+      "slug": "tiger-analytics",
+      "id": "a2619303-c8b0-4b90-90f9-b8dc6e2ce7c5"
+    },
+    {
+      "name": "Acko",
+      "count": 8,
+      "slug": "acko",
+      "id": "4cae3a0d-4420-4803-8fc6-1b527ee92858"
+    },
+    {
+      "name": "Chubb",
+      "count": 8,
+      "slug": "chubb",
+      "id": "86dc2538-cb62-441b-b5cd-fb94f7bd36db"
+    },
+    {
+      "name": "Wise",
+      "count": 8,
+      "slug": "wise",
+      "id": "14d951d0-8ddb-4942-9ad2-f38cbcec7fd5"
+    },
+    {
+      "name": "Veeva",
+      "count": 8,
+      "slug": "veeva",
+      "id": "c4a9b21f-2dd8-4de6-9acd-c47da58364ff"
+    },
+    {
+      "name": "Cerner",
+      "count": 8,
+      "slug": "cerner",
+      "id": "c1d88e5e-42c0-4f4d-a758-9baee73e4fb0"
+    },
+    {
+      "name": "Coindcx",
+      "count": 8,
+      "slug": "coindcx",
+      "id": "3d02648c-bd70-4998-a820-483014274b13"
+    },
+    {
+      "name": "Works-applications",
+      "count": 8,
+      "slug": "works-applications",
+      "id": "c8ba529a-f326-46e2-8e3a-878611941518"
+    },
+    {
+      "name": "Adp",
+      "count": 7,
+      "slug": "adp",
+      "id": "add15aa6-e093-4f62-9ffc-4082b25a503d"
+    },
+    {
+      "name": "Jump-trading",
+      "count": 7,
+      "slug": "jump-trading",
+      "id": "29800527-2e87-4bd6-8139-0bc026849854"
+    },
+    {
+      "name": "Altimetrik",
+      "count": 7,
+      "slug": "altimetrik",
+      "id": "9be81af4-327d-42df-b770-5d465b21c7ef"
+    },
+    {
+      "name": "Navi",
+      "count": 7,
+      "slug": "navi",
+      "id": "21aed534-e160-4cb1-82dc-cee0f538dda2"
+    },
+    {
+      "name": "Cohesity",
+      "count": 7,
+      "slug": "cohesity",
+      "id": "0ae0772f-3494-4a9d-b5d1-191e48bad67b"
+    },
+    {
+      "name": "Grubhub",
+      "count": 7,
+      "slug": "grubhub",
+      "id": "e31018ac-593f-419d-b203-ef584dd9ff3a"
+    },
+    {
+      "name": "Tower-research",
+      "count": 7,
+      "slug": "tower-research",
+      "id": "bd41fc6e-9666-4f96-b4d2-9edd5731ea5c"
+    },
+    {
+      "name": "Mindtree",
+      "count": 7,
+      "slug": "mindtree",
+      "id": "c15e5cea-5335-44c2-97d1-5b1d8f11ad78"
+    },
+    {
+      "name": "Hp",
+      "count": 7,
+      "slug": "hp",
+      "id": "15f33444-6c77-4cc0-8ec0-6ac10a37e8d5"
+    },
+    {
+      "name": "Blinkit",
+      "count": 7,
+      "slug": "blinkit",
+      "id": "34eba396-7487-4920-bdd2-8f01be93ca58"
+    },
+    {
+      "name": "Amadeus",
+      "count": 6,
+      "slug": "amadeus",
+      "id": "ac8fd132-1e39-47f5-afc2-5c63ea5064e7"
+    },
+    {
+      "name": "Clari",
+      "count": 6,
+      "slug": "clari",
+      "id": "591ffe2b-00ad-4da0-9b44-13249c3c901f"
+    },
+    {
+      "name": "Deltax",
+      "count": 6,
+      "slug": "deltax",
+      "id": "a3b4e9c6-7f53-4505-a324-c754c98ada56"
+    },
+    {
+      "name": "Postmates",
+      "count": 6,
+      "slug": "postmates",
+      "id": "c6a80ae1-6696-4c98-8594-49512d67327b"
+    },
+    {
+      "name": "Fidelity",
+      "count": 6,
+      "slug": "fidelity",
+      "id": "6bd18114-af55-41a4-951c-4d52ed369b65"
+    },
+    {
+      "name": "Hilabs",
+      "count": 6,
+      "slug": "hilabs",
+      "id": "aaaaa5e4-fc08-41a8-9686-425054d0bbb0"
+    },
+    {
+      "name": "Sentry",
+      "count": 6,
+      "slug": "sentry",
+      "id": "edd855d0-a7ec-4644-bb76-0cb014b1d5c4"
+    },
+    {
+      "name": "Softwire",
+      "count": 6,
+      "slug": "softwire",
+      "id": "ec50e95c-7fa3-4f84-99c0-f59b56e59de4"
+    },
+    {
+      "name": "Rbc",
+      "count": 6,
+      "slug": "rbc",
+      "id": "675560a2-e77e-4189-a93b-4210fd24a617"
+    },
+    {
+      "name": "Peloton",
+      "count": 6,
+      "slug": "peloton",
+      "id": "e453743f-db51-4fb3-9389-669170c5db1b"
+    },
+    {
+      "name": "Viasat",
+      "count": 6,
+      "slug": "viasat",
+      "id": "8a0b1914-42c6-414c-81be-407282370576"
+    },
+    {
+      "name": "Buyhatke",
+      "count": 6,
+      "slug": "buyhatke",
+      "id": "f2fb9cd5-0070-4f69-a811-1ecea1dfe3f1"
+    },
+    {
+      "name": "Snapdeal",
+      "count": 6,
+      "slug": "snapdeal",
+      "id": "7ca79abf-3321-4065-8038-943ba813c6af"
+    },
+    {
+      "name": "Appfolio",
+      "count": 6,
+      "slug": "appfolio",
+      "id": "b6385281-f4fb-4fa5-abe6-b8bf4eb6fdeb"
+    },
+    {
+      "name": "Kickdrum",
+      "count": 6,
+      "slug": "kickdrum",
+      "id": "57fe475b-c83b-4c07-b2ae-a59cd3d0d9a6"
+    },
+    {
+      "name": "Ramp-2",
+      "count": 6,
+      "slug": "ramp-2",
+      "id": "fdeb0bfa-d1fb-4496-85b4-5f65057277e1"
+    },
+    {
+      "name": "Aqr-capital-management-llc",
+      "count": 6,
+      "slug": "aqr-capital-management-llc",
+      "id": "5d8da212-f4c4-4d22-b66d-d69f59a0e229"
+    },
+    {
+      "name": "Credit-karma",
+      "count": 6,
+      "slug": "credit-karma",
+      "id": "cd27d434-69c4-4a93-a096-2862680fb20a"
+    },
+    {
+      "name": "Oscar-health",
+      "count": 6,
+      "slug": "oscar-health",
+      "id": "a13dff84-c4aa-4679-a9a9-4dc65208e6fc"
+    },
+    {
+      "name": "Soundhound",
+      "count": 6,
+      "slug": "soundhound",
+      "id": "2dafd0aa-38c2-4b43-9ba9-7ab7a25b1b4e"
+    },
+    {
+      "name": "Ziprecruiter",
+      "count": 6,
+      "slug": "ziprecruiter",
+      "id": "717f4540-213a-41c6-8d0e-c882058276b4"
+    },
+    {
+      "name": "Groupon",
+      "count": 6,
+      "slug": "groupon",
+      "id": "484005f0-7034-45d7-8932-6d95e7a38d14"
+    },
+    {
+      "name": "Canonical",
+      "count": 6,
+      "slug": "canonical",
+      "id": "7db0d4a6-454d-4813-83c3-27d1581ec917"
+    },
+    {
+      "name": "Boeing",
+      "count": 6,
+      "slug": "boeing",
+      "id": "06a2cc06-4fe3-4b76-a25c-8f232a93be79"
+    },
+    {
+      "name": "Delhivery",
+      "count": 6,
+      "slug": "delhivery",
+      "id": "737c3317-b284-4fc0-87bb-efadec7ed659"
+    },
+    {
+      "name": "Freecharge",
+      "count": 6,
+      "slug": "freecharge",
+      "id": "3528e0cd-a659-4d1f-a0b7-558cfd64bfd8"
+    },
+    {
+      "name": "Cme-group",
+      "count": 6,
+      "slug": "cme-group",
+      "id": "caa218b3-f9b4-48cf-9581-f5010e182449"
+    },
+    {
+      "name": "Gartner",
+      "count": 6,
+      "slug": "gartner",
+      "id": "2be647b4-3d29-4027-9cb6-b2b3a2b1b0d6"
+    },
+    {
+      "name": "Bridgewater-associates",
+      "count": 6,
+      "slug": "bridgewater-associates",
+      "id": "09d909fa-702e-4655-9fe8-5b65a91a3e92"
+    },
+    {
+      "name": "Argo-ai",
+      "count": 6,
+      "slug": "argo-ai",
+      "id": "789a90c4-7775-4e0d-be00-2d03a05ca218"
+    },
+    {
+      "name": "Electronic-arts",
+      "count": 6,
+      "slug": "electronic-arts",
+      "id": "12727156-3711-412a-bf24-dca6818db5e7"
+    },
+    {
+      "name": "Fourkites",
+      "count": 6,
+      "slug": "fourkites",
+      "id": "d8667eca-c8d2-4101-880f-5d0c43c059b6"
+    },
+    {
+      "name": "Unity",
+      "count": 6,
+      "slug": "unity",
+      "id": "654b7fdb-54ad-4133-9f2f-660b1409c184"
+    },
+    {
+      "name": "Fiverr",
+      "count": 6,
+      "slug": "fiverr",
+      "id": "92a16f27-81db-49c1-971a-83abb87cdfc6"
+    },
+    {
+      "name": "Dialpad",
+      "count": 6,
+      "slug": "dialpad",
+      "id": "a42772ab-bb57-449a-879f-e283166b95a7"
+    },
+    {
+      "name": "Texas-instruments",
+      "count": 6,
+      "slug": "texas-instruments",
+      "id": "657c4a35-0413-4407-8915-8d9d9e9f5ad4"
+    },
+    {
+      "name": "Blend",
+      "count": 6,
+      "slug": "blend",
+      "id": "65a6e929-26de-4084-8743-080a8a831c71"
+    },
+    {
+      "name": "Ge-digital",
+      "count": 6,
+      "slug": "ge-digital",
+      "id": "984f80a8-0fde-4c1b-94b2-32da74a93e89"
+    },
+    {
+      "name": "Informatica",
+      "count": 6,
+      "slug": "informatica",
+      "id": "0f7edb9a-af13-4ac8-a6ab-2ff30e19cec0"
+    },
+    {
+      "name": "Line",
+      "count": 6,
+      "slug": "line",
+      "id": "f7a1a5d2-2226-491e-899a-c6086d6b260f"
+    },
+    {
+      "name": "Activision",
+      "count": 6,
+      "slug": "activision",
+      "id": "bcbdedfd-6f9e-4011-8c1a-15954e0c5815"
+    },
+    {
+      "name": "Smartsheet",
+      "count": 6,
+      "slug": "smartsheet",
+      "id": "a56a5916-6868-4fcb-9d0f-630f3d710c52"
+    },
+    {
+      "name": "Tinder",
+      "count": 6,
+      "slug": "tinder",
+      "id": "9ccaeae8-2e93-4947-a56f-85c1c22e07f4"
+    },
+    {
+      "name": "Amdocs",
+      "count": 5,
+      "slug": "amdocs",
+      "id": "73918ee4-6993-4d2d-a2bf-06f6ce2c846f"
+    },
+    {
+      "name": "Zoom",
+      "count": 5,
+      "slug": "zoom",
+      "id": "0868b8ef-308e-4331-8e00-0fe47ceae847"
+    },
+    {
+      "name": "Hive",
+      "count": 5,
+      "slug": "hive",
+      "id": "79eab755-47b0-4afa-a681-9893053fe6bb"
+    },
+    {
+      "name": "Societe-generale",
+      "count": 5,
+      "slug": "societe-generale",
+      "id": "27964d70-a384-4186-a5ff-1b29cecb7b10"
+    },
+    {
+      "name": "Odoo",
+      "count": 5,
+      "slug": "odoo",
+      "id": "cc35b8f3-46c5-4057-a9ce-72abc6e2923f"
+    },
+    {
+      "name": "Teradata",
+      "count": 5,
+      "slug": "teradata",
+      "id": "7e949a9c-c70d-45f2-91e0-9dfe06c81ffc"
+    },
+    {
+      "name": "Fpt",
+      "count": 5,
+      "slug": "fpt",
+      "id": "0def3616-9b5e-4946-b438-a6f7fbad802e"
+    },
+    {
+      "name": "Bank-of-america",
+      "count": 5,
+      "slug": "bank-of-america",
+      "id": "6996879c-3daf-4e86-ba6f-03c36a340f44"
+    },
+    {
+      "name": "Blackstone",
+      "count": 5,
+      "slug": "blackstone",
+      "id": "9783bbfb-26b3-4d4b-bfef-2325a00e37e4"
+    },
+    {
+      "name": "Slice",
+      "count": 5,
+      "slug": "slice",
+      "id": "20d11104-5a75-4697-952e-ae390b7bdc52"
+    },
+    {
+      "name": "Luxoft",
+      "count": 5,
+      "slug": "luxoft",
+      "id": "0001b8fa-935b-49b4-9353-da259f7b0248"
+    },
+    {
+      "name": "Glovo",
+      "count": 5,
+      "slug": "glovo",
+      "id": "c3d87001-bdca-4799-8976-54cd58a1c649"
+    },
+    {
+      "name": "Zynga",
+      "count": 5,
+      "slug": "zynga",
+      "id": "eadcaf0c-c74c-4ec3-8c59-79632bbc0e68"
+    },
+    {
+      "name": "Philips",
+      "count": 5,
+      "slug": "philips",
+      "id": "9eeb4e9a-681a-4773-8c51-884e976bf649"
+    },
+    {
+      "name": "Cockroach-labs",
+      "count": 5,
+      "slug": "cockroach-labs",
+      "id": "0decf730-d771-42a1-ba37-50bbb3188f43"
+    },
+    {
+      "name": "Synopsys",
+      "count": 5,
+      "slug": "synopsys",
+      "id": "23c91a41-c0de-47d0-8220-d9336671240a"
+    },
+    {
+      "name": "Sony",
+      "count": 5,
+      "slug": "sony",
+      "id": "f42ccb64-c004-4713-a490-142c37139f7f"
+    },
+    {
+      "name": "Purplle",
+      "count": 4,
+      "slug": "purplle",
+      "id": "642d2ac9-b6c9-4b3f-aeca-29abb205dab8"
+    },
+    {
+      "name": "Mobileye",
+      "count": 4,
+      "slug": "mobileye",
+      "id": "720c6d78-4455-486c-b244-0778ff8e6e5f"
+    },
+    {
+      "name": "Zemoso",
+      "count": 4,
+      "slug": "zemoso",
+      "id": "dcf363f9-fbcb-4d4b-b704-a94d1bfb52f2"
+    },
+    {
+      "name": "Zluri",
+      "count": 4,
+      "slug": "zluri",
+      "id": "6e2e77a3-3cf7-4d36-b13a-dcaa227529cc"
+    },
+    {
+      "name": "Netsuite",
+      "count": 4,
+      "slug": "netsuite",
+      "id": "c2a2c8da-a9ba-4f25-b088-33b29b6e9689"
+    },
+    {
+      "name": "Cleartrip",
+      "count": 4,
+      "slug": "cleartrip",
+      "id": "0903f927-d9fe-4256-ab0f-591912e08d62"
+    },
+    {
+      "name": "Sumologic",
+      "count": 4,
+      "slug": "sumologic",
+      "id": "927211b2-2cf1-43dd-938d-d12bcd34507c"
+    },
+    {
+      "name": "Thomson-reuters",
+      "count": 4,
+      "slug": "thomson-reuters",
+      "id": "b7b97823-fca1-4db8-8093-784ffe9a6d47"
+    },
+    {
+      "name": "Observeai",
+      "count": 4,
+      "slug": "observeai",
+      "id": "ef088aa7-faf4-480d-b56a-75ae9737a15c"
+    },
+    {
+      "name": "Gsa-capital",
+      "count": 4,
+      "slug": "gsa-capital",
+      "id": "abd3ffee-a799-4360-9271-29a9e3e935f4"
+    },
+    {
+      "name": "Natwest",
+      "count": 4,
+      "slug": "natwest",
+      "id": "db9cd5ab-2e1a-42df-8ff3-dfd50503f943"
+    },
+    {
+      "name": "Turo",
+      "count": 4,
+      "slug": "turo",
+      "id": "45e37efd-a3ff-4533-b58f-654abe409287"
+    },
+    {
+      "name": "Mckinsey",
+      "count": 4,
+      "slug": "mckinsey",
+      "id": "715aa85c-ea13-425e-9ec8-ae00fe53e6bd"
+    },
+    {
+      "name": "Hpe",
+      "count": 4,
+      "slug": "hpe",
+      "id": "6eebb969-dcb0-4827-8b3e-355050f3a076"
+    },
+    {
+      "name": "Houzz",
+      "count": 4,
+      "slug": "houzz",
+      "id": "da641880-6a4f-44a8-8efb-bcb4fe9d72ff"
+    },
+    {
+      "name": "Kakao",
+      "count": 4,
+      "slug": "kakao",
+      "id": "13f9621e-a989-4379-8c70-31c9f3e5637b"
+    },
+    {
+      "name": "Ivp",
+      "count": 4,
+      "slug": "ivp",
+      "id": "b18a7ad0-6ce1-4ad5-b378-2fd407389c6a"
+    },
+    {
+      "name": "Kpmg",
+      "count": 4,
+      "slug": "kpmg",
+      "id": "9d6e6bcd-2faf-4498-a4a1-6b00b7f4d01c"
+    },
+    {
+      "name": "Zeta-suite",
+      "count": 4,
+      "slug": "zeta-suite",
+      "id": "d08e7158-8746-4880-b55e-2977249a14a3"
+    },
+    {
+      "name": "Tokopedia",
+      "count": 4,
+      "slug": "tokopedia",
+      "id": "63d54b01-aae2-4739-b589-afca68c8c32d"
+    },
+    {
+      "name": "Avalara",
+      "count": 4,
+      "slug": "avalara",
+      "id": "6c41630a-f966-4a17-bdfb-b8caeda07b19"
+    },
+    {
+      "name": "Quince",
+      "count": 4,
+      "slug": "quince",
+      "id": "16b54e51-2e40-4a8a-a197-f9280d22b44a"
+    },
+    {
+      "name": "Glassdoor",
+      "count": 4,
+      "slug": "glassdoor",
+      "id": "b2702645-8b71-4585-b147-5610fa546f18"
+    },
+    {
+      "name": "Toptal",
+      "count": 4,
+      "slug": "toptal",
+      "id": "844b7623-7ee3-46f8-867a-231f3245e536"
+    },
+    {
+      "name": "Mixpanel",
+      "count": 4,
+      "slug": "mixpanel",
+      "id": "2cce103b-1b2d-420c-b283-c301b8bb6083"
+    },
+    {
+      "name": "Dataminr",
+      "count": 4,
+      "slug": "dataminr",
+      "id": "9d8fc993-a5db-481e-9bfd-c36f659af0b9"
+    },
+    {
+      "name": "Cvent",
+      "count": 4,
+      "slug": "cvent",
+      "id": "df0a44e7-3abf-4f25-837f-b0ffdf0f7122"
+    },
+    {
+      "name": "Machine-zone",
+      "count": 4,
+      "slug": "machine-zone",
+      "id": "8e04e57e-6438-45b9-af44-0c0b0b191353"
+    },
+    {
+      "name": "Oppo",
+      "count": 4,
+      "slug": "oppo",
+      "id": "71966a80-1b30-4e51-8fb7-dc654e0159a8"
+    },
+    {
+      "name": "Tesco",
+      "count": 4,
+      "slug": "tesco",
+      "id": "0fd743cc-59b7-4f0d-b2da-8f96d370808d"
+    },
+    {
+      "name": "Gopuff",
+      "count": 4,
+      "slug": "gopuff",
+      "id": "d0e9f260-36bb-45f3-9f02-4f1f1371fd41"
+    },
+    {
+      "name": "Zendesk",
+      "count": 4,
+      "slug": "zendesk",
+      "id": "f215592b-f9ac-4894-9bbe-17c6de3c8222"
+    },
+    {
+      "name": "Appdynamics",
+      "count": 4,
+      "slug": "appdynamics",
+      "id": "d12c4518-67fe-4370-bc29-493a324c8916"
+    },
+    {
+      "name": "Bending-spoons",
+      "count": 4,
+      "slug": "bending-spoons",
+      "id": "e209b46e-d0f4-495e-8325-30e58d75400a"
+    },
+    {
+      "name": "Cruise-automation",
+      "count": 4,
+      "slug": "cruise-automation",
+      "id": "e1ef5f74-179c-4af9-8ac0-2ae90fb8f68c"
+    },
+    {
+      "name": "Watchguard",
+      "count": 4,
+      "slug": "watchguard",
+      "id": "cfada620-e005-44ae-88e2-b66f63ddeaf2"
+    },
+    {
+      "name": "Turvo",
+      "count": 4,
+      "slug": "turvo",
+      "id": "559b4671-5d0a-4398-ab65-eb99f3b6a970"
+    },
+    {
+      "name": "Harness",
+      "count": 4,
+      "slug": "harness",
+      "id": "cee4029e-5b91-4e22-8fae-926a0714e410"
+    },
+    {
+      "name": "Okx",
+      "count": 4,
+      "slug": "okx",
+      "id": "f3d55c01-89fc-4b74-80c5-135398dfc970"
+    },
+    {
+      "name": "Hertz",
+      "count": 4,
+      "slug": "hertz",
+      "id": "6ca7b12d-5fec-4959-92ce-700d62c9b7f6"
+    },
+    {
+      "name": "Cred",
+      "count": 4,
+      "slug": "cred",
+      "id": "9c709b3f-97da-4aa5-8ad2-86ed6df41c34"
+    },
+    {
+      "name": "Analytics-quotient",
+      "count": 4,
+      "slug": "analytics-quotient",
+      "id": "2a972886-0048-40e5-84d4-65349d247e1c"
+    },
+    {
+      "name": "Larsen-toubro",
+      "count": 4,
+      "slug": "larsen-toubro",
+      "id": "ead8ec83-fa6e-4212-8e20-6da5a34ffbd5"
+    },
+    {
+      "name": "Starbucks",
+      "count": 4,
+      "slug": "starbucks",
+      "id": "23720d22-50b9-4e5c-8a28-ba9f70e600fb"
+    },
+    {
+      "name": "Hotstar",
+      "count": 4,
+      "slug": "hotstar",
+      "id": "57d2e72c-a43f-4443-a86c-47647f891d87"
+    },
+    {
+      "name": "Redfin",
+      "count": 4,
+      "slug": "redfin",
+      "id": "5aedf1a6-aa4e-4f86-a40f-ee39c6c0d74b"
+    },
+    {
+      "name": "Ford",
+      "count": 4,
+      "slug": "ford",
+      "id": "80c69ac1-042d-40cd-83ee-b3a2b69d3874"
+    },
+    {
+      "name": "Redbus",
+      "count": 4,
+      "slug": "redbus",
+      "id": "a3bb67ad-8313-4b4f-b7d2-b5fdae3123e6"
+    },
+    {
+      "name": "Yext",
+      "count": 4,
+      "slug": "yext",
+      "id": "daaf6f98-ab7b-42ea-96ca-e8a03ce39097"
+    },
+    {
+      "name": "Symantec",
+      "count": 4,
+      "slug": "symantec",
+      "id": "459cfb8a-6574-44e8-8696-76c0dc23ee85"
+    },
+    {
+      "name": "Coveo",
+      "count": 4,
+      "slug": "coveo",
+      "id": "7067fd49-3f54-4b3f-8956-b3d955e22155"
+    },
+    {
+      "name": "Scale-ai",
+      "count": 4,
+      "slug": "scale-ai",
+      "id": "46438a58-d631-41d8-8139-31a1d90fe276"
+    },
+    {
+      "name": "Stackline",
+      "count": 4,
+      "slug": "stackline",
+      "id": "d79a8201-e348-4544-b70f-a78f6cc86592"
+    },
+    {
+      "name": "Park",
+      "count": 4,
+      "slug": "park",
+      "id": "cde51a01-6123-4068-9beb-126f79c0a82d"
+    },
+    {
+      "name": "Hopper",
+      "count": 4,
+      "slug": "hopper",
+      "id": "69ab62a0-9d21-4e73-a5d4-115112ddef9f"
+    },
+    {
+      "name": "Kpit",
+      "count": 4,
+      "slug": "kpit",
+      "id": "84a0de51-88ce-4d83-9fb5-1f12a815f4a9"
+    },
+    {
+      "name": "Pure",
+      "count": 4,
+      "slug": "pure",
+      "id": "1dbc2e1f-72b7-4eea-91b3-a6a965f50aad"
+    },
+    {
+      "name": "Netease",
+      "count": 4,
+      "slug": "netease",
+      "id": "5c4cf3ba-232e-4bcc-98bd-c538e0d751f8"
+    },
+    {
+      "name": "Sharechat",
+      "count": 4,
+      "slug": "sharechat",
+      "id": "211e2325-b9f8-44b8-a6f8-c1c3b48aab56"
+    },
+    {
+      "name": "National-instruments",
+      "count": 4,
+      "slug": "national-instruments",
+      "id": "efbee33f-032f-4a65-8c3f-dfbefd1c71f4"
+    },
+    {
+      "name": "National-payments-coorperation-india",
+      "count": 4,
+      "slug": "national-payments-coorperation-india",
+      "id": "6f964c39-7c5c-4ab0-bb41-059aad5d23a3"
+    },
+    {
+      "name": "Paycom",
+      "count": 4,
+      "slug": "paycom",
+      "id": "5250f0ca-036d-4a56-aa42-4363fdea2ba2"
+    },
+    {
+      "name": "Flatiron-health",
+      "count": 4,
+      "slug": "flatiron-health",
+      "id": "0feed3c3-8ea6-4e58-8d1e-7c3ea03fe946"
+    },
+    {
+      "name": "Druva",
+      "count": 4,
+      "slug": "druva",
+      "id": "ef5e7bfa-d2f6-4d6b-ba1a-946eb4924fe6"
+    },
+    {
+      "name": "Pubmatic",
+      "count": 4,
+      "slug": "pubmatic",
+      "id": "59bc1a91-425f-4142-a763-a8534be1e3c9"
+    },
+    {
+      "name": "Plaid",
+      "count": 4,
+      "slug": "plaid",
+      "id": "b0a9d476-5b49-4af6-9353-dba3aefffdd4"
+    },
+    {
+      "name": "Bp",
+      "count": 4,
+      "slug": "bp",
+      "id": "8791a550-fdf0-4da8-95b7-dd760317a307"
+    },
+    {
+      "name": "Instabase",
+      "count": 4,
+      "slug": "instabase",
+      "id": "bc817dbd-a655-4efe-9ec6-3bac61fc6d4c"
+    },
+    {
+      "name": "Moengage",
+      "count": 4,
+      "slug": "moengage",
+      "id": "0516c480-7695-4c68-aca7-76912483340d"
+    },
+    {
+      "name": "Wissen",
+      "count": 4,
+      "slug": "wissen",
+      "id": "47718b19-d8f7-4081-a348-80659d90854a"
+    },
+    {
+      "name": "Livspace",
+      "count": 4,
+      "slug": "livspace",
+      "id": "1b2f76e8-a689-4a67-be55-e40e7f7f2c45"
+    },
+    {
+      "name": "Bnp-paribas",
+      "count": 4,
+      "slug": "bnp-paribas",
+      "id": "9fd68e20-1431-4cb8-bbd5-5a2d8918ab06"
+    },
+    {
+      "name": "Tripactions",
+      "count": 4,
+      "slug": "tripactions",
+      "id": "4d515e1b-1047-4db8-8b7a-e6bda8ba7601"
+    },
+    {
+      "name": "Ciena",
+      "count": 4,
+      "slug": "ciena",
+      "id": "90f691d3-c0a7-44e4-959f-20de24e3ed43"
+    },
+    {
+      "name": "Flexera",
+      "count": 4,
+      "slug": "flexera",
+      "id": "10eadfba-9cfb-4990-9f95-5081b42ca35d"
+    },
+    {
+      "name": "Newsbreak",
+      "count": 4,
+      "slug": "newsbreak",
+      "id": "137a1757-2444-497d-9b76-720fbaaf3772"
+    },
+    {
+      "name": "Brex",
+      "count": 4,
+      "slug": "brex",
+      "id": "fedc4947-fafe-4f4d-82cd-dc12bdeaeeb7"
+    },
+    {
+      "name": "Marqeta",
+      "count": 4,
+      "slug": "marqeta",
+      "id": "0d5b1168-85a2-4dc4-aa80-81eff9430a2e"
+    },
+    {
+      "name": "Olx",
+      "count": 4,
+      "slug": "olx",
+      "id": "8af082a0-a6fd-4496-8565-babd13738f40"
+    },
+    {
+      "name": "Globallogic",
+      "count": 4,
+      "slug": "globallogic",
+      "id": "724761fd-090d-451e-b335-3fba8a636092"
+    },
+    {
+      "name": "Smartnews",
+      "count": 4,
+      "slug": "smartnews",
+      "id": "0959b2b0-6b4e-4f67-b0b5-de82734992b8"
+    },
+    {
+      "name": "Blackbuck",
+      "count": 4,
+      "slug": "blackbuck",
+      "id": "9877ecfa-326b-4076-a264-abf06699574b"
+    },
+    {
+      "name": "Canva",
+      "count": 4,
+      "slug": "canva",
+      "id": "cad8cd87-692c-4f1a-9264-a6aceaa1b2a3"
+    },
+    {
+      "name": "Blue-origin",
+      "count": 3,
+      "slug": "blue-origin",
+      "id": "92e52ada-969f-4bed-a02b-9ec95527a3d9"
+    },
+    {
+      "name": "F5-networks",
+      "count": 3,
+      "slug": "f5-networks",
+      "id": "71c6e16f-806b-4c41-b905-8285183ace0b"
+    },
+    {
+      "name": "Micro1",
+      "count": 3,
+      "slug": "micro1",
+      "id": "00e365b7-3a24-4091-8764-47999438a85b"
+    },
+    {
+      "name": "Ericsson",
+      "count": 3,
+      "slug": "ericsson",
+      "id": "1c695a73-c0f8-4e64-9109-6c3878c5be7b"
+    },
+    {
+      "name": "Singlestore",
+      "count": 3,
+      "slug": "singlestore",
+      "id": "6e4345f9-6361-46da-b45e-b1e7751c37ae"
+    },
+    {
+      "name": "Anyscale",
+      "count": 3,
+      "slug": "anyscale",
+      "id": "c77403e2-74bf-4476-b5d6-2c9500dd1398"
+    },
+    {
+      "name": "Mcdonalds",
+      "count": 3,
+      "slug": "mcdonalds",
+      "id": "86f72d0b-a3e3-489d-a0db-659588adf394"
+    },
+    {
+      "name": "Carwale",
+      "count": 3,
+      "slug": "carwale",
+      "id": "b2d743df-03d4-4ca2-b3c9-91253e89b20a"
+    },
+    {
+      "name": "Garena",
+      "count": 3,
+      "slug": "garena",
+      "id": "aaedce60-e09b-47bd-ab2f-168f036c1db8"
+    },
+    {
+      "name": "Deepmind",
+      "count": 3,
+      "slug": "deepmind",
+      "id": "c8dbcc30-dee3-485f-a242-dfa90be350f6"
+    },
+    {
+      "name": "Tanium",
+      "count": 3,
+      "slug": "tanium",
+      "id": "5e96932f-1d0d-4e63-81d7-37c4b4a07c67"
+    },
+    {
+      "name": "Maersk",
+      "count": 3,
+      "slug": "maersk",
+      "id": "e8597756-f9a1-495c-ace6-192299803391"
+    },
+    {
+      "name": "Payu",
+      "count": 2,
+      "slug": "payu",
+      "id": "57d11357-0e91-426d-bde6-e6f3a96af75c"
+    },
+    {
+      "name": "Cyware",
+      "count": 2,
+      "slug": "cyware",
+      "id": "8f3882cd-996a-4269-ac4f-8577e1fac8b3"
+    },
+    {
+      "name": "Npci",
+      "count": 2,
+      "slug": "npci",
+      "id": "b4f4631a-3d32-4203-be97-721dce396d2c"
+    },
+    {
+      "name": "Schneider-electric",
+      "count": 2,
+      "slug": "schneider-electric",
+      "id": "5e971274-b236-4d5c-83c9-e4d7ee18f50d"
+    },
+    {
+      "name": "Traveloka",
+      "count": 2,
+      "slug": "traveloka",
+      "id": "c05aca27-b3c0-4d33-bbd3-bc023cd16379"
+    },
+    {
+      "name": "Clutter",
+      "count": 2,
+      "slug": "clutter",
+      "id": "948e8e1c-e162-4708-9fe9-ae30cc852ff8"
+    },
+    {
+      "name": "Gainsight",
+      "count": 2,
+      "slug": "gainsight",
+      "id": "0a017e40-9f12-41ab-aac7-1a172eec5f71"
+    },
+    {
+      "name": "Accelya",
+      "count": 2,
+      "slug": "accelya",
+      "id": "29985fd4-d3e8-4c20-acc1-c9f086e4726d"
+    },
+    {
+      "name": "Broadcom",
+      "count": 2,
+      "slug": "broadcom",
+      "id": "8c99c370-f125-4a19-9cb9-d32af6c18524"
+    },
+    {
+      "name": "Bt-group",
+      "count": 2,
+      "slug": "bt-group",
+      "id": "bb4e6378-7fb5-4488-ac88-88672e724462"
+    },
+    {
+      "name": "Cleartax",
+      "count": 2,
+      "slug": "cleartax",
+      "id": "e20b6124-f1c4-4bfa-9906-6d991bcae988"
+    },
+    {
+      "name": "Interactive-brokers",
+      "count": 2,
+      "slug": "interactive-brokers",
+      "id": "2c4093cf-5442-4558-98ba-dbc514fa5422"
+    },
+    {
+      "name": "Goto",
+      "count": 2,
+      "slug": "goto",
+      "id": "0b22b7b7-7d3d-4b41-a11e-62f6dffbdec7"
+    },
+    {
+      "name": "Upstox",
+      "count": 2,
+      "slug": "upstox",
+      "id": "13efbc19-a581-46ca-9db5-beb5c7e2d9f7"
+    },
+    {
+      "name": "Circle",
+      "count": 2,
+      "slug": "circle",
+      "id": "7d84566c-3157-403e-9cb4-3f0b196eec48"
+    },
+    {
+      "name": "Didi",
+      "count": 2,
+      "slug": "didi",
+      "id": "ff878361-7027-4421-9421-5aec27d10d54"
+    },
+    {
+      "name": "Opendoor",
+      "count": 2,
+      "slug": "opendoor",
+      "id": "37423ffa-8651-473a-a4ae-728c93748606"
+    },
+    {
+      "name": "Globant",
+      "count": 2,
+      "slug": "globant",
+      "id": "800631ab-f4fe-4b00-a69b-0503debf28bf"
+    },
+    {
+      "name": "Impact-analytics",
+      "count": 2,
+      "slug": "impact-analytics",
+      "id": "dbea63ad-052d-41ef-87b8-7e50608ea2b6"
+    },
+    {
+      "name": "Fastenal",
+      "count": 2,
+      "slug": "fastenal",
+      "id": "8b862128-233c-4956-95b5-2a821f3e97ba"
+    },
+    {
+      "name": "Ascend",
+      "count": 2,
+      "slug": "ascend",
+      "id": "5c080d71-049c-41b7-8113-56230e27ff13"
+    },
+    {
+      "name": "Schrodinger",
+      "count": 2,
+      "slug": "schrodinger",
+      "id": "b953c1c3-f515-4870-a2e0-e08946a686ce"
+    },
+    {
+      "name": "Justworks",
+      "count": 2,
+      "slug": "justworks",
+      "id": "7c3a9664-da1f-4507-8403-a6ee2b15251f"
+    },
+    {
+      "name": "Notion",
+      "count": 2,
+      "slug": "notion",
+      "id": "a735a67d-88ad-4d59-a9a0-d5cc20389709"
+    },
+    {
+      "name": "Quantcast",
+      "count": 2,
+      "slug": "quantcast",
+      "id": "fac5bcae-a40c-4853-b9e5-74b3d8affe46"
+    },
+    {
+      "name": "Applovin",
+      "count": 2,
+      "slug": "applovin",
+      "id": "3230c83a-d295-434d-b49e-4ee571992abf"
+    },
+    {
+      "name": "Shipsy",
+      "count": 2,
+      "slug": "shipsy",
+      "id": "b8d59639-7aa3-4056-95ed-22b812677638"
+    },
+    {
+      "name": "Kotak-mahindra-bank",
+      "count": 2,
+      "slug": "kotak-mahindra-bank",
+      "id": "d9be265c-0cf5-4db7-8ce0-ef46d0d2f4fa"
+    },
+    {
+      "name": "Mishipay",
+      "count": 2,
+      "slug": "mishipay",
+      "id": "e87f4762-fdf7-4244-a484-95e789a49b22"
+    },
+    {
+      "name": "Porter",
+      "count": 2,
+      "slug": "porter",
+      "id": "23e391a3-9e31-42a0-990f-242ae4e86869"
+    },
+    {
+      "name": "Leap-motion",
+      "count": 2,
+      "slug": "leap-motion",
+      "id": "def42f8d-ba90-45db-b505-10f87061e6e9"
+    },
+    {
+      "name": "Veritas",
+      "count": 2,
+      "slug": "veritas",
+      "id": "b983497c-2267-4943-a5c1-7992070a20a0"
+    },
+    {
+      "name": "Shiprocket",
+      "count": 2,
+      "slug": "shiprocket",
+      "id": "ba30b5d4-9d2e-479b-8634-4bfbf0845159"
+    },
+    {
+      "name": "Tally-solutions",
+      "count": 2,
+      "slug": "tally-solutions",
+      "id": "c9cbd991-5907-414d-aab6-c9d959d3e1b0"
+    },
+    {
+      "name": "Airwallex",
+      "count": 2,
+      "slug": "airwallex",
+      "id": "a14a0df9-d4f3-440f-a37f-8f4d8aa5db42"
+    },
+    {
+      "name": "Helix",
+      "count": 2,
+      "slug": "helix",
+      "id": "4613f688-4ddc-459e-9fd4-7504e984ad01"
+    },
+    {
+      "name": "Genpact",
+      "count": 2,
+      "slug": "genpact",
+      "id": "cb4ffea7-834f-4679-9255-2580e9de1c35"
+    },
+    {
+      "name": "Pega",
+      "count": 2,
+      "slug": "pega",
+      "id": "67d954cd-dfce-44d5-90c8-f58e91b407c6"
+    },
+    {
+      "name": "Ixigo",
+      "count": 2,
+      "slug": "ixigo",
+      "id": "dee477e8-e1a5-4d43-92e6-9569315655ef"
+    },
+    {
+      "name": "Grid-dynamics",
+      "count": 2,
+      "slug": "grid-dynamics",
+      "id": "fcdd51f9-0252-4c70-980f-9f3dd5df7a58"
+    },
+    {
+      "name": "Alten",
+      "count": 2,
+      "slug": "alten",
+      "id": "189d7873-f50a-4268-875f-d52c900a7113"
+    },
+    {
+      "name": "Axis-bank",
+      "count": 2,
+      "slug": "axis-bank",
+      "id": "91a4e274-70fc-4c3d-947f-fdc91791d9c4"
+    },
+    {
+      "name": "Schlumberger",
+      "count": 2,
+      "slug": "schlumberger",
+      "id": "8570ac90-7c3c-46ea-998c-5354f0c71374"
+    },
+    {
+      "name": "Allincall",
+      "count": 2,
+      "slug": "allincall",
+      "id": "1b11934c-5cfc-49dd-bc1c-fe2d7344b87d"
+    },
+    {
+      "name": "Browserstack",
+      "count": 2,
+      "slug": "browserstack",
+      "id": "7e915f65-2810-4551-8807-1c225b83b177"
+    },
+    {
+      "name": "Highspot",
+      "count": 2,
+      "slug": "highspot",
+      "id": "a2ba4aa4-7e80-4dc7-9839-4406972ae9ee"
+    },
+    {
+      "name": "State-farm",
+      "count": 2,
+      "slug": "state-farm",
+      "id": "1551a808-7535-4a7d-be4b-dfcf6b49a67a"
+    },
+    {
+      "name": "Addepar",
+      "count": 2,
+      "slug": "addepar",
+      "id": "ce77382d-807a-47a2-97e9-333eb30dd8de"
+    },
+    {
+      "name": "Soti",
+      "count": 2,
+      "slug": "soti",
+      "id": "31d808f1-7d71-4664-be43-0aa2a1320461"
+    },
+    {
+      "name": "Discord",
+      "count": 2,
+      "slug": "discord",
+      "id": "5e681399-8a23-4b00-bc26-d735a814b2ee"
+    },
+    {
+      "name": "Netcracker-technology",
+      "count": 2,
+      "slug": "netcracker-technology",
+      "id": "02e015f3-1efc-44c5-8e9e-fe594f81bdeb"
+    },
+    {
+      "name": "Gilt-groupe",
+      "count": 2,
+      "slug": "gilt-groupe",
+      "id": "05be0804-8ffc-4194-8a3d-54e9c9594c5b"
+    },
+    {
+      "name": "Dji",
+      "count": 2,
+      "slug": "dji",
+      "id": "e202d1c4-70cd-4610-9d44-3f4bc0b27a7c"
+    },
+    {
+      "name": "Meituan",
+      "count": 2,
+      "slug": "meituan",
+      "id": "f58edeb8-df55-46c6-8edd-b18ffe953643"
+    },
+    {
+      "name": "Factwise",
+      "count": 2,
+      "slug": "factwise",
+      "id": "b687af08-2db5-4f68-8d86-132f1162aa14"
+    },
+    {
+      "name": "General-electric",
+      "count": 2,
+      "slug": "general-electric",
+      "id": "cffa4b84-60f9-4cfc-bc47-885f5a6d19f8"
+    },
+    {
+      "name": "Jd",
+      "count": 2,
+      "slug": "jd",
+      "id": "dc57583e-299f-41c3-be59-d3433f947489"
+    },
+    {
+      "name": "Ust",
+      "count": 2,
+      "slug": "ust",
+      "id": "41fcf64f-90d4-4ccd-a284-8fe928d5a04b"
+    },
+    {
+      "name": "Dataart",
+      "count": 2,
+      "slug": "dataart",
+      "id": "74c09baf-3ad8-4bea-b2e9-195179437a34"
+    },
+    {
+      "name": "Nextjump",
+      "count": 2,
+      "slug": "nextjump",
+      "id": "22981010-0245-4c63-b0f7-01068fa59e10"
+    },
+    {
+      "name": "Zappos",
+      "count": 2,
+      "slug": "zappos",
+      "id": "efaafa9f-2157-40d1-8a47-d1300827fa5f"
+    },
+    {
+      "name": "Indmoney",
+      "count": 2,
+      "slug": "indmoney",
+      "id": "ab144617-43ce-4953-9dfd-1d229993655a"
+    },
+    {
+      "name": "Braze",
+      "count": 2,
+      "slug": "braze",
+      "id": "d2f3a1ff-fdfb-401a-afd8-f3c42be2b8e5"
+    },
+    {
+      "name": "Dtcc",
+      "count": 2,
+      "slug": "dtcc",
+      "id": "7ab3ba81-990b-4b26-9bf9-83ddcccfba0d"
+    },
+    {
+      "name": "Rackspace",
+      "count": 2,
+      "slug": "rackspace",
+      "id": "d269f9f0-6f49-4d57-8859-aa723f71e776"
+    },
+    {
+      "name": "Alphonso",
+      "count": 2,
+      "slug": "alphonso",
+      "id": "5a8f693f-9346-46e7-9a76-bcf8e425a004"
+    },
+    {
+      "name": "Sixt",
+      "count": 2,
+      "slug": "sixt",
+      "id": "c3ec4747-5e30-48db-8f27-f869d822801e"
+    },
+    {
+      "name": "Caterpillar",
+      "count": 2,
+      "slug": "caterpillar",
+      "id": "36ca8d9e-727e-425e-93f5-7813dc905882"
+    },
+    {
+      "name": "Hbo",
+      "count": 2,
+      "slug": "hbo",
+      "id": "dc1e718f-2a66-4751-bdb1-3b5ceca982a6"
+    },
+    {
+      "name": "Etsy",
+      "count": 2,
+      "slug": "etsy",
+      "id": "08ceb42f-d0fd-49a7-8bd7-dcfd7c74d8f9"
+    },
+    {
+      "name": "Dailyhunt",
+      "count": 2,
+      "slug": "dailyhunt",
+      "id": "d93382f4-dcc9-445e-b9f3-9ce0793a025a"
+    },
+    {
+      "name": "Msci",
+      "count": 2,
+      "slug": "msci",
+      "id": "06ab2e54-838f-4345-8ce1-6152cad3179d"
+    },
+    {
+      "name": "Jingchi",
+      "count": 2,
+      "slug": "jingchi",
+      "id": "b8d7ac23-3aa2-4f52-9820-01f737f95a93"
+    },
+    {
+      "name": "Lenskart",
+      "count": 2,
+      "slug": "lenskart",
+      "id": "b4cdd66d-ed72-4712-9138-a3190e6b1d68"
+    },
+    {
+      "name": "Western-digital",
+      "count": 2,
+      "slug": "western-digital",
+      "id": "354103ec-7399-423f-a627-32c85fe2e86b"
+    },
+    {
+      "name": "Machinezone",
+      "count": 2,
+      "slug": "machinezone",
+      "id": "169e7e57-8904-4d7e-8d7e-d3c66bce47c5"
+    },
+    {
+      "name": "Moneylion",
+      "count": 2,
+      "slug": "moneylion",
+      "id": "fcac0be0-532d-471a-9255-d3c6afba1191"
+    },
+    {
+      "name": "Nference",
+      "count": 2,
+      "slug": "nference",
+      "id": "c926ff73-d618-4007-b74d-dbe00c0837ab"
+    },
+    {
+      "name": "Mykaarma",
+      "count": 2,
+      "slug": "mykaarma",
+      "id": "0f04ca76-8340-4437-a7e2-0bfad2c770a6"
+    },
+    {
+      "name": "Increff",
+      "count": 2,
+      "slug": "increff",
+      "id": "201a760c-ed7d-4c99-bb6c-6b2fd93bf4a1"
+    },
+    {
+      "name": "Thumbtack",
+      "count": 2,
+      "slug": "thumbtack",
+      "id": "356f864a-bd99-4346-8762-3b145b73dbe2"
+    },
+    {
+      "name": "Jtg",
+      "count": 2,
+      "slug": "jtg",
+      "id": "1d68351a-eaec-4b2f-bf52-146d519de3cd"
+    },
+    {
+      "name": "Shift-technology",
+      "count": 2,
+      "slug": "shift-technology",
+      "id": "af6214cf-8b7d-4170-9351-f4fe3a31c86a"
+    },
+    {
+      "name": "Naver",
+      "count": 2,
+      "slug": "naver",
+      "id": "a968a1d6-405d-4e3b-8a5c-c907a32be21a"
+    },
+    {
+      "name": "Auriga",
+      "count": 2,
+      "slug": "auriga",
+      "id": "de922da4-01c9-4b8e-9e11-78b23d2639e0"
+    },
+    {
+      "name": "Tiaa",
+      "count": 2,
+      "slug": "tiaa",
+      "id": "120da8d0-6cc1-4fd8-bf1f-28abab963bd7"
+    },
+    {
+      "name": "Affinity",
+      "count": 2,
+      "slug": "affinity",
+      "id": "845ee774-12cf-4523-98b3-760622683e7f"
+    },
+    {
+      "name": "Epic-games",
+      "count": 2,
+      "slug": "epic-games",
+      "id": "23e5e025-4123-471a-b649-fd0d3a94a59a"
+    },
+    {
+      "name": "Acorns",
+      "count": 2,
+      "slug": "acorns",
+      "id": "9d17deb3-6dfa-4664-9da1-9dcf25b230d4"
+    },
+    {
+      "name": "Elitmus",
+      "count": 2,
+      "slug": "elitmus",
+      "id": "edac0a34-cbc1-4b26-af76-b801335cbf30"
+    },
+    {
+      "name": "Ta-digital",
+      "count": 2,
+      "slug": "ta-digital",
+      "id": "328f9629-290c-4efa-b3cc-5f260d668107"
+    },
+    {
+      "name": "Yatra",
+      "count": 2,
+      "slug": "yatra",
+      "id": "21c50ad6-6979-4bd7-984f-a9641e556452"
+    },
+    {
+      "name": "Curefit",
+      "count": 2,
+      "slug": "curefit",
+      "id": "49fdb625-9180-4be5-82fe-3a4a6d6bc1d8"
+    },
+    {
+      "name": "Murex",
+      "count": 2,
+      "slug": "murex",
+      "id": "decc7645-b3d7-447a-b9b5-b2083fef933b"
+    },
+    {
+      "name": "Fico",
+      "count": 2,
+      "slug": "fico",
+      "id": "35fa17b3-2039-40f4-83b5-8b3fba7e939c"
+    },
+    {
+      "name": "Edelweiss",
+      "count": 2,
+      "slug": "edelweiss",
+      "id": "6168798c-0848-4fd9-b268-cfaa91f1f685"
+    },
+    {
+      "name": "Iit-bombay",
+      "count": 2,
+      "slug": "iit-bombay",
+      "id": "70b22e22-a7d4-4214-8950-36b751a3d39b"
+    },
+    {
+      "name": "Aetion",
+      "count": 2,
+      "slug": "aetion",
+      "id": "e8077547-8a3e-4ecd-b79f-8b493dbb39b2"
+    },
+    {
+      "name": "Tableau",
+      "count": 2,
+      "slug": "tableau",
+      "id": "52eeb578-4b27-4a9e-86a2-7711e688f050"
+    },
+    {
+      "name": "Chargebee",
+      "count": 2,
+      "slug": "chargebee",
+      "id": "a0a21654-ba66-407a-9083-218b18e41c1d"
+    },
+    {
+      "name": "Drawbridge",
+      "count": 2,
+      "slug": "drawbridge",
+      "id": "b9eecb3f-135a-40e5-a49b-ef61c37f98f0"
+    },
+    {
+      "name": "Intercom",
+      "count": 2,
+      "slug": "intercom",
+      "id": "03c3f784-9ed3-4850-a25b-e55302edcf64"
+    },
+    {
+      "name": "Peak6",
+      "count": 2,
+      "slug": "peak6",
+      "id": "56ee8cf2-d587-4003-b1c2-becec4b0df74"
+    },
+    {
+      "name": "Zocdoc",
+      "count": 2,
+      "slug": "zocdoc",
+      "id": "464ea68c-f38d-44aa-a3ae-192c7912481b"
+    },
+    {
+      "name": "Lacework",
+      "count": 2,
+      "slug": "lacework",
+      "id": "27e348b2-4ac8-4c51-ba42-751fdd6a001b"
+    },
+    {
+      "name": "Andela",
+      "count": 2,
+      "slug": "andela",
+      "id": "463340da-a7a0-412b-93e2-b073a8bd9f7c"
+    },
+    {
+      "name": "Polar",
+      "count": 2,
+      "slug": "polar",
+      "id": "a19f4893-3221-49a6-a1f2-88ee7dca374c"
+    },
+    {
+      "name": "Winzo",
+      "count": 2,
+      "slug": "winzo",
+      "id": "3ca6470b-8fbe-48b9-8f4f-9198591f3768"
+    },
+    {
+      "name": "1kosmos",
+      "count": 2,
+      "slug": "1kosmos",
+      "id": "5144fbc4-94a7-462c-b596-cd7841e60304"
+    },
+    {
+      "name": "Mcafee",
+      "count": 2,
+      "slug": "mcafee",
+      "id": "f284da7b-6170-4c32-84da-186d7a8e7c2e"
+    },
+    {
+      "name": "Practo",
+      "count": 2,
+      "slug": "practo",
+      "id": "17113567-5485-40a1-baa9-95c152171351"
+    },
+    {
+      "name": "Checkpoint",
+      "count": 2,
+      "slug": "checkpoint",
+      "id": "db1e971c-dba5-4dd9-8f5e-1537a64b6d8a"
+    },
+    {
+      "name": "Poynt",
+      "count": 2,
+      "slug": "poynt",
+      "id": "a7f17c01-27c8-4adb-a77b-ee0d7a5b5e01"
+    },
+    {
+      "name": "Jeavio",
+      "count": 2,
+      "slug": "jeavio",
+      "id": "21e89ce9-611c-44e9-9016-163d2c640553"
+    },
+    {
+      "name": "Unbxd",
+      "count": 2,
+      "slug": "unbxd",
+      "id": "3dc35e95-5cb9-4194-8736-b06bb07fbcfd"
+    },
+    {
+      "name": "Chalo",
+      "count": 2,
+      "slug": "chalo",
+      "id": "f217d5b7-ea74-45c4-aa26-29e79f2db006"
+    },
+    {
+      "name": "Ey",
+      "count": 2,
+      "slug": "ey",
+      "id": "563c799a-82d0-4861-b34c-195fcf45792d"
+    },
+    {
+      "name": "Ctc",
+      "count": 2,
+      "slug": "ctc",
+      "id": "d38f5484-74eb-4e81-b7f4-97cbdeb2d796"
+    },
+    {
+      "name": "Amplitude",
+      "count": 2,
+      "slug": "amplitude",
+      "id": "d567e1a4-8be6-4a8c-a719-f807f9415a84"
+    },
+    {
+      "name": "Tracxn",
+      "count": 2,
+      "slug": "tracxn",
+      "id": "f8b9ab56-93f0-4ab7-bd35-0186c77a1c9b"
+    },
+    {
+      "name": "Wayve",
+      "count": 2,
+      "slug": "wayve",
+      "id": "ef2e6637-7476-4d91-a616-7251ddfda16c"
+    },
+    {
+      "name": "Fynd",
+      "count": 2,
+      "slug": "fynd",
+      "id": "975d5f0b-6b2b-4b85-9f5a-6af7c633d048"
+    },
+    {
+      "name": "Jetbrains",
+      "count": 2,
+      "slug": "jetbrains",
+      "id": "dbaa274f-25cb-458f-98ad-c34bf6e1bb19"
+    },
+    {
+      "name": "Dassault-sysetmes",
+      "count": 2,
+      "slug": "dassault-sysetmes",
+      "id": "3cf15faa-5369-4bed-a325-3e6197a11551"
+    },
+    {
+      "name": "Whatfix",
+      "count": 2,
+      "slug": "whatfix",
+      "id": "43dc0f06-37f5-46cb-b516-777210fe624f"
+    },
+    {
+      "name": "Triplebyte",
+      "count": 2,
+      "slug": "triplebyte",
+      "id": "cb1b8bc8-f806-41a5-be7d-e50262fb5d78"
+    },
+    {
+      "name": "Wealthfront",
+      "count": 2,
+      "slug": "wealthfront",
+      "id": "a0a943d5-e2cf-4255-8cb2-35d7b6b4662d"
+    },
+    {
+      "name": "Pickrr",
+      "count": 2,
+      "slug": "pickrr",
+      "id": "5c5abeb2-1b45-4c4a-a1ea-d151c6f93506"
+    },
+    {
+      "name": "Bloomreach",
+      "count": 2,
+      "slug": "bloomreach",
+      "id": "4abdb486-5b1b-4fff-b486-a6b733292dd9"
+    },
+    {
+      "name": "Strava",
+      "count": 2,
+      "slug": "strava",
+      "id": "50da5b43-8f63-4236-a4db-49d0b943953c"
+    },
+    {
+      "name": "Woven-by-toyota",
+      "count": 2,
+      "slug": "woven-by-toyota",
+      "id": "ba1b4e35-9665-4ecb-9ab9-55b70610db47"
+    },
+    {
+      "name": "Quantiphi",
+      "count": 2,
+      "slug": "quantiphi",
+      "id": "87370c9f-6b84-415f-acc8-f8ec5098a104"
+    },
+    {
+      "name": "Retailmenot",
+      "count": 2,
+      "slug": "retailmenot",
+      "id": "c43330fe-b140-48f3-9ea6-123908148f8a"
+    },
+    {
+      "name": "Junglee-games",
+      "count": 2,
+      "slug": "junglee-games",
+      "id": "0b82a4ec-f180-47c8-9d80-788ef519d20e"
+    },
+    {
+      "name": "Fleetx",
+      "count": 2,
+      "slug": "fleetx",
+      "id": "82afbcd7-74d6-4398-a2c0-308d19be52fe"
+    },
+    {
+      "name": "Juniper",
+      "count": 2,
+      "slug": "juniper",
+      "id": "01c8224e-afca-43d0-b9f9-efdfba4fe416"
+    },
+    {
+      "name": "Unstop",
+      "count": 2,
+      "slug": "unstop",
+      "id": "e41fb2da-3075-489c-b205-c9676db7a7bd"
+    },
+    {
+      "name": "Mobisy",
+      "count": 2,
+      "slug": "mobisy",
+      "id": "ee273d41-92d2-4a53-86f2-040dd019533a"
+    },
+    {
+      "name": "Code-studio",
+      "count": 2,
+      "slug": "code-studio",
+      "id": "bf6c10ea-48b9-4809-a990-154534b8f4fe"
+    },
+    {
+      "name": "Radius",
+      "count": 2,
+      "slug": "radius",
+      "id": "c5f92cbf-1536-4e0d-9f29-135303883b26"
+    },
+    {
+      "name": "Xing",
+      "count": 2,
+      "slug": "xing",
+      "id": "97305c05-226f-4377-9bbb-1d5649ff0b0e"
+    },
+    {
+      "name": "American-airlines",
+      "count": 2,
+      "slug": "american-airlines",
+      "id": "46635d57-d1f4-4694-9fa4-e6a9597d78e7"
+    },
+    {
+      "name": "Fallible",
+      "count": 2,
+      "slug": "fallible",
+      "id": "b4f3ce28-830a-4be3-8d7f-e5662d1f7509"
+    },
+    {
+      "name": "Forusall",
+      "count": 2,
+      "slug": "forusall",
+      "id": "6bb41f6d-ca47-40c4-8a83-ce04ce54676c"
+    },
+    {
+      "name": "Fidessa",
+      "count": 1,
+      "slug": "fidessa",
+      "id": "11868317-190c-4f90-871f-718c767c968f"
+    },
+    {
+      "name": "Coupa",
+      "count": 1,
+      "slug": "coupa",
+      "id": "cdd3ab28-290f-4bf3-a36d-b68b819cee3c"
+    },
+    {
+      "name": "Discovery",
+      "count": 1,
+      "slug": "discovery",
+      "id": "371eef41-c00a-4551-b6b4-b111a0cae877"
+    },
+    {
+      "name": "Epifi",
+      "count": 1,
+      "slug": "epifi",
+      "id": "2d5bcaf9-91c0-45df-8f5b-5132ff34bc1f"
+    },
+    {
+      "name": "Nasdaq",
+      "count": 1,
+      "slug": "nasdaq",
+      "id": "a2d68e35-a0e9-41b6-b849-76439c0cf80f"
+    },
+    {
+      "name": "Yugabyte",
+      "count": 1,
+      "slug": "yugabyte",
+      "id": "9cc2c2fb-1053-4b15-94d5-34393ad0882e"
+    },
+    {
+      "name": "Figma",
+      "count": 1,
+      "slug": "figma",
+      "id": "f5fd1070-9b29-4452-bc71-66a4fd07c564"
+    },
+    {
+      "name": "Qualys",
+      "count": 1,
+      "slug": "qualys",
+      "id": "a11c6632-bdc0-42b7-ab08-a214d1a3b2c9"
+    },
+    {
+      "name": "Lendingkart",
+      "count": 1,
+      "slug": "lendingkart",
+      "id": "ffca649e-59e3-4abb-bcf3-a7dad65de8b2"
+    },
+    {
+      "name": "Rally-health",
+      "count": 1,
+      "slug": "rally-health",
+      "id": "9ae893f9-5b3a-47a0-a51d-7c62abfef463"
+    },
+    {
+      "name": "Sambanova",
+      "count": 1,
+      "slug": "sambanova",
+      "id": "810405bd-9c38-437f-ab43-18d5f0785a8f"
+    },
+    {
+      "name": "Equinix",
+      "count": 1,
+      "slug": "equinix",
+      "id": "4884772d-bb9e-4895-865d-8dfc01f20141"
+    },
+    {
+      "name": "Liberty-mutual",
+      "count": 1,
+      "slug": "liberty-mutual",
+      "id": "22ccc605-cca5-459f-bf56-07d1aa4dd0a2"
+    },
+    {
+      "name": "Brillio",
+      "count": 1,
+      "slug": "brillio",
+      "id": "83da52a3-2c92-4139-8a2e-16ee17475cec"
+    },
+    {
+      "name": "Honey",
+      "count": 1,
+      "slug": "honey",
+      "id": "746e9995-4f95-474c-a6b5-1118f1cbe56c"
+    },
+    {
+      "name": "Nerdwallet",
+      "count": 1,
+      "slug": "nerdwallet",
+      "id": "36a66e71-fd37-4e62-aa4d-30f92217823b"
+    },
+    {
+      "name": "Mapbox",
+      "count": 1,
+      "slug": "mapbox",
+      "id": "6b145c5b-d55f-4354-bb4b-dc427436c2ad"
+    },
+    {
+      "name": "Noon",
+      "count": 1,
+      "slug": "noon",
+      "id": "de61e52f-364d-4c4e-94b7-352639a32c12"
+    },
+    {
+      "name": "Postman",
+      "count": 1,
+      "slug": "postman",
+      "id": "5d7dbf4a-28fc-4dea-9d3d-2d835a4b46de"
+    },
+    {
+      "name": "Fast",
+      "count": 1,
+      "slug": "fast",
+      "id": "b0f29723-08b4-44b4-b8bb-0b9ad0d722ef"
+    }
+  ]
+}

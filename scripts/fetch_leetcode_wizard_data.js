@@ -1,4 +1,4 @@
-import https from 'https';
+import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,88 +7,70 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /**
- * Fetches company problem counts from LeetCode Wizard
- * Companies data is embedded in the page's Nuxt state
+ * Fetches company problem counts from LeetCode Wizard using Puppeteer
+ * This properly executes JavaScript to access window.__NUXT__.data.companies
  */
 async function fetchLeetCodeWizardData() {
-    console.log('🧙 Fetching data from LeetCode Wizard...');
+    console.log('🧙 Fetching data from LeetCode Wizard (using Puppeteer)...');
 
-    return new Promise((resolve, reject) => {
-        const options = {
-            hostname: 'leetcodewizard.io',
-            path: '/problem-database',
-            method: 'GET',
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-            }
-        };
-
-        https.get(options, (res) => {
-            let data = '';
-
-            res.on('data', (chunk) => {
-                data += chunk;
-            });
-
-            res.on('end', () => {
-                try {
-                    // Find the script tag containing window.__NUXT__
-                    const scriptMatch = data.match(/<script[^>]*>window\.__NUXT__\s*=\s*({[^<]+})<\/script>/);
-
-                    if (!scriptMatch) {
-                        console.error('❌ Could not find __NUXT__ script in page');
-                        resolve({ companyMap: {}, companiesList: [] });
-                        return;
-                    }
-
-                    // Parse the NUXT data
-                    const nuxtData = JSON.parse(scriptMatch[1]);
-
-                    // Extract companies array
-                    const companies = nuxtData?.data?.companies || [];
-
-                    if (companies.length === 0) {
-                        console.error('❌ No companies found in NUXT data');
-                        resolve({ companyMap: {}, companiesList: [] });
-                        return;
-                    }
-
-                    // Convert to a map of company name -> count
-                    const companyMap = {};
-                    const companiesList = [];
-
-                    companies.forEach(company => {
-                        if (company.name && company.totalEntries) {
-                            // Capitalize first letter of company name
-                            const displayName = company.name.charAt(0).toUpperCase() + company.name.slice(1);
-
-                            companyMap[displayName] = company.totalEntries;
-                            companiesList.push({
-                                name: displayName,
-                                count: company.totalEntries,
-                                slug: company.name,
-                                id: company.id
-                            });
-                        }
-                    });
-
-                    // Sort by count (descending) - this is the priority
-                    companiesList.sort((a, b) => b.count - a.count);
-
-                    console.log(`✅ Fetched ${Object.keys(companyMap).length} companies from LeetCode Wizard`);
-                    console.log(`📊 Top 5: ${companiesList.slice(0, 5).map(c => `${c.name}(${c.count})`).join(', ')}`);
-
-                    resolve({ companyMap, companiesList });
-                } catch (error) {
-                    console.error('❌ Error parsing LeetCode Wizard data:', error.message);
-                    resolve({ companyMap: {}, companiesList: [] });
-                }
-            });
-        }).on('error', (error) => {
-            console.error('❌ Error fetching from LeetCode Wizard:', error.message);
-            resolve({ companyMap: {}, companiesList: [] });
+    let browser;
+    try {
+        browser = await puppeteer.launch({
+            headless: true,
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
-    });
+
+        const page = await browser.newPage();
+        await page.goto('https://leetcodewizard.io/problem-database', {
+            waitUntil: 'networkidle2',
+            timeout: 30000
+        });
+
+        // Extract companies data from window.__NUXT__
+        const companiesData = await page.evaluate(() => {
+            return window.__NUXT__?.data?.companies || [];
+        });
+
+        await browser.close();
+
+        if (!Array.isArray(companiesData) || companiesData.length === 0) {
+            console.error('❌ No companies found in NUXT data');
+            return { companyMap: {}, companiesList: [] };
+        }
+
+        // Convert to a map of company name -> count
+        const companyMap = {};
+        const companiesList = [];
+
+        companiesData.forEach(company => {
+            if (company.name && company.totalEntries) {
+                // Capitalize first letter of company name
+                const displayName = company.name.charAt(0).toUpperCase() + company.name.slice(1);
+
+                companyMap[displayName] = company.totalEntries;
+                companiesList.push({
+                    name: displayName,
+                    count: company.totalEntries,
+                    slug: company.name,
+                    id: company.id
+                });
+            }
+        });
+
+        // Sort by count (descending) - this is the priority
+        companiesList.sort((a, b) => b.count - a.count);
+
+        console.log(`✅ Fetched ${Object.keys(companyMap).length} companies from LeetCode Wizard`);
+        console.log(`📊 Top 5: ${companiesList.slice(0, 5).map(c => `${c.name}(${c.count})`).join(', ')}`);
+
+        return { companyMap, companiesList };
+    } catch (error) {
+        console.error('❌ Error fetching from LeetCode Wizard:', error.message);
+        if (browser) {
+            await browser.close();
+        }
+        return { companyMap: {}, companiesList: [] };
+    }
 }
 
 /**
