@@ -186,7 +186,7 @@ export default function Wizard({ config: globalConfig, setConfig: setGlobalConfi
                 <div className="transition-opacity duration-500 opacity-100">
 
                     {/* Progress Indicator */}
-                    <div className="flex items-center gap-4 mb-16 justify-center">
+                    <div className="flex items-center gap-4 mb-16 justify-center pt-4 md:pt-0">
                         {[1, 2, 3, 4].map(i => (
                             <React.Fragment key={i}>
                                 <div className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${step >= i ? 'bg-blue-600 scale-110 shadow-md' : 'bg-gray-200 dark:bg-gray-700'}`}></div>
@@ -583,7 +583,9 @@ export default function Wizard({ config: globalConfig, setConfig: setGlobalConfi
                                     onClick={handleGenerate}
                                     className="flex-1 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg hover:shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
                                 >
-                                    <span>✨</span> Generate My Personal Strategy
+                                    <span className="text-xl md:text-base">✨</span>
+                                    <span className="hidden md:inline">Generate My Personal Strategy</span>
+                                    <span className="md:hidden">Generate Strategy</span>
                                 </button>
                             </div>
                         </div>
