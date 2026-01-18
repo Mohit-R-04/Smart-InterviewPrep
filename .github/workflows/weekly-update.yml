@@ -22,44 +22,67 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Merge curated sheets
-        id: merge
+      - name: Backup current data
         run: |
-          echo "Merging curated sheets..."
-          node scripts/merge_curated_sheets.js || echo "::warning::Merge curated sheets failed, continuing..."
-        continue-on-error: true
+          echo "📦 Backing up current data..."
+          cp public/problems.json public/problems.json.backup || echo "No existing problems.json to backup"
+          cp public/metadata.json public/metadata.json.backup || echo "No existing metadata.json to backup"
         
       - name: Fetch real-time LeetCode data
         id: fetch
         run: |
-          echo "Fetching LeetCode data..."
-          node scripts/fetch_realtime_data.js || echo "::warning::Fetch realtime data failed, continuing..."
+          echo "Fetching LeetCode data (problems + company frequencies)..."
+          node scripts/fetch_realtime_data.js
         continue-on-error: true
         
-      - name: Check if data files exist
-        id: check
+      - name: Verify data integrity
+        id: verify
         run: |
           if [ -f "public/problems.json" ]; then
-            echo "data_exists=true" >> $GITHUB_OUTPUT
-            echo "✅ Data files found"
+            # Check if file is valid JSON and has data
+            if jq -e '. | length > 0' public/problems.json > /dev/null 2>&1; then
+              echo "data_valid=true" >> $GITHUB_OUTPUT
+              echo "✅ New data is valid"
+            else
+              echo "data_valid=false" >> $GITHUB_OUTPUT
+              echo "⚠️ New data is invalid or empty"
+            fi
           else
-            echo "data_exists=false" >> $GITHUB_OUTPUT
-            echo "⚠️ No data files found"
+            echo "data_valid=false" >> $GITHUB_OUTPUT
+            echo "⚠️ No data file generated"
           fi
         
+      - name: Restore backup if fetch failed
+        if: steps.verify.outputs.data_valid != 'true'
+        run: |
+          echo "⚠️ Fetch failed or data invalid - restoring backup..."
+          mv public/problems.json.backup public/problems.json || echo "No backup to restore"
+          mv public/metadata.json.backup public/metadata.json || echo "No metadata backup to restore"
+          echo "✅ Using previous week's data"
+        
+      - name: Clean up backups
+        if: steps.verify.outputs.data_valid == 'true'
+        run: |
+          echo "🧹 Cleaning up backups..."
+          rm -f public/problems.json.backup public/metadata.json.backup
+        
       - name: Commit and push if changed
-        if: steps.check.outputs.data_exists == 'true'
+        if: steps.verify.outputs.data_valid == 'true'
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add public/problems.json public/daily-problem.json public/metadata.json data/curated-problems.json || true
+          git add public/problems.json public/metadata.json || true
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Weekly data update: $(date +'%Y-%m-%d')" && git push)
         
       - name: Summary
         if: always()
         run: |
-          echo "📊 Workflow Summary:"
-          echo "  Merge status: ${{ steps.merge.outcome }}"
+          echo "📊 Weekly Update Summary:"
           echo "  Fetch status: ${{ steps.fetch.outcome }}"
-          echo "  Data exists: ${{ steps.check.outputs.data_exists }}"
-          echo "✅ Workflow completed. Netlify will auto-deploy if changes were pushed."
+          echo "  Data valid: ${{ steps.verify.outputs.data_valid }}"
+          if [ "${{ steps.verify.outputs.data_valid }}" == "true" ]; then
+            echo "✅ Database updated with fresh LeetCode data"
+          else
+            echo "⚠️ Using previous data - fetch failed or data invalid"
+          fi
+          echo "📝 Note: Curated problems are NOT updated (as requested)"

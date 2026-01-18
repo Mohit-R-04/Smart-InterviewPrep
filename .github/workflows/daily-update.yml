@@ -1,0 +1,107 @@
+name: Daily Problem Update
+
+on:
+  schedule:
+    # Run daily at 6:00 AM UTC (11:30 AM IST)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-daily:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Fetch today's daily problem
+        id: fetch-daily
+        run: |
+          echo "Fetching today's LeetCode daily problem..."
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          
+          async function fetchDailyProblem() {
+              const query = \`
+                  query questionOfToday {
+                      activeDailyCodingChallengeQuestion {
+                          date
+                          link
+                          question {
+                              questionFrontendId
+                              title
+                              titleSlug
+                              difficulty
+                              likes
+                              dislikes
+                              acRate
+                          }
+                      }
+                  }
+              \`;
+              
+              try {
+                  const response = await fetch('https://leetcode.com/graphql', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                          'User-Agent': 'Mozilla/5.0'
+                      },
+                      body: JSON.stringify({ query })
+                  });
+                  
+                  const data = await response.json();
+                  const daily = data.data.activeDailyCodingChallengeQuestion;
+                  
+                  const dailyProblem = {
+                      date: daily.date,
+                      id: daily.question.questionFrontendId,
+                      title: daily.question.title,
+                      titleSlug: daily.question.titleSlug,
+                      difficulty: daily.question.difficulty,
+                      likes: daily.question.likes,
+                      dislikes: daily.question.dislikes,
+                      acceptanceRate: daily.question.acRate,
+                      url: \`https://leetcode.com\${daily.link}\`
+                  };
+                  
+                  fs.writeFileSync('public/daily-problem.json', JSON.stringify(dailyProblem, null, 2));
+                  console.log(\`✅ Daily problem updated: \${dailyProblem.title}\`);
+                  process.exit(0);
+              } catch (error) {
+                  console.error('❌ Error fetching daily problem:', error.message);
+                  process.exit(1);
+              }
+          }
+          
+          fetchDailyProblem();
+          "
+        continue-on-error: true
+        
+      - name: Commit and push if changed
+        if: steps.fetch-daily.outcome == 'success'
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add public/daily-problem.json || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🌅 Daily problem update: $(date +'%Y-%m-%d')" && git push)
+        
+      - name: Summary
+        if: always()
+        run: |
+          echo "📊 Daily Update Summary:"
+          echo "  Fetch status: ${{ steps.fetch-daily.outcome }}"
+          if [ "${{ steps.fetch-daily.outcome }}" == "success" ]; then
+            echo "✅ Daily problem updated successfully"
+          else
+            echo "⚠️ Daily problem fetch failed - keeping previous day's problem"
+          fi
