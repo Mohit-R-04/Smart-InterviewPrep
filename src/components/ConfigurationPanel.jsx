@@ -252,7 +252,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] md:min-h-[300px] lg:min-h-[400px] max-h-[50vh] lg:max-h-none overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] max-h-[50vh] overflow-y-auto p-2 custom-scrollbar">
                                 {filteredCompanies.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredCompanies.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
@@ -290,7 +290,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] md:min-h-[300px] lg:min-h-[400px] max-h-[50vh] lg:max-h-none overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] max-h-[50vh] overflow-y-auto p-2 custom-scrollbar">
                                 {filteredTopics.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredTopics.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
