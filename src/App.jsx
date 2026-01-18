@@ -412,6 +412,7 @@ function App() {
                                 completed={completed}
                                 setCompleted={setCompleted}
                                 aiExtras={aiExtras}
+                                config={config}
                             />
                         </div>
                     </div>

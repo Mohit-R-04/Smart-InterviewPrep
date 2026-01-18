@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import confetti from 'canvas-confetti';
 
 
-export default function ScheduleView({ schedule, completed, setCompleted, aiExtras }) {
+export default function ScheduleView({ schedule, completed, setCompleted, aiExtras, config }) {
     const [celebratedWeeks, setCelebratedWeeks] = useState(new Set());
     const [showCompletionModal, setShowCompletionModal] = useState(false);
     const [hasCelebratedCompletion, setHasCelebratedCompletion] = useState(false);
