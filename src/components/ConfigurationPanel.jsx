@@ -1,9 +1,30 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+
+// Debounce hook for search
+function useDebounce(value, delay) {
+    const [debouncedValue, setDebouncedValue] = React.useState(value);
+
+    React.useEffect(() => {
+        const handler = setTimeout(() => {
+            setDebouncedValue(value);
+        }, delay);
+
+        return () => {
+            clearTimeout(handler);
+        };
+    }, [value, delay]);
+
+    return debouncedValue;
+}
 
 export default function ConfigurationPanel({ config, setConfig, allProblems, filteredStats, dynamicCompanyCounts, dynamicTopicCounts }) {
     const [companySearch, setCompanySearch] = useState('');
     const [topicSearch, setTopicSearch] = useState('');
+
+    // Debounce search inputs
+    const debouncedCompanySearch = useDebounce(companySearch, 150);
+    const debouncedTopicSearch = useDebounce(topicSearch, 150);
 
     // Collapse states
     const [isConfigOpen, setIsConfigOpen] = useState(true);
@@ -64,16 +85,16 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
     }, [allProblems, dynamicTopicCounts, config.selectedTopics]);
 
     const filteredCompanies = useMemo(() => {
-        if (!companySearch.trim()) return companyOptions;
-        const search = companySearch.toLowerCase();
+        if (!debouncedCompanySearch.trim()) return companyOptions;
+        const search = debouncedCompanySearch.toLowerCase();
         return companyOptions.filter(({ name }) => name.toLowerCase().includes(search));
-    }, [companyOptions, companySearch]);
+    }, [companyOptions, debouncedCompanySearch]);
 
     const filteredTopics = useMemo(() => {
-        if (!topicSearch.trim()) return topicOptions;
-        const search = topicSearch.toLowerCase();
+        if (!debouncedTopicSearch.trim()) return topicOptions;
+        const search = debouncedTopicSearch.toLowerCase();
         return topicOptions.filter(({ name }) => name.toLowerCase().includes(search));
-    }, [topicOptions, topicSearch]);
+    }, [topicOptions, debouncedTopicSearch]);
 
     const toggleDifficulty = (difficulty) => {
         if (config.selectedDifficulties.includes(difficulty)) {
