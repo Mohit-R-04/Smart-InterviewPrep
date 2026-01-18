@@ -33,7 +33,7 @@ async function fetchLeetCodeWizardData() {
 
                     if (!nuxtDataMatch) {
                         console.error('❌ Could not find __NUXT__ data in page');
-                        resolve({});
+                        resolve({ companyMap: {}, companiesList: [] });
                         return;
                     }
 
@@ -45,30 +45,40 @@ async function fetchLeetCodeWizardData() {
 
                     if (companies.length === 0) {
                         console.error('❌ No companies found in NUXT data');
-                        resolve({});
+                        resolve({ companyMap: {}, companiesList: [] });
                         return;
                     }
 
                     // Convert to a map of company name -> count
                     const companyMap = {};
+                    const companiesList = [];
+
                     companies.forEach(company => {
                         if (company.name && company.totalEntries) {
                             companyMap[company.name] = company.totalEntries;
+                            companiesList.push({
+                                name: company.name,
+                                count: company.totalEntries,
+                                slug: company.slug || company.name.toLowerCase().replace(/\s+/g, '-')
+                            });
                         }
                     });
 
-                    console.log(`✅ Fetched ${Object.keys(companyMap).length} companies from LeetCode Wizard`);
-                    console.log(`📊 Sample counts: Google=${companyMap['Google']}, Amazon=${companyMap['Amazon']}, Microsoft=${companyMap['Microsoft']}`);
+                    // Sort by count (descending) - this is the priority
+                    companiesList.sort((a, b) => b.count - a.count);
 
-                    resolve(companyMap);
+                    console.log(`✅ Fetched ${Object.keys(companyMap).length} companies from LeetCode Wizard`);
+                    console.log(`📊 Top 5: ${companiesList.slice(0, 5).map(c => `${c.name}(${c.count})`).join(', ')}`);
+
+                    resolve({ companyMap, companiesList });
                 } catch (error) {
                     console.error('❌ Error parsing LeetCode Wizard data:', error.message);
-                    resolve({});
+                    resolve({ companyMap: {}, companiesList: [] });
                 }
             });
         }).on('error', (error) => {
             console.error('❌ Error fetching from LeetCode Wizard:', error.message);
-            resolve({});
+            resolve({ companyMap: {}, companiesList: [] });
         });
     });
 }
@@ -90,7 +100,7 @@ async function updateProblemsWithWizardData() {
     console.log(`📚 Loaded ${problems.length} problems from problems.json`);
 
     // Fetch LeetCode Wizard data
-    const wizardCompanyCounts = await fetchLeetCodeWizardData();
+    const { companyMap: wizardCompanyCounts, companiesList } = await fetchLeetCodeWizardData();
 
     if (Object.keys(wizardCompanyCounts).length === 0) {
         console.warn('⚠️  No data from LeetCode Wizard, skipping update');
@@ -144,6 +154,11 @@ async function updateProblemsWithWizardData() {
     console.log(`✅ Updated ${updatedCount} company frequency entries`);
     console.log(`✅ Updated ${frequencyUpdates} problems with wizard frequency data`);
     console.log(`💾 Saved to ${problemsPath}`);
+
+    // Save the complete companies list with priority (sorted by count)
+    const companiesListPath = path.join(__dirname, '../public/companies-list.json');
+    fs.writeFileSync(companiesListPath, JSON.stringify(companiesList, null, 2));
+    console.log(`💾 Saved ${companiesList.length} companies (sorted by priority) to ${companiesListPath}`);
 
     // Also save the raw wizard data for reference
     const wizardDataPath = path.join(__dirname, '../public/wizard-company-counts.json');
