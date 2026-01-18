@@ -1,0 +1,141 @@
+name: Monthly Data Update
+
+on:
+  schedule:
+    # Run on the 1st of every month at 00:00 UTC
+    - cron: '0 0 1 * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Install Puppeteer Chrome dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+        
+      - name: Backup current data
+        run: |
+          echo "📦 Creating backups of current data..."
+          mkdir -p backups
+          cp public/problems.json backups/problems.json.backup || echo "⚠️ No existing problems.json"
+          cp public/metadata.json backups/metadata.json.backup || echo "⚠️ No existing metadata.json"
+          cp public/companies-list.json backups/companies-list.json.backup || echo "⚠️ No existing companies-list.json"
+          cp public/companies-by-tier.json backups/companies-by-tier.json.backup || echo "⚠️ No existing companies-by-tier.json"
+          cp public/wizard-company-counts.json backups/wizard-company-counts.json.backup || echo "⚠️ No existing wizard-company-counts.json"
+          echo "✅ Backups created"
+        
+      - name: Fetch real-time LeetCode data
+        id: fetch
+        run: |
+          echo "📥 Fetching LeetCode data..."
+          node scripts/fetch_realtime_data.js
+          if [ $? -ne 0 ]; then
+            echo "❌ LeetCode fetch failed"
+            exit 1
+          fi
+          echo "✅ LeetCode data fetched successfully"
+        continue-on-error: true
+        
+      - name: Enhance with LeetCode Wizard data
+        id: wizard
+        run: |
+          echo "🧙 Fetching company data from LeetCode Wizard..."
+          node scripts/fetch_leetcode_wizard_data.js
+          if [ $? -ne 0 ]; then
+            echo "❌ Wizard fetch failed"
+            exit 1
+          fi
+          echo "✅ Wizard data fetched successfully"
+        continue-on-error: true
+        
+      - name: Categorize companies into tiers
+        id: categorize
+        run: |
+          echo "🏆 Categorizing companies into tiers..."
+          node scripts/categorize_companies.js
+          if [ $? -ne 0 ]; then
+            echo "❌ Categorization failed"
+            exit 1
+          fi
+          echo "✅ Companies categorized successfully"
+        continue-on-error: true
+        
+      - name: Check for failures and restore backups
+        run: |
+          echo "🔍 Checking update status..."
+          
+          FETCH_STATUS="${{ steps.fetch.outcome }}"
+          WIZARD_STATUS="${{ steps.wizard.outcome }}"
+          CATEGORIZE_STATUS="${{ steps.categorize.outcome }}"
+          
+          echo "LeetCode fetch: $FETCH_STATUS"
+          echo "Wizard fetch: $WIZARD_STATUS"
+          echo "Categorization: $CATEGORIZE_STATUS"
+          
+          # If any critical step failed, restore backups
+          if [ "$FETCH_STATUS" != "success" ] || [ "$WIZARD_STATUS" != "success" ] || [ "$CATEGORIZE_STATUS" != "success" ]; then
+            echo "⚠️ One or more steps failed. Restoring backups..."
+            
+            # Restore backups
+            cp backups/problems.json.backup public/problems.json || echo "No backup to restore for problems.json"
+            cp backups/metadata.json.backup public/metadata.json || echo "No backup to restore for metadata.json"
+            cp backups/companies-list.json.backup public/companies-list.json || echo "No backup to restore for companies-list.json"
+            cp backups/companies-by-tier.json.backup public/companies-by-tier.json || echo "No backup to restore for companies-by-tier.json"
+            cp backups/wizard-company-counts.json.backup public/wizard-company-counts.json || echo "No backup to restore for wizard-company-counts.json"
+            
+            echo "✅ Backups restored. Keeping old data."
+            echo "UPDATE_STATUS=failed" >> $GITHUB_ENV
+          else
+            echo "✅ All steps succeeded. Using new data."
+            echo "UPDATE_STATUS=success" >> $GITHUB_ENV
+          fi
+        
+      - name: Commit data updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add all data files
+          git add public/problems.json public/metadata.json public/wizard-company-counts.json public/companies-list.json public/companies-by-tier.json || true
+          
+          # Check if there are changes
+          if git diff --staged --quiet; then
+            echo "📝 No changes to commit"
+          else
+            if [ "$UPDATE_STATUS" = "success" ]; then
+              git commit -m "🔄 Monthly data update - $(date +'%Y-%m-%d')"
+              git push
+              echo "✅ Successfully pushed new data"
+            else
+              git commit -m "⚠️ Monthly update failed - kept old data - $(date +'%Y-%m-%d')"
+              git push
+              echo "⚠️ Pushed with old data (update failed)"
+            fi
+          fi
+        
+      - name: Summary
+        if: always()
+        run: |
+          echo "📊 Weekly Update Summary:"
+          echo "  Fetch status: ${{ steps.fetch.outcome }}"
+          echo "  Data valid: ${{ steps.verify.outputs.data_valid }}"
+          if [ "${{ steps.verify.outputs.data_valid }}" == "true" ]; then
+            echo "✅ Database updated with fresh LeetCode data"
+          else
+            echo "⚠️ Using previous data - fetch failed or data invalid"
+          fi
+          echo "📝 Note: Curated problems are NOT updated (as requested)"

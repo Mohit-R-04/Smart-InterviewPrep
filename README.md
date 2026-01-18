@@ -38,11 +38,12 @@
 - Dynamic Programming (558), Greedy (405), Binary Search (281)
 - And 40+ more algorithm patterns
 
-### 🔄 **Weekly Auto-Updates**
-- GitHub Actions workflow runs every Sunday at 00:00 UTC
+### 🔄 **Monthly Auto-Updates**
+- GitHub Actions workflow runs on the 1st of every month at 00:00 UTC
 - Fetches latest LeetCode problems
 - Updates company data from LeetCode Wizard (using Puppeteer)
 - Categorizes companies into tiers
+- **Automatic rollback**: If any step fails, keeps old data intact
 - Commits and deploys automatically
 
 ---
