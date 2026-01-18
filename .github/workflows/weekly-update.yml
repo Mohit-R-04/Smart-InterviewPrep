@@ -35,6 +35,13 @@ jobs:
           node scripts/fetch_realtime_data.js
         continue-on-error: true
         
+      - name: Enhance with LeetCode Wizard data
+        id: wizard
+        run: |
+          echo "🧙 Fetching accurate company counts from LeetCode Wizard..."
+          node scripts/fetch_leetcode_wizard_data.js
+        continue-on-error: true
+        
       - name: Verify data integrity
         id: verify
         run: |
@@ -71,7 +78,7 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
-          git add public/problems.json public/metadata.json || true
+          git add public/problems.json public/metadata.json public/wizard-company-counts.json || true
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Weekly data update: $(date +'%Y-%m-%d')" && git push)
         
       - name: Summary
