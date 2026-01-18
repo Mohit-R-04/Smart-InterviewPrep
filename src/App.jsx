@@ -171,6 +171,13 @@ function App() {
             return;
         }
 
+        // Skip AI for advanced approach (no companies/topics selected)
+        if ((!config.selectedCompanies || config.selectedCompanies.length === 0) &&
+            (!config.selectedTopics || config.selectedTopics.length === 0)) {
+            console.log('⏸️ Skipping AI fetch - advanced approach (no specific targets)');
+            return;
+        }
+
         // Prevent duplicate fetches
         if (aiFetchInProgress.current) {
             console.log('⏸️ AI fetch already in progress, skipping');
