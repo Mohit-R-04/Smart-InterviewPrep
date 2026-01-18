@@ -233,16 +233,14 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                     <div>
                         <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Difficulty</label>
                         <div className="flex gap-2 flex-wrap mb-3">
-                            {['Very Easy', 'Easy', 'Medium', 'Hard', 'Very Hard'].map(d => (
+                            {['Easy', 'Medium', 'Hard'].map(d => (
                                 <button
                                     key={d}
                                     onClick={() => toggleDifficulty(d)}
                                     className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border ${config.selectedDifficulties.includes(d)
-                                        ? d === 'Very Easy' ? 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800'
-                                            : d === 'Easy' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800'
-                                                : d === 'Medium' ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 border-yellow-200 dark:border-yellow-800'
-                                                    : d === 'Hard' ? 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800'
-                                                        : 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border-purple-200 dark:border-purple-800'
+                                        ? d === 'Easy' ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800'
+                                            : d === 'Medium' ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 border-yellow-200 dark:border-yellow-800'
+                                                : 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800'
                                         : 'bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700'
                                         }`}
                                 >
@@ -263,14 +261,12 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap gap-x-4 gap-y-2">
-                                    {['Very Easy', 'Easy', 'Medium', 'Hard', 'Very Hard']
+                                    {['Easy', 'Medium', 'Hard']
                                         .filter(d => config.selectedDifficulties.includes(d))
                                         .map(lvl => (
                                             <div key={lvl} className="flex items-center gap-1.5">
-                                                <div className={`w-2 h-2 rounded-full ${lvl === 'Very Easy' ? 'bg-emerald-500' :
-                                                    lvl === 'Easy' ? 'bg-green-500' :
-                                                        lvl === 'Medium' ? 'bg-yellow-500' :
-                                                            lvl === 'Hard' ? 'bg-red-500' : 'bg-purple-500'
+                                                <div className={`w-2 h-2 rounded-full ${lvl === 'Easy' ? 'bg-green-500' :
+                                                        lvl === 'Medium' ? 'bg-yellow-500' : 'bg-red-500'
                                                     }`}></div>
                                                 <span className="text-gray-700 dark:text-gray-300 font-medium">{lvl}: {filteredStats[lvl] || 0}</span>
                                             </div>

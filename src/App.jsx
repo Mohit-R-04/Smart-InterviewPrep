@@ -25,12 +25,23 @@ function App() {
         const saved = localStorage.getItem('grind_view_mode_v2');
         return saved ? saved : 'welcome';
     });
-
+    // Config State with migration for removed difficulty levels
     const [config, setConfig] = useState(() => {
         const saved = localStorage.getItem('grind_config');
         if (saved) {
             try {
-                return JSON.parse(saved);
+                const parsed = JSON.parse(saved);
+                // Migrate: Remove "Very Easy" and "Very Hard" if they exist
+                if (parsed.selectedDifficulties) {
+                    parsed.selectedDifficulties = parsed.selectedDifficulties.filter(
+                        d => d !== 'Very Easy' && d !== 'Very Hard'
+                    );
+                    // If empty after migration, default to Medium
+                    if (parsed.selectedDifficulties.length === 0) {
+                        parsed.selectedDifficulties = ['Medium'];
+                    }
+                }
+                return parsed;
             } catch (e) {
                 console.error("Failed to parse saved config", e);
             }
