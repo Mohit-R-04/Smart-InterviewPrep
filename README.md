@@ -23,12 +23,15 @@
 - **Weekly auto-updates** via GitHub Actions
 
 ### 🏢 **Company Targeting (664 Companies!)**
-- **664 companies** with accurate problem counts from LeetCode Wizard
+- **664 companies** with interview frequency data from LeetCode Wizard
 - **Tier 1 - FAANG+** (9): Google (5,432), Amazon (4,749), Facebook (3,429), Microsoft (3,198), etc.
 - **Tier 2 - Major Tech** (26): Bloomberg (2,835), Adobe, Oracle, Nvidia, etc.
 - **Tier 3 - Finance** (2): Citadel, Barclays
 - **Tier 4-7**: 627 more companies organized by problem volume
-- **Company frequency data**: Know exactly how many problems each company asks
+- **Company counts represent**: Total interview occurrences/reports (not unique problems)
+  - *Example: Google's 5,432 count = total interview reports processed by LeetCode Wizard*
+  - *Actual unique problems per company: ~180-200 for top companies*
+- **All problems link to**: LeetCode.com (verified - no multi-platform issues)
 
 ### 📚 **Topic Coverage (50+ Topics)**
 - Array (1,777 problems), String (727), Hash Table (656)
