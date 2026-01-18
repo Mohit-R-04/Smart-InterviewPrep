@@ -1,6 +1,6 @@
 # 🎯 Smart Interview Prep - AI-Powered LeetCode Scheduler
 
-**Your intelligent, personalized interview preparation companion powered by AI and real-time data.**
+**Your intelligent, personalized interview preparation companion powered by AI and real-time data from LeetCode Wizard.**
 
 🌐 **[Live Demo](https://smart-interviewprep.netlify.app)** | 📖 [Architecture](#architecture) | ⭐ [Star this repo](https://github.com/Mohit-R-04/Smart-InterviewPrep)
 
@@ -20,18 +20,15 @@
 - **Actual likes/dislikes** from LeetCode
 - **160 curated problems** from 3 popular sheets
 - **Daily LeetCode problem** displayed beautifully
+- **Weekly auto-updates** via GitHub Actions
 
-### 🏢 **Company Targeting (52 Companies)**
-- **FAANG+**: Google (1,207), Meta (1,207), Amazon (1,207), Microsoft (1,207), Apple (1,207), Facebook (1,207), Netflix (1,207)
-- **Top Tech**: Bloomberg (497), Adobe (497), Uber (497), Airbnb (497), LinkedIn (497), Stripe (497), Nvidia (497), and 10 more
-- **Others**: Goldman Sachs, JPMorgan, Walmart, Cisco, PayPal, Databricks, Snowflake, Spotify, and 21 more
-- **Fair distribution**: Round-robin ensures ALL companies get problems
-
-### 🎥 **YouTube Video Integration**
-- **49 problems** with curated video links (NeetCode, TechDose, etc.)
-- **Automatic fetcher** available for ALL 3,058 problems
-- **Smart display**: Only shows if video exists
-- **Quality content**: Top-rated solution videos
+### 🏢 **Company Targeting (664 Companies!)**
+- **664 companies** with accurate problem counts from LeetCode Wizard
+- **Tier 1 - FAANG+** (9): Google (5,432), Amazon (4,749), Facebook (3,429), Microsoft (3,198), etc.
+- **Tier 2 - Major Tech** (26): Bloomberg (2,835), Adobe, Oracle, Nvidia, etc.
+- **Tier 3 - Finance** (2): Citadel, Barclays
+- **Tier 4-7**: 627 more companies organized by problem volume
+- **Company frequency data**: Know exactly how many problems each company asks
 
 ### 📚 **Topic Coverage (50+ Topics)**
 - Array (1,777 problems), String (727), Hash Table (656)
@@ -39,9 +36,11 @@
 - And 40+ more algorithm patterns
 
 ### 🔄 **Weekly Auto-Updates**
-- GitHub Actions workflow runs every Sunday
-- Fresh company questions and daily problems
-- Updated metrics automatically
+- GitHub Actions workflow runs every Sunday at 00:00 UTC
+- Fetches latest LeetCode problems
+- Updates company data from LeetCode Wizard (using Puppeteer)
+- Categorizes companies into tiers
+- Commits and deploys automatically
 
 ---
 
@@ -86,28 +85,30 @@ npm run dev
 ### **Data Flow:**
 
 1. **Data Sources** (Blue)
-   - LeetCode GraphQL API fetches 3,058 problems with real metrics
-   - Curated lists (Grind75, NeetCode150, Blind75) provide expert selections
-   - Daily Problem API gets today's LeetCode challenge
+   - **LeetCode GraphQL API**: Fetches 3,058 problems with real metrics
+   - **LeetCode Wizard**: Provides accurate company problem counts (664 companies)
+   - **Curated Lists**: Grind75, NeetCode150, Blind75 expert selections
+   - **Daily Problem API**: Gets today's LeetCode challenge
 
 2. **Data Processing** (Green)
-   - Data Fetcher script collects from all sources
-   - Merge & Enhance combines and enriches data
-   - Importance Scoring uses AI + algorithmic methods
-   - Storage saves to JSON files (problems.json, daily-problem.json, metadata.json)
+   - **Data Fetcher**: Collects from LeetCode API
+   - **Wizard Data Fetcher**: Uses Puppeteer to extract company data
+   - **Company Tier Categorization**: Organizes 664 companies into 7 tiers
+   - **Merge & Enhance**: Combines and enriches all data sources
+   - **Storage**: Saves to JSON files (problems.json, companies-list.json, companies-by-tier.json, etc.)
 
 3. **Application Layer** (Purple)
-   - React Frontend displays the UI
-   - Configuration Panel captures user preferences
-   - AI Scheduler (Gemini) generates personalized schedules
-   - Schedule Generator creates week-by-week plans
-   - Daily Problem Display shows today's challenge
-   - Progress Tracker monitors completion
+   - **React Frontend**: Modern, responsive UI
+   - **Configuration Panel**: Collapsible sections for companies, topics, settings
+   - **AI Scheduler (Gemini)**: Generates personalized schedules
+   - **Schedule Generator**: Creates week-by-week plans
+   - **Daily Problem Display**: Shows today's challenge
+   - **Progress Tracker**: Monitors completion with confetti celebrations
 
 4. **Auto-Update** (Orange)
-   - GitHub Actions runs weekly (every Sunday)
-   - Automatically triggers Data Fetcher
-   - Keeps data fresh without manual intervention
+   - **GitHub Actions**: Runs weekly (every Sunday)
+   - **Automated Pipeline**: Fetches → Processes → Commits → Deploys
+   - **Keeps data fresh** without manual intervention
 
 ---
 
@@ -115,10 +116,10 @@ npm run dev
 
 ### **1. Configure Your Profile**
 - **Experience Level**: Beginner / Intermediate / Expert
-- **Duration**: Number of weeks
+- **Duration**: Number of weeks until interview
 - **Weekly Hours**: Time available per week
-- **Difficulty**: Select Easy, Medium, Hard
-- **Companies**: Target specific companies (52 available)
+- **Difficulty**: Select Easy, Medium, Hard, Very Hard
+- **Companies**: Choose from 664 companies organized by tier
 - **Topics**: Focus on specific patterns (50+ topics)
 
 ### **2. AI Generates Your Schedule**
@@ -126,61 +127,97 @@ npm run dev
 - Selects best problems from 3,058 options
 - Ensures no duplicates
 - Progressive difficulty
-- Curated problems first
+- Prioritizes curated problems
+- Uses company frequency data for targeting
 
 ### **3. Track Your Progress**
 - Mark problems as completed
-- See completion percentage
+- See completion percentage per week
 - Track remaining time
 - Visual progress indicators
-
----
-
-## 🎥 YouTube Videos
-
-### **Current Status**
-- ✅ **49 problems** have curated video links
-- ✅ Covers all Grind75, Blind75, and popular NeetCode problems
-
-### **Get Videos for ALL Problems (Optional)**
-
-1. **Get Free YouTube API Key**:
-   - Visit [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
-   - Create project → Enable YouTube Data API v3
-   - Create API Key
-
-2. **Add to .env**:
-   ```bash
-   YOUTUBE_API_KEY=your_youtube_api_key_here
-   ```
-
-3. **Run Fetcher**:
-   ```bash
-   node scripts/fetch_all_youtube_videos.js
-   ```
-
-4. **Wait**: ~75 minutes for all 3,058 problems (rate limited)
-
-**OR** just use the 49 videos already included (no setup needed)!
+- Confetti celebration on week completion
+- Grand finale fireworks on 100% completion
 
 ---
 
 ## 📊 Data Management
 
-### **Update Problem Data**
+### **Automated Weekly Updates (Recommended)**
+
+The GitHub Actions workflow automatically:
+1. Fetches latest LeetCode problems
+2. Fetches company data from LeetCode Wizard
+3. Categorizes companies into tiers
+4. Updates all JSON files
+5. Commits and pushes changes
+
+**No manual intervention needed!**
+
+### **Manual Data Update (Optional)**
 
 ```bash
-# Fetch latest LeetCode data with real metrics
-node scripts/scrape_leetcode_data.js
+# Fetch latest LeetCode data
+node scripts/fetch_realtime_data.js
 
-# Or use the enhanced version with ALL companies
-node scripts/complete_data_enhancement.js
+# Fetch company data from LeetCode Wizard
+node scripts/fetch_leetcode_wizard_data.js
+
+# Categorize companies into tiers
+node scripts/categorize_companies.js
 ```
 
-### **Merge Curated Sheets**
+---
+
+## 📁 Project Structure
+
+```
+smart-interview-grind/
+├── src/
+│   ├── components/
+│   │   ├── DailyProblem.jsx          # Daily LeetCode challenge
+│   │   ├── ConfigurationPanel.jsx    # Collapsible config sections
+│   │   ├── ScheduleView.jsx          # Collapsible week sections
+│   │   ├── Wizard.jsx                # Multi-step setup wizard
+│   │   └── ...
+│   ├── utils/
+│   │   ├── aiScheduler.js            # Gemini AI scheduling
+│   │   └── scheduler.js              # Algorithmic fallback
+│   └── App.jsx
+├── scripts/
+│   ├── fetch_realtime_data.js        # LeetCode API scraper
+│   ├── fetch_leetcode_wizard_data.js # Puppeteer-based company data fetch
+│   └── categorize_companies.js       # Company tier categorization
+├── public/
+│   ├── problems.json                 # 3,058 problems with metrics (2.7MB)
+│   ├── companies-list.json           # 664 companies sorted by priority (79KB)
+│   ├── companies-by-tier.json        # Companies organized into 7 tiers (87KB)
+│   ├── wizard-company-counts.json    # Raw company counts (11KB)
+│   ├── daily-problem.json            # Today's daily problem
+│   └── metadata.json                 # Last updated timestamp
+├── netlify/functions/
+│   └── gemini-proxy.js               # Secure API proxy
+└── .github/workflows/
+    ├── weekly-update.yml             # Auto-update workflow (Sundays)
+    └── daily-update.yml              # Daily problem fetch
+```
+
+---
+
+## 🎓 Commands
 
 ```bash
-node scripts/merge_curated_sheets.js
+# Development
+npm run dev                    # Start development server
+npm run build                  # Build for production
+npm run preview                # Preview production build
+
+# Data Management (Manual - Optional)
+node scripts/fetch_realtime_data.js           # Fetch LeetCode data
+node scripts/fetch_leetcode_wizard_data.js    # Fetch company data (requires Puppeteer)
+node scripts/categorize_companies.js          # Categorize companies into tiers
+
+# Deployment
+# For Netlify: Push to GitHub (auto-deploys)
 ```
 
 ---
@@ -201,98 +238,28 @@ The app uses `netlify/functions/gemini-proxy.js` to:
 
 ---
 
-## 📁 Project Structure
-
-```
-smart-interview-grind/
-├── src/
-│   ├── components/
-│   │   ├── DailyProblem.jsx       # Daily LeetCode challenge
-│   │   ├── ConfigurationPanel.jsx  # User preferences
-│   │   ├── ScheduleView.jsx        # Weekly schedule display
-│   │   └── ...
-│   ├── utils/
-│   │   ├── aiScheduler.js          # Gemini AI scheduling
-│   │   └── scheduler.js            # Algorithmic fallback
-│   └── App.jsx
-├── scripts/
-│   ├── scrape_leetcode_data.js           # LeetCode API scraper
-│   ├── complete_data_enhancement.js      # ALL 52 companies distributor
-│   ├── fetch_all_youtube_videos.js       # YouTube video fetcher
-│   └── merge_curated_sheets.js           # Combine Grind75/NeetCode/Blind75
-├── public/
-│   ├── problems.json               # 3,058 problems with metrics
-│   ├── daily-problem.json          # Today's daily problem
-│   └── metadata.json               # Last updated timestamp
-├── netlify/functions/
-│   └── gemini-proxy.js             # Secure API proxy
-└── .github/workflows/
-    └── weekly-update.yml           # Auto-update workflow
-```
-
----
-
-## 🎓 Commands
-
-```bash
-# Development
-npm run dev                    # Start development server
-npm run build                  # Build for production
-npm run preview                # Preview production build
-
-# Data Management
-node scripts/scrape_leetcode_data.js          # Fetch LeetCode data
-node scripts/complete_data_enhancement.js     # Distribute ALL 52 companies
-node scripts/fetch_all_youtube_videos.js      # Fetch YouTube videos (requires API key)
-node scripts/merge_curated_sheets.js          # Merge curated sheets
-
-# Deployment
-# For Netlify: Push to GitHub (auto-deploys)
-```
-
----
-
-## 🌐 Deployment
-
-### **Netlify (Recommended)**
-- **Free tier**: Generous limits
-- **Serverless functions**: Keeps API key secure
-- **Auto-deploy**: Push to GitHub → Auto-deploy
-- **Custom domains**: Free SSL included
-
-### **Vercel (Alternative)**
-- Rename `netlify/functions` to `api`
-- Deploy to [vercel.com](https://vercel.com)
-- Add `GEMINI_API_KEY` in environment variables
-
-### **GitHub Pages (Static Only)**
-- No AI features (requires serverless backend)
-- Good for demo/testing
-- Already configured in `.github/workflows/deploy.yml`
-
----
-
 ## 💡 Pro Tips
 
-### **1. Update Data Regularly**
-```bash
-node scripts/complete_data_enhancement.js  # Weekly recommended
-```
+### **1. Trust the Automated Updates**
+- GitHub Actions keeps your data fresh every week
+- No manual intervention needed
+- Always have the latest company data
 
-### **2. Trust the Curated Problems**
-- Grind75, NeetCode150, Blind75 are expert-selected
-- These appear first in your schedule
-- Proven to be most valuable
+### **2. Use Company Tiers for Prioritization**
+- **Tier 1 (FAANG+)**: Highest priority for most candidates
+- **Tier 2 (Major Tech)**: Great for diversification
+- **Tier 3 (Finance)**: Specialized for finance roles
+- **Tiers 4-7**: Explore based on your interests
 
-### **3. Use Company Targeting**
-- Select your target companies
-- AI focuses on their specific questions
-- Real frequency data shows what's recent
-
-### **4. Follow the Schedule**
-- Progressive difficulty is intentional
+### **3. Follow the Progressive Schedule**
 - Week 1: Build confidence with easier problems
 - Week 4: Challenge yourself with harder problems
+- AI ensures optimal difficulty progression
+
+### **4. Use Collapsible Sections**
+- All week sections are collapsible
+- Focus on one week at a time
+- Better mobile experience
 
 ---
 
@@ -305,12 +272,29 @@ node scripts/complete_data_enhancement.js  # Weekly recommended
 - ❌ Duplicate practice → ✅ No duplicates guaranteed
 
 ### **vs Other Tools:**
-- ✅ **3,058 problems** (most comprehensive)
-- ✅ **Real metrics** (not estimates)
+- ✅ **664 companies** (most comprehensive)
+- ✅ **Real metrics** from LeetCode Wizard
 - ✅ **AI scheduling** (personalized)
 - ✅ **Auto-updates** (always fresh)
-- ✅ **52 companies** (ALL with problems)
-- ✅ **YouTube videos** (49+ curated)
+- ✅ **Company tiers** (organized by priority)
+- ✅ **Collapsible UI** (better UX)
+- ✅ **Mobile optimized** (works on all devices)
+
+---
+
+## 🌐 Deployment
+
+### **Netlify (Recommended)**
+- **Free tier**: Generous limits
+- **Serverless functions**: Keeps API key secure
+- **Auto-deploy**: Push to GitHub → Auto-deploy
+- **Custom domains**: Free SSL included
+- **Puppeteer support**: Works out of the box
+
+### **GitHub Pages (Static Only)**
+- No AI features (requires serverless backend)
+- No automated data updates
+- Good for demo/testing only
 
 ---
 
@@ -323,10 +307,12 @@ Open-source and free to use.
 ## 🙏 Acknowledgments
 
 - **LeetCode** for the comprehensive problem database
+- **LeetCode Wizard** for accurate company problem counts
 - **Grind75** for the curated problem list
-- **NeetCode** for the 150 essential problems and video solutions
+- **NeetCode** for the 150 essential problems
 - **Blind** for the classic 75 problems
 - **Google Gemini** for AI-powered scheduling
+- **Puppeteer** for reliable web scraping
 
 ---
 
