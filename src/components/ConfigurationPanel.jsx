@@ -103,8 +103,8 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
     };
 
     return (
-        <div className="sticky top-16 -mt-8 pt-8 h-[calc(100vh-6rem)] z-[900]">
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 space-y-8 flex flex-col h-full transition-colors duration-300">
+        <div className="lg:sticky lg:top-16 lg:-mt-8 lg:pt-8 lg:h-[calc(100vh-6rem)] z-[900]">
+            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 space-y-8 flex flex-col lg:h-full transition-colors duration-300">
                 <h2 className="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-4 shrink-0 tracking-tight">
                     Configuration
                 </h2>
@@ -252,7 +252,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[300px] md:min-h-[400px] overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] md:min-h-[300px] lg:min-h-[400px] max-h-[50vh] lg:max-h-none overflow-y-auto p-2 custom-scrollbar">
                                 {filteredCompanies.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredCompanies.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
@@ -290,7 +290,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[300px] md:min-h-[400px] overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[200px] md:min-h-[300px] lg:min-h-[400px] max-h-[50vh] lg:max-h-none overflow-y-auto p-2 custom-scrollbar">
                                 {filteredTopics.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredTopics.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
