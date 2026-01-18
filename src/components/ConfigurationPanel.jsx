@@ -252,7 +252,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[300px] md:min-h-[400px] overflow-y-auto p-2 custom-scrollbar">
                                 {filteredCompanies.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredCompanies.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
@@ -262,9 +262,9 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                             onChange={() => toggleCompany(name)}
                                             className="w-4 h-4 text-blue-600 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 rounded focus:ring-blue-500 focus:ring-offset-0"
                                         />
-                                        <div className="flex-1 flex justify-between text-sm">
-                                            <span className="text-gray-700 dark:text-gray-300 font-medium group-hover:text-blue-600 dark:group-hover:text-white transition-colors">{name}</span>
-                                            <span className="text-gray-400 text-xs bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded-md">{count}</span>
+                                        <div className="flex-1 flex justify-between text-base">
+                                            <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-blue-600 dark:group-hover:text-white transition-colors">{name}</span>
+                                            <span className="text-gray-400 text-sm bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded-md font-medium">{count}</span>
                                         </div>
                                     </label>
                                 ))}
@@ -290,7 +290,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                     </button>
                                 )}
                             </div>
-                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 overflow-y-auto p-2 custom-scrollbar">
+                            <div className="bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 flex-1 min-h-[300px] md:min-h-[400px] overflow-y-auto p-2 custom-scrollbar">
                                 {filteredTopics.length === 0 && <div className="text-gray-400 text-xs text-center p-4">No matches found</div>}
                                 {filteredTopics.map(({ name, count }) => (
                                     <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
@@ -300,9 +300,9 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
                                             onChange={() => toggleTopic(name)}
                                             className="w-4 h-4 text-blue-600 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 rounded focus:ring-blue-500 focus:ring-offset-0"
                                         />
-                                        <div className="flex-1 flex justify-between text-sm">
-                                            <span className="text-gray-700 dark:text-gray-300 font-medium group-hover:text-blue-600 dark:group-hover:text-white transition-colors">{name}</span>
-                                            <span className="text-gray-400 text-xs bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded-md">{count}</span>
+                                        <div className="flex-1 flex justify-between text-base">
+                                            <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-blue-600 dark:group-hover:text-white transition-colors">{name}</span>
+                                            <span className="text-gray-400 text-sm bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded-md font-medium">{count}</span>
                                         </div>
                                     </label>
                                 ))}
