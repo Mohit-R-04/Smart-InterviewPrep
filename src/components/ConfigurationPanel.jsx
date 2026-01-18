@@ -266,7 +266,7 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                                         .map(lvl => (
                                             <div key={lvl} className="flex items-center gap-1.5">
                                                 <div className={`w-2 h-2 rounded-full ${lvl === 'Easy' ? 'bg-green-500' :
-                                                        lvl === 'Medium' ? 'bg-yellow-500' : 'bg-red-500'
+                                                    lvl === 'Medium' ? 'bg-yellow-500' : 'bg-red-500'
                                                     }`}></div>
                                                 <span className="text-gray-700 dark:text-gray-300 font-medium">{lvl}: {filteredStats[lvl] || 0}</span>
                                             </div>
@@ -345,7 +345,6 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                             placeholder="Search topics..."
                             value={topicSearch}
                             onChange={(e) => setTopicSearch(e.target.value)}
-                            onKeyPress={handleTopicKeyPress}
                             aria-label="Search topics"
                             className="flex-1 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent block p-2.5 transition-colors"
                         />
