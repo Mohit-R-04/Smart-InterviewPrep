@@ -312,11 +312,14 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                 <div className="space-y-3">
                     <div className="flex gap-2">
                         <input
+                            id="company-search-input"
+                            name="companySearch"
                             type="text"
                             placeholder="Search companies..."
                             value={companySearch}
                             onChange={(e) => setCompanySearch(e.target.value)}
                             onKeyPress={handleCompanyKeyPress}
+                            aria-label="Search companies"
                             className="flex-1 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent block p-2.5 transition-colors"
                         />
                         <button
@@ -341,6 +344,8 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                         {filteredCompanies.map(({ name, count }) => (
                             <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
                                 <input
+                                    id={`company-${name.toLowerCase().replace(/\s+/g, '-')}`}
+                                    name={`company-${name}`}
                                     type="checkbox"
                                     checked={config.selectedCompanies.includes(name)}
                                     onChange={() => toggleCompany(name)}
@@ -366,11 +371,14 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                 <div className="space-y-3">
                     <div className="flex gap-2">
                         <input
+                            id="topic-search-input"
+                            name="topicSearch"
                             type="text"
                             placeholder="Search topics..."
                             value={topicSearch}
                             onChange={(e) => setTopicSearch(e.target.value)}
                             onKeyPress={handleTopicKeyPress}
+                            aria-label="Search topics"
                             className="flex-1 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent block p-2.5 transition-colors"
                         />
                         <button
@@ -395,6 +403,8 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                         {filteredTopics.map(({ name, count }) => (
                             <label key={name} className="flex items-center space-x-3 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer group transition-colors">
                                 <input
+                                    id={`topic-${name.toLowerCase().replace(/\s+/g, '-')}`}
+                                    name={`topic-${name}`}
                                     type="checkbox"
                                     checked={(config.selectedTopics || []).includes(name)}
                                     onChange={() => toggleTopic(name)}
