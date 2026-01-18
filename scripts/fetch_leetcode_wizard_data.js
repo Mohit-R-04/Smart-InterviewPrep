@@ -97,14 +97,19 @@ async function updateProblemsWithWizardData() {
         return;
     }
 
-    // Update company frequencies in problems
+    // Fetch problem-level frequency data from LeetCode Wizard
+    console.log('🔍 Fetching problem-level frequency data...');
+    const problemFrequencyData = await fetchProblemFrequencyData();
+
+    // Update company frequencies and problem metadata
     let updatedCount = 0;
+    let frequencyUpdates = 0;
+
     problems.forEach(problem => {
+        // Update company frequency counts
         if (problem.companies && Array.isArray(problem.companies)) {
             problem.companies.forEach(company => {
-                // If we have more accurate data from LeetCode Wizard, use it
                 if (wizardCompanyCounts[company]) {
-                    // Store the wizard count as metadata
                     if (!problem.companyFrequency) {
                         problem.companyFrequency = {};
                     }
@@ -113,17 +118,114 @@ async function updateProblemsWithWizardData() {
                 }
             });
         }
+
+        // Update problem-specific frequency and metadata from wizard
+        const wizardProblem = problemFrequencyData[problem.id];
+        if (wizardProblem) {
+            // Add wizard frequency score (0-100)
+            problem.wizardFrequency = wizardProblem.frequency;
+
+            // Add wizard difficulty if available (1=Easy, 2=Medium, 3=Hard)
+            if (wizardProblem.difficulty) {
+                problem.wizardDifficulty = wizardProblem.difficulty;
+            }
+
+            // Add wizard tags if available
+            if (wizardProblem.tags && wizardProblem.tags.length > 0) {
+                problem.wizardTags = wizardProblem.tags;
+            }
+
+            frequencyUpdates++;
+        }
     });
 
     // Save updated problems
     fs.writeFileSync(problemsPath, JSON.stringify(problems, null, 2));
     console.log(`✅ Updated ${updatedCount} company frequency entries`);
+    console.log(`✅ Updated ${frequencyUpdates} problems with wizard frequency data`);
     console.log(`💾 Saved to ${problemsPath}`);
 
     // Also save the raw wizard data for reference
     const wizardDataPath = path.join(__dirname, '../public/wizard-company-counts.json');
     fs.writeFileSync(wizardDataPath, JSON.stringify(wizardCompanyCounts, null, 2));
     console.log(`💾 Saved raw wizard data to ${wizardDataPath}`);
+}
+
+/**
+ * Fetches problem-level frequency data from LeetCode Wizard
+ * This includes per-problem frequency scores, difficulty, and tags
+ */
+async function fetchProblemFrequencyData() {
+    console.log('🧙 Fetching problem frequency data from LeetCode Wizard...');
+
+    return new Promise((resolve, reject) => {
+        const options = {
+            hostname: 'leetcodewizard.io',
+            path: '/problem-database',
+            method: 'GET',
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+        };
+
+        https.get(options, (res) => {
+            let data = '';
+
+            res.on('data', (chunk) => {
+                data += chunk;
+            });
+
+            res.on('end', () => {
+                try {
+                    // Extract the __NUXT__ data from the HTML
+                    const nuxtDataMatch = data.match(/window\.__NUXT__\s*=\s*({.*?});/s);
+
+                    if (!nuxtDataMatch) {
+                        console.error('❌ Could not find __NUXT__ data in page');
+                        resolve({});
+                        return;
+                    }
+
+                    // Parse the NUXT data
+                    const nuxtData = JSON.parse(nuxtDataMatch[1]);
+
+                    // Extract problems array with frequency data
+                    const problemsData = nuxtData?.data?.problems?.data || [];
+
+                    if (problemsData.length === 0) {
+                        console.warn('⚠️  No problem frequency data found');
+                        resolve({});
+                        return;
+                    }
+
+                    // Convert to a map of problem ID -> frequency data
+                    const problemMap = {};
+                    problemsData.forEach(prob => {
+                        if (prob.externalId) {
+                            problemMap[prob.externalId] = {
+                                frequency: prob.frequency || 0,
+                                difficulty: prob.difficulty,
+                                tags: prob.tags || [],
+                                title: prob.title,
+                                titleSlug: prob.titleSlug
+                            };
+                        }
+                    });
+
+                    console.log(`✅ Fetched frequency data for ${Object.keys(problemMap).length} problems`);
+                    console.log(`📊 Sample: Problem #1 frequency=${problemMap[1]?.frequency}, difficulty=${problemMap[1]?.difficulty}`);
+
+                    resolve(problemMap);
+                } catch (error) {
+                    console.error('❌ Error parsing problem frequency data:', error.message);
+                    resolve({});
+                }
+            });
+        }).on('error', (error) => {
+            console.error('❌ Error fetching problem frequency data:', error.message);
+            resolve({});
+        });
+    });
 }
 
 // Run if called directly
