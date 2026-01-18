@@ -14,6 +14,7 @@ import { getCachedAIRecommendations, cacheAIRecommendations } from './utils/aiCa
 function App() {
     // Problems are loaded directly from JSON
     const [problemsData, setProblemsData] = useState(null);
+    const [companiesData, setCompaniesData] = useState(null);
     const [isLoadingData, setIsLoadingData] = useState(true);
 
     // UI State
@@ -56,14 +57,27 @@ function App() {
     }, [config]);
 
 
-    // Load Problems Data
+    // Load Problems Data and Companies Data
     useEffect(() => {
-        const loadProblems = async () => {
+        const loadData = async () => {
             try {
-                const response = await fetch(import.meta.env.BASE_URL + 'problems.json');
-                if (!response.ok) throw new Error('Could not load problems data');
-                const problems = await response.json();
+                // Load problems
+                const problemsResponse = await fetch(import.meta.env.BASE_URL + 'problems.json');
+                if (!problemsResponse.ok) throw new Error('Could not load problems data');
+                const problems = await problemsResponse.json();
                 setProblemsData(problems);
+
+                // Load companies list (from LeetCode Wizard)
+                try {
+                    const companiesResponse = await fetch(import.meta.env.BASE_URL + 'companies-list.json');
+                    if (companiesResponse.ok) {
+                        const companies = await companiesResponse.json();
+                        setCompaniesData(companies);
+                        console.log(`✅ Loaded ${companies.length} companies from LeetCode Wizard`);
+                    }
+                } catch (error) {
+                    console.warn('Companies list not available, using fallback counts');
+                }
             } catch (error) {
                 console.error('Failed to load problems:', error);
                 alert('Failed to load problems data. Please refresh the page.');
@@ -71,7 +85,7 @@ function App() {
                 setIsLoadingData(false);
             }
         };
-        loadProblems();
+        loadData();
     }, []);
 
 
@@ -99,23 +113,32 @@ function App() {
         return stats;
     }, [problemsData, config.selectedCompanies, config.selectedTopics]);
 
-    // Dynamic Company Counts
+    // Dynamic Company Counts - Use LeetCode Wizard data for accurate counts
     const dynamicCompanyCounts = useMemo(() => {
-        if (!problemsData) return new Map();
         const map = new Map();
-        problemsData.forEach(p => {
-            if (!config.selectedDifficulties.includes(p.difficulty)) return;
-            if (config.selectedTopics.length > 0) {
-                const pTags = (p.relatedTopics || []).map(t => t.name);
-                const hasTopic = config.selectedTopics.some(t => pTags.includes(t));
-                if (!hasTopic) return;
-            }
-            p.companies.forEach(c => {
-                map.set(c, (map.get(c) || 0) + 1);
+
+        // If we have LeetCode Wizard data, use those accurate counts
+        if (companiesData && companiesData.length > 0) {
+            companiesData.forEach(company => {
+                map.set(company.name, company.count);
             });
-        });
+        } else if (problemsData) {
+            // Fallback: calculate from problems if wizard data not available
+            problemsData.forEach(p => {
+                if (!config.selectedDifficulties.includes(p.difficulty)) return;
+                if (config.selectedTopics.length > 0) {
+                    const pTags = (p.relatedTopics || []).map(t => t.name);
+                    const hasTopic = config.selectedTopics.some(t => pTags.includes(t));
+                    if (!hasTopic) return;
+                }
+                p.companies.forEach(c => {
+                    map.set(c, (map.get(c) || 0) + 1);
+                });
+            });
+        }
+
         return map;
-    }, [problemsData, config.selectedDifficulties, config.selectedTopics]);
+    }, [companiesData, problemsData, config.selectedDifficulties, config.selectedTopics]);
 
     // Dynamic Topic Counts
     const dynamicTopicCounts = useMemo(() => {
