@@ -216,15 +216,18 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                     {/* Duration & Hours Sliders */}
                     <div className="space-y-4">
                         <div>
-                            <label className="flex justify-between text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                            <label htmlFor="duration-slider" className="flex justify-between text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                                 <span>Duration</span>
                                 <span className="text-gray-900 dark:text-white font-bold">{config.weeks} Weeks</span>
                             </label>
                             <input
+                                id="duration-slider"
+                                name="duration"
                                 type="range"
                                 min="1" max="20"
                                 value={config.weeks}
                                 onChange={(e) => setConfig({ ...config, weeks: parseInt(e.target.value) })}
+                                aria-label="Duration in weeks"
                                 className="w-full slider-modern text-blue-600 dark:text-blue-500"
                                 style={{
                                     background: `linear-gradient(to right, currentColor ${((config.weeks - 1) * 100) / 19}%, #e5e7eb ${((config.weeks - 1) * 100) / 19}%)`
@@ -232,15 +235,18 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                             />
                         </div>
                         <div>
-                            <label className="flex justify-between text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                            <label htmlFor="hours-slider" className="flex justify-between text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
                                 <span>Weekly Hours</span>
                                 <span className="text-gray-900 dark:text-white font-bold">{config.hoursPerWeek}h</span>
                             </label>
                             <input
+                                id="hours-slider"
+                                name="hoursPerWeek"
                                 type="range"
                                 min="2" max="40"
                                 value={config.hoursPerWeek}
                                 onChange={(e) => setConfig({ ...config, hoursPerWeek: parseInt(e.target.value) })}
+                                aria-label="Weekly hours"
                                 className="w-full slider-modern text-emerald-600 dark:text-emerald-500"
                                 style={{
                                     background: `linear-gradient(to right, currentColor ${((config.hoursPerWeek - 2) * 100) / 38}%, #e5e7eb ${((config.hoursPerWeek - 2) * 100) / 38}%)`
