@@ -18,7 +18,7 @@ function useDebounce(value, delay) {
     return debouncedValue;
 }
 
-export default function ConfigurationPanel({ config, setConfig, allProblems, filteredStats, dynamicCompanyCounts, dynamicTopicCounts }) {
+const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setConfig, allProblems, filteredStats, dynamicCompanyCounts, dynamicTopicCounts }) {
     const [companySearch, setCompanySearch] = useState('');
     const [topicSearch, setTopicSearch] = useState('');
 
@@ -359,4 +359,6 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
             </CollapsibleSection>
         </div>
     );
-}
+});
+
+export default ConfigurationPanel;
