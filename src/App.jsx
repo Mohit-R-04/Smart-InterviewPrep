@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import ConfigurationPanel from './components/ConfigurationPanel';
 import ScheduleView from './components/ScheduleView';
 
@@ -148,6 +148,7 @@ function App() {
 
     const [schedule, setSchedule] = useState([]);
     const [aiExtras, setAiExtras] = useState([]);
+    const aiFetchInProgress = useRef(false);
 
     useEffect(() => {
         if (!problemsData) {
@@ -170,6 +171,12 @@ function App() {
             return;
         }
 
+        // Prevent duplicate fetches
+        if (aiFetchInProgress.current) {
+            console.log('⏸️ AI fetch already in progress, skipping');
+            return;
+        }
+
         // Check cache first
         const cachedRecs = getCachedAIRecommendations(config);
         if (cachedRecs) {
@@ -179,6 +186,7 @@ function App() {
         }
 
         // Fetch new recommendations
+        aiFetchInProgress.current = true;
         const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
         generateAIRecommendations(problemsData, config, apiKey)
@@ -197,7 +205,10 @@ function App() {
                     }
                 }
             })
-            .catch(err => console.error('AI Recommendation Error:', err));
+            .catch(err => console.error('AI Recommendation Error:', err))
+            .finally(() => {
+                aiFetchInProgress.current = false;
+            });
 
     }, [config, problemsData, viewMode]);
 

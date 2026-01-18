@@ -98,9 +98,9 @@ export async function generateAIRecommendations(allProblems, config, geminiApiKe
             );
             console.log(`📊 Filtered ${relevantProblems.length} problems by topics`);
         } else {
-            // General high importance
-            relevantProblems = allProblems.filter(p => p.importanceScore > 80);
-            console.log(`📊 Filtered ${relevantProblems.length} high-importance problems`);
+            // Advanced approach: use all problems, sorted by importance
+            relevantProblems = allProblems.slice(); // Copy all problems
+            console.log(`📊 Using all ${relevantProblems.length} problems (advanced approach)`);
         }
 
         if (relevantProblems.length === 0) {
