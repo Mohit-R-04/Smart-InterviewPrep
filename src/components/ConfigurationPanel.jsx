@@ -22,9 +22,9 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
     const [companySearch, setCompanySearch] = useState('');
     const [topicSearch, setTopicSearch] = useState('');
 
-    // Debounce search inputs
-    const debouncedCompanySearch = useDebounce(companySearch, 150);
-    const debouncedTopicSearch = useDebounce(topicSearch, 150);
+    // Active search (only updated when search button is clicked)
+    const [activeCompanySearch, setActiveCompanySearch] = useState('');
+    const [activeTopicSearch, setActiveTopicSearch] = useState('');
 
     // Collapse states
     const [isConfigOpen, setIsConfigOpen] = useState(true);
@@ -88,17 +88,40 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
             .map(([name, count]) => ({ name, count }));
     }, [allProblems, dynamicTopicCounts, selectedTopics]);
 
+    // Filter based on ACTIVE search (only updates when button clicked)
     const filteredCompanies = useMemo(() => {
-        if (!debouncedCompanySearch.trim()) return companyOptions;
-        const search = debouncedCompanySearch.toLowerCase();
+        if (!activeCompanySearch.trim()) return companyOptions;
+        const search = activeCompanySearch.toLowerCase();
         return companyOptions.filter(({ name }) => name.toLowerCase().includes(search));
-    }, [companyOptions, debouncedCompanySearch]);
+    }, [companyOptions, activeCompanySearch]);
 
     const filteredTopics = useMemo(() => {
-        if (!debouncedTopicSearch.trim()) return topicOptions;
-        const search = debouncedTopicSearch.toLowerCase();
+        if (!activeTopicSearch.trim()) return topicOptions;
+        const search = activeTopicSearch.toLowerCase();
         return topicOptions.filter(({ name }) => name.toLowerCase().includes(search));
-    }, [topicOptions, debouncedTopicSearch]);
+    }, [topicOptions, activeTopicSearch]);
+
+    // Handle search button clicks
+    const handleCompanySearch = () => {
+        setActiveCompanySearch(companySearch);
+    };
+
+    const handleTopicSearch = () => {
+        setActiveTopicSearch(topicSearch);
+    };
+
+    // Handle Enter key
+    const handleCompanyKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleCompanySearch();
+        }
+    };
+
+    const handleTopicKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleTopicSearch();
+        }
+    };
 
     const toggleDifficulty = (difficulty) => {
         if (config.selectedDifficulties.includes(difficulty)) {
@@ -280,8 +303,16 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                             placeholder="Search companies..."
                             value={companySearch}
                             onChange={(e) => setCompanySearch(e.target.value)}
+                            onKeyPress={handleCompanyKeyPress}
                             className="flex-1 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent block p-2.5 transition-colors"
                         />
+                        <button
+                            onClick={handleCompanySearch}
+                            className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg transition-colors whitespace-nowrap"
+                            title="Search companies"
+                        >
+                            Search
+                        </button>
                         {config.selectedCompanies.length > 0 && (
                             <button
                                 onClick={() => setConfig({ ...config, selectedCompanies: [] })}
@@ -326,8 +357,16 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
                             placeholder="Search topics..."
                             value={topicSearch}
                             onChange={(e) => setTopicSearch(e.target.value)}
+                            onKeyPress={handleTopicKeyPress}
                             className="flex-1 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent block p-2.5 transition-colors"
                         />
+                        <button
+                            onClick={handleTopicSearch}
+                            className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg transition-colors whitespace-nowrap"
+                            title="Search topics"
+                        >
+                            Search
+                        </button>
                         {(config.selectedTopics || []).length > 0 && (
                             <button
                                 onClick={() => setConfig({ ...config, selectedTopics: [] })}
