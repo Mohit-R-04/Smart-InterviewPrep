@@ -143,19 +143,39 @@ export default function ScheduleView({ schedule, completed, setCompleted, aiExtr
                         ></div>
                     </div>
 
-                    {/* Collapsible Topics - Show only top 5 on mobile */}
-                    <details className="group">
-                        <summary className="cursor-pointer text-xs font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 flex items-center gap-2">
+
+                    {/* Target Companies */}
+                    {config && config.selectedCompanies && config.selectedCompanies.length > 0 && (
+                        <details className="group" open>
+                            <summary className="cursor-pointer text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 flex items-center gap-2 mb-2">
+                                <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                                Target Companies ({config.selectedCompanies.length})
+                            </summary>
+                            <div className="flex flex-wrap gap-2 mt-2 mb-3">
+                                {config.selectedCompanies.map(company => (
+                                    <span key={company} className="px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium border border-blue-200 dark:border-blue-700">
+                                        {company}
+                                    </span>
+                                ))}
+                            </div>
+                        </details>
+                    )}
+
+                    {/* Collapsible Topics - Improved visibility */}
+                    <details className="group" open>
+                        <summary className="cursor-pointer text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 flex items-center gap-2 mb-2">
                             <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
                             Top Topics ({topicStats.length})
                         </summary>
-                        <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-3">
+                        <div className="flex flex-wrap gap-2 mt-2">
                             {topicStats.map(([topic, count]) => (
-                                <span key={topic} className="px-2 py-0.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-[10px] sm:text-xs font-medium border border-gray-200 dark:border-gray-600 flex items-center gap-1">
-                                    <span className="truncate max-w-[80px] sm:max-w-[120px]">{topic}</span>
-                                    <span className="bg-white dark:bg-gray-800 px-1 py-0.5 rounded text-[9px] font-bold text-blue-600 dark:text-blue-400">{count}</span>
+                                <span key={topic} className="px-3 py-1.5 bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium border border-purple-200 dark:border-purple-700 flex items-center gap-2">
+                                    <span>{topic}</span>
+                                    <span className="bg-white dark:bg-purple-800 px-2 py-0.5 rounded text-xs font-bold text-purple-600 dark:text-purple-300">{count}</span>
                                 </span>
                             ))}
                         </div>
