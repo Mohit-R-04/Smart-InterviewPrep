@@ -18,6 +18,18 @@ function useDebounce(value, delay) {
     return debouncedValue;
 }
 
+// Custom comparison function for React.memo
+function arePropsEqual(prevProps, nextProps) {
+    // Only re-render if these specific props change
+    return (
+        prevProps.config === nextProps.config &&
+        prevProps.allProblems === nextProps.allProblems &&
+        prevProps.dynamicCompanyCounts === nextProps.dynamicCompanyCounts &&
+        prevProps.dynamicTopicCounts === nextProps.dynamicTopicCounts &&
+        JSON.stringify(prevProps.filteredStats) === JSON.stringify(nextProps.filteredStats)
+    );
+}
+
 const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setConfig, allProblems, filteredStats, dynamicCompanyCounts, dynamicTopicCounts }) {
     const [companySearch, setCompanySearch] = useState('');
     const [topicSearch, setTopicSearch] = useState('');
@@ -398,6 +410,6 @@ const ConfigurationPanel = React.memo(function ConfigurationPanel({ config, setC
             </CollapsibleSection>
         </div>
     );
-});
+}, arePropsEqual);
 
 export default ConfigurationPanel;
