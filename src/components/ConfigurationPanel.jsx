@@ -104,7 +104,7 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
 
     return (
         <div className="lg:sticky lg:top-16 lg:-mt-8 lg:pt-8 lg:h-[calc(100vh-6rem)] z-[900]">
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 space-y-8 flex flex-col lg:h-full transition-colors duration-300">
+            <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 space-y-4 flex flex-col lg:h-full transition-colors duration-300">
                 <h2 className="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-700 pb-4 shrink-0 tracking-tight">
                     Configuration
                 </h2>
