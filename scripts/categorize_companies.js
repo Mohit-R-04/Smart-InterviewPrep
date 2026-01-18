@@ -1,5 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Categorizes companies into tiers based on their problem count and industry reputation
@@ -112,9 +116,9 @@ function categorizeCompaniesIntoTiers() {
 }
 
 // Run if called directly
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
     categorizeCompaniesIntoTiers();
     console.log('\n🎉 Company tier categorization complete!');
 }
 
-module.exports = { categorizeCompaniesIntoTiers };
+export { categorizeCompaniesIntoTiers };
