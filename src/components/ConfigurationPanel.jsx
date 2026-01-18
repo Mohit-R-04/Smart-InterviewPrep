@@ -31,6 +31,10 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
     const [isCompaniesOpen, setIsCompaniesOpen] = useState(true);
     const [isTopicsOpen, setIsTopicsOpen] = useState(true);
 
+    // Memoize the selected arrays to prevent reference changes
+    const selectedCompanies = useMemo(() => config.selectedCompanies, [config.selectedCompanies]);
+    const selectedTopics = useMemo(() => config.selectedTopics || [], [config.selectedTopics]);
+
     // Extract unique companies & counts using dynamic data
     const companyOptions = useMemo(() => {
         const map = new Map();
@@ -46,14 +50,14 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
 
         return Array.from(map.entries())
             .sort((a, b) => {
-                const aSelected = config.selectedCompanies.includes(a[0]);
-                const bSelected = config.selectedCompanies.includes(b[0]);
+                const aSelected = selectedCompanies.includes(a[0]);
+                const bSelected = selectedCompanies.includes(b[0]);
                 if (aSelected && !bSelected) return -1;
                 if (!aSelected && bSelected) return 1;
                 return b[1] - a[1];
             })
             .map(([name, count]) => ({ name, count }));
-    }, [allProblems, dynamicCompanyCounts, config.selectedCompanies]);
+    }, [allProblems, dynamicCompanyCounts, selectedCompanies]);
 
     // Extract unique topics & counts using dynamic data
     const topicOptions = useMemo(() => {
@@ -75,14 +79,14 @@ export default function ConfigurationPanel({ config, setConfig, allProblems, fil
 
         return Array.from(map.entries())
             .sort((a, b) => {
-                const aSelected = (config.selectedTopics || []).includes(a[0]);
-                const bSelected = (config.selectedTopics || []).includes(b[0]);
+                const aSelected = selectedTopics.includes(a[0]);
+                const bSelected = selectedTopics.includes(b[0]);
                 if (aSelected && !bSelected) return -1;
                 if (!aSelected && bSelected) return 1;
                 return b[1] - a[1];
             })
             .map(([name, count]) => ({ name, count }));
-    }, [allProblems, dynamicTopicCounts, config.selectedTopics]);
+    }, [allProblems, dynamicTopicCounts, selectedTopics]);
 
     const filteredCompanies = useMemo(() => {
         if (!debouncedCompanySearch.trim()) return companyOptions;
