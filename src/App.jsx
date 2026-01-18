@@ -113,17 +113,24 @@ function App() {
         return stats;
     }, [problemsData, config.selectedCompanies, config.selectedTopics]);
 
-    // Dynamic Company Counts - Use LeetCode Wizard data for accurate counts
-    const dynamicCompanyCounts = useMemo(() => {
+    // Company Counts from LeetCode Wizard (static, doesn't change)
+    const wizardCompanyCounts = useMemo(() => {
+        if (!companiesData || companiesData.length === 0) return null;
         const map = new Map();
+        companiesData.forEach(company => {
+            map.set(company.name, company.count);
+        });
+        return map;
+    }, [companiesData]);
 
-        // If we have LeetCode Wizard data, use those accurate counts
-        if (companiesData && companiesData.length > 0) {
-            companiesData.forEach(company => {
-                map.set(company.name, company.count);
-            });
-        } else if (problemsData) {
-            // Fallback: calculate from problems if wizard data not available
+    // Dynamic Company Counts - only recalculates if no wizard data
+    const dynamicCompanyCounts = useMemo(() => {
+        // Use wizard data if available (doesn't change with filters)
+        if (wizardCompanyCounts) return wizardCompanyCounts;
+
+        // Fallback: calculate from problems
+        const map = new Map();
+        if (problemsData) {
             problemsData.forEach(p => {
                 if (!config.selectedDifficulties.includes(p.difficulty)) return;
                 if (config.selectedTopics.length > 0) {
@@ -136,9 +143,8 @@ function App() {
                 });
             });
         }
-
         return map;
-    }, [companiesData, problemsData, config.selectedDifficulties, config.selectedTopics]);
+    }, [wizardCompanyCounts, problemsData, config.selectedDifficulties, config.selectedTopics]);
 
     // Dynamic Topic Counts
     const dynamicTopicCounts = useMemo(() => {
