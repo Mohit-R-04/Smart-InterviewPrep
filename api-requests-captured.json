@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://api.leetcodewizard.io/api/v1/treasurer",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.0.0 Safari/537.36",
+      "accept": "application/json",
+      "content-type": "application/json"
+    },
+    "postData": "{\"t\":\"3cfcb25e3539d297aca30da87acb781c\",\"d\":{\"fullPath\":\"/problem-database\",\"utm_source\":null,\"utm_id\":null}}"
+  },
+  {
+    "url": "https://api.leetcodewizard.io/api/v1/treasurer",
+    "method": "OPTIONS",
+    "headers": {
+      "accept": "*/*",
+      "access-control-request-headers": "content-type",
+      "access-control-request-method": "POST",
+      "origin": "https://leetcodewizard.io",
+      "sec-fetch-mode": "cors",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "url": "https://api.leetcodewizard.io/api/v1/treasurer",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "",
+      "accept-language": "en-GB,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.0.0 Safari/537.36",
+      "accept": "application/json",
+      "content-type": "application/json"
+    },
+    "postData": "{\"t\":\"3cfcb25e3539d297aca30da87acb781c\",\"d\":{\"fullPath\":\"/problem-database?company=google\",\"utm_source\":null,\"utm_id\":null}}"
+  },
+  {
+    "url": "https://api.leetcodewizard.io/api/v1/treasurer",
+    "method": "OPTIONS",
+    "headers": {
+      "accept": "*/*",
+      "access-control-request-headers": "content-type",
+      "access-control-request-method": "POST",
+      "origin": "https://leetcodewizard.io",
+      "sec-fetch-mode": "cors",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.0.0 Safari/537.36"
+    }
+  }
+]
