@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 
 const PRESETS = {
-    topTech: ['Google', 'Meta', 'Amazon', 'Microsoft', 'Apple', 'Netflix', 'Uber', 'Airbnb'],
+    topTech: ['Google', 'Facebook', 'Amazon', 'Microsoft', 'Apple', 'Netflix', 'Uber', 'Airbnb'],
     recommendedTopics: ['Array', 'String', 'Hash Table', 'Dynamic Programming', 'Tree', 'Graph', 'Linked List', 'Sorting']
 };
 
