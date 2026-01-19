@@ -133,11 +133,11 @@ function App() {
         return stats;
     }, [problemsData, config.selectedCompanies, config.selectedTopics]);
 
-    // Company Counts - Use unified list (LeetCode + Wizard data merged)
+    // Company Counts - ONLY show companies with actual problems
     const dynamicCompanyCounts = useMemo(() => {
         const map = new Map();
 
-        // First, count actual problems from LeetCode data
+        // Count actual problems from LeetCode data
         if (problemsData) {
             problemsData.forEach(p => {
                 p.companies.forEach(c => {
@@ -146,19 +146,11 @@ function App() {
             });
         }
 
-        // Then, add companies from unified list (includes wizard-only companies)
-        if (companiesData && companiesData.length > 0) {
-            companiesData.forEach(company => {
-                // Only add if not already in map (LeetCode data takes precedence)
-                if (!map.has(company.name)) {
-                    // Use leetcodeProblems count, or 0 if none
-                    map.set(company.name, company.leetcodeProblems || 0);
-                }
-            });
-        }
+        // Do NOT add companies with 0 problems
+        // Only return companies that have actual problem data
 
         return map;
-    }, [problemsData, companiesData]);
+    }, [problemsData]);
 
     // Dynamic Topic Counts
     const dynamicTopicCounts = useMemo(() => {
