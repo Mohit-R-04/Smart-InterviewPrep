@@ -1,2298 +1,2298 @@
 [
   {
     "name": "Google",
-    "count": 1208,
     "slug": "google",
+    "problemCount": 1208,
+    "wizardCount": 5432,
     "hasProblems": true,
-    "leetcodeProblems": 1208,
-    "wizardReports": 5432
+    "source": "leetcode"
   },
   {
     "name": "Amazon",
-    "count": 1207,
     "slug": "amazon",
+    "problemCount": 1207,
+    "wizardCount": 4749,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 4749
+    "source": "leetcode"
   },
   {
     "name": "Facebook",
-    "count": 1207,
     "slug": "facebook",
+    "problemCount": 1207,
+    "wizardCount": 3429,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 3429
+    "source": "leetcode"
   },
   {
     "name": "Microsoft",
-    "count": 1207,
     "slug": "microsoft",
+    "problemCount": 1207,
+    "wizardCount": 3198,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 3198
+    "source": "leetcode"
   },
   {
     "name": "Apple",
-    "count": 1207,
     "slug": "apple",
+    "problemCount": 1207,
+    "wizardCount": 878,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 878
+    "source": "leetcode"
   },
   {
     "name": "Netflix",
-    "count": 1207,
     "slug": "netflix",
+    "problemCount": 1207,
+    "wizardCount": 76,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 76
+    "source": "leetcode"
   },
   {
     "name": "Meta",
-    "count": 1207,
     "slug": "meta",
+    "problemCount": 1207,
+    "wizardCount": 0,
     "hasProblems": true,
-    "leetcodeProblems": 1207,
-    "wizardReports": 0
+    "source": "leetcode"
   },
   {
     "name": "Bloomberg",
-    "count": 498,
     "slug": "bloomberg",
+    "problemCount": 498,
+    "wizardCount": 2835,
     "hasProblems": true,
-    "leetcodeProblems": 498,
-    "wizardReports": 2835
+    "source": "leetcode"
   },
   {
     "name": "TikTok",
-    "count": 497,
     "slug": "tiktok",
+    "problemCount": 497,
+    "wizardCount": 899,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 899
+    "source": "leetcode"
   },
   {
     "name": "Uber",
-    "count": 497,
     "slug": "uber",
+    "problemCount": 497,
+    "wizardCount": 884,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 884
+    "source": "leetcode"
   },
   {
     "name": "Oracle",
-    "count": 497,
     "slug": "oracle",
+    "problemCount": 497,
+    "wizardCount": 809,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 809
+    "source": "leetcode"
   },
   {
     "name": "Adobe",
-    "count": 497,
     "slug": "adobe",
+    "problemCount": 497,
+    "wizardCount": 532,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 532
+    "source": "leetcode"
   },
   {
     "name": "LinkedIn",
-    "count": 497,
     "slug": "linkedin",
+    "problemCount": 497,
+    "wizardCount": 473,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 473
+    "source": "leetcode"
   },
   {
     "name": "Salesforce",
-    "count": 497,
     "slug": "salesforce",
+    "problemCount": 497,
+    "wizardCount": 397,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 397
+    "source": "leetcode"
   },
   {
     "name": "Nvidia",
-    "count": 497,
     "slug": "nvidia",
+    "problemCount": 497,
+    "wizardCount": 295,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 295
+    "source": "leetcode"
   },
   {
     "name": "DoorDash",
-    "count": 497,
     "slug": "doordash",
+    "problemCount": 497,
+    "wizardCount": 206,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 206
+    "source": "leetcode"
   },
   {
     "name": "Snapchat",
-    "count": 497,
     "slug": "snapchat",
+    "problemCount": 497,
+    "wizardCount": 201,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 201
+    "source": "leetcode"
   },
   {
     "name": "Airbnb",
-    "count": 497,
     "slug": "airbnb",
+    "problemCount": 497,
+    "wizardCount": 128,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 128
+    "source": "leetcode"
   },
   {
     "name": "ByteDance",
-    "count": 497,
     "slug": "bytedance",
+    "problemCount": 497,
+    "wizardCount": 127,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 127
+    "source": "leetcode"
   },
   {
     "name": "Twitter",
-    "count": 497,
     "slug": "twitter",
+    "problemCount": 497,
+    "wizardCount": 108,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 108
+    "source": "leetcode"
   },
   {
     "name": "Tesla",
-    "count": 497,
     "slug": "tesla",
+    "problemCount": 497,
+    "wizardCount": 97,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 97
+    "source": "leetcode"
   },
   {
     "name": "Lyft",
-    "count": 497,
     "slug": "lyft",
+    "problemCount": 497,
+    "wizardCount": 55,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 55
+    "source": "leetcode"
   },
   {
     "name": "Stripe",
-    "count": 497,
     "slug": "stripe",
+    "problemCount": 497,
+    "wizardCount": 26,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 26
+    "source": "leetcode"
   },
   {
     "name": "Instacart",
-    "count": 497,
     "slug": "instacart",
+    "problemCount": 497,
+    "wizardCount": 24,
     "hasProblems": true,
-    "leetcodeProblems": 497,
-    "wizardReports": 24
+    "source": "leetcode"
   },
   {
     "name": "Goldman Sachs",
-    "count": 55,
     "slug": "goldman-sachs",
+    "problemCount": 55,
+    "wizardCount": 588,
     "hasProblems": true,
-    "leetcodeProblems": 55,
-    "wizardReports": 588
+    "source": "leetcode"
   },
   {
     "name": "Citadel",
-    "count": 55,
     "slug": "citadel",
+    "problemCount": 55,
+    "wizardCount": 196,
     "hasProblems": true,
-    "leetcodeProblems": 55,
-    "wizardReports": 196
+    "source": "leetcode"
   },
   {
     "name": "JPMorgan",
-    "count": 55,
     "slug": "jpmorgan",
+    "problemCount": 55,
+    "wizardCount": 162,
     "hasProblems": true,
-    "leetcodeProblems": 55,
-    "wizardReports": 162
+    "source": "leetcode"
   },
   {
     "name": "Capital One",
-    "count": 55,
     "slug": "capital-one",
+    "problemCount": 55,
+    "wizardCount": 126,
     "hasProblems": true,
-    "leetcodeProblems": 55,
-    "wizardReports": 126
+    "source": "leetcode"
   },
   {
     "name": "Morgan Stanley",
-    "count": 55,
     "slug": "morgan-stanley",
+    "problemCount": 55,
+    "wizardCount": 96,
     "hasProblems": true,
-    "leetcodeProblems": 55,
-    "wizardReports": 96
+    "source": "leetcode"
   },
   {
     "name": "Walmart",
-    "count": 54,
     "slug": "walmart-labs",
+    "problemCount": 54,
+    "wizardCount": 337,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 337
+    "source": "leetcode"
   },
   {
     "name": "Snowflake",
-    "count": 54,
     "slug": "snowflake",
+    "problemCount": 54,
+    "wizardCount": 230,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 230
+    "source": "leetcode"
   },
   {
     "name": "PayPal",
-    "count": 54,
     "slug": "paypal",
+    "problemCount": 54,
+    "wizardCount": 227,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 227
+    "source": "leetcode"
   },
   {
     "name": "Cisco",
-    "count": 54,
     "slug": "cisco",
+    "problemCount": 54,
+    "wizardCount": 171,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 171
+    "source": "leetcode"
   },
   {
     "name": "Intuit",
-    "count": 54,
     "slug": "intuit",
+    "problemCount": 54,
+    "wizardCount": 146,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 146
+    "source": "leetcode"
   },
   {
     "name": "Atlassian",
-    "count": 54,
     "slug": "atlassian",
+    "problemCount": 54,
+    "wizardCount": 143,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 143
+    "source": "leetcode"
   },
   {
     "name": "Roblox",
-    "count": 54,
     "slug": "roblox",
+    "problemCount": 54,
+    "wizardCount": 135,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 135
+    "source": "leetcode"
   },
   {
     "name": "eBay",
-    "count": 54,
     "slug": "ebay",
+    "problemCount": 54,
+    "wizardCount": 117,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 117
+    "source": "leetcode"
   },
   {
     "name": "Expedia",
-    "count": 54,
     "slug": "expedia",
+    "problemCount": 54,
+    "wizardCount": 110,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 110
+    "source": "leetcode"
   },
   {
     "name": "Pinterest",
-    "count": 54,
     "slug": "pinterest",
+    "problemCount": 54,
+    "wizardCount": 105,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 105
+    "source": "leetcode"
   },
   {
     "name": "Databricks",
-    "count": 54,
     "slug": "databricks",
+    "problemCount": 54,
+    "wizardCount": 86,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 86
+    "source": "leetcode"
   },
   {
     "name": "Palantir",
-    "count": 54,
     "slug": "palantir-technologies",
+    "problemCount": 54,
+    "wizardCount": 62,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 62
+    "source": "leetcode"
   },
   {
     "name": "Dropbox",
-    "count": 54,
     "slug": "dropbox",
+    "problemCount": 54,
+    "wizardCount": 48,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 48
+    "source": "leetcode"
   },
   {
     "name": "Spotify",
-    "count": 54,
     "slug": "spotify",
+    "problemCount": 54,
+    "wizardCount": 35,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 35
+    "source": "leetcode"
   },
   {
     "name": "Robinhood",
-    "count": 54,
     "slug": "robinhood",
+    "problemCount": 54,
+    "wizardCount": 31,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 31
+    "source": "leetcode"
   },
   {
     "name": "Booking.com",
-    "count": 54,
     "slug": "bookingcom",
+    "problemCount": 54,
+    "wizardCount": 29,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 29
+    "source": "leetcode"
   },
   {
     "name": "Coinbase",
-    "count": 54,
     "slug": "coinbase",
+    "problemCount": 54,
+    "wizardCount": 28,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 28
+    "source": "leetcode"
   },
   {
     "name": "Square",
-    "count": 54,
     "slug": "square",
+    "problemCount": 54,
+    "wizardCount": 25,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 25
+    "source": "leetcode"
   },
   {
     "name": "Twilio",
-    "count": 54,
     "slug": "twilio",
+    "problemCount": 54,
+    "wizardCount": 21,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 21
+    "source": "leetcode"
   },
   {
     "name": "VMware",
-    "count": 54,
     "slug": "vmware",
+    "problemCount": 54,
+    "wizardCount": 17,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 17
+    "source": "leetcode"
   },
   {
     "name": "Reddit",
-    "count": 54,
     "slug": "reddit",
+    "problemCount": 54,
+    "wizardCount": 10,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 10
+    "source": "leetcode"
   },
   {
     "name": "Zillow",
-    "count": 54,
     "slug": "zillow",
+    "problemCount": 54,
+    "wizardCount": 3,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 3
+    "source": "leetcode"
   },
   {
     "name": "Slack",
-    "count": 54,
     "slug": "slack",
+    "problemCount": 54,
+    "wizardCount": 0,
     "hasProblems": true,
-    "leetcodeProblems": 54,
-    "wizardReports": 0
+    "source": "leetcode"
   },
   {
     "name": "Tcs",
-    "count": 437,
     "slug": "tcs",
+    "problemCount": 0,
+    "wizardCount": 437,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 437
+    "source": "wizard"
   },
   {
     "name": "Zoho",
-    "count": 370,
     "slug": "zoho",
+    "problemCount": 0,
+    "wizardCount": 370,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 370
+    "source": "wizard"
   },
   {
     "name": "Ibm",
-    "count": 337,
     "slug": "ibm",
+    "problemCount": 0,
+    "wizardCount": 337,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 337
+    "source": "wizard"
   },
   {
     "name": "Infosys",
-    "count": 312,
     "slug": "infosys",
+    "problemCount": 0,
+    "wizardCount": 312,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 312
+    "source": "wizard"
   },
   {
     "name": "Yandex",
-    "count": 308,
     "slug": "yandex",
+    "problemCount": 0,
+    "wizardCount": 308,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 308
+    "source": "wizard"
   },
   {
     "name": "Accenture",
-    "count": 284,
     "slug": "accenture",
+    "problemCount": 0,
+    "wizardCount": 284,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 284
+    "source": "wizard"
   },
   {
     "name": "Visa",
-    "count": 257,
     "slug": "visa",
+    "problemCount": 0,
+    "wizardCount": 257,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 257
+    "source": "wizard"
   },
   {
     "name": "De Shaw",
-    "count": 246,
     "slug": "de-shaw",
+    "problemCount": 0,
+    "wizardCount": 246,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 246
+    "source": "wizard"
   },
   {
     "name": "Flipkart",
-    "count": 232,
     "slug": "flipkart",
+    "problemCount": 0,
+    "wizardCount": 232,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 232
+    "source": "wizard"
   },
   {
     "name": "Phonepe",
-    "count": 200,
     "slug": "phonepe",
+    "problemCount": 0,
+    "wizardCount": 200,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 200
+    "source": "wizard"
   },
   {
     "name": "Yahoo",
-    "count": 200,
     "slug": "yahoo",
+    "problemCount": 0,
+    "wizardCount": 200,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 200
+    "source": "wizard"
   },
   {
     "name": "Servicenow",
-    "count": 169,
     "slug": "servicenow",
+    "problemCount": 0,
+    "wizardCount": 169,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 169
+    "source": "wizard"
   },
   {
     "name": "Nutanix",
-    "count": 140,
     "slug": "nutanix",
+    "problemCount": 0,
+    "wizardCount": 140,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 140
+    "source": "wizard"
   },
   {
     "name": "Samsung",
-    "count": 131,
     "slug": "samsung",
+    "problemCount": 0,
+    "wizardCount": 131,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 131
+    "source": "wizard"
   },
   {
     "name": "Wix",
-    "count": 111,
     "slug": "wix",
+    "problemCount": 0,
+    "wizardCount": 111,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 111
+    "source": "wizard"
   },
   {
     "name": "Qualcomm",
-    "count": 110,
     "slug": "qualcomm",
+    "problemCount": 0,
+    "wizardCount": 110,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 110
+    "source": "wizard"
   },
   {
     "name": "Coupang",
-    "count": 108,
     "slug": "coupang",
+    "problemCount": 0,
+    "wizardCount": 108,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 108
+    "source": "wizard"
   },
   {
     "name": "Epam Systems",
-    "count": 107,
     "slug": "epam-systems",
+    "problemCount": 0,
+    "wizardCount": 107,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 107
+    "source": "wizard"
   },
   {
     "name": "Anduril",
-    "count": 98,
     "slug": "anduril",
+    "problemCount": 0,
+    "wizardCount": 98,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 98
+    "source": "wizard"
   },
   {
     "name": "Cognizant",
-    "count": 92,
     "slug": "cognizant",
+    "problemCount": 0,
+    "wizardCount": 92,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 92
+    "source": "wizard"
   },
   {
     "name": "Sap",
-    "count": 89,
     "slug": "sap",
+    "problemCount": 0,
+    "wizardCount": 89,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 89
+    "source": "wizard"
   },
   {
     "name": "Agoda",
-    "count": 88,
     "slug": "agoda",
+    "problemCount": 0,
+    "wizardCount": 88,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 88
+    "source": "wizard"
   },
   {
     "name": "Meesho",
-    "count": 85,
     "slug": "meesho",
+    "problemCount": 0,
+    "wizardCount": 85,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 85
+    "source": "wizard"
   },
   {
     "name": "Arista Networks",
-    "count": 84,
     "slug": "arista-networks",
+    "problemCount": 0,
+    "wizardCount": 84,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 84
+    "source": "wizard"
   },
   {
     "name": "Turing",
-    "count": 83,
     "slug": "turing",
+    "problemCount": 0,
+    "wizardCount": 83,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 83
+    "source": "wizard"
   },
   {
     "name": "Sprinklr",
-    "count": 81,
     "slug": "sprinklr",
+    "problemCount": 0,
+    "wizardCount": 81,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 81
+    "source": "wizard"
   },
   {
     "name": "Rubrik",
-    "count": 77,
     "slug": "rubrik",
+    "problemCount": 0,
+    "wizardCount": 77,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 77
+    "source": "wizard"
   },
   {
     "name": "Swiggy",
-    "count": 72,
     "slug": "swiggy",
+    "problemCount": 0,
+    "wizardCount": 72,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 72
+    "source": "wizard"
   },
   {
     "name": "Josh Technology",
-    "count": 71,
     "slug": "josh-technology",
+    "problemCount": 0,
+    "wizardCount": 71,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 71
+    "source": "wizard"
   },
   {
     "name": "Deloitte",
-    "count": 70,
     "slug": "deloitte",
+    "problemCount": 0,
+    "wizardCount": 70,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 70
+    "source": "wizard"
   },
   {
     "name": "Palo Alto Networks",
-    "count": 68,
     "slug": "palo-alto-networks",
+    "problemCount": 0,
+    "wizardCount": 68,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 68
+    "source": "wizard"
   },
   {
     "name": "Grammarly",
-    "count": 67,
     "slug": "grammarly",
+    "problemCount": 0,
+    "wizardCount": 67,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 67
+    "source": "wizard"
   },
   {
     "name": "Docusign",
-    "count": 67,
     "slug": "docusign",
+    "problemCount": 0,
+    "wizardCount": 67,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 67
+    "source": "wizard"
   },
   {
     "name": "Medianet",
-    "count": 65,
     "slug": "medianet",
+    "problemCount": 0,
+    "wizardCount": 65,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 65
+    "source": "wizard"
   },
   {
     "name": "Autodesk",
-    "count": 63,
     "slug": "autodesk",
+    "problemCount": 0,
+    "wizardCount": 63,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 63
+    "source": "wizard"
   },
   {
     "name": "Zeta",
-    "count": 63,
     "slug": "zeta",
+    "problemCount": 0,
+    "wizardCount": 63,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 63
+    "source": "wizard"
   },
   {
     "name": "Mathworks",
-    "count": 62,
     "slug": "mathworks",
+    "problemCount": 0,
+    "wizardCount": 62,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 62
+    "source": "wizard"
   },
   {
     "name": "Hashedin",
-    "count": 61,
     "slug": "hashedin",
+    "problemCount": 0,
+    "wizardCount": 61,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 61
+    "source": "wizard"
   },
   {
     "name": "Capgemini",
-    "count": 59,
     "slug": "capgemini",
+    "problemCount": 0,
+    "wizardCount": 59,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 59
+    "source": "wizard"
   },
   {
     "name": "Yelp",
-    "count": 56,
     "slug": "yelp",
+    "problemCount": 0,
+    "wizardCount": 56,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 56
+    "source": "wizard"
   },
   {
     "name": "Zepto",
-    "count": 55,
     "slug": "zepto",
+    "problemCount": 0,
+    "wizardCount": 55,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 55
+    "source": "wizard"
   },
   {
     "name": "Tinkoff",
-    "count": 54,
     "slug": "tinkoff",
+    "problemCount": 0,
+    "wizardCount": 54,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 54
+    "source": "wizard"
   },
   {
     "name": "Zomato",
-    "count": 50,
     "slug": "zomato",
+    "problemCount": 0,
+    "wizardCount": 50,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 50
+    "source": "wizard"
   },
   {
     "name": "Intel",
-    "count": 50,
     "slug": "intel",
+    "problemCount": 0,
+    "wizardCount": 50,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 50
+    "source": "wizard"
   },
   {
     "name": "Siemens",
-    "count": 48,
     "slug": "siemens",
+    "problemCount": 0,
+    "wizardCount": 48,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 48
+    "source": "wizard"
   },
   {
     "name": "American Express",
-    "count": 47,
     "slug": "american-express",
+    "problemCount": 0,
+    "wizardCount": 47,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 47
+    "source": "wizard"
   },
   {
     "name": "Myntra",
-    "count": 47,
     "slug": "myntra",
+    "problemCount": 0,
+    "wizardCount": 47,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 47
+    "source": "wizard"
   },
   {
     "name": "Rippling",
-    "count": 46,
     "slug": "rippling",
+    "problemCount": 0,
+    "wizardCount": 46,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 46
+    "source": "wizard"
   },
   {
     "name": "Paytm",
-    "count": 46,
     "slug": "paytm",
+    "problemCount": 0,
+    "wizardCount": 46,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 46
+    "source": "wizard"
   },
   {
     "name": "Wayfair",
-    "count": 45,
     "slug": "wayfair",
+    "problemCount": 0,
+    "wizardCount": 45,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 45
+    "source": "wizard"
   },
   {
     "name": "Verkada",
-    "count": 44,
     "slug": "verkada",
+    "problemCount": 0,
+    "wizardCount": 44,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 44
+    "source": "wizard"
   },
   {
     "name": "Tekion",
-    "count": 44,
     "slug": "tekion",
+    "problemCount": 0,
+    "wizardCount": 44,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 44
+    "source": "wizard"
   },
   {
     "name": "Squarepoint Capital",
-    "count": 43,
     "slug": "squarepoint-capital",
+    "problemCount": 0,
+    "wizardCount": 43,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 43
+    "source": "wizard"
   },
   {
     "name": "Wipro",
-    "count": 43,
     "slug": "wipro",
+    "problemCount": 0,
+    "wizardCount": 43,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 43
+    "source": "wizard"
   },
   {
     "name": "Geico",
-    "count": 43,
     "slug": "geico",
+    "problemCount": 0,
+    "wizardCount": 43,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 43
+    "source": "wizard"
   },
   {
     "name": "Wells Fargo",
-    "count": 43,
     "slug": "wells-fargo",
+    "problemCount": 0,
+    "wizardCount": 43,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 43
+    "source": "wizard"
   },
   {
     "name": "Datadog",
-    "count": 42,
     "slug": "datadog",
+    "problemCount": 0,
+    "wizardCount": 42,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 42
+    "source": "wizard"
   },
   {
     "name": "Two Sigma",
-    "count": 42,
     "slug": "two-sigma",
+    "problemCount": 0,
+    "wizardCount": 42,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 42
+    "source": "wizard"
   },
   {
     "name": "Zopsmart",
-    "count": 42,
     "slug": "zopsmart",
+    "problemCount": 0,
+    "wizardCount": 42,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 42
+    "source": "wizard"
   },
   {
     "name": "Zenefits",
-    "count": 42,
     "slug": "zenefits",
+    "problemCount": 0,
+    "wizardCount": 42,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 42
+    "source": "wizard"
   },
   {
     "name": "Makemytrip",
-    "count": 41,
     "slug": "makemytrip",
+    "problemCount": 0,
+    "wizardCount": 41,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 41
+    "source": "wizard"
   },
   {
     "name": "Quora",
-    "count": 41,
     "slug": "quora",
+    "problemCount": 0,
+    "wizardCount": 41,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 41
+    "source": "wizard"
   },
   {
     "name": "Ixl",
-    "count": 41,
     "slug": "ixl",
+    "problemCount": 0,
+    "wizardCount": 41,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 41
+    "source": "wizard"
   },
   {
     "name": "Deutsche Bank",
-    "count": 40,
     "slug": "deutsche-bank",
+    "problemCount": 0,
+    "wizardCount": 40,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 40
+    "source": "wizard"
   },
   {
     "name": "Okta",
-    "count": 40,
     "slug": "okta",
+    "problemCount": 0,
+    "wizardCount": 40,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 40
+    "source": "wizard"
   },
   {
     "name": "Zscaler",
-    "count": 39,
     "slug": "zscaler",
+    "problemCount": 0,
+    "wizardCount": 39,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 39
+    "source": "wizard"
   },
   {
     "name": "Accolite",
-    "count": 39,
     "slug": "accolite",
+    "problemCount": 0,
+    "wizardCount": 39,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 39
+    "source": "wizard"
   },
   {
     "name": "Mongodb",
-    "count": 39,
     "slug": "mongodb",
+    "problemCount": 0,
+    "wizardCount": 39,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 39
+    "source": "wizard"
   },
   {
     "name": "Huawei",
-    "count": 38,
     "slug": "huawei",
+    "problemCount": 0,
+    "wizardCount": 38,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 38
+    "source": "wizard"
   },
   {
     "name": "Akuna Capital",
-    "count": 35,
     "slug": "akuna-capital",
+    "problemCount": 0,
+    "wizardCount": 35,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 35
+    "source": "wizard"
   },
   {
     "name": "Epic Systems",
-    "count": 34,
     "slug": "epic-systems",
+    "problemCount": 0,
+    "wizardCount": 34,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 34
+    "source": "wizard"
   },
   {
     "name": "Fractal Analytics",
-    "count": 34,
     "slug": "fractal-analytics",
+    "problemCount": 0,
+    "wizardCount": 34,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 34
+    "source": "wizard"
   },
   {
     "name": "Nuro",
-    "count": 34,
     "slug": "nuro",
+    "problemCount": 0,
+    "wizardCount": 34,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 34
+    "source": "wizard"
   },
   {
     "name": "Disney",
-    "count": 33,
     "slug": "disney",
+    "problemCount": 0,
+    "wizardCount": 33,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 33
+    "source": "wizard"
   },
   {
     "name": "Cloudflare",
-    "count": 33,
     "slug": "cloudflare",
+    "problemCount": 0,
+    "wizardCount": 33,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 33
+    "source": "wizard"
   },
   {
     "name": "Mitsogo",
-    "count": 32,
     "slug": "mitsogo",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Karat",
-    "count": 32,
     "slug": "karat",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Sofi",
-    "count": 32,
     "slug": "sofi",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Openai",
-    "count": 32,
     "slug": "openai",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Splunk",
-    "count": 32,
     "slug": "splunk",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Roku",
-    "count": 32,
     "slug": "roku",
+    "problemCount": 0,
+    "wizardCount": 32,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 32
+    "source": "wizard"
   },
   {
     "name": "Grab",
-    "count": 31,
     "slug": "grab",
+    "problemCount": 0,
+    "wizardCount": 31,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 31
+    "source": "wizard"
   },
   {
     "name": "Pocket Gems",
-    "count": 30,
     "slug": "pocket-gems",
+    "problemCount": 0,
+    "wizardCount": 30,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 30
+    "source": "wizard"
   },
   {
     "name": "Blackrock",
-    "count": 30,
     "slug": "blackrock",
+    "problemCount": 0,
+    "wizardCount": 30,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 30
+    "source": "wizard"
   },
   {
     "name": "Barclays",
-    "count": 30,
     "slug": "barclays",
+    "problemCount": 0,
+    "wizardCount": 30,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 30
+    "source": "wizard"
   },
   {
     "name": "Juspay",
-    "count": 30,
     "slug": "juspay",
+    "problemCount": 0,
+    "wizardCount": 30,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 30
+    "source": "wizard"
   },
   {
     "name": "Crowdstrike",
-    "count": 29,
     "slug": "crowdstrike",
+    "problemCount": 0,
+    "wizardCount": 29,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 29
+    "source": "wizard"
   },
   {
     "name": "Bitgo",
-    "count": 29,
     "slug": "bitgo",
+    "problemCount": 0,
+    "wizardCount": 29,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 29
+    "source": "wizard"
   },
   {
     "name": "Arcesium",
-    "count": 28,
     "slug": "arcesium",
+    "problemCount": 0,
+    "wizardCount": 28,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 28
+    "source": "wizard"
   },
   {
     "name": "Udemy",
-    "count": 28,
     "slug": "udemy",
+    "problemCount": 0,
+    "wizardCount": 28,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 28
+    "source": "wizard"
   },
   {
     "name": "Clevertap",
-    "count": 28,
     "slug": "clevertap",
+    "problemCount": 0,
+    "wizardCount": 28,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 28
+    "source": "wizard"
   },
   {
     "name": "Nike",
-    "count": 27,
     "slug": "nike",
+    "problemCount": 0,
+    "wizardCount": 27,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 27
+    "source": "wizard"
   },
   {
     "name": "Bny Mellon",
-    "count": 27,
     "slug": "bny-mellon",
+    "problemCount": 0,
+    "wizardCount": 27,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 27
+    "source": "wizard"
   },
   {
     "name": "Uipath",
-    "count": 27,
     "slug": "uipath",
+    "problemCount": 0,
+    "wizardCount": 27,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 27
+    "source": "wizard"
   },
   {
     "name": "Netapp",
-    "count": 27,
     "slug": "netapp",
+    "problemCount": 0,
+    "wizardCount": 27,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 27
+    "source": "wizard"
   },
   {
     "name": "Affirm",
-    "count": 27,
     "slug": "affirm",
+    "problemCount": 0,
+    "wizardCount": 27,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 27
+    "source": "wizard"
   },
   {
     "name": "Hubspot",
-    "count": 26,
     "slug": "hubspot",
+    "problemCount": 0,
+    "wizardCount": 26,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 26
+    "source": "wizard"
   },
   {
     "name": "Razorpay",
-    "count": 26,
     "slug": "razorpay",
+    "problemCount": 0,
+    "wizardCount": 26,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 26
+    "source": "wizard"
   },
   {
     "name": "Ripple",
-    "count": 26,
     "slug": "ripple",
+    "problemCount": 0,
+    "wizardCount": 26,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 26
+    "source": "wizard"
   },
   {
     "name": "Amd",
-    "count": 26,
     "slug": "amd",
+    "problemCount": 0,
+    "wizardCount": 26,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 26
+    "source": "wizard"
   },
   {
     "name": "Dream11",
-    "count": 25,
     "slug": "dream11",
+    "problemCount": 0,
+    "wizardCount": 25,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 25
+    "source": "wizard"
   },
   {
     "name": "Vk",
-    "count": 25,
     "slug": "vk",
+    "problemCount": 0,
+    "wizardCount": 25,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 25
+    "source": "wizard"
   },
   {
     "name": "Ozon",
-    "count": 25,
     "slug": "ozon",
+    "problemCount": 0,
+    "wizardCount": 25,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 25
+    "source": "wizard"
   },
   {
     "name": "Confluent",
-    "count": 25,
     "slug": "confluent",
+    "problemCount": 0,
+    "wizardCount": 25,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 25
+    "source": "wizard"
   },
   {
     "name": "Waymo",
-    "count": 25,
     "slug": "waymo",
+    "problemCount": 0,
+    "wizardCount": 25,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 25
+    "source": "wizard"
   },
   {
     "name": "Verily",
-    "count": 24,
     "slug": "verily",
+    "problemCount": 0,
+    "wizardCount": 24,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 24
+    "source": "wizard"
   },
   {
     "name": "Applied Intuition",
-    "count": 23,
     "slug": "applied-intuition",
+    "problemCount": 0,
+    "wizardCount": 23,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 23
+    "source": "wizard"
   },
   {
     "name": "Whatnot",
-    "count": 23,
     "slug": "whatnot",
+    "problemCount": 0,
+    "wizardCount": 23,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 23
+    "source": "wizard"
   },
   {
     "name": "Persistent Systems",
-    "count": 23,
     "slug": "persistent-systems",
+    "problemCount": 0,
+    "wizardCount": 23,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 23
+    "source": "wizard"
   },
   {
     "name": "Jane Street",
-    "count": 23,
     "slug": "jane-street",
+    "problemCount": 0,
+    "wizardCount": 23,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 23
+    "source": "wizard"
   },
   {
     "name": "Sigmoid",
-    "count": 23,
     "slug": "sigmoid",
+    "problemCount": 0,
+    "wizardCount": 23,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 23
+    "source": "wizard"
   },
   {
     "name": "Revolut",
-    "count": 22,
     "slug": "revolut",
+    "problemCount": 0,
+    "wizardCount": 22,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 22
+    "source": "wizard"
   },
   {
     "name": "Mastercard",
-    "count": 22,
     "slug": "mastercard",
+    "problemCount": 0,
+    "wizardCount": 22,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 22
+    "source": "wizard"
   },
   {
     "name": "Warnermedia",
-    "count": 22,
     "slug": "warnermedia",
+    "problemCount": 0,
+    "wizardCount": 22,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 22
+    "source": "wizard"
   },
   {
     "name": "Dp World",
-    "count": 21,
     "slug": "dp-world",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Zs Associates",
-    "count": 21,
     "slug": "zs-associates",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Dell",
-    "count": 21,
     "slug": "dell",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Baidu",
-    "count": 21,
     "slug": "baidu",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Axon",
-    "count": 21,
     "slug": "axon",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Inmobi",
-    "count": 21,
     "slug": "inmobi",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Weride",
-    "count": 21,
     "slug": "weride",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Ukg",
-    "count": 21,
     "slug": "ukg",
+    "problemCount": 0,
+    "wizardCount": 21,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 21
+    "source": "wizard"
   },
   {
     "name": "Htc",
-    "count": 20,
     "slug": "htc",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "Millennium",
-    "count": 20,
     "slug": "millennium",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "Bcg",
-    "count": 20,
     "slug": "bcg",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "Flexport",
-    "count": 20,
     "slug": "flexport",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "Hcl",
-    "count": 20,
     "slug": "hcl",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "Rivian",
-    "count": 20,
     "slug": "rivian",
+    "problemCount": 0,
+    "wizardCount": 20,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 20
+    "source": "wizard"
   },
   {
     "name": "General Motors",
-    "count": 19,
     "slug": "general-motors",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Sig",
-    "count": 19,
     "slug": "sig",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Kla",
-    "count": 19,
     "slug": "kla",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Tencent",
-    "count": 19,
     "slug": "tencent",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Aurora",
-    "count": 19,
     "slug": "aurora",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Avito",
-    "count": 19,
     "slug": "avito",
+    "problemCount": 0,
+    "wizardCount": 19,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 19
+    "source": "wizard"
   },
   {
     "name": "Directi",
-    "count": 18,
     "slug": "directi",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Microstrategy",
-    "count": 18,
     "slug": "microstrategy",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Rakuten",
-    "count": 18,
     "slug": "rakuten",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Coursera",
-    "count": 18,
     "slug": "coursera",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Hrt",
-    "count": 18,
     "slug": "hrt",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Nielsen",
-    "count": 18,
     "slug": "nielsen",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Nordstrom",
-    "count": 18,
     "slug": "nordstrom",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Shopee",
-    "count": 18,
     "slug": "shopee",
+    "problemCount": 0,
+    "wizardCount": 18,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 18
+    "source": "wizard"
   },
   {
     "name": "Moloco",
-    "count": 17,
     "slug": "moloco",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "Virtusa",
-    "count": 17,
     "slug": "virtusa",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "Freshworks",
-    "count": 17,
     "slug": "freshworks",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "C3 Ai",
-    "count": 17,
     "slug": "c3-ai",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "Athenahealth",
-    "count": 17,
     "slug": "athenahealth",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "Akamai",
-    "count": 17,
     "slug": "akamai",
+    "problemCount": 0,
+    "wizardCount": 17,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 17
+    "source": "wizard"
   },
   {
     "name": "Info Edge",
-    "count": 16,
     "slug": "info-edge",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Virtu",
-    "count": 16,
     "slug": "virtu",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Criteo",
-    "count": 16,
     "slug": "criteo",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Thoughtspot",
-    "count": 16,
     "slug": "thoughtspot",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Gusto",
-    "count": 16,
     "slug": "gusto",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Imc",
-    "count": 16,
     "slug": "imc",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Rokt",
-    "count": 16,
     "slug": "rokt",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Pure Storage",
-    "count": 16,
     "slug": "pure-storage",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Compass",
-    "count": 16,
     "slug": "compass",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Oyo",
-    "count": 16,
     "slug": "oyo",
+    "problemCount": 0,
+    "wizardCount": 16,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 16
+    "source": "wizard"
   },
   {
     "name": "Pornhub",
-    "count": 15,
     "slug": "pornhub",
+    "problemCount": 0,
+    "wizardCount": 15,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 15
+    "source": "wizard"
   },
   {
     "name": "Twitch",
-    "count": 15,
     "slug": "twitch",
+    "problemCount": 0,
+    "wizardCount": 15,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 15
+    "source": "wizard"
   },
   {
     "name": "Upstart",
-    "count": 15,
     "slug": "upstart",
+    "problemCount": 0,
+    "wizardCount": 15,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 15
+    "source": "wizard"
   },
   {
     "name": "Shopify",
-    "count": 15,
     "slug": "shopify",
+    "problemCount": 0,
+    "wizardCount": 15,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 15
+    "source": "wizard"
   },
   {
     "name": "Nextdoor",
-    "count": 14,
     "slug": "nextdoor",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Attentive",
-    "count": 14,
     "slug": "attentive",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Squarespace",
-    "count": 14,
     "slug": "squarespace",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "At T",
-    "count": 14,
     "slug": "at-t",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Nokia",
-    "count": 14,
     "slug": "nokia",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Dunzo",
-    "count": 14,
     "slug": "dunzo",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Cars24",
-    "count": 14,
     "slug": "cars24",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Zoox",
-    "count": 14,
     "slug": "zoox",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Lucid",
-    "count": 14,
     "slug": "lucid",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Graviton",
-    "count": 14,
     "slug": "graviton",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Indeed",
-    "count": 14,
     "slug": "indeed",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Duolingo",
-    "count": 14,
     "slug": "duolingo",
+    "problemCount": 0,
+    "wizardCount": 14,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 14
+    "source": "wizard"
   },
   {
     "name": "Moveworks",
-    "count": 13,
     "slug": "moveworks",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Hsbc",
-    "count": 13,
     "slug": "hsbc",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Trilogy",
-    "count": 13,
     "slug": "trilogy",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Keeptruckin",
-    "count": 13,
     "slug": "keeptruckin",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Box",
-    "count": 13,
     "slug": "box",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "6sense",
-    "count": 13,
     "slug": "6sense",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Chewy",
-    "count": 13,
     "slug": "chewy",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Thoughtworks",
-    "count": 13,
     "slug": "thoughtworks",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Pwc",
-    "count": 13,
     "slug": "pwc",
+    "problemCount": 0,
+    "wizardCount": 13,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 13
+    "source": "wizard"
   },
   {
     "name": "Citrix",
-    "count": 12,
     "slug": "citrix",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Faire",
-    "count": 12,
     "slug": "faire",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Lime",
-    "count": 12,
     "slug": "lime",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Verizon",
-    "count": 12,
     "slug": "verizon",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Vimeo",
-    "count": 12,
     "slug": "vimeo",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Deliveroo",
-    "count": 12,
     "slug": "deliveroo",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Liveramp",
-    "count": 12,
     "slug": "liveramp",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Ge Healthcare",
-    "count": 12,
     "slug": "ge-healthcare",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Cadence",
-    "count": 12,
     "slug": "cadence",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Trexquant",
-    "count": 12,
     "slug": "trexquant",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Target",
-    "count": 12,
     "slug": "target",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Garmin",
-    "count": 12,
     "slug": "garmin",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Netskope",
-    "count": 12,
     "slug": "netskope",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Darwinbox",
-    "count": 12,
     "slug": "darwinbox",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Maq Software",
-    "count": 12,
     "slug": "maq-software",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Optiver",
-    "count": 12,
     "slug": "optiver",
+    "problemCount": 0,
+    "wizardCount": 12,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 12
+    "source": "wizard"
   },
   {
     "name": "Lowe",
-    "count": 11,
     "slug": "lowe",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Airtel",
-    "count": 11,
     "slug": "airtel",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Remitly",
-    "count": 11,
     "slug": "remitly",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Gameskraft",
-    "count": 11,
     "slug": "gameskraft",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Toast",
-    "count": 11,
     "slug": "toast",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Samsara",
-    "count": 11,
     "slug": "samsara",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Factset",
-    "count": 11,
     "slug": "factset",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Couchbase",
-    "count": 11,
     "slug": "couchbase",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Groww",
-    "count": 11,
     "slug": "groww",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Jio",
-    "count": 11,
     "slug": "jio",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Optum",
-    "count": 11,
     "slug": "optum",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Ubs",
-    "count": 11,
     "slug": "ubs",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Alibaba",
-    "count": 11,
     "slug": "alibaba",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Workday",
-    "count": 11,
     "slug": "workday",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Cashfree",
-    "count": 11,
     "slug": "cashfree",
+    "problemCount": 0,
+    "wizardCount": 11,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 11
+    "source": "wizard"
   },
   {
     "name": "Gojek",
-    "count": 10,
     "slug": "gojek",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Mercari",
-    "count": 10,
     "slug": "mercari",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Godaddy",
-    "count": 10,
     "slug": "godaddy",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Cyntexa",
-    "count": 10,
     "slug": "cyntexa",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Comcast",
-    "count": 10,
     "slug": "comcast",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Point72",
-    "count": 10,
     "slug": "point72",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Guidewire",
-    "count": 10,
     "slug": "guidewire",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Navan",
-    "count": 10,
     "slug": "navan",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Liftoff",
-    "count": 10,
     "slug": "liftoff",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Anthropic",
-    "count": 10,
     "slug": "anthropic",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Qualtrics",
-    "count": 10,
     "slug": "qualtrics",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Nagarro",
-    "count": 10,
     "slug": "nagarro",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Bolt",
-    "count": 10,
     "slug": "bolt",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Patreon",
-    "count": 10,
     "slug": "patreon",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Lg Electronics",
-    "count": 10,
     "slug": "lg-electronics",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Tripadvisor",
-    "count": 10,
     "slug": "tripadvisor",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Careem",
-    "count": 10,
     "slug": "careem",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Asana",
-    "count": 10,
     "slug": "asana",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Hulu",
-    "count": 10,
     "slug": "hulu",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "Gsn Games",
-    "count": 10,
     "slug": "gsn-games",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   },
   {
     "name": "The Trade Desk",
-    "count": 10,
     "slug": "the-trade-desk",
+    "problemCount": 0,
+    "wizardCount": 10,
     "hasProblems": false,
-    "leetcodeProblems": 0,
-    "wizardReports": 10
+    "source": "wizard"
   }
 ]

@@ -2,6 +2,8 @@
 // "Smart Grinder" Algorithm
 // Generates a weekly schedule based on constraints and intelligent weighting.
 
+import { getCompanyNameVariations } from './companyNameMapper.js';
+
 function getDifficultyWeight(diff) {
     switch (diff) {
         case 'Very Easy': return 1;
@@ -33,7 +35,14 @@ export function generateSchedule(allProblems, config) {
 
         // Company Check (if any selected)
         if (selectedCompanies.length > 0) {
-            const hasCompany = p.companies.some(c => selectedCompanies.includes(c));
+            // Use fuzzy matching to handle name variations
+            const hasCompany = selectedCompanies.some(selectedCompany => {
+                const variations = getCompanyNameVariations(selectedCompany);
+                return p.companies.some(problemCompany => {
+                    const problemCompanyLower = problemCompany.toLowerCase();
+                    return variations.some(v => v.toLowerCase() === problemCompanyLower);
+                });
+            });
             if (!hasCompany) return false;
         }
 

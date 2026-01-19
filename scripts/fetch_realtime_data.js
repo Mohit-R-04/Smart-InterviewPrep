@@ -315,15 +315,34 @@ function calculateImportanceScore(problem, companyFrequencies = {}) {
 async function fetchAllCompanyFrequencies() {
     console.log('\n🏢 Fetching real company question frequencies...');
 
-    const companies = [
-        'google', 'amazon', 'microsoft', 'facebook', 'apple',
-        'bloomberg', 'adobe', 'uber', 'airbnb', 'linkedin',
-        'netflix', 'tesla', 'twitter', 'snapchat', 'tiktok'
-    ];
+    // Load ALL companies from wizard data
+    const wizardCompaniesPath = path.join(ROOT_DIR, 'public/wizard-companies-full.json');
+    let companies = [];
+
+    if (fs.existsSync(wizardCompaniesPath)) {
+        const wizardCompanies = JSON.parse(fs.readFileSync(wizardCompaniesPath, 'utf8'));
+        // Use all companies with more than 10 entries (filters out very small companies)
+        companies = wizardCompanies
+            .filter(c => c.totalEntries >= 10)
+            .map(c => c.name);
+        console.log(`📊 Loaded ${companies.length} companies from wizard data`);
+    } else {
+        // Fallback to hardcoded list if wizard data doesn't exist
+        companies = [
+            'google', 'amazon', 'microsoft', 'facebook', 'apple',
+            'bloomberg', 'adobe', 'uber', 'airbnb', 'linkedin',
+            'netflix', 'tesla', 'twitter', 'snapchat', 'tiktok'
+        ];
+        console.log(`⚠️  Using fallback list of ${companies.length} companies`);
+    }
 
     const allFrequencies = {};
+    let processedCount = 0;
 
     for (const company of companies) {
+        processedCount++;
+        console.log(`  [${processedCount}/${companies.length}] Fetching ${company}...`);
+
         const frequencies = await fetchCompanyQuestions(company);
         if (frequencies) {
             // Merge frequencies - higher value = more recent/frequent
@@ -338,10 +357,10 @@ async function fetchAllCompanyFrequencies() {
                 allFrequencies[questionId].totalFreq += freq;
             });
         }
-        await delay(500); // Rate limiting
+        await delay(500); // Rate limiting - be nice to LeetCode's servers
     }
 
-    console.log(`✅ Loaded company data for ${Object.keys(allFrequencies).length} problems`);
+    console.log(`✅ Loaded company data for ${Object.keys(allFrequencies).length} problems from ${processedCount} companies`);
     return allFrequencies;
 }
 

@@ -10,6 +10,8 @@ import DailyProblem from './components/DailyProblem';
 import { generateSchedule } from './utils/scheduler';
 import { generateAIRecommendations } from './utils/aiScheduler';
 import { getCachedAIRecommendations, cacheAIRecommendations } from './utils/aiCache';
+import { getCompanyNameVariations } from './utils/companyNameMapper';
+
 
 function App() {
     // Problems are loaded directly from JSON
@@ -109,7 +111,14 @@ function App() {
 
         problemsData.forEach(p => {
             if (config.selectedCompanies.length > 0) {
-                const hasCompany = p.companies.some(c => config.selectedCompanies.includes(c));
+                // Use fuzzy matching to handle name variations
+                const hasCompany = config.selectedCompanies.some(selectedCompany => {
+                    const variations = getCompanyNameVariations(selectedCompany);
+                    return p.companies.some(problemCompany => {
+                        const problemCompanyLower = problemCompany.toLowerCase();
+                        return variations.some(v => v.toLowerCase() === problemCompanyLower);
+                    });
+                });
                 if (!hasCompany) return;
             }
             if (config.selectedTopics.length > 0) {
@@ -124,38 +133,32 @@ function App() {
         return stats;
     }, [problemsData, config.selectedCompanies, config.selectedTopics]);
 
-    // Company Counts from LeetCode Wizard (static, doesn't change)
-    const wizardCompanyCounts = useMemo(() => {
-        if (!companiesData || companiesData.length === 0) return null;
-        const map = new Map();
-        companiesData.forEach(company => {
-            map.set(company.name, company.count);
-        });
-        return map;
-    }, [companiesData]);
-
-    // Dynamic Company Counts - only recalculates if no wizard data
+    // Company Counts - Use unified list (LeetCode + Wizard data merged)
     const dynamicCompanyCounts = useMemo(() => {
-        // Use wizard data if available (doesn't change with filters)
-        if (wizardCompanyCounts) return wizardCompanyCounts;
-
-        // Fallback: calculate from problems
         const map = new Map();
+
+        // First, count actual problems from LeetCode data
         if (problemsData) {
             problemsData.forEach(p => {
-                if (!config.selectedDifficulties.includes(p.difficulty)) return;
-                if (config.selectedTopics.length > 0) {
-                    const pTags = (p.relatedTopics || []).map(t => t.name);
-                    const hasTopic = config.selectedTopics.some(t => pTags.includes(t));
-                    if (!hasTopic) return;
-                }
                 p.companies.forEach(c => {
                     map.set(c, (map.get(c) || 0) + 1);
                 });
             });
         }
+
+        // Then, add companies from unified list (includes wizard-only companies)
+        if (companiesData && companiesData.length > 0) {
+            companiesData.forEach(company => {
+                // Only add if not already in map (LeetCode data takes precedence)
+                if (!map.has(company.name)) {
+                    // Use leetcodeProblems count, or 0 if none
+                    map.set(company.name, company.leetcodeProblems || 0);
+                }
+            });
+        }
+
         return map;
-    }, [wizardCompanyCounts, problemsData, config.selectedDifficulties, config.selectedTopics]);
+    }, [problemsData, companiesData]);
 
     // Dynamic Topic Counts
     const dynamicTopicCounts = useMemo(() => {
@@ -164,7 +167,14 @@ function App() {
         problemsData.forEach(p => {
             if (!config.selectedDifficulties.includes(p.difficulty)) return;
             if (config.selectedCompanies.length > 0) {
-                const hasCompany = p.companies.some(c => config.selectedCompanies.includes(c));
+                // Use fuzzy matching to handle name variations
+                const hasCompany = config.selectedCompanies.some(selectedCompany => {
+                    const variations = getCompanyNameVariations(selectedCompany);
+                    return p.companies.some(problemCompany => {
+                        const problemCompanyLower = problemCompany.toLowerCase();
+                        return variations.some(v => v.toLowerCase() === problemCompanyLower);
+                    });
+                });
                 if (!hasCompany) return;
             }
             if (p.relatedTopics && Array.isArray(p.relatedTopics)) {
