@@ -136,12 +136,13 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "📊 Weekly Update Summary:"
-          echo "  Fetch status: ${{ steps.fetch.outcome }}"
-          echo "  Data valid: ${{ steps.verify.outputs.data_valid }}"
-          if [ "${{ steps.verify.outputs.data_valid }}" == "true" ]; then
+          echo "📊 Monthly Update Summary:"
+          echo "  LeetCode fetch: ${{ steps.fetch.outcome }}"
+          echo "  Wizard fetch: ${{ steps.wizard.outcome }}"
+          echo "  Categorization: ${{ steps.categorize.outcome }}"
+          if [ "$UPDATE_STATUS" == "success" ]; then
             echo "✅ Database updated with fresh LeetCode data"
           else
-            echo "⚠️ Using previous data - fetch failed or data invalid"
+            echo "⚠️ Using previous data - one or more steps failed"
           fi
           echo "📝 Note: Curated problems are NOT updated (as requested)"
