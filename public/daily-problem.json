@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-19",
-  "id": "1292",
-  "title": "Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
-  "titleSlug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold",
-  "difficulty": "Medium",
-  "likes": 1239,
-  "dislikes": 105,
-  "acceptanceRate": 58.175552319021925,
-  "url": "https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/"
+  "date": "2026-01-20",
+  "id": "3314",
+  "title": "Construct the Minimum Bitwise Array I",
+  "titleSlug": "construct-the-minimum-bitwise-array-i",
+  "difficulty": "Easy",
+  "likes": 189,
+  "dislikes": 29,
+  "acceptanceRate": 80.98147046447176,
+  "url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/"
 }
