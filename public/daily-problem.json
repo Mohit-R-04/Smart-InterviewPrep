@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-20",
-  "id": "3314",
-  "title": "Construct the Minimum Bitwise Array I",
-  "titleSlug": "construct-the-minimum-bitwise-array-i",
-  "difficulty": "Easy",
-  "likes": 189,
-  "dislikes": 29,
-  "acceptanceRate": 80.98147046447176,
-  "url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/"
+  "date": "2026-01-21",
+  "id": "3315",
+  "title": "Construct the Minimum Bitwise Array II",
+  "titleSlug": "construct-the-minimum-bitwise-array-ii",
+  "difficulty": "Medium",
+  "likes": 200,
+  "dislikes": 16,
+  "acceptanceRate": 53.5584188237717,
+  "url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/"
 }
