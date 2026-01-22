@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-21",
-  "id": "3315",
-  "title": "Construct the Minimum Bitwise Array II",
-  "titleSlug": "construct-the-minimum-bitwise-array-ii",
-  "difficulty": "Medium",
-  "likes": 200,
-  "dislikes": 16,
-  "acceptanceRate": 53.5584188237717,
-  "url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/"
+  "date": "2026-01-22",
+  "id": "3507",
+  "title": "Minimum Pair Removal to Sort Array I",
+  "titleSlug": "minimum-pair-removal-to-sort-array-i",
+  "difficulty": "Easy",
+  "likes": 228,
+  "dislikes": 48,
+  "acceptanceRate": 59.9550141289658,
+  "url": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/"
 }
