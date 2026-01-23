@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-22",
-  "id": "3507",
-  "title": "Minimum Pair Removal to Sort Array I",
-  "titleSlug": "minimum-pair-removal-to-sort-array-i",
-  "difficulty": "Easy",
-  "likes": 228,
-  "dislikes": 48,
-  "acceptanceRate": 59.9550141289658,
-  "url": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/"
+  "date": "2026-01-23",
+  "id": "3510",
+  "title": "Minimum Pair Removal to Sort Array II",
+  "titleSlug": "minimum-pair-removal-to-sort-array-ii",
+  "difficulty": "Hard",
+  "likes": 152,
+  "dislikes": 16,
+  "acceptanceRate": 29.94053262087391,
+  "url": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/"
 }
