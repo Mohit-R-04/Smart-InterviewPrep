@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-24",
-  "id": "1877",
-  "title": "Minimize Maximum Pair Sum in Array",
-  "titleSlug": "minimize-maximum-pair-sum-in-array",
-  "difficulty": "Medium",
-  "likes": 2147,
-  "dislikes": 497,
-  "acceptanceRate": 82.22283186447653,
-  "url": "https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/"
+  "date": "2026-01-25",
+  "id": "1984",
+  "title": "Minimum Difference Between Highest and Lowest of K Scores",
+  "titleSlug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+  "difficulty": "Easy",
+  "likes": 1234,
+  "dislikes": 346,
+  "acceptanceRate": 61.8578094544309,
+  "url": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
 }
