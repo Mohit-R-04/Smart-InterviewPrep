@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-25",
-  "id": "1984",
-  "title": "Minimum Difference Between Highest and Lowest of K Scores",
-  "titleSlug": "minimum-difference-between-highest-and-lowest-of-k-scores",
+  "date": "2026-01-26",
+  "id": "1200",
+  "title": "Minimum Absolute Difference",
+  "titleSlug": "minimum-absolute-difference",
   "difficulty": "Easy",
-  "likes": 1234,
-  "dislikes": 346,
-  "acceptanceRate": 61.8578094544309,
-  "url": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/"
+  "likes": 2622,
+  "dislikes": 84,
+  "acceptanceRate": 72.6582512386386,
+  "url": "https://leetcode.com/problems/minimum-absolute-difference/"
 }
