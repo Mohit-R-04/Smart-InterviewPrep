@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-26",
-  "id": "1200",
-  "title": "Minimum Absolute Difference",
-  "titleSlug": "minimum-absolute-difference",
-  "difficulty": "Easy",
-  "likes": 2622,
-  "dislikes": 84,
-  "acceptanceRate": 72.6582512386386,
-  "url": "https://leetcode.com/problems/minimum-absolute-difference/"
+  "date": "2026-01-27",
+  "id": "3650",
+  "title": "Minimum Cost Path with Edge Reversals",
+  "titleSlug": "minimum-cost-path-with-edge-reversals",
+  "difficulty": "Medium",
+  "likes": 141,
+  "dislikes": 5,
+  "acceptanceRate": 54.04547137095989,
+  "url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/"
 }
