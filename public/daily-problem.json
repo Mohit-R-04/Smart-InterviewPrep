@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-27",
-  "id": "3650",
-  "title": "Minimum Cost Path with Edge Reversals",
-  "titleSlug": "minimum-cost-path-with-edge-reversals",
-  "difficulty": "Medium",
-  "likes": 141,
-  "dislikes": 5,
-  "acceptanceRate": 54.04547137095989,
-  "url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/"
+  "date": "2026-01-28",
+  "id": "3651",
+  "title": "Minimum Cost Path with Teleportations",
+  "titleSlug": "minimum-cost-path-with-teleportations",
+  "difficulty": "Hard",
+  "likes": 139,
+  "dislikes": 9,
+  "acceptanceRate": 35.24590163934426,
+  "url": "https://leetcode.com/problems/minimum-cost-path-with-teleportations/"
 }
