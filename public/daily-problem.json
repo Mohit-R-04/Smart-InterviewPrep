@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-28",
-  "id": "3651",
-  "title": "Minimum Cost Path with Teleportations",
-  "titleSlug": "minimum-cost-path-with-teleportations",
-  "difficulty": "Hard",
-  "likes": 139,
-  "dislikes": 9,
-  "acceptanceRate": 35.24590163934426,
-  "url": "https://leetcode.com/problems/minimum-cost-path-with-teleportations/"
+  "date": "2026-01-29",
+  "id": "2976",
+  "title": "Minimum Cost to Convert String I",
+  "titleSlug": "minimum-cost-to-convert-string-i",
+  "difficulty": "Medium",
+  "likes": 1045,
+  "dislikes": 75,
+  "acceptanceRate": 59.30542618669297,
+  "url": "https://leetcode.com/problems/minimum-cost-to-convert-string-i/"
 }
