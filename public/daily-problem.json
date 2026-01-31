@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-30",
-  "id": "2977",
-  "title": "Minimum Cost to Convert String II",
-  "titleSlug": "minimum-cost-to-convert-string-ii",
-  "difficulty": "Hard",
-  "likes": 182,
-  "dislikes": 93,
-  "acceptanceRate": 44.62759319000636,
-  "url": "https://leetcode.com/problems/minimum-cost-to-convert-string-ii/"
+  "date": "2026-01-31",
+  "id": "744",
+  "title": "Find Smallest Letter Greater Than Target",
+  "titleSlug": "find-smallest-letter-greater-than-target",
+  "difficulty": "Easy",
+  "likes": 4925,
+  "dislikes": 2223,
+  "acceptanceRate": 56.109050133307115,
+  "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"
 }
