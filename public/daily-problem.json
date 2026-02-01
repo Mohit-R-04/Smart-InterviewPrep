@@ -1,11 +1,11 @@
 {
-  "date": "2026-01-31",
-  "id": "744",
-  "title": "Find Smallest Letter Greater Than Target",
-  "titleSlug": "find-smallest-letter-greater-than-target",
+  "date": "2026-02-01",
+  "id": "3010",
+  "title": "Divide an Array Into Subarrays With Minimum Cost I",
+  "titleSlug": "divide-an-array-into-subarrays-with-minimum-cost-i",
   "difficulty": "Easy",
-  "likes": 4925,
-  "dislikes": 2223,
-  "acceptanceRate": 56.109050133307115,
-  "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"
+  "likes": 238,
+  "dislikes": 17,
+  "acceptanceRate": 74.20940898439848,
+  "url": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/"
 }
