@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-02",
-  "id": "3013",
-  "title": "Divide an Array Into Subarrays With Minimum Cost II",
-  "titleSlug": "divide-an-array-into-subarrays-with-minimum-cost-ii",
-  "difficulty": "Hard",
-  "likes": 244,
-  "dislikes": 34,
-  "acceptanceRate": 46.1363791185086,
-  "url": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/"
+  "date": "2026-02-03",
+  "id": "3637",
+  "title": "Trionic Array I",
+  "titleSlug": "trionic-array-i",
+  "difficulty": "Easy",
+  "likes": 193,
+  "dislikes": 16,
+  "acceptanceRate": 48.58534227414843,
+  "url": "https://leetcode.com/problems/trionic-array-i/"
 }
