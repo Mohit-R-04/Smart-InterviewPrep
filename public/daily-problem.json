@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-03",
-  "id": "3637",
-  "title": "Trionic Array I",
-  "titleSlug": "trionic-array-i",
-  "difficulty": "Easy",
-  "likes": 193,
-  "dislikes": 16,
-  "acceptanceRate": 48.58534227414843,
-  "url": "https://leetcode.com/problems/trionic-array-i/"
+  "date": "2026-02-04",
+  "id": "3640",
+  "title": "Trionic Array II",
+  "titleSlug": "trionic-array-ii",
+  "difficulty": "Hard",
+  "likes": 143,
+  "dislikes": 18,
+  "acceptanceRate": 39.27220985230761,
+  "url": "https://leetcode.com/problems/trionic-array-ii/"
 }
