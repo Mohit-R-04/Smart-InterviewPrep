@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-05",
-  "id": "3379",
-  "title": "Transformed Array",
-  "titleSlug": "transformed-array",
-  "difficulty": "Easy",
-  "likes": 209,
-  "dislikes": 26,
-  "acceptanceRate": 64.9608904115797,
-  "url": "https://leetcode.com/problems/transformed-array/"
+  "date": "2026-02-06",
+  "id": "3634",
+  "title": "Minimum Removals to Balance Array",
+  "titleSlug": "minimum-removals-to-balance-array",
+  "difficulty": "Medium",
+  "likes": 245,
+  "dislikes": 14,
+  "acceptanceRate": 43.12005490982871,
+  "url": "https://leetcode.com/problems/minimum-removals-to-balance-array/"
 }
