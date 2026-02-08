@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-07",
-  "id": "1653",
-  "title": "Minimum Deletions to Make String Balanced",
-  "titleSlug": "minimum-deletions-to-make-string-balanced",
-  "difficulty": "Medium",
-  "likes": 2294,
-  "dislikes": 72,
-  "acceptanceRate": 66.22748488142743,
-  "url": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/"
+  "date": "2026-02-08",
+  "id": "110",
+  "title": "Balanced Binary Tree",
+  "titleSlug": "balanced-binary-tree",
+  "difficulty": "Easy",
+  "likes": 11954,
+  "dislikes": 829,
+  "acceptanceRate": 57.20942034114939,
+  "url": "https://leetcode.com/problems/balanced-binary-tree/"
 }
