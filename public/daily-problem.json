@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-08",
-  "id": "110",
-  "title": "Balanced Binary Tree",
-  "titleSlug": "balanced-binary-tree",
-  "difficulty": "Easy",
-  "likes": 11954,
-  "dislikes": 829,
-  "acceptanceRate": 57.20942034114939,
-  "url": "https://leetcode.com/problems/balanced-binary-tree/"
+  "date": "2026-02-09",
+  "id": "1382",
+  "title": "Balance a Binary Search Tree",
+  "titleSlug": "balance-a-binary-search-tree",
+  "difficulty": "Medium",
+  "likes": 3933,
+  "dislikes": 102,
+  "acceptanceRate": 85.25019285835698,
+  "url": "https://leetcode.com/problems/balance-a-binary-search-tree/"
 }
