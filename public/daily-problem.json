@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-10",
-  "id": "3719",
-  "title": "Longest Balanced Subarray I",
-  "titleSlug": "longest-balanced-subarray-i",
-  "difficulty": "Medium",
-  "likes": 207,
-  "dislikes": 19,
-  "acceptanceRate": 60.133226307504664,
-  "url": "https://leetcode.com/problems/longest-balanced-subarray-i/"
+  "date": "2026-02-11",
+  "id": "3721",
+  "title": "Longest Balanced Subarray II",
+  "titleSlug": "longest-balanced-subarray-ii",
+  "difficulty": "Hard",
+  "likes": 146,
+  "dislikes": 31,
+  "acceptanceRate": 26.117971171348454,
+  "url": "https://leetcode.com/problems/longest-balanced-subarray-ii/"
 }
