@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-12",
-  "id": "3713",
-  "title": "Longest Balanced Substring I",
-  "titleSlug": "longest-balanced-substring-i",
+  "date": "2026-02-13",
+  "id": "3714",
+  "title": "Longest Balanced Substring II",
+  "titleSlug": "longest-balanced-substring-ii",
   "difficulty": "Medium",
-  "likes": 208,
-  "dislikes": 15,
-  "acceptanceRate": 62.615228125198676,
-  "url": "https://leetcode.com/problems/longest-balanced-substring-i/"
+  "likes": 285,
+  "dislikes": 60,
+  "acceptanceRate": 32.114764753478624,
+  "url": "https://leetcode.com/problems/longest-balanced-substring-ii/"
 }
