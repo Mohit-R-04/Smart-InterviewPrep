@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-13",
-  "id": "3714",
-  "title": "Longest Balanced Substring II",
-  "titleSlug": "longest-balanced-substring-ii",
+  "date": "2026-02-14",
+  "id": "799",
+  "title": "Champagne Tower",
+  "titleSlug": "champagne-tower",
   "difficulty": "Medium",
-  "likes": 285,
-  "dislikes": 60,
-  "acceptanceRate": 32.114764753478624,
-  "url": "https://leetcode.com/problems/longest-balanced-substring-ii/"
+  "likes": 3851,
+  "dislikes": 215,
+  "acceptanceRate": 60.02957218256416,
+  "url": "https://leetcode.com/problems/champagne-tower/"
 }
