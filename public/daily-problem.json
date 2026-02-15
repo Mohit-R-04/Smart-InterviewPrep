@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-14",
-  "id": "799",
-  "title": "Champagne Tower",
-  "titleSlug": "champagne-tower",
-  "difficulty": "Medium",
-  "likes": 3851,
-  "dislikes": 215,
-  "acceptanceRate": 60.02957218256416,
-  "url": "https://leetcode.com/problems/champagne-tower/"
+  "date": "2026-02-15",
+  "id": "67",
+  "title": "Add Binary",
+  "titleSlug": "add-binary",
+  "difficulty": "Easy",
+  "likes": 10497,
+  "dislikes": 1099,
+  "acceptanceRate": 57.058488896987,
+  "url": "https://leetcode.com/problems/add-binary/"
 }
