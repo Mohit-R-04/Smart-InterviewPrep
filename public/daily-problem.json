@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-15",
-  "id": "67",
-  "title": "Add Binary",
-  "titleSlug": "add-binary",
+  "date": "2026-02-16",
+  "id": "190",
+  "title": "Reverse Bits",
+  "titleSlug": "reverse-bits",
   "difficulty": "Easy",
-  "likes": 10497,
-  "dislikes": 1099,
-  "acceptanceRate": 57.058488896987,
-  "url": "https://leetcode.com/problems/add-binary/"
+  "likes": 5679,
+  "dislikes": 1658,
+  "acceptanceRate": 66.4012002360435,
+  "url": "https://leetcode.com/problems/reverse-bits/"
 }
