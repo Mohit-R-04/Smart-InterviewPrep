@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-16",
-  "id": "190",
-  "title": "Reverse Bits",
-  "titleSlug": "reverse-bits",
+  "date": "2026-02-17",
+  "id": "401",
+  "title": "Binary Watch",
+  "titleSlug": "binary-watch",
   "difficulty": "Easy",
-  "likes": 5679,
-  "dislikes": 1658,
-  "acceptanceRate": 66.4012002360435,
-  "url": "https://leetcode.com/problems/reverse-bits/"
+  "likes": 1705,
+  "dislikes": 2972,
+  "acceptanceRate": 60.303712133716736,
+  "url": "https://leetcode.com/problems/binary-watch/"
 }
