@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-18",
-  "id": "693",
-  "title": "Binary Number with Alternating Bits",
-  "titleSlug": "binary-number-with-alternating-bits",
+  "date": "2026-02-19",
+  "id": "696",
+  "title": "Count Binary Substrings",
+  "titleSlug": "count-binary-substrings",
   "difficulty": "Easy",
-  "likes": 1554,
-  "dislikes": 117,
-  "acceptanceRate": 66.48694261577506,
-  "url": "https://leetcode.com/problems/binary-number-with-alternating-bits/"
+  "likes": 4343,
+  "dislikes": 935,
+  "acceptanceRate": 67.7857873575524,
+  "url": "https://leetcode.com/problems/count-binary-substrings/"
 }
