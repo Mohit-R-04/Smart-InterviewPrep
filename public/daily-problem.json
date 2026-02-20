@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-19",
-  "id": "696",
-  "title": "Count Binary Substrings",
-  "titleSlug": "count-binary-substrings",
-  "difficulty": "Easy",
-  "likes": 4343,
-  "dislikes": 935,
-  "acceptanceRate": 67.7857873575524,
-  "url": "https://leetcode.com/problems/count-binary-substrings/"
+  "date": "2026-02-20",
+  "id": "761",
+  "title": "Special Binary String",
+  "titleSlug": "special-binary-string",
+  "difficulty": "Hard",
+  "likes": 896,
+  "dislikes": 269,
+  "acceptanceRate": 71.72476350913567,
+  "url": "https://leetcode.com/problems/special-binary-string/"
 }
