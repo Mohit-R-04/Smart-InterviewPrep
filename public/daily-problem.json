@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-20",
-  "id": "761",
-  "title": "Special Binary String",
-  "titleSlug": "special-binary-string",
-  "difficulty": "Hard",
-  "likes": 896,
-  "dislikes": 269,
-  "acceptanceRate": 71.72476350913567,
-  "url": "https://leetcode.com/problems/special-binary-string/"
+  "date": "2026-02-21",
+  "id": "762",
+  "title": "Prime Number of Set Bits in Binary Representation",
+  "titleSlug": "prime-number-of-set-bits-in-binary-representation",
+  "difficulty": "Easy",
+  "likes": 850,
+  "dislikes": 516,
+  "acceptanceRate": 74.89845471641375,
+  "url": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/"
 }
