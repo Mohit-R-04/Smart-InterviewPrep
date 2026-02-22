@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-21",
-  "id": "762",
-  "title": "Prime Number of Set Bits in Binary Representation",
-  "titleSlug": "prime-number-of-set-bits-in-binary-representation",
+  "date": "2026-02-22",
+  "id": "868",
+  "title": "Binary Gap",
+  "titleSlug": "binary-gap",
   "difficulty": "Easy",
-  "likes": 850,
-  "dislikes": 516,
-  "acceptanceRate": 74.89845471641375,
-  "url": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/"
+  "likes": 791,
+  "dislikes": 698,
+  "acceptanceRate": 69.1784089335269,
+  "url": "https://leetcode.com/problems/binary-gap/"
 }
