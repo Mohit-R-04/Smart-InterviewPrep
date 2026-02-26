@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-25",
-  "id": "1356",
-  "title": "Sort Integers by The Number of 1 Bits",
-  "titleSlug": "sort-integers-by-the-number-of-1-bits",
-  "difficulty": "Easy",
-  "likes": 2687,
-  "dislikes": 129,
-  "acceptanceRate": 80.32065561870596,
-  "url": "https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/"
+  "date": "2026-02-26",
+  "id": "1404",
+  "title": "Number of Steps to Reduce a Number in Binary Representation to One",
+  "titleSlug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "difficulty": "Medium",
+  "likes": 1540,
+  "dislikes": 92,
+  "acceptanceRate": 61.93210650550501,
+  "url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/"
 }
