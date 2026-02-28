@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-26",
-  "id": "1404",
-  "title": "Number of Steps to Reduce a Number in Binary Representation to One",
-  "titleSlug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one",
+  "date": "2026-02-28",
+  "id": "1680",
+  "title": "Concatenation of Consecutive Binary Numbers",
+  "titleSlug": "concatenation-of-consecutive-binary-numbers",
   "difficulty": "Medium",
-  "likes": 1540,
-  "dislikes": 92,
-  "acceptanceRate": 61.93210650550501,
-  "url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/"
+  "likes": 1548,
+  "dislikes": 441,
+  "acceptanceRate": 60.42340265622872,
+  "url": "https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/"
 }
