@@ -1,11 +1,11 @@
 {
-  "date": "2026-02-28",
-  "id": "1680",
-  "title": "Concatenation of Consecutive Binary Numbers",
-  "titleSlug": "concatenation-of-consecutive-binary-numbers",
+  "date": "2026-03-01",
+  "id": "1689",
+  "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
+  "titleSlug": "partitioning-into-minimum-number-of-deci-binary-numbers",
   "difficulty": "Medium",
-  "likes": 1548,
-  "dislikes": 441,
-  "acceptanceRate": 60.42340265622872,
-  "url": "https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/"
+  "likes": 2607,
+  "dislikes": 1518,
+  "acceptanceRate": 89.37708144111414,
+  "url": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/"
 }
