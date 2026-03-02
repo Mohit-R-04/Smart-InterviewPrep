@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-01",
-  "id": "1689",
-  "title": "Partitioning Into Minimum Number Of Deci-Binary Numbers",
-  "titleSlug": "partitioning-into-minimum-number-of-deci-binary-numbers",
+  "date": "2026-03-02",
+  "id": "1536",
+  "title": "Minimum Swaps to Arrange a Binary Grid",
+  "titleSlug": "minimum-swaps-to-arrange-a-binary-grid",
   "difficulty": "Medium",
-  "likes": 2607,
-  "dislikes": 1518,
-  "acceptanceRate": 89.37708144111414,
-  "url": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/"
+  "likes": 703,
+  "dislikes": 80,
+  "acceptanceRate": 59.786026908737234,
+  "url": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/"
 }
