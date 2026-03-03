@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-02",
-  "id": "1536",
-  "title": "Minimum Swaps to Arrange a Binary Grid",
-  "titleSlug": "minimum-swaps-to-arrange-a-binary-grid",
+  "date": "2026-03-03",
+  "id": "1545",
+  "title": "Find Kth Bit in Nth Binary String",
+  "titleSlug": "find-kth-bit-in-nth-binary-string",
   "difficulty": "Medium",
-  "likes": 703,
-  "dislikes": 80,
-  "acceptanceRate": 59.786026908737234,
-  "url": "https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/"
+  "likes": 1627,
+  "dislikes": 107,
+  "acceptanceRate": 71.5920882203505,
+  "url": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/"
 }
