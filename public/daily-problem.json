@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-03",
-  "id": "1545",
-  "title": "Find Kth Bit in Nth Binary String",
-  "titleSlug": "find-kth-bit-in-nth-binary-string",
-  "difficulty": "Medium",
-  "likes": 1627,
-  "dislikes": 107,
-  "acceptanceRate": 71.5920882203505,
-  "url": "https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/"
+  "date": "2026-03-04",
+  "id": "1582",
+  "title": "Special Positions in a Binary Matrix",
+  "titleSlug": "special-positions-in-a-binary-matrix",
+  "difficulty": "Easy",
+  "likes": 1618,
+  "dislikes": 78,
+  "acceptanceRate": 70.18064303474566,
+  "url": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/"
 }
