@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-05",
-  "id": "1758",
-  "title": "Minimum Changes To Make Alternating Binary String",
-  "titleSlug": "minimum-changes-to-make-alternating-binary-string",
+  "date": "2026-03-06",
+  "id": "1784",
+  "title": "Check if Binary String Has at Most One Segment of Ones",
+  "titleSlug": "check-if-binary-string-has-at-most-one-segment-of-ones",
   "difficulty": "Easy",
-  "likes": 1630,
-  "dislikes": 46,
-  "acceptanceRate": 65.34572560071291,
-  "url": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/"
+  "likes": 473,
+  "dislikes": 1067,
+  "acceptanceRate": 43.81512574925411,
+  "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/"
 }
