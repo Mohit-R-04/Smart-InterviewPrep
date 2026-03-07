@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-06",
-  "id": "1784",
-  "title": "Check if Binary String Has at Most One Segment of Ones",
-  "titleSlug": "check-if-binary-string-has-at-most-one-segment-of-ones",
-  "difficulty": "Easy",
-  "likes": 473,
-  "dislikes": 1067,
-  "acceptanceRate": 43.81512574925411,
-  "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/"
+  "date": "2026-03-07",
+  "id": "1888",
+  "title": "Minimum Number of Flips to Make the Binary String Alternating",
+  "titleSlug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+  "difficulty": "Medium",
+  "likes": 1422,
+  "dislikes": 97,
+  "acceptanceRate": 45.110321228240245,
+  "url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/"
 }
