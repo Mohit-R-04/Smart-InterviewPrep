@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-07",
-  "id": "1888",
-  "title": "Minimum Number of Flips to Make the Binary String Alternating",
-  "titleSlug": "minimum-number-of-flips-to-make-the-binary-string-alternating",
+  "date": "2026-03-08",
+  "id": "1980",
+  "title": "Find Unique Binary String",
+  "titleSlug": "find-unique-binary-string",
   "difficulty": "Medium",
-  "likes": 1422,
-  "dislikes": 97,
-  "acceptanceRate": 45.110321228240245,
-  "url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/"
+  "likes": 2657,
+  "dislikes": 92,
+  "acceptanceRate": 80.01667572956318,
+  "url": "https://leetcode.com/problems/find-unique-binary-string/"
 }
