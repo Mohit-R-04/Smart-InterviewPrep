@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-08",
-  "id": "1980",
-  "title": "Find Unique Binary String",
-  "titleSlug": "find-unique-binary-string",
+  "date": "2026-03-09",
+  "id": "3129",
+  "title": "Find All Possible Stable Binary Arrays I",
+  "titleSlug": "find-all-possible-stable-binary-arrays-i",
   "difficulty": "Medium",
-  "likes": 2657,
+  "likes": 233,
   "dislikes": 92,
-  "acceptanceRate": 80.01667572956318,
-  "url": "https://leetcode.com/problems/find-unique-binary-string/"
+  "acceptanceRate": 41.807414269408284,
+  "url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/"
 }
