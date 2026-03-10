@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-09",
-  "id": "3129",
-  "title": "Find All Possible Stable Binary Arrays I",
-  "titleSlug": "find-all-possible-stable-binary-arrays-i",
-  "difficulty": "Medium",
-  "likes": 233,
-  "dislikes": 92,
-  "acceptanceRate": 41.807414269408284,
-  "url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/"
+  "date": "2026-03-10",
+  "id": "3130",
+  "title": "Find All Possible Stable Binary Arrays II",
+  "titleSlug": "find-all-possible-stable-binary-arrays-ii",
+  "difficulty": "Hard",
+  "likes": 138,
+  "dislikes": 18,
+  "acceptanceRate": 50.47451755348996,
+  "url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/"
 }
