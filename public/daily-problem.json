@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-10",
-  "id": "3130",
-  "title": "Find All Possible Stable Binary Arrays II",
-  "titleSlug": "find-all-possible-stable-binary-arrays-ii",
-  "difficulty": "Hard",
-  "likes": 138,
-  "dislikes": 18,
-  "acceptanceRate": 50.47451755348996,
-  "url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/"
+  "date": "2026-03-11",
+  "id": "1009",
+  "title": "Complement of Base 10 Integer",
+  "titleSlug": "complement-of-base-10-integer",
+  "difficulty": "Easy",
+  "likes": 2695,
+  "dislikes": 132,
+  "acceptanceRate": 61.47061886085176,
+  "url": "https://leetcode.com/problems/complement-of-base-10-integer/"
 }
