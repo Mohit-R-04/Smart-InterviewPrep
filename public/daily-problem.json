@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-11",
-  "id": "1009",
-  "title": "Complement of Base 10 Integer",
-  "titleSlug": "complement-of-base-10-integer",
-  "difficulty": "Easy",
-  "likes": 2695,
-  "dislikes": 132,
-  "acceptanceRate": 61.47061886085176,
-  "url": "https://leetcode.com/problems/complement-of-base-10-integer/"
+  "date": "2026-03-12",
+  "id": "3600",
+  "title": "Maximize Spanning Tree Stability with Upgrades",
+  "titleSlug": "maximize-spanning-tree-stability-with-upgrades",
+  "difficulty": "Hard",
+  "likes": 154,
+  "dislikes": 5,
+  "acceptanceRate": 56.95792012865184,
+  "url": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/"
 }
