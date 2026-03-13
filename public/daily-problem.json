@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-12",
-  "id": "3600",
-  "title": "Maximize Spanning Tree Stability with Upgrades",
-  "titleSlug": "maximize-spanning-tree-stability-with-upgrades",
-  "difficulty": "Hard",
-  "likes": 154,
-  "dislikes": 5,
-  "acceptanceRate": 56.95792012865184,
-  "url": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/"
+  "date": "2026-03-13",
+  "id": "3296",
+  "title": "Minimum Number of Seconds to Make Mountain Height Zero",
+  "titleSlug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+  "difficulty": "Medium",
+  "likes": 337,
+  "dislikes": 51,
+  "acceptanceRate": 46.46912212683467,
+  "url": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/"
 }
