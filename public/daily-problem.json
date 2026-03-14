@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-13",
-  "id": "3296",
-  "title": "Minimum Number of Seconds to Make Mountain Height Zero",
-  "titleSlug": "minimum-number-of-seconds-to-make-mountain-height-zero",
+  "date": "2026-03-14",
+  "id": "1415",
+  "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+  "titleSlug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
   "difficulty": "Medium",
-  "likes": 337,
-  "dislikes": 51,
-  "acceptanceRate": 46.46912212683467,
-  "url": "https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/"
+  "likes": 1614,
+  "dislikes": 49,
+  "acceptanceRate": 85.99915975824331,
+  "url": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/"
 }
