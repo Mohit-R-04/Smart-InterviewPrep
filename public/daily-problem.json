@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-14",
-  "id": "1415",
-  "title": "The k-th Lexicographical String of All Happy Strings of Length n",
-  "titleSlug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
-  "difficulty": "Medium",
-  "likes": 1614,
-  "dislikes": 49,
-  "acceptanceRate": 85.99915975824331,
-  "url": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/"
+  "date": "2026-03-15",
+  "id": "1622",
+  "title": "Fancy Sequence",
+  "titleSlug": "fancy-sequence",
+  "difficulty": "Hard",
+  "likes": 463,
+  "dislikes": 164,
+  "acceptanceRate": 27.49126639567145,
+  "url": "https://leetcode.com/problems/fancy-sequence/"
 }
