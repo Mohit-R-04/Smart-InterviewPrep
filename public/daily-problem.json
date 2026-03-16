@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-15",
-  "id": "1622",
-  "title": "Fancy Sequence",
-  "titleSlug": "fancy-sequence",
-  "difficulty": "Hard",
-  "likes": 463,
-  "dislikes": 164,
-  "acceptanceRate": 27.49126639567145,
-  "url": "https://leetcode.com/problems/fancy-sequence/"
+  "date": "2026-03-16",
+  "id": "1878",
+  "title": "Get Biggest Three Rhombus Sums in a Grid",
+  "titleSlug": "get-biggest-three-rhombus-sums-in-a-grid",
+  "difficulty": "Medium",
+  "likes": 318,
+  "dislikes": 551,
+  "acceptanceRate": 60.44422967974139,
+  "url": "https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/"
 }
