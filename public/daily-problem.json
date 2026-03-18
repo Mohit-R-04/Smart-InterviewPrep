@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-17",
-  "id": "1727",
-  "title": "Largest Submatrix With Rearrangements",
-  "titleSlug": "largest-submatrix-with-rearrangements",
+  "date": "2026-03-18",
+  "id": "3070",
+  "title": "Count Submatrices with Top-Left Element and Sum Less Than k",
+  "titleSlug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
   "difficulty": "Medium",
-  "likes": 2065,
-  "dislikes": 115,
-  "acceptanceRate": 77.2277150154338,
-  "url": "https://leetcode.com/problems/largest-submatrix-with-rearrangements/"
+  "likes": 283,
+  "dislikes": 12,
+  "acceptanceRate": 67.31795883031936,
+  "url": "https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/"
 }
