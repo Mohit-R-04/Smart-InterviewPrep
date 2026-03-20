@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-19",
-  "id": "3212",
-  "title": "Count Submatrices With Equal Frequency of X and Y",
-  "titleSlug": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "date": "2026-03-20",
+  "id": "3567",
+  "title": "Minimum Absolute Difference in Sliding Submatrix",
+  "titleSlug": "minimum-absolute-difference-in-sliding-submatrix",
   "difficulty": "Medium",
-  "likes": 254,
-  "dislikes": 36,
-  "acceptanceRate": 60.95086683321978,
-  "url": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/"
+  "likes": 137,
+  "dislikes": 15,
+  "acceptanceRate": 75.01543567183762,
+  "url": "https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/"
 }
