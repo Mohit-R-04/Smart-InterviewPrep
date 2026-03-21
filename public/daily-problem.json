@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-20",
-  "id": "3567",
-  "title": "Minimum Absolute Difference in Sliding Submatrix",
-  "titleSlug": "minimum-absolute-difference-in-sliding-submatrix",
-  "difficulty": "Medium",
-  "likes": 137,
-  "dislikes": 15,
-  "acceptanceRate": 75.01543567183762,
-  "url": "https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/"
+  "date": "2026-03-21",
+  "id": "3643",
+  "title": "Flip Square Submatrix Vertically",
+  "titleSlug": "flip-square-submatrix-vertically",
+  "difficulty": "Easy",
+  "likes": 130,
+  "dislikes": 13,
+  "acceptanceRate": 75.88696172767737,
+  "url": "https://leetcode.com/problems/flip-square-submatrix-vertically/"
 }
