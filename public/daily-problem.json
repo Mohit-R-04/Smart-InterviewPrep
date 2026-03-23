@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-22",
-  "id": "1886",
-  "title": "Determine Whether Matrix Can Be Obtained By Rotation",
-  "titleSlug": "determine-whether-matrix-can-be-obtained-by-rotation",
-  "difficulty": "Easy",
-  "likes": 1677,
-  "dislikes": 156,
-  "acceptanceRate": 62.53392350282545,
-  "url": "https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/"
+  "date": "2026-03-23",
+  "id": "1594",
+  "title": "Maximum Non Negative Product in a Matrix",
+  "titleSlug": "maximum-non-negative-product-in-a-matrix",
+  "difficulty": "Medium",
+  "likes": 1092,
+  "dislikes": 63,
+  "acceptanceRate": 42.131341394357285,
+  "url": "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/"
 }
