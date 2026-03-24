@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-23",
-  "id": "1594",
-  "title": "Maximum Non Negative Product in a Matrix",
-  "titleSlug": "maximum-non-negative-product-in-a-matrix",
+  "date": "2026-03-24",
+  "id": "2906",
+  "title": "Construct Product Matrix",
+  "titleSlug": "construct-product-matrix",
   "difficulty": "Medium",
-  "likes": 1092,
-  "dislikes": 63,
-  "acceptanceRate": 42.131341394357285,
-  "url": "https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/"
+  "likes": 381,
+  "dislikes": 32,
+  "acceptanceRate": 42.77147436237622,
+  "url": "https://leetcode.com/problems/construct-product-matrix/"
 }
