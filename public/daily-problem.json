@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-24",
-  "id": "2906",
-  "title": "Construct Product Matrix",
-  "titleSlug": "construct-product-matrix",
+  "date": "2026-03-25",
+  "id": "3546",
+  "title": "Equal Sum Grid Partition I",
+  "titleSlug": "equal-sum-grid-partition-i",
   "difficulty": "Medium",
-  "likes": 381,
-  "dislikes": 32,
-  "acceptanceRate": 42.77147436237622,
-  "url": "https://leetcode.com/problems/construct-product-matrix/"
+  "likes": 209,
+  "dislikes": 9,
+  "acceptanceRate": 49.000241768672154,
+  "url": "https://leetcode.com/problems/equal-sum-grid-partition-i/"
 }
