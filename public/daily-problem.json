@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-25",
-  "id": "3546",
-  "title": "Equal Sum Grid Partition I",
-  "titleSlug": "equal-sum-grid-partition-i",
-  "difficulty": "Medium",
-  "likes": 209,
-  "dislikes": 9,
-  "acceptanceRate": 49.000241768672154,
-  "url": "https://leetcode.com/problems/equal-sum-grid-partition-i/"
+  "date": "2026-03-26",
+  "id": "3548",
+  "title": "Equal Sum Grid Partition II",
+  "titleSlug": "equal-sum-grid-partition-ii",
+  "difficulty": "Hard",
+  "likes": 130,
+  "dislikes": 34,
+  "acceptanceRate": 33.70777665742374,
+  "url": "https://leetcode.com/problems/equal-sum-grid-partition-ii/"
 }
