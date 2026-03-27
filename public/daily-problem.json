@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-26",
-  "id": "3548",
-  "title": "Equal Sum Grid Partition II",
-  "titleSlug": "equal-sum-grid-partition-ii",
-  "difficulty": "Hard",
-  "likes": 130,
-  "dislikes": 34,
-  "acceptanceRate": 33.70777665742374,
-  "url": "https://leetcode.com/problems/equal-sum-grid-partition-ii/"
+  "date": "2026-03-27",
+  "id": "2946",
+  "title": "Matrix Similarity After Cyclic Shifts",
+  "titleSlug": "matrix-similarity-after-cyclic-shifts",
+  "difficulty": "Easy",
+  "likes": 292,
+  "dislikes": 78,
+  "acceptanceRate": 67.89475497571004,
+  "url": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/"
 }
