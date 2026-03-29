@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-28",
-  "id": "2573",
-  "title": "Find the String with LCP",
-  "titleSlug": "find-the-string-with-lcp",
-  "difficulty": "Hard",
-  "likes": 288,
-  "dislikes": 35,
-  "acceptanceRate": 49.797323135755256,
-  "url": "https://leetcode.com/problems/find-the-string-with-lcp/"
+  "date": "2026-03-29",
+  "id": "2839",
+  "title": "Check if Strings Can be Made Equal With Operations I",
+  "titleSlug": "check-if-strings-can-be-made-equal-with-operations-i",
+  "difficulty": "Easy",
+  "likes": 283,
+  "dislikes": 36,
+  "acceptanceRate": 54.65993250741739,
+  "url": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/"
 }
