@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-30",
-  "id": "2840",
-  "title": "Check if Strings Can be Made Equal With Operations II",
-  "titleSlug": "check-if-strings-can-be-made-equal-with-operations-ii",
-  "difficulty": "Medium",
-  "likes": 410,
-  "dislikes": 11,
-  "acceptanceRate": 67.78246863682746,
-  "url": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/"
+  "date": "2026-03-31",
+  "id": "3474",
+  "title": "Lexicographically Smallest Generated String",
+  "titleSlug": "lexicographically-smallest-generated-string",
+  "difficulty": "Hard",
+  "likes": 118,
+  "dislikes": 20,
+  "acceptanceRate": 47.33293855053979,
+  "url": "https://leetcode.com/problems/lexicographically-smallest-generated-string/"
 }
