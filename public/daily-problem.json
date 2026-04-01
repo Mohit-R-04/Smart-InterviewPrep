@@ -1,11 +1,11 @@
 {
-  "date": "2026-03-31",
-  "id": "3474",
-  "title": "Lexicographically Smallest Generated String",
-  "titleSlug": "lexicographically-smallest-generated-string",
+  "date": "2026-04-01",
+  "id": "2751",
+  "title": "Robot Collisions",
+  "titleSlug": "robot-collisions",
   "difficulty": "Hard",
-  "likes": 118,
-  "dislikes": 20,
-  "acceptanceRate": 47.33293855053979,
-  "url": "https://leetcode.com/problems/lexicographically-smallest-generated-string/"
+  "likes": 1296,
+  "dislikes": 106,
+  "acceptanceRate": 57.973520508583846,
+  "url": "https://leetcode.com/problems/robot-collisions/"
 }
