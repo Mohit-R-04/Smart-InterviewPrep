@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-01",
-  "id": "2751",
-  "title": "Robot Collisions",
-  "titleSlug": "robot-collisions",
-  "difficulty": "Hard",
-  "likes": 1296,
-  "dislikes": 106,
-  "acceptanceRate": 57.973520508583846,
-  "url": "https://leetcode.com/problems/robot-collisions/"
+  "date": "2026-04-02",
+  "id": "3418",
+  "title": "Maximum Amount of Money Robot Can Earn",
+  "titleSlug": "maximum-amount-of-money-robot-can-earn",
+  "difficulty": "Medium",
+  "likes": 251,
+  "dislikes": 19,
+  "acceptanceRate": 37.90502719890679,
+  "url": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/"
 }
