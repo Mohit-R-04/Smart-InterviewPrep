@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-02",
-  "id": "3418",
-  "title": "Maximum Amount of Money Robot Can Earn",
-  "titleSlug": "maximum-amount-of-money-robot-can-earn",
-  "difficulty": "Medium",
-  "likes": 251,
-  "dislikes": 19,
-  "acceptanceRate": 37.90502719890679,
-  "url": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/"
+  "date": "2026-04-03",
+  "id": "3661",
+  "title": "Maximum Walls Destroyed by Robots",
+  "titleSlug": "maximum-walls-destroyed-by-robots",
+  "difficulty": "Hard",
+  "likes": 147,
+  "dislikes": 15,
+  "acceptanceRate": 38.6819318837791,
+  "url": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/"
 }
