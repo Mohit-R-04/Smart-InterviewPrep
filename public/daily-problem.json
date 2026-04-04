@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-03",
-  "id": "3661",
-  "title": "Maximum Walls Destroyed by Robots",
-  "titleSlug": "maximum-walls-destroyed-by-robots",
-  "difficulty": "Hard",
-  "likes": 147,
-  "dislikes": 15,
-  "acceptanceRate": 38.6819318837791,
-  "url": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/"
+  "date": "2026-04-04",
+  "id": "2075",
+  "title": "Decode the Slanted Ciphertext",
+  "titleSlug": "decode-the-slanted-ciphertext",
+  "difficulty": "Medium",
+  "likes": 363,
+  "dislikes": 90,
+  "acceptanceRate": 60.060920441522406,
+  "url": "https://leetcode.com/problems/decode-the-slanted-ciphertext/"
 }
