@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-04",
-  "id": "2075",
-  "title": "Decode the Slanted Ciphertext",
-  "titleSlug": "decode-the-slanted-ciphertext",
-  "difficulty": "Medium",
-  "likes": 363,
-  "dislikes": 90,
-  "acceptanceRate": 60.060920441522406,
-  "url": "https://leetcode.com/problems/decode-the-slanted-ciphertext/"
+  "date": "2026-04-05",
+  "id": "657",
+  "title": "Robot Return to Origin",
+  "titleSlug": "robot-return-to-origin",
+  "difficulty": "Easy",
+  "likes": 2676,
+  "dislikes": 754,
+  "acceptanceRate": 77.10990209052817,
+  "url": "https://leetcode.com/problems/robot-return-to-origin/"
 }
