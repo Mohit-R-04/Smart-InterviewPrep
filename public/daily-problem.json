@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-05",
-  "id": "657",
-  "title": "Robot Return to Origin",
-  "titleSlug": "robot-return-to-origin",
-  "difficulty": "Easy",
-  "likes": 2676,
-  "dislikes": 754,
-  "acceptanceRate": 77.10990209052817,
-  "url": "https://leetcode.com/problems/robot-return-to-origin/"
+  "date": "2026-04-06",
+  "id": "874",
+  "title": "Walking Robot Simulation",
+  "titleSlug": "walking-robot-simulation",
+  "difficulty": "Medium",
+  "likes": 1006,
+  "dislikes": 209,
+  "acceptanceRate": 60.43551597661973,
+  "url": "https://leetcode.com/problems/walking-robot-simulation/"
 }
