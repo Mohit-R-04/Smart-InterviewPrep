@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-06",
-  "id": "874",
-  "title": "Walking Robot Simulation",
-  "titleSlug": "walking-robot-simulation",
+  "date": "2026-04-07",
+  "id": "2069",
+  "title": "Walking Robot Simulation II",
+  "titleSlug": "walking-robot-simulation-ii",
   "difficulty": "Medium",
-  "likes": 1006,
-  "dislikes": 209,
-  "acceptanceRate": 60.43551597661973,
-  "url": "https://leetcode.com/problems/walking-robot-simulation/"
+  "likes": 273,
+  "dislikes": 340,
+  "acceptanceRate": 34.29467144931578,
+  "url": "https://leetcode.com/problems/walking-robot-simulation-ii/"
 }
