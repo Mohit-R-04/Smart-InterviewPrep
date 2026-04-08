@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-07",
-  "id": "2069",
-  "title": "Walking Robot Simulation II",
-  "titleSlug": "walking-robot-simulation-ii",
+  "date": "2026-04-08",
+  "id": "3653",
+  "title": "XOR After Range Multiplication Queries I",
+  "titleSlug": "xor-after-range-multiplication-queries-i",
   "difficulty": "Medium",
-  "likes": 273,
-  "dislikes": 340,
-  "acceptanceRate": 34.29467144931578,
-  "url": "https://leetcode.com/problems/walking-robot-simulation-ii/"
+  "likes": 107,
+  "dislikes": 49,
+  "acceptanceRate": 73.243965126241,
+  "url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-i/"
 }
