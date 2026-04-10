@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-09",
-  "id": "3655",
-  "title": "XOR After Range Multiplication Queries II",
-  "titleSlug": "xor-after-range-multiplication-queries-ii",
-  "difficulty": "Hard",
-  "likes": 115,
-  "dislikes": 18,
-  "acceptanceRate": 41.64411614130037,
-  "url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/"
+  "date": "2026-04-10",
+  "id": "3740",
+  "title": "Minimum Distance Between Three Equal Elements I",
+  "titleSlug": "minimum-distance-between-three-equal-elements-i",
+  "difficulty": "Easy",
+  "likes": 150,
+  "dislikes": 15,
+  "acceptanceRate": 67.95656209763547,
+  "url": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/"
 }
