@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-11",
-  "id": "3741",
-  "title": "Minimum Distance Between Three Equal Elements II",
-  "titleSlug": "minimum-distance-between-three-equal-elements-ii",
-  "difficulty": "Medium",
-  "likes": 165,
-  "dislikes": 4,
-  "acceptanceRate": 72.31931818181818,
-  "url": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/"
+  "date": "2026-04-12",
+  "id": "1320",
+  "title": "Minimum Distance to Type a Word Using Two Fingers",
+  "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers",
+  "difficulty": "Hard",
+  "likes": 1128,
+  "dislikes": 46,
+  "acceptanceRate": 64.89861886570672,
+  "url": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/"
 }
