@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-12",
-  "id": "1320",
-  "title": "Minimum Distance to Type a Word Using Two Fingers",
-  "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers",
-  "difficulty": "Hard",
-  "likes": 1128,
-  "dislikes": 46,
-  "acceptanceRate": 64.89861886570672,
-  "url": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/"
+  "date": "2026-04-13",
+  "id": "1848",
+  "title": "Minimum Distance to the Target Element",
+  "titleSlug": "minimum-distance-to-the-target-element",
+  "difficulty": "Easy",
+  "likes": 490,
+  "dislikes": 74,
+  "acceptanceRate": 60.48255907809609,
+  "url": "https://leetcode.com/problems/minimum-distance-to-the-target-element/"
 }
