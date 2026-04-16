@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-15",
-  "id": "2515",
-  "title": "Shortest Distance to Target String in a Circular Array",
-  "titleSlug": "shortest-distance-to-target-string-in-a-circular-array",
-  "difficulty": "Easy",
-  "likes": 471,
-  "dislikes": 29,
-  "acceptanceRate": 58.16734770640634,
-  "url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/"
+  "date": "2026-04-16",
+  "id": "3488",
+  "title": "Closest Equal Element Queries",
+  "titleSlug": "closest-equal-element-queries",
+  "difficulty": "Medium",
+  "likes": 223,
+  "dislikes": 18,
+  "acceptanceRate": 42.10222293044379,
+  "url": "https://leetcode.com/problems/closest-equal-element-queries/"
 }
