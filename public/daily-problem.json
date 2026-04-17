@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-16",
-  "id": "3488",
-  "title": "Closest Equal Element Queries",
-  "titleSlug": "closest-equal-element-queries",
+  "date": "2026-04-17",
+  "id": "3761",
+  "title": "Minimum Absolute Distance Between Mirror Pairs",
+  "titleSlug": "minimum-absolute-distance-between-mirror-pairs",
   "difficulty": "Medium",
-  "likes": 223,
-  "dislikes": 18,
-  "acceptanceRate": 42.10222293044379,
-  "url": "https://leetcode.com/problems/closest-equal-element-queries/"
+  "likes": 196,
+  "dislikes": 10,
+  "acceptanceRate": 53.92862750375704,
+  "url": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/"
 }
