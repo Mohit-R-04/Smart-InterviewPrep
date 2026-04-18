@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-17",
-  "id": "3761",
-  "title": "Minimum Absolute Distance Between Mirror Pairs",
-  "titleSlug": "minimum-absolute-distance-between-mirror-pairs",
-  "difficulty": "Medium",
-  "likes": 196,
-  "dislikes": 10,
-  "acceptanceRate": 53.92862750375704,
-  "url": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/"
+  "date": "2026-04-18",
+  "id": "3783",
+  "title": "Mirror Distance of an Integer",
+  "titleSlug": "mirror-distance-of-an-integer",
+  "difficulty": "Easy",
+  "likes": 132,
+  "dislikes": 4,
+  "acceptanceRate": 90.35532476028868,
+  "url": "https://leetcode.com/problems/mirror-distance-of-an-integer/"
 }
