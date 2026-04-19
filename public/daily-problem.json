@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-18",
-  "id": "3783",
-  "title": "Mirror Distance of an Integer",
-  "titleSlug": "mirror-distance-of-an-integer",
-  "difficulty": "Easy",
-  "likes": 132,
-  "dislikes": 4,
-  "acceptanceRate": 90.35532476028868,
-  "url": "https://leetcode.com/problems/mirror-distance-of-an-integer/"
+  "date": "2026-04-19",
+  "id": "1855",
+  "title": "Maximum Distance Between a Pair of Values",
+  "titleSlug": "maximum-distance-between-a-pair-of-values",
+  "difficulty": "Medium",
+  "likes": 1390,
+  "dislikes": 34,
+  "acceptanceRate": 57.62716108113521,
+  "url": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/"
 }
