@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-19",
-  "id": "1855",
-  "title": "Maximum Distance Between a Pair of Values",
-  "titleSlug": "maximum-distance-between-a-pair-of-values",
-  "difficulty": "Medium",
-  "likes": 1390,
-  "dislikes": 34,
-  "acceptanceRate": 57.62716108113521,
-  "url": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/"
+  "date": "2026-04-20",
+  "id": "2078",
+  "title": "Two Furthest Houses With Different Colors",
+  "titleSlug": "two-furthest-houses-with-different-colors",
+  "difficulty": "Easy",
+  "likes": 1155,
+  "dislikes": 39,
+  "acceptanceRate": 68.87289414768065,
+  "url": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/"
 }
