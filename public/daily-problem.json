@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-20",
-  "id": "2078",
-  "title": "Two Furthest Houses With Different Colors",
-  "titleSlug": "two-furthest-houses-with-different-colors",
-  "difficulty": "Easy",
-  "likes": 1155,
-  "dislikes": 39,
-  "acceptanceRate": 68.87289414768065,
-  "url": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/"
+  "date": "2026-04-21",
+  "id": "1722",
+  "title": "Minimize Hamming Distance After Swap Operations",
+  "titleSlug": "minimize-hamming-distance-after-swap-operations",
+  "difficulty": "Medium",
+  "likes": 1060,
+  "dislikes": 32,
+  "acceptanceRate": 59.47600824256697,
+  "url": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/"
 }
