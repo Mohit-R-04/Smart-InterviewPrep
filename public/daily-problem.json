@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-21",
-  "id": "1722",
-  "title": "Minimize Hamming Distance After Swap Operations",
-  "titleSlug": "minimize-hamming-distance-after-swap-operations",
+  "date": "2026-04-22",
+  "id": "2452",
+  "title": "Words Within Two Edits of Dictionary",
+  "titleSlug": "words-within-two-edits-of-dictionary",
   "difficulty": "Medium",
-  "likes": 1060,
+  "likes": 411,
   "dislikes": 32,
-  "acceptanceRate": 59.47600824256697,
-  "url": "https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/"
+  "acceptanceRate": 68.66947607375297,
+  "url": "https://leetcode.com/problems/words-within-two-edits-of-dictionary/"
 }
