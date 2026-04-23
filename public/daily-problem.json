@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-22",
-  "id": "2452",
-  "title": "Words Within Two Edits of Dictionary",
-  "titleSlug": "words-within-two-edits-of-dictionary",
+  "date": "2026-04-23",
+  "id": "2615",
+  "title": "Sum of Distances",
+  "titleSlug": "sum-of-distances",
   "difficulty": "Medium",
-  "likes": 411,
-  "dislikes": 32,
-  "acceptanceRate": 68.66947607375297,
-  "url": "https://leetcode.com/problems/words-within-two-edits-of-dictionary/"
+  "likes": 964,
+  "dislikes": 106,
+  "acceptanceRate": 40.60598830967434,
+  "url": "https://leetcode.com/problems/sum-of-distances/"
 }
