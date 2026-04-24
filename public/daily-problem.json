@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-23",
-  "id": "2615",
-  "title": "Sum of Distances",
-  "titleSlug": "sum-of-distances",
-  "difficulty": "Medium",
-  "likes": 964,
-  "dislikes": 106,
-  "acceptanceRate": 40.60598830967434,
-  "url": "https://leetcode.com/problems/sum-of-distances/"
+  "date": "2026-04-24",
+  "id": "2833",
+  "title": "Furthest Point From Origin",
+  "titleSlug": "furthest-point-from-origin",
+  "difficulty": "Easy",
+  "likes": 392,
+  "dislikes": 66,
+  "acceptanceRate": 72.05273746227905,
+  "url": "https://leetcode.com/problems/furthest-point-from-origin/"
 }
