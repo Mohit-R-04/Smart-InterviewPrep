@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-26",
-  "id": "1559",
-  "title": "Detect Cycles in 2D Grid",
-  "titleSlug": "detect-cycles-in-2d-grid",
+  "date": "2026-04-27",
+  "id": "1391",
+  "title": "Check if There is a Valid Path in a Grid",
+  "titleSlug": "check-if-there-is-a-valid-path-in-a-grid",
   "difficulty": "Medium",
-  "likes": 1393,
-  "dislikes": 32,
-  "acceptanceRate": 56.975712722493085,
-  "url": "https://leetcode.com/problems/detect-cycles-in-2d-grid/"
+  "likes": 950,
+  "dislikes": 335,
+  "acceptanceRate": 57.035295047626576,
+  "url": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/"
 }
