@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-27",
-  "id": "1391",
-  "title": "Check if There is a Valid Path in a Grid",
-  "titleSlug": "check-if-there-is-a-valid-path-in-a-grid",
+  "date": "2026-04-28",
+  "id": "2033",
+  "title": "Minimum Operations to Make a Uni-Value Grid",
+  "titleSlug": "minimum-operations-to-make-a-uni-value-grid",
   "difficulty": "Medium",
-  "likes": 950,
-  "dislikes": 335,
-  "acceptanceRate": 57.035295047626576,
-  "url": "https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/"
+  "likes": 1171,
+  "dislikes": 77,
+  "acceptanceRate": 68.87206302612051,
+  "url": "https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/"
 }
