@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-29",
-  "id": "3225",
-  "title": "Maximum Score From Grid Operations",
-  "titleSlug": "maximum-score-from-grid-operations",
-  "difficulty": "Hard",
-  "likes": 120,
-  "dislikes": 14,
-  "acceptanceRate": 54.46658769423733,
-  "url": "https://leetcode.com/problems/maximum-score-from-grid-operations/"
+  "date": "2026-04-30",
+  "id": "3742",
+  "title": "Maximum Path Score in a Grid",
+  "titleSlug": "maximum-path-score-in-a-grid",
+  "difficulty": "Medium",
+  "likes": 164,
+  "dislikes": 6,
+  "acceptanceRate": 46.2995761521455,
+  "url": "https://leetcode.com/problems/maximum-path-score-in-a-grid/"
 }
