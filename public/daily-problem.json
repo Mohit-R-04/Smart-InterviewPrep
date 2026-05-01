@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-30",
-  "id": "3742",
-  "title": "Maximum Path Score in a Grid",
-  "titleSlug": "maximum-path-score-in-a-grid",
+  "date": "2026-05-01",
+  "id": "396",
+  "title": "Rotate Function",
+  "titleSlug": "rotate-function",
   "difficulty": "Medium",
-  "likes": 164,
-  "dislikes": 6,
-  "acceptanceRate": 46.2995761521455,
-  "url": "https://leetcode.com/problems/maximum-path-score-in-a-grid/"
+  "likes": 1792,
+  "dislikes": 285,
+  "acceptanceRate": 48.84832988409134,
+  "url": "https://leetcode.com/problems/rotate-function/"
 }
