@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-01",
-  "id": "396",
-  "title": "Rotate Function",
-  "titleSlug": "rotate-function",
+  "date": "2026-05-02",
+  "id": "788",
+  "title": "Rotated Digits",
+  "titleSlug": "rotated-digits",
   "difficulty": "Medium",
-  "likes": 1792,
-  "dislikes": 285,
-  "acceptanceRate": 48.84832988409134,
-  "url": "https://leetcode.com/problems/rotate-function/"
+  "likes": 856,
+  "dislikes": 1962,
+  "acceptanceRate": 59.434785449876806,
+  "url": "https://leetcode.com/problems/rotated-digits/"
 }
