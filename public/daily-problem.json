@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-03",
-  "id": "796",
-  "title": "Rotate String",
-  "titleSlug": "rotate-string",
-  "difficulty": "Easy",
-  "likes": 4929,
-  "dislikes": 439,
-  "acceptanceRate": 65.81786482245597,
-  "url": "https://leetcode.com/problems/rotate-string/"
+  "date": "2026-05-04",
+  "id": "48",
+  "title": "Rotate Image",
+  "titleSlug": "rotate-image",
+  "difficulty": "Medium",
+  "likes": 19982,
+  "dislikes": 967,
+  "acceptanceRate": 79.79523884505318,
+  "url": "https://leetcode.com/problems/rotate-image/"
 }
