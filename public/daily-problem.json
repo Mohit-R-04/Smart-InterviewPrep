@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-04",
-  "id": "48",
-  "title": "Rotate Image",
-  "titleSlug": "rotate-image",
+  "date": "2026-05-05",
+  "id": "61",
+  "title": "Rotate List",
+  "titleSlug": "rotate-list",
   "difficulty": "Medium",
-  "likes": 19982,
-  "dislikes": 967,
-  "acceptanceRate": 79.79523884505318,
-  "url": "https://leetcode.com/problems/rotate-image/"
+  "likes": 11367,
+  "dislikes": 1556,
+  "acceptanceRate": 41.97249719359119,
+  "url": "https://leetcode.com/problems/rotate-list/"
 }
