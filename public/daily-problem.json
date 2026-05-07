@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-05",
-  "id": "61",
-  "title": "Rotate List",
-  "titleSlug": "rotate-list",
+  "date": "2026-05-07",
+  "id": "3660",
+  "title": "Jump Game IX",
+  "titleSlug": "jump-game-ix",
   "difficulty": "Medium",
-  "likes": 11367,
-  "dislikes": 1556,
-  "acceptanceRate": 41.97249719359119,
-  "url": "https://leetcode.com/problems/rotate-list/"
+  "likes": 278,
+  "dislikes": 19,
+  "acceptanceRate": 34.85514387071344,
+  "url": "https://leetcode.com/problems/jump-game-ix/"
 }
