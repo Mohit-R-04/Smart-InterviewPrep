@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-07",
-  "id": "3660",
-  "title": "Jump Game IX",
-  "titleSlug": "jump-game-ix",
+  "date": "2026-05-08",
+  "id": "3629",
+  "title": "Minimum Jumps to Reach End via Prime Teleportation",
+  "titleSlug": "minimum-jumps-to-reach-end-via-prime-teleportation",
   "difficulty": "Medium",
-  "likes": 278,
-  "dislikes": 19,
-  "acceptanceRate": 34.85514387071344,
-  "url": "https://leetcode.com/problems/jump-game-ix/"
+  "likes": 212,
+  "dislikes": 21,
+  "acceptanceRate": 37.38786680857534,
+  "url": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/"
 }
