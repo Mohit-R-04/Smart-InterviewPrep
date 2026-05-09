@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-08",
-  "id": "3629",
-  "title": "Minimum Jumps to Reach End via Prime Teleportation",
-  "titleSlug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+  "date": "2026-05-09",
+  "id": "1914",
+  "title": "Cyclically Rotating a Grid",
+  "titleSlug": "cyclically-rotating-a-grid",
   "difficulty": "Medium",
-  "likes": 212,
-  "dislikes": 21,
-  "acceptanceRate": 37.38786680857534,
-  "url": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/"
+  "likes": 336,
+  "dislikes": 288,
+  "acceptanceRate": 64.30076376086384,
+  "url": "https://leetcode.com/problems/cyclically-rotating-a-grid/"
 }
