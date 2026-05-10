@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-09",
-  "id": "1914",
-  "title": "Cyclically Rotating a Grid",
-  "titleSlug": "cyclically-rotating-a-grid",
+  "date": "2026-05-10",
+  "id": "2770",
+  "title": "Maximum Number of Jumps to Reach the Last Index",
+  "titleSlug": "maximum-number-of-jumps-to-reach-the-last-index",
   "difficulty": "Medium",
-  "likes": 336,
-  "dislikes": 288,
-  "acceptanceRate": 64.30076376086384,
-  "url": "https://leetcode.com/problems/cyclically-rotating-a-grid/"
+  "likes": 545,
+  "dislikes": 16,
+  "acceptanceRate": 41.35696656305791,
+  "url": "https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/"
 }
