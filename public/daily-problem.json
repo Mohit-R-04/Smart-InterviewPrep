@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-12",
-  "id": "1665",
-  "title": "Minimum Initial Energy to Finish Tasks",
-  "titleSlug": "minimum-initial-energy-to-finish-tasks",
-  "difficulty": "Hard",
-  "likes": 713,
-  "dislikes": 43,
-  "acceptanceRate": 70.72146065619049,
-  "url": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/"
+  "date": "2026-05-13",
+  "id": "1674",
+  "title": "Minimum Moves to Make Array Complementary",
+  "titleSlug": "minimum-moves-to-make-array-complementary",
+  "difficulty": "Medium",
+  "likes": 856,
+  "dislikes": 98,
+  "acceptanceRate": 56.25195172578482,
+  "url": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/"
 }
