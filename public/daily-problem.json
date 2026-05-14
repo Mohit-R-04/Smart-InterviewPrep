@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-13",
-  "id": "1674",
-  "title": "Minimum Moves to Make Array Complementary",
-  "titleSlug": "minimum-moves-to-make-array-complementary",
-  "difficulty": "Medium",
-  "likes": 856,
-  "dislikes": 98,
-  "acceptanceRate": 56.25195172578482,
-  "url": "https://leetcode.com/problems/minimum-moves-to-make-array-complementary/"
+  "date": "2026-05-14",
+  "id": "2784",
+  "title": "Check if Array is Good",
+  "titleSlug": "check-if-array-is-good",
+  "difficulty": "Easy",
+  "likes": 388,
+  "dislikes": 63,
+  "acceptanceRate": 53.42441902147751,
+  "url": "https://leetcode.com/problems/check-if-array-is-good/"
 }
