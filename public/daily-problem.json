@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-14",
-  "id": "2784",
-  "title": "Check if Array is Good",
-  "titleSlug": "check-if-array-is-good",
-  "difficulty": "Easy",
-  "likes": 388,
-  "dislikes": 63,
-  "acceptanceRate": 53.42441902147751,
-  "url": "https://leetcode.com/problems/check-if-array-is-good/"
+  "date": "2026-05-15",
+  "id": "153",
+  "title": "Find Minimum in Rotated Sorted Array",
+  "titleSlug": "find-minimum-in-rotated-sorted-array",
+  "difficulty": "Medium",
+  "likes": 15401,
+  "dislikes": 674,
+  "acceptanceRate": 54.35027903402242,
+  "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
 }
