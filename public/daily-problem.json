@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-17",
-  "id": "1306",
-  "title": "Jump Game III",
-  "titleSlug": "jump-game-iii",
-  "difficulty": "Medium",
-  "likes": 4446,
-  "dislikes": 119,
-  "acceptanceRate": 68.21016670046146,
-  "url": "https://leetcode.com/problems/jump-game-iii/"
+  "date": "2026-05-18",
+  "id": "1345",
+  "title": "Jump Game IV",
+  "titleSlug": "jump-game-iv",
+  "difficulty": "Hard",
+  "likes": 4005,
+  "dislikes": 135,
+  "acceptanceRate": 48.40671442639464,
+  "url": "https://leetcode.com/problems/jump-game-iv/"
 }
