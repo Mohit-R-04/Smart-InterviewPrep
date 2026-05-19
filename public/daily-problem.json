@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-18",
-  "id": "1345",
-  "title": "Jump Game IV",
-  "titleSlug": "jump-game-iv",
-  "difficulty": "Hard",
-  "likes": 4005,
-  "dislikes": 135,
-  "acceptanceRate": 48.40671442639464,
-  "url": "https://leetcode.com/problems/jump-game-iv/"
+  "date": "2026-05-19",
+  "id": "2540",
+  "title": "Minimum Common Value",
+  "titleSlug": "minimum-common-value",
+  "difficulty": "Easy",
+  "likes": 1338,
+  "dislikes": 44,
+  "acceptanceRate": 59.57028885743384,
+  "url": "https://leetcode.com/problems/minimum-common-value/"
 }
