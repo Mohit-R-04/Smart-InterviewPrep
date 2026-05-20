@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-19",
-  "id": "2540",
-  "title": "Minimum Common Value",
-  "titleSlug": "minimum-common-value",
-  "difficulty": "Easy",
-  "likes": 1338,
-  "dislikes": 44,
-  "acceptanceRate": 59.57028885743384,
-  "url": "https://leetcode.com/problems/minimum-common-value/"
+  "date": "2026-05-20",
+  "id": "2657",
+  "title": "Find the Prefix Common Array of Two Arrays",
+  "titleSlug": "find-the-prefix-common-array-of-two-arrays",
+  "difficulty": "Medium",
+  "likes": 1267,
+  "dislikes": 76,
+  "acceptanceRate": 87.70178726966627,
+  "url": "https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/"
 }
