@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-20",
-  "id": "2657",
-  "title": "Find the Prefix Common Array of Two Arrays",
-  "titleSlug": "find-the-prefix-common-array-of-two-arrays",
+  "date": "2026-05-21",
+  "id": "3043",
+  "title": "Find the Length of the Longest Common Prefix",
+  "titleSlug": "find-the-length-of-the-longest-common-prefix",
   "difficulty": "Medium",
-  "likes": 1267,
-  "dislikes": 76,
-  "acceptanceRate": 87.70178726966627,
-  "url": "https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/"
+  "likes": 951,
+  "dislikes": 54,
+  "acceptanceRate": 59.38710570005534,
+  "url": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/"
 }
