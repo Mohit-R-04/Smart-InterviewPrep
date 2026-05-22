@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-21",
-  "id": "3043",
-  "title": "Find the Length of the Longest Common Prefix",
-  "titleSlug": "find-the-length-of-the-longest-common-prefix",
+  "date": "2026-05-22",
+  "id": "33",
+  "title": "Search in Rotated Sorted Array",
+  "titleSlug": "search-in-rotated-sorted-array",
   "difficulty": "Medium",
-  "likes": 951,
-  "dislikes": 54,
-  "acceptanceRate": 59.38710570005534,
-  "url": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/"
+  "likes": 30229,
+  "dislikes": 1836,
+  "acceptanceRate": 44.69845762037216,
+  "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
 }
