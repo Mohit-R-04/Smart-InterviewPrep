@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-22",
-  "id": "33",
-  "title": "Search in Rotated Sorted Array",
-  "titleSlug": "search-in-rotated-sorted-array",
-  "difficulty": "Medium",
-  "likes": 30229,
-  "dislikes": 1836,
-  "acceptanceRate": 44.69845762037216,
-  "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  "date": "2026-05-23",
+  "id": "1752",
+  "title": "Check if Array Is Sorted and Rotated",
+  "titleSlug": "check-if-array-is-sorted-and-rotated",
+  "difficulty": "Easy",
+  "likes": 5085,
+  "dislikes": 295,
+  "acceptanceRate": 56.54753428914944,
+  "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/"
 }
