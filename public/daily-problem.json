@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-23",
-  "id": "1752",
-  "title": "Check if Array Is Sorted and Rotated",
-  "titleSlug": "check-if-array-is-sorted-and-rotated",
-  "difficulty": "Easy",
-  "likes": 5085,
-  "dislikes": 295,
-  "acceptanceRate": 56.54753428914944,
-  "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/"
+  "date": "2026-05-24",
+  "id": "1340",
+  "title": "Jump Game V",
+  "titleSlug": "jump-game-v",
+  "difficulty": "Hard",
+  "likes": 1299,
+  "dislikes": 54,
+  "acceptanceRate": 70.77320370651678,
+  "url": "https://leetcode.com/problems/jump-game-v/"
 }
