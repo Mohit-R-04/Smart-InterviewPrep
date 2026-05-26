@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-25",
-  "id": "1871",
-  "title": "Jump Game VII",
-  "titleSlug": "jump-game-vii",
-  "difficulty": "Medium",
-  "likes": 1949,
-  "dislikes": 125,
-  "acceptanceRate": 30.80299769045861,
-  "url": "https://leetcode.com/problems/jump-game-vii/"
+  "date": "2026-05-26",
+  "id": "3120",
+  "title": "Count the Number of Special Characters I",
+  "titleSlug": "count-the-number-of-special-characters-i",
+  "difficulty": "Easy",
+  "likes": 286,
+  "dislikes": 9,
+  "acceptanceRate": 73.87352483564871,
+  "url": "https://leetcode.com/problems/count-the-number-of-special-characters-i/"
 }
