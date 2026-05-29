@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-28",
-  "id": "3093",
-  "title": "Longest Common Suffix Queries",
-  "titleSlug": "longest-common-suffix-queries",
-  "difficulty": "Hard",
-  "likes": 315,
-  "dislikes": 27,
-  "acceptanceRate": 47.016004569261995,
-  "url": "https://leetcode.com/problems/longest-common-suffix-queries/"
+  "date": "2026-05-29",
+  "id": "3300",
+  "title": "Minimum Element After Replacement With Digit Sum",
+  "titleSlug": "minimum-element-after-replacement-with-digit-sum",
+  "difficulty": "Easy",
+  "likes": 187,
+  "dislikes": 5,
+  "acceptanceRate": 88.46680907661924,
+  "url": "https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/"
 }
