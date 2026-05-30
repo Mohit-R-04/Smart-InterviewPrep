@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-29",
-  "id": "3300",
-  "title": "Minimum Element After Replacement With Digit Sum",
-  "titleSlug": "minimum-element-after-replacement-with-digit-sum",
-  "difficulty": "Easy",
-  "likes": 187,
-  "dislikes": 5,
-  "acceptanceRate": 88.46680907661924,
-  "url": "https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/"
+  "date": "2026-05-30",
+  "id": "3161",
+  "title": "Block Placement Queries",
+  "titleSlug": "block-placement-queries",
+  "difficulty": "Hard",
+  "likes": 227,
+  "dislikes": 35,
+  "acceptanceRate": 29.558789751727883,
+  "url": "https://leetcode.com/problems/block-placement-queries/"
 }
