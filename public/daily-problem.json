@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-30",
-  "id": "3161",
-  "title": "Block Placement Queries",
-  "titleSlug": "block-placement-queries",
-  "difficulty": "Hard",
-  "likes": 227,
-  "dislikes": 35,
-  "acceptanceRate": 29.558789751727883,
-  "url": "https://leetcode.com/problems/block-placement-queries/"
+  "date": "2026-05-31",
+  "id": "2126",
+  "title": "Destroying Asteroids",
+  "titleSlug": "destroying-asteroids",
+  "difficulty": "Medium",
+  "likes": 706,
+  "dislikes": 208,
+  "acceptanceRate": 57.02667236328125,
+  "url": "https://leetcode.com/problems/destroying-asteroids/"
 }
