@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-31",
-  "id": "2126",
-  "title": "Destroying Asteroids",
-  "titleSlug": "destroying-asteroids",
-  "difficulty": "Medium",
-  "likes": 706,
-  "dislikes": 208,
-  "acceptanceRate": 57.02667236328125,
-  "url": "https://leetcode.com/problems/destroying-asteroids/"
+  "date": "2026-06-01",
+  "id": "2144",
+  "title": "Minimum Cost of Buying Candies With Discount",
+  "titleSlug": "minimum-cost-of-buying-candies-with-discount",
+  "difficulty": "Easy",
+  "likes": 827,
+  "dislikes": 29,
+  "acceptanceRate": 68.536166149439,
+  "url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/"
 }
