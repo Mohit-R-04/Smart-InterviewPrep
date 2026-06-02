@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-01",
-  "id": "2144",
-  "title": "Minimum Cost of Buying Candies With Discount",
-  "titleSlug": "minimum-cost-of-buying-candies-with-discount",
+  "date": "2026-06-02",
+  "id": "3633",
+  "title": "Earliest Finish Time for Land and Water Rides I",
+  "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
   "difficulty": "Easy",
-  "likes": 827,
-  "dislikes": 29,
-  "acceptanceRate": 68.536166149439,
-  "url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/"
+  "likes": 212,
+  "dislikes": 38,
+  "acceptanceRate": 69.08965039806161,
+  "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/"
 }
