@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-02",
-  "id": "3633",
-  "title": "Earliest Finish Time for Land and Water Rides I",
-  "titleSlug": "earliest-finish-time-for-land-and-water-rides-i",
-  "difficulty": "Easy",
-  "likes": 212,
-  "dislikes": 38,
-  "acceptanceRate": 69.08965039806161,
-  "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/"
+  "date": "2026-06-03",
+  "id": "3635",
+  "title": "Earliest Finish Time for Land and Water Rides II",
+  "titleSlug": "earliest-finish-time-for-land-and-water-rides-ii",
+  "difficulty": "Medium",
+  "likes": 217,
+  "dislikes": 13,
+  "acceptanceRate": 57.9276430610024,
+  "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/"
 }
