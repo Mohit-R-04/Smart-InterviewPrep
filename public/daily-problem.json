@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-03",
-  "id": "3635",
-  "title": "Earliest Finish Time for Land and Water Rides II",
-  "titleSlug": "earliest-finish-time-for-land-and-water-rides-ii",
+  "date": "2026-06-04",
+  "id": "3751",
+  "title": "Total Waviness of Numbers in Range I",
+  "titleSlug": "total-waviness-of-numbers-in-range-i",
   "difficulty": "Medium",
-  "likes": 217,
-  "dislikes": 13,
-  "acceptanceRate": 57.9276430610024,
-  "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/"
+  "likes": 163,
+  "dislikes": 10,
+  "acceptanceRate": 86.40569723089688,
+  "url": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/"
 }
