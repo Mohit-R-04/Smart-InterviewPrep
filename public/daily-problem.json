@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-07",
-  "id": "2196",
-  "title": "Create Binary Tree From Descriptions",
-  "titleSlug": "create-binary-tree-from-descriptions",
+  "date": "2026-06-08",
+  "id": "2161",
+  "title": "Partition Array According to Given Pivot",
+  "titleSlug": "partition-array-according-to-given-pivot",
   "difficulty": "Medium",
-  "likes": 1786,
-  "dislikes": 42,
-  "acceptanceRate": 82.77170454270822,
-  "url": "https://leetcode.com/problems/create-binary-tree-from-descriptions/"
+  "likes": 1894,
+  "dislikes": 130,
+  "acceptanceRate": 90.39892095152456,
+  "url": "https://leetcode.com/problems/partition-array-according-to-given-pivot/"
 }
