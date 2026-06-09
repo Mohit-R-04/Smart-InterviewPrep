@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-08",
-  "id": "2161",
-  "title": "Partition Array According to Given Pivot",
-  "titleSlug": "partition-array-according-to-given-pivot",
+  "date": "2026-06-09",
+  "id": "3689",
+  "title": "Maximum Total Subarray Value I",
+  "titleSlug": "maximum-total-subarray-value-i",
   "difficulty": "Medium",
-  "likes": 1894,
-  "dislikes": 130,
-  "acceptanceRate": 90.39892095152456,
-  "url": "https://leetcode.com/problems/partition-array-according-to-given-pivot/"
+  "likes": 167,
+  "dislikes": 63,
+  "acceptanceRate": 69.46801810283814,
+  "url": "https://leetcode.com/problems/maximum-total-subarray-value-i/"
 }
