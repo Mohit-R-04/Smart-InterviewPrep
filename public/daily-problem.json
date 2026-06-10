@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-09",
-  "id": "3689",
-  "title": "Maximum Total Subarray Value I",
-  "titleSlug": "maximum-total-subarray-value-i",
-  "difficulty": "Medium",
-  "likes": 167,
-  "dislikes": 63,
-  "acceptanceRate": 69.46801810283814,
-  "url": "https://leetcode.com/problems/maximum-total-subarray-value-i/"
+  "date": "2026-06-10",
+  "id": "3691",
+  "title": "Maximum Total Subarray Value II",
+  "titleSlug": "maximum-total-subarray-value-ii",
+  "difficulty": "Hard",
+  "likes": 209,
+  "dislikes": 9,
+  "acceptanceRate": 32.319164515010215,
+  "url": "https://leetcode.com/problems/maximum-total-subarray-value-ii/"
 }
