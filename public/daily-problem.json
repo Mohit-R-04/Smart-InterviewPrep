@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-11",
-  "id": "3558",
-  "title": "Number of Ways to Assign Edge Weights I",
-  "titleSlug": "number-of-ways-to-assign-edge-weights-i",
-  "difficulty": "Medium",
-  "likes": 195,
-  "dislikes": 13,
-  "acceptanceRate": 60.73728802305352,
-  "url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/"
+  "date": "2026-06-12",
+  "id": "3559",
+  "title": "Number of Ways to Assign Edge Weights II",
+  "titleSlug": "number-of-ways-to-assign-edge-weights-ii",
+  "difficulty": "Hard",
+  "likes": 149,
+  "dislikes": 7,
+  "acceptanceRate": 69.19326671194334,
+  "url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/"
 }
