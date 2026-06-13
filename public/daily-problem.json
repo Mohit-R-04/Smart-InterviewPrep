@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-12",
-  "id": "3559",
-  "title": "Number of Ways to Assign Edge Weights II",
-  "titleSlug": "number-of-ways-to-assign-edge-weights-ii",
-  "difficulty": "Hard",
-  "likes": 149,
-  "dislikes": 7,
-  "acceptanceRate": 69.19326671194334,
-  "url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/"
+  "date": "2026-06-13",
+  "id": "3838",
+  "title": "Weighted Word Mapping",
+  "titleSlug": "weighted-word-mapping",
+  "difficulty": "Easy",
+  "likes": 139,
+  "dislikes": 6,
+  "acceptanceRate": 89.55265918184998,
+  "url": "https://leetcode.com/problems/weighted-word-mapping/"
 }
