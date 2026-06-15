@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-14",
-  "id": "2130",
-  "title": "Maximum Twin Sum of a Linked List",
-  "titleSlug": "maximum-twin-sum-of-a-linked-list",
+  "date": "2026-06-15",
+  "id": "2095",
+  "title": "Delete the Middle Node of a Linked List",
+  "titleSlug": "delete-the-middle-node-of-a-linked-list",
   "difficulty": "Medium",
-  "likes": 4033,
-  "dislikes": 128,
-  "acceptanceRate": 82.4306641844752,
-  "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/"
+  "likes": 5103,
+  "dislikes": 109,
+  "acceptanceRate": 60.30299405925877,
+  "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/"
 }
