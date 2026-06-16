@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-15",
-  "id": "2095",
-  "title": "Delete the Middle Node of a Linked List",
-  "titleSlug": "delete-the-middle-node-of-a-linked-list",
+  "date": "2026-06-16",
+  "id": "3612",
+  "title": "Process String with Special Operations I",
+  "titleSlug": "process-string-with-special-operations-i",
   "difficulty": "Medium",
-  "likes": 5103,
-  "dislikes": 109,
-  "acceptanceRate": 60.30299405925877,
-  "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/"
+  "likes": 189,
+  "dislikes": 24,
+  "acceptanceRate": 69.56163880648275,
+  "url": "https://leetcode.com/problems/process-string-with-special-operations-i/"
 }
