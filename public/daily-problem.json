@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-16",
-  "id": "3612",
-  "title": "Process String with Special Operations I",
-  "titleSlug": "process-string-with-special-operations-i",
-  "difficulty": "Medium",
-  "likes": 189,
-  "dislikes": 24,
-  "acceptanceRate": 69.56163880648275,
-  "url": "https://leetcode.com/problems/process-string-with-special-operations-i/"
+  "date": "2026-06-17",
+  "id": "3614",
+  "title": "Process String with Special Operations II",
+  "titleSlug": "process-string-with-special-operations-ii",
+  "difficulty": "Hard",
+  "likes": 291,
+  "dislikes": 15,
+  "acceptanceRate": 31.23256464297163,
+  "url": "https://leetcode.com/problems/process-string-with-special-operations-ii/"
 }
