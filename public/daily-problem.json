@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-19",
-  "id": "1732",
-  "title": "Find the Highest Altitude",
-  "titleSlug": "find-the-highest-altitude",
-  "difficulty": "Easy",
-  "likes": 3389,
-  "dislikes": 438,
-  "acceptanceRate": 84.32892306446371,
-  "url": "https://leetcode.com/problems/find-the-highest-altitude/"
+  "date": "2026-06-20",
+  "id": "1840",
+  "title": "Maximum Building Height",
+  "titleSlug": "maximum-building-height",
+  "difficulty": "Hard",
+  "likes": 574,
+  "dislikes": 31,
+  "acceptanceRate": 57.188757919818045,
+  "url": "https://leetcode.com/problems/maximum-building-height/"
 }
