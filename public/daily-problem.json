@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-21",
-  "id": "1833",
-  "title": "Maximum Ice Cream Bars",
-  "titleSlug": "maximum-ice-cream-bars",
-  "difficulty": "Medium",
-  "likes": 2389,
-  "dislikes": 684,
-  "acceptanceRate": 76.02578833524835,
-  "url": "https://leetcode.com/problems/maximum-ice-cream-bars/"
+  "date": "2026-06-22",
+  "id": "1189",
+  "title": "Maximum Number of Balloons",
+  "titleSlug": "maximum-number-of-balloons",
+  "difficulty": "Easy",
+  "likes": 2050,
+  "dislikes": 124,
+  "acceptanceRate": 62.41641236765918,
+  "url": "https://leetcode.com/problems/maximum-number-of-balloons/"
 }
