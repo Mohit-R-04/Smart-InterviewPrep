@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-22",
-  "id": "1189",
-  "title": "Maximum Number of Balloons",
-  "titleSlug": "maximum-number-of-balloons",
-  "difficulty": "Easy",
-  "likes": 2050,
-  "dislikes": 124,
-  "acceptanceRate": 62.41641236765918,
-  "url": "https://leetcode.com/problems/maximum-number-of-balloons/"
+  "date": "2026-06-23",
+  "id": "3699",
+  "title": "Number of ZigZag Arrays I",
+  "titleSlug": "number-of-zigzag-arrays-i",
+  "difficulty": "Hard",
+  "likes": 199,
+  "dislikes": 20,
+  "acceptanceRate": 44.753837407617965,
+  "url": "https://leetcode.com/problems/number-of-zigzag-arrays-i/"
 }
