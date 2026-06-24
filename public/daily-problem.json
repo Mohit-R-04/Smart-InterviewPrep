@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-23",
-  "id": "3699",
-  "title": "Number of ZigZag Arrays I",
-  "titleSlug": "number-of-zigzag-arrays-i",
+  "date": "2026-06-24",
+  "id": "3700",
+  "title": "Number of ZigZag Arrays II",
+  "titleSlug": "number-of-zigzag-arrays-ii",
   "difficulty": "Hard",
-  "likes": 199,
-  "dislikes": 20,
-  "acceptanceRate": 44.753837407617965,
-  "url": "https://leetcode.com/problems/number-of-zigzag-arrays-i/"
+  "likes": 96,
+  "dislikes": 13,
+  "acceptanceRate": 63.17975554417039,
+  "url": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/"
 }
