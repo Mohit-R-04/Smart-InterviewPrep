@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-24",
-  "id": "3700",
-  "title": "Number of ZigZag Arrays II",
-  "titleSlug": "number-of-zigzag-arrays-ii",
-  "difficulty": "Hard",
-  "likes": 96,
-  "dislikes": 13,
-  "acceptanceRate": 63.17975554417039,
-  "url": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/"
+  "date": "2026-06-25",
+  "id": "3737",
+  "title": "Count Subarrays With Majority Element I",
+  "titleSlug": "count-subarrays-with-majority-element-i",
+  "difficulty": "Medium",
+  "likes": 179,
+  "dislikes": 11,
+  "acceptanceRate": 72.52832464567268,
+  "url": "https://leetcode.com/problems/count-subarrays-with-majority-element-i/"
 }
