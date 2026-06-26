@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-25",
-  "id": "3737",
-  "title": "Count Subarrays With Majority Element I",
-  "titleSlug": "count-subarrays-with-majority-element-i",
-  "difficulty": "Medium",
-  "likes": 179,
-  "dislikes": 11,
-  "acceptanceRate": 72.52832464567268,
-  "url": "https://leetcode.com/problems/count-subarrays-with-majority-element-i/"
+  "date": "2026-06-26",
+  "id": "3739",
+  "title": "Count Subarrays With Majority Element II",
+  "titleSlug": "count-subarrays-with-majority-element-ii",
+  "difficulty": "Hard",
+  "likes": 198,
+  "dislikes": 6,
+  "acceptanceRate": 60.81788697432552,
+  "url": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/"
 }
