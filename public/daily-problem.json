@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-28",
-  "id": "1846",
-  "title": "Maximum Element After Decreasing and Rearranging",
-  "titleSlug": "maximum-element-after-decreasing-and-rearranging",
-  "difficulty": "Medium",
-  "likes": 1247,
-  "dislikes": 283,
-  "acceptanceRate": 67.29472200793832,
-  "url": "https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/"
+  "date": "2026-06-29",
+  "id": "1967",
+  "title": "Number of Strings That Appear as Substrings in Word",
+  "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
+  "difficulty": "Easy",
+  "likes": 873,
+  "dislikes": 44,
+  "acceptanceRate": 85.01134191158262,
+  "url": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/"
 }
