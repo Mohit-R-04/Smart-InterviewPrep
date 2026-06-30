@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-29",
-  "id": "1967",
-  "title": "Number of Strings That Appear as Substrings in Word",
-  "titleSlug": "number-of-strings-that-appear-as-substrings-in-word",
-  "difficulty": "Easy",
-  "likes": 873,
-  "dislikes": 44,
-  "acceptanceRate": 85.01134191158262,
-  "url": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/"
+  "date": "2026-06-30",
+  "id": "1358",
+  "title": "Number of Substrings Containing All Three Characters",
+  "titleSlug": "number-of-substrings-containing-all-three-characters",
+  "difficulty": "Medium",
+  "likes": 4638,
+  "dislikes": 87,
+  "acceptanceRate": 74.01072527025192,
+  "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/"
 }
