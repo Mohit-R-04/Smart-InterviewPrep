@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-30",
-  "id": "1358",
-  "title": "Number of Substrings Containing All Three Characters",
-  "titleSlug": "number-of-substrings-containing-all-three-characters",
+  "date": "2026-07-01",
+  "id": "2812",
+  "title": "Find the Safest Path in a Grid",
+  "titleSlug": "find-the-safest-path-in-a-grid",
   "difficulty": "Medium",
-  "likes": 4638,
-  "dislikes": 87,
-  "acceptanceRate": 74.01072527025192,
-  "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/"
+  "likes": 2021,
+  "dislikes": 341,
+  "acceptanceRate": 52.17617091929095,
+  "url": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/"
 }
