@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-01",
-  "id": "2812",
-  "title": "Find the Safest Path in a Grid",
-  "titleSlug": "find-the-safest-path-in-a-grid",
+  "date": "2026-07-02",
+  "id": "3286",
+  "title": "Find a Safe Walk Through a Grid",
+  "titleSlug": "find-a-safe-walk-through-a-grid",
   "difficulty": "Medium",
-  "likes": 2021,
-  "dislikes": 341,
-  "acceptanceRate": 52.17617091929095,
-  "url": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/"
+  "likes": 375,
+  "dislikes": 16,
+  "acceptanceRate": 44.859055985215754,
+  "url": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/"
 }
