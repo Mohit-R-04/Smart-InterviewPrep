@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-02",
-  "id": "3286",
-  "title": "Find a Safe Walk Through a Grid",
-  "titleSlug": "find-a-safe-walk-through-a-grid",
-  "difficulty": "Medium",
-  "likes": 375,
-  "dislikes": 16,
-  "acceptanceRate": 44.859055985215754,
-  "url": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/"
+  "date": "2026-07-03",
+  "id": "3620",
+  "title": "Network Recovery Pathways",
+  "titleSlug": "network-recovery-pathways",
+  "difficulty": "Hard",
+  "likes": 275,
+  "dislikes": 19,
+  "acceptanceRate": 41.870851202943356,
+  "url": "https://leetcode.com/problems/network-recovery-pathways/"
 }
