@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-03",
-  "id": "3620",
-  "title": "Network Recovery Pathways",
-  "titleSlug": "network-recovery-pathways",
-  "difficulty": "Hard",
-  "likes": 275,
-  "dislikes": 19,
-  "acceptanceRate": 41.870851202943356,
-  "url": "https://leetcode.com/problems/network-recovery-pathways/"
+  "date": "2026-07-04",
+  "id": "2492",
+  "title": "Minimum Score of a Path Between Two Cities",
+  "titleSlug": "minimum-score-of-a-path-between-two-cities",
+  "difficulty": "Medium",
+  "likes": 2028,
+  "dislikes": 329,
+  "acceptanceRate": 62.0440978572168,
+  "url": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/"
 }
