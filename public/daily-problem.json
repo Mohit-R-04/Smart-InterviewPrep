@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-05",
-  "id": "1301",
-  "title": "Number of Paths with Max Score",
-  "titleSlug": "number-of-paths-with-max-score",
-  "difficulty": "Hard",
-  "likes": 641,
-  "dislikes": 32,
-  "acceptanceRate": 54.82377975794653,
-  "url": "https://leetcode.com/problems/number-of-paths-with-max-score/"
+  "date": "2026-07-06",
+  "id": "1288",
+  "title": "Remove Covered Intervals",
+  "titleSlug": "remove-covered-intervals",
+  "difficulty": "Medium",
+  "likes": 2467,
+  "dislikes": 64,
+  "acceptanceRate": 57.7826718830667,
+  "url": "https://leetcode.com/problems/remove-covered-intervals/"
 }
