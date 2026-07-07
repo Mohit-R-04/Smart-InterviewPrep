@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-06",
-  "id": "1288",
-  "title": "Remove Covered Intervals",
-  "titleSlug": "remove-covered-intervals",
-  "difficulty": "Medium",
-  "likes": 2467,
-  "dislikes": 64,
-  "acceptanceRate": 57.7826718830667,
-  "url": "https://leetcode.com/problems/remove-covered-intervals/"
+  "date": "2026-07-07",
+  "id": "3754",
+  "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+  "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "difficulty": "Easy",
+  "likes": 152,
+  "dislikes": 2,
+  "acceptanceRate": 63.658103643804544,
+  "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/"
 }
