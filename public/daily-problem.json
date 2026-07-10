@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-08",
-  "id": "3756",
-  "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
-  "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
-  "difficulty": "Medium",
-  "likes": 242,
-  "dislikes": 29,
-  "acceptanceRate": 35.50272372768677,
-  "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/"
+  "date": "2026-07-10",
+  "id": "3534",
+  "title": "Path Existence Queries in a Graph II",
+  "titleSlug": "path-existence-queries-in-a-graph-ii",
+  "difficulty": "Hard",
+  "likes": 136,
+  "dislikes": 8,
+  "acceptanceRate": 53.83083463862162,
+  "url": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/"
 }
