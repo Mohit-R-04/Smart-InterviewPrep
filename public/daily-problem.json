@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-10",
-  "id": "3534",
-  "title": "Path Existence Queries in a Graph II",
-  "titleSlug": "path-existence-queries-in-a-graph-ii",
-  "difficulty": "Hard",
-  "likes": 136,
-  "dislikes": 8,
-  "acceptanceRate": 53.83083463862162,
-  "url": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/"
+  "date": "2026-07-11",
+  "id": "2685",
+  "title": "Count the Number of Complete Components",
+  "titleSlug": "count-the-number-of-complete-components",
+  "difficulty": "Medium",
+  "likes": 1386,
+  "dislikes": 32,
+  "acceptanceRate": 78.94316046289275,
+  "url": "https://leetcode.com/problems/count-the-number-of-complete-components/"
 }
