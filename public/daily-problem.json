@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-11",
-  "id": "2685",
-  "title": "Count the Number of Complete Components",
-  "titleSlug": "count-the-number-of-complete-components",
-  "difficulty": "Medium",
-  "likes": 1386,
-  "dislikes": 32,
-  "acceptanceRate": 78.94316046289275,
-  "url": "https://leetcode.com/problems/count-the-number-of-complete-components/"
+  "date": "2026-07-12",
+  "id": "1331",
+  "title": "Rank Transform of an Array",
+  "titleSlug": "rank-transform-of-an-array",
+  "difficulty": "Easy",
+  "likes": 2491,
+  "dislikes": 120,
+  "acceptanceRate": 72.17911995991132,
+  "url": "https://leetcode.com/problems/rank-transform-of-an-array/"
 }
