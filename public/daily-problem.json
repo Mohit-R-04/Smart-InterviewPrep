@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-14",
-  "id": "3336",
-  "title": "Find the Number of Subsequences With Equal GCD",
-  "titleSlug": "find-the-number-of-subsequences-with-equal-gcd",
-  "difficulty": "Hard",
-  "likes": 189,
-  "dislikes": 14,
-  "acceptanceRate": 55.37352935494465,
-  "url": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/"
+  "date": "2026-07-15",
+  "id": "3658",
+  "title": "GCD of Odd and Even Sums",
+  "titleSlug": "gcd-of-odd-and-even-sums",
+  "difficulty": "Easy",
+  "likes": 216,
+  "dislikes": 40,
+  "acceptanceRate": 88.05502446079426,
+  "url": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/"
 }
