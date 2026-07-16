@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-15",
-  "id": "3658",
-  "title": "GCD of Odd and Even Sums",
-  "titleSlug": "gcd-of-odd-and-even-sums",
-  "difficulty": "Easy",
-  "likes": 216,
-  "dislikes": 40,
-  "acceptanceRate": 88.05502446079426,
-  "url": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/"
+  "date": "2026-07-16",
+  "id": "3867",
+  "title": "Sum of GCD of Formed Pairs",
+  "titleSlug": "sum-of-gcd-of-formed-pairs",
+  "difficulty": "Medium",
+  "likes": 116,
+  "dislikes": 29,
+  "acceptanceRate": 72.58172377168482,
+  "url": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/"
 }
