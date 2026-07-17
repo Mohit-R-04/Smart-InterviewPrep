@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-16",
-  "id": "3867",
-  "title": "Sum of GCD of Formed Pairs",
-  "titleSlug": "sum-of-gcd-of-formed-pairs",
-  "difficulty": "Medium",
-  "likes": 116,
-  "dislikes": 29,
-  "acceptanceRate": 72.58172377168482,
-  "url": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/"
+  "date": "2026-07-17",
+  "id": "3312",
+  "title": "Sorted GCD Pair Queries",
+  "titleSlug": "sorted-gcd-pair-queries",
+  "difficulty": "Hard",
+  "likes": 186,
+  "dislikes": 13,
+  "acceptanceRate": 43.91107335032569,
+  "url": "https://leetcode.com/problems/sorted-gcd-pair-queries/"
 }
