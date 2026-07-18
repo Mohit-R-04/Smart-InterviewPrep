@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-17",
-  "id": "3312",
-  "title": "Sorted GCD Pair Queries",
-  "titleSlug": "sorted-gcd-pair-queries",
-  "difficulty": "Hard",
-  "likes": 186,
-  "dislikes": 13,
-  "acceptanceRate": 43.91107335032569,
-  "url": "https://leetcode.com/problems/sorted-gcd-pair-queries/"
+  "date": "2026-07-18",
+  "id": "1979",
+  "title": "Find Greatest Common Divisor of Array",
+  "titleSlug": "find-greatest-common-divisor-of-array",
+  "difficulty": "Easy",
+  "likes": 1386,
+  "dislikes": 56,
+  "acceptanceRate": 81.78531555443207,
+  "url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/"
 }
