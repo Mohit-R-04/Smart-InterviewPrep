@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-20",
-  "id": "1260",
-  "title": "Shift 2D Grid",
-  "titleSlug": "shift-2d-grid",
-  "difficulty": "Easy",
-  "likes": 1891,
-  "dislikes": 365,
-  "acceptanceRate": 70.97869082557101,
-  "url": "https://leetcode.com/problems/shift-2d-grid/"
+  "date": "2026-07-21",
+  "id": "3499",
+  "title": "Maximize Active Section with Trade I",
+  "titleSlug": "maximize-active-section-with-trade-i",
+  "difficulty": "Medium",
+  "likes": 167,
+  "dislikes": 47,
+  "acceptanceRate": 49.44769017647413,
+  "url": "https://leetcode.com/problems/maximize-active-section-with-trade-i/"
 }
