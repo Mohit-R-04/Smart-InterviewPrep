@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-21",
-  "id": "3499",
-  "title": "Maximize Active Section with Trade I",
-  "titleSlug": "maximize-active-section-with-trade-i",
-  "difficulty": "Medium",
-  "likes": 167,
-  "dislikes": 47,
-  "acceptanceRate": 49.44769017647413,
-  "url": "https://leetcode.com/problems/maximize-active-section-with-trade-i/"
+  "date": "2026-07-22",
+  "id": "3501",
+  "title": "Maximize Active Section with Trade II",
+  "titleSlug": "maximize-active-section-with-trade-ii",
+  "difficulty": "Hard",
+  "likes": 82,
+  "dislikes": 16,
+  "acceptanceRate": 57.20118538030952,
+  "url": "https://leetcode.com/problems/maximize-active-section-with-trade-ii/"
 }
