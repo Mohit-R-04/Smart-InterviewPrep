@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-22",
-  "id": "3501",
-  "title": "Maximize Active Section with Trade II",
-  "titleSlug": "maximize-active-section-with-trade-ii",
-  "difficulty": "Hard",
-  "likes": 82,
-  "dislikes": 16,
-  "acceptanceRate": 57.20118538030952,
-  "url": "https://leetcode.com/problems/maximize-active-section-with-trade-ii/"
+  "date": "2026-07-23",
+  "id": "3513",
+  "title": "Number of Unique XOR Triplets I",
+  "titleSlug": "number-of-unique-xor-triplets-i",
+  "difficulty": "Medium",
+  "likes": 135,
+  "dislikes": 25,
+  "acceptanceRate": 44.03780434628295,
+  "url": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/"
 }
