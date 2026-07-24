@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-23",
-  "id": "3513",
-  "title": "Number of Unique XOR Triplets I",
-  "titleSlug": "number-of-unique-xor-triplets-i",
+  "date": "2026-07-24",
+  "id": "3514",
+  "title": "Number of Unique XOR Triplets II",
+  "titleSlug": "number-of-unique-xor-triplets-ii",
   "difficulty": "Medium",
-  "likes": 135,
-  "dislikes": 25,
-  "acceptanceRate": 44.03780434628295,
-  "url": "https://leetcode.com/problems/number-of-unique-xor-triplets-i/"
+  "likes": 127,
+  "dislikes": 19,
+  "acceptanceRate": 45.48120077906682,
+  "url": "https://leetcode.com/problems/number-of-unique-xor-triplets-ii/"
 }
