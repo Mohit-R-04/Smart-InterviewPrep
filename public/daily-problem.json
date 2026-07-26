@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-25",
-  "id": "3536",
-  "title": "Maximum Product of Two Digits",
-  "titleSlug": "maximum-product-of-two-digits",
+  "date": "2026-07-26",
+  "id": "628",
+  "title": "Maximum Product of Three Numbers",
+  "titleSlug": "maximum-product-of-three-numbers",
   "difficulty": "Easy",
-  "likes": 158,
-  "dislikes": 3,
-  "acceptanceRate": 73.66894521286675,
-  "url": "https://leetcode.com/problems/maximum-product-of-two-digits/"
+  "likes": 4669,
+  "dislikes": 723,
+  "acceptanceRate": 46.84942578224102,
+  "url": "https://leetcode.com/problems/maximum-product-of-three-numbers/"
 }
