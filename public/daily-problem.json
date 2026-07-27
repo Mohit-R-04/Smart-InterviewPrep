@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-26",
-  "id": "628",
-  "title": "Maximum Product of Three Numbers",
-  "titleSlug": "maximum-product-of-three-numbers",
+  "date": "2026-07-27",
+  "id": "1464",
+  "title": "Maximum Product of Two Elements in an Array",
+  "titleSlug": "maximum-product-of-two-elements-in-an-array",
   "difficulty": "Easy",
-  "likes": 4669,
-  "dislikes": 723,
-  "acceptanceRate": 46.84942578224102,
-  "url": "https://leetcode.com/problems/maximum-product-of-three-numbers/"
+  "likes": 2718,
+  "dislikes": 241,
+  "acceptanceRate": 84.37016318764776,
+  "url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/"
 }
