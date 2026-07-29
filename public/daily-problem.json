@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-28",
-  "id": "3517",
-  "title": "Smallest Palindromic Rearrangement I",
-  "titleSlug": "smallest-palindromic-rearrangement-i",
-  "difficulty": "Medium",
-  "likes": 215,
-  "dislikes": 5,
-  "acceptanceRate": 70.7294628038059,
-  "url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/"
+  "date": "2026-07-29",
+  "id": "3518",
+  "title": "Smallest Palindromic Rearrangement II",
+  "titleSlug": "smallest-palindromic-rearrangement-ii",
+  "difficulty": "Hard",
+  "likes": 163,
+  "dislikes": 15,
+  "acceptanceRate": 32.61580451631176,
+  "url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/"
 }
