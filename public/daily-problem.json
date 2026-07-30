@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-29",
-  "id": "3518",
-  "title": "Smallest Palindromic Rearrangement II",
-  "titleSlug": "smallest-palindromic-rearrangement-ii",
-  "difficulty": "Hard",
-  "likes": 163,
-  "dislikes": 15,
-  "acceptanceRate": 32.61580451631176,
-  "url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/"
+  "date": "2026-07-30",
+  "id": "3014",
+  "title": "Minimum Number of Pushes to Type Word I",
+  "titleSlug": "minimum-number-of-pushes-to-type-word-i",
+  "difficulty": "Easy",
+  "likes": 299,
+  "dislikes": 47,
+  "acceptanceRate": 72.96469378172306,
+  "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/"
 }
