@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-30",
-  "id": "3014",
-  "title": "Minimum Number of Pushes to Type Word I",
-  "titleSlug": "minimum-number-of-pushes-to-type-word-i",
-  "difficulty": "Easy",
-  "likes": 299,
-  "dislikes": 47,
-  "acceptanceRate": 72.96469378172306,
-  "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/"
+  "date": "2026-07-31",
+  "id": "3016",
+  "title": "Minimum Number of Pushes to Type Word II",
+  "titleSlug": "minimum-number-of-pushes-to-type-word-ii",
+  "difficulty": "Medium",
+  "likes": 887,
+  "dislikes": 85,
+  "acceptanceRate": 81.80177927646362,
+  "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/"
 }
