@@ -1,11 +1,11 @@
 {
-  "date": "2026-07-31",
-  "id": "3016",
-  "title": "Minimum Number of Pushes to Type Word II",
-  "titleSlug": "minimum-number-of-pushes-to-type-word-ii",
+  "date": "2026-08-01",
+  "id": "486",
+  "title": "Predict the Winner",
+  "titleSlug": "predict-the-winner",
   "difficulty": "Medium",
-  "likes": 887,
-  "dislikes": 85,
-  "acceptanceRate": 81.80177927646362,
-  "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/"
+  "likes": 6365,
+  "dislikes": 300,
+  "acceptanceRate": 57.469440863918564,
+  "url": "https://leetcode.com/problems/predict-the-winner/"
 }
