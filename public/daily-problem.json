@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-01",
-  "id": "486",
-  "title": "Predict the Winner",
-  "titleSlug": "predict-the-winner",
+  "date": "2026-08-02",
+  "id": "877",
+  "title": "Stone Game",
+  "titleSlug": "stone-game",
   "difficulty": "Medium",
-  "likes": 6365,
-  "dislikes": 300,
-  "acceptanceRate": 57.469440863918564,
-  "url": "https://leetcode.com/problems/predict-the-winner/"
+  "likes": 3677,
+  "dislikes": 2972,
+  "acceptanceRate": 74.54912504127164,
+  "url": "https://leetcode.com/problems/stone-game/"
 }
