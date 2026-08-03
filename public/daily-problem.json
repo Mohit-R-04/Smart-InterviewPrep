@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-02",
-  "id": "877",
-  "title": "Stone Game",
-  "titleSlug": "stone-game",
-  "difficulty": "Medium",
-  "likes": 3677,
-  "dislikes": 2972,
-  "acceptanceRate": 74.54912504127164,
-  "url": "https://leetcode.com/problems/stone-game/"
+  "date": "2026-08-03",
+  "id": "1406",
+  "title": "Stone Game III",
+  "titleSlug": "stone-game-iii",
+  "difficulty": "Hard",
+  "likes": 2435,
+  "dislikes": 87,
+  "acceptanceRate": 65.19463569897056,
+  "url": "https://leetcode.com/problems/stone-game-iii/"
 }
