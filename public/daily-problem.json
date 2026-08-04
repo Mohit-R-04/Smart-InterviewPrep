@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-03",
-  "id": "1406",
-  "title": "Stone Game III",
-  "titleSlug": "stone-game-iii",
-  "difficulty": "Hard",
-  "likes": 2435,
-  "dislikes": 87,
-  "acceptanceRate": 65.19463569897056,
-  "url": "https://leetcode.com/problems/stone-game-iii/"
+  "date": "2026-08-04",
+  "id": "3731",
+  "title": "Find Missing Elements",
+  "titleSlug": "find-missing-elements",
+  "difficulty": "Easy",
+  "likes": 208,
+  "dislikes": 8,
+  "acceptanceRate": 87.20582987434969,
+  "url": "https://leetcode.com/problems/find-missing-elements/"
 }
