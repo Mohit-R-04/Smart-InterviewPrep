@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-04",
-  "id": "3731",
-  "title": "Find Missing Elements",
-  "titleSlug": "find-missing-elements",
-  "difficulty": "Easy",
-  "likes": 208,
-  "dislikes": 8,
-  "acceptanceRate": 87.20582987434969,
-  "url": "https://leetcode.com/problems/find-missing-elements/"
+  "date": "2026-08-05",
+  "id": "3310",
+  "title": "Remove Methods From Project",
+  "titleSlug": "remove-methods-from-project",
+  "difficulty": "Medium",
+  "likes": 286,
+  "dislikes": 92,
+  "acceptanceRate": 62.044973489532026,
+  "url": "https://leetcode.com/problems/remove-methods-from-project/"
 }
