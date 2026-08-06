@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-05",
-  "id": "3310",
-  "title": "Remove Methods From Project",
-  "titleSlug": "remove-methods-from-project",
-  "difficulty": "Medium",
-  "likes": 286,
-  "dislikes": 92,
-  "acceptanceRate": 62.044973489532026,
-  "url": "https://leetcode.com/problems/remove-methods-from-project/"
+  "date": "2026-08-06",
+  "id": "3345",
+  "title": "Smallest Divisible Digit Product I",
+  "titleSlug": "smallest-divisible-digit-product-i",
+  "difficulty": "Easy",
+  "likes": 184,
+  "dislikes": 17,
+  "acceptanceRate": 70.63650964775252,
+  "url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/"
 }
