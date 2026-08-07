@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-06",
-  "id": "3345",
-  "title": "Smallest Divisible Digit Product I",
-  "titleSlug": "smallest-divisible-digit-product-i",
-  "difficulty": "Easy",
-  "likes": 184,
-  "dislikes": 17,
-  "acceptanceRate": 70.63650964775252,
-  "url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/"
+  "date": "2026-08-07",
+  "id": "3348",
+  "title": "Smallest Divisible Digit Product II",
+  "titleSlug": "smallest-divisible-digit-product-ii",
+  "difficulty": "Hard",
+  "likes": 138,
+  "dislikes": 39,
+  "acceptanceRate": 32.49712502053556,
+  "url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/"
 }
