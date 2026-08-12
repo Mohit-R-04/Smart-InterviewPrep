@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-11",
-  "id": "2996",
-  "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
-  "titleSlug": "smallest-missing-integer-greater-than-sequential-prefix-sum",
-  "difficulty": "Easy",
-  "likes": 281,
-  "dislikes": 355,
-  "acceptanceRate": 42.164112322082914,
-  "url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/"
+  "date": "2026-08-12",
+  "id": "2958",
+  "title": "Length of Longest Subarray With at Most K Frequency",
+  "titleSlug": "length-of-longest-subarray-with-at-most-k-frequency",
+  "difficulty": "Medium",
+  "likes": 1326,
+  "dislikes": 37,
+  "acceptanceRate": 58.252353328032825,
+  "url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/"
 }
