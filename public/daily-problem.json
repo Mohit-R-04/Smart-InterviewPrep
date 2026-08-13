@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-12",
-  "id": "2958",
-  "title": "Length of Longest Subarray With at Most K Frequency",
-  "titleSlug": "length-of-longest-subarray-with-at-most-k-frequency",
-  "difficulty": "Medium",
-  "likes": 1326,
-  "dislikes": 37,
-  "acceptanceRate": 58.252353328032825,
-  "url": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/"
+  "date": "2026-08-13",
+  "id": "2213",
+  "title": "Longest Substring of One Repeating Character",
+  "titleSlug": "longest-substring-of-one-repeating-character",
+  "difficulty": "Hard",
+  "likes": 406,
+  "dislikes": 88,
+  "acceptanceRate": 53.05072344041353,
+  "url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
 }
