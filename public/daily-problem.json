@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-13",
-  "id": "2213",
-  "title": "Longest Substring of One Repeating Character",
-  "titleSlug": "longest-substring-of-one-repeating-character",
-  "difficulty": "Hard",
-  "likes": 406,
-  "dislikes": 88,
-  "acceptanceRate": 53.05072344041353,
-  "url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/"
+  "date": "2026-08-14",
+  "id": "3090",
+  "title": "Maximum Length Substring With Two Occurrences",
+  "titleSlug": "maximum-length-substring-with-two-occurrences",
+  "difficulty": "Easy",
+  "likes": 367,
+  "dislikes": 25,
+  "acceptanceRate": 72.31410183884944,
+  "url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/"
 }
