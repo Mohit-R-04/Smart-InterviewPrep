@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-17",
-  "id": "1563",
-  "title": "Stone Game V",
-  "titleSlug": "stone-game-v",
-  "difficulty": "Hard",
-  "likes": 766,
-  "dislikes": 97,
-  "acceptanceRate": 50.264244696036876,
-  "url": "https://leetcode.com/problems/stone-game-v/"
+  "date": "2026-08-18",
+  "id": "3471",
+  "title": "Find the Largest Almost Missing Integer",
+  "titleSlug": "find-the-largest-almost-missing-integer",
+  "difficulty": "Easy",
+  "likes": 207,
+  "dislikes": 79,
+  "acceptanceRate": 42.794792827857236,
+  "url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/"
 }
