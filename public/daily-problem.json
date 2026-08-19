@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-18",
-  "id": "3471",
-  "title": "Find the Largest Almost Missing Integer",
-  "titleSlug": "find-the-largest-almost-missing-integer",
-  "difficulty": "Easy",
-  "likes": 207,
-  "dislikes": 79,
-  "acceptanceRate": 42.794792827857236,
-  "url": "https://leetcode.com/problems/find-the-largest-almost-missing-integer/"
+  "date": "2026-08-19",
+  "id": "1386",
+  "title": "Cinema Seat Allocation",
+  "titleSlug": "cinema-seat-allocation",
+  "difficulty": "Medium",
+  "likes": 1103,
+  "dislikes": 426,
+  "acceptanceRate": 49.0681195984755,
+  "url": "https://leetcode.com/problems/cinema-seat-allocation/"
 }
