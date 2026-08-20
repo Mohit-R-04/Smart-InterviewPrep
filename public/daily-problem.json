@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-19",
-  "id": "1386",
-  "title": "Cinema Seat Allocation",
-  "titleSlug": "cinema-seat-allocation",
-  "difficulty": "Medium",
-  "likes": 1103,
-  "dislikes": 426,
-  "acceptanceRate": 49.0681195984755,
-  "url": "https://leetcode.com/problems/cinema-seat-allocation/"
+  "date": "2026-08-20",
+  "id": "3069",
+  "title": "Distribute Elements Into Two Arrays I",
+  "titleSlug": "distribute-elements-into-two-arrays-i",
+  "difficulty": "Easy",
+  "likes": 189,
+  "dislikes": 37,
+  "acceptanceRate": 79.00096215522771,
+  "url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/"
 }
