@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-20",
-  "id": "3069",
-  "title": "Distribute Elements Into Two Arrays I",
-  "titleSlug": "distribute-elements-into-two-arrays-i",
-  "difficulty": "Easy",
-  "likes": 189,
-  "dislikes": 37,
-  "acceptanceRate": 79.00096215522771,
-  "url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/"
+  "date": "2026-08-21",
+  "id": "3116",
+  "title": "Kth Smallest Amount With Single Denomination Combination",
+  "titleSlug": "kth-smallest-amount-with-single-denomination-combination",
+  "difficulty": "Hard",
+  "likes": 330,
+  "dislikes": 24,
+  "acceptanceRate": 32.773098972020875,
+  "url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/"
 }
