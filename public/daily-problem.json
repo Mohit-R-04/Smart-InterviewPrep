@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-21",
-  "id": "3116",
-  "title": "Kth Smallest Amount With Single Denomination Combination",
-  "titleSlug": "kth-smallest-amount-with-single-denomination-combination",
-  "difficulty": "Hard",
-  "likes": 330,
-  "dislikes": 24,
-  "acceptanceRate": 32.773098972020875,
-  "url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/"
+  "date": "2026-08-22",
+  "id": "3622",
+  "title": "Check Divisibility by Digit Sum and Product",
+  "titleSlug": "check-divisibility-by-digit-sum-and-product",
+  "difficulty": "Easy",
+  "likes": 123,
+  "dislikes": 2,
+  "acceptanceRate": 72.1857004535494,
+  "url": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/"
 }
